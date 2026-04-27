@@ -76,6 +76,13 @@
   .adv-desc { font-size:0.7rem; color:var(--text-md); line-height:1.35; }
 
   .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+
+  @media (max-width: 480px) {
+    .two-col, .three-col, .adv-row { grid-template-columns: 1fr; }
+    .led-grid { grid-template-columns: 1fr 1fr; }
+    .fas-grid { grid-template-columns: 1fr; }
+    .fas-hdr, .fas-cell { display: block; }
+  }
 </style>
 </head>
 <body>

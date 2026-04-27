@@ -31,7 +31,7 @@
   --sidebar-w:   280px;
 }
 
-html { font-size: 16px; }
+html { font-size: 16px; overflow-x: hidden; }
 body {
   font-family: var(--font);
   background: var(--grå-50);
