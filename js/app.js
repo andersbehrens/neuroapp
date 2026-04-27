@@ -406,7 +406,7 @@ const Vy = {
         mdText = mdText.replace(/^# [^\n]+\n+/, '');
         // Remove date lines and remaining h1 headings (document title duplicates from PDF extraction)
         mdText = mdText.replace(/^(# [^\n]+\n+|\d{4}-\d{2}-\d{2}\n+)+/, '');
-        mdText = mdText.replace(/!\[([^\]]*)\]\(images\//g, '![$1](/riktlinjerMarkdown/images/');
+        mdText = mdText.replace(/!\[([^\]]*)\]\(images\//g, '![$1](riktlinjerMarkdown/images/');
         mdText = mdText.replace(/!\[[^\]]*\]\([^\)]*\.pdf-0-\d+\.png\)/g, '');
         // Convert blank-surrounded **bold** lines (single or consecutive) to headings.
         // First occurrence → ##, repeated occurrences → ### (subsection of parent).

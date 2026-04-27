@@ -16,9 +16,9 @@ const DOKUMENT = [
     id: 'mr-konsensus',
     titel: 'Nationella rekommendationer för MR vid neuroinflammation (v3.1, 2025)',
     kategori: 'ms',
-    pdf: '/riktlinjer/Konsensusdokument_MR_3.1_2025-10-10.pdf',
-    markdownUrl: '/riktlinjerMarkdown/Konsensusdokument_MR_3.1_2025-10-10.md',
-    graphicalAbstract: '/graphical_abstract_mr.html',
+    pdf: 'riktlinjer/Konsensusdokument_MR_3.1_2025-10-10.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Konsensusdokument_MR_3.1_2025-10-10.md',
+    graphicalAbstract: 'graphical_abstract_mr.html',
     innehall: [
     {
       rubrik: 'Rekommenderad MR-användning – i vilka situationer bör MR göras?',
@@ -771,9 +771,9 @@ Förutom radiologisk avbildning av synnerven kan även OCT (Optical Coherence To
     id: 'hypogamma',
     titel: 'Handläggning av hypogammaglobulinemi och late-onset neutropeni vid anti-CD20',
     kategori: 'ms',
-    pdf: '/riktlinjer/Handlaggning-av-hypogammaglobulinemi-och-late-onset-neutropeni.pdf',
-    markdownUrl: '/riktlinjerMarkdown/Handlaggning-av-hypogammaglobulinemi-och-late-onset-neutropeni.md',
-    graphicalAbstract: '/graphical_abstract_hypogamma.html',
+    pdf: 'riktlinjer/Handlaggning-av-hypogammaglobulinemi-och-late-onset-neutropeni.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Handlaggning-av-hypogammaglobulinemi-och-late-onset-neutropeni.md',
+    graphicalAbstract: 'graphical_abstract_hypogamma.html',
     innehall: [
     {
       rubrik: 'Bakgrund – hypogammaglobulinemi vid anti-CD20-behandling',
@@ -1090,9 +1090,9 @@ ofatumumab in patients with relapsing-remitting multiple sclerosis: The MIRROR s
     id: 'parkinson-riktlinjer',
     titel: 'Riktlinjer för utredning och behandling av Parkinsons sjukdom (v10, 2025)',
     kategori: 'parkinson',
-    pdf: '/riktlinjer/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf',
-    markdownUrl: '/riktlinjerMarkdown/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.md',
-    graphicalAbstract: '/graphical_abstract_parkinson.html',
+    pdf: 'riktlinjer/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.md',
+    graphicalAbstract: 'graphical_abstract_parkinson.html',
     innehall: [
     {
       rubrik: 'IV. Definitioner, diagnostik och utredningsgång',
@@ -4862,9 +4862,9 @@ analyser med bla bioinformatisk analys begäras.`
     id: 'tremor-riktlinjer',
     titel: 'Svenska riktlinjer för utredning och behandling av tremortillstånd (v3, 2026)',
     kategori: 'tremor',
-    pdf: '/riktlinjer/Tremor-riktlinjer-SWEMODIS-2026.pdf',
-    markdownUrl: '/riktlinjerMarkdown/Tremor-riktlinjer-SWEMODIS-2026.md',
-    graphicalAbstract: '/graphical_abstract_tremor.html',
+    pdf: 'riktlinjer/Tremor-riktlinjer-SWEMODIS-2026.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Tremor-riktlinjer-SWEMODIS-2026.md',
+    graphicalAbstract: 'graphical_abstract_tremor.html',
     innehall: [
     {
       rubrik: 'B. Definitioner, klassificering, diagnostik och utredningsgång',
@@ -6489,9 +6489,9 @@ Rådata till DT-bilderna sparas i tre månader ifall en rekonstruktion av bilder
     id: 'mg-konsensus',
     titel: 'Myastenia Gravis – Svenskt konsensusprogram 2024',
     kategori: 'myasteni',
-    pdf: '/riktlinjer/MGkonsensus2024v2.pdf',
-    markdownUrl: '/riktlinjerMarkdown/MGkonsensus2024v2.md',
-    graphicalAbstract: '/graphical_abstract_mg.html',
+    pdf: 'riktlinjer/MGkonsensus2024v2.pdf',
+    markdownUrl: 'riktlinjerMarkdown/MGkonsensus2024v2.md',
+    graphicalAbstract: 'graphical_abstract_mg.html',
     innehall: [
     {
       rubrik: 'Riktlinjer för MG – bakgrund och epidemiologi',
@@ -7268,9 +7268,9 @@ Neostigmin/tim (mg)
     id: 'polyneuropati',
     titel: 'Polyneuropati – Vårdprogram för slutenvård, Karolinska 2023',
     kategori: 'polyneuropati',
-    pdf: '/riktlinjer/Polyneuropati Karolinska 2023v2.pdf',
-    markdownUrl: '/riktlinjerMarkdown/Polyneuropati_Karolinska_2023v2.md',
-    graphicalAbstract: '/graphical_abstract_polyneuropati.html',
+    pdf: 'riktlinjer/Polyneuropati Karolinska 2023v2.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Polyneuropati_Karolinska_2023v2.md',
+    graphicalAbstract: 'graphical_abstract_polyneuropati.html',
     innehall: [
     {
       rubrik: 'Definition',
@@ -8679,7 +8679,7 @@ i symtomkomplexet.`
     id: 'gcs',
     titel: 'GCS – Glasgow Coma Scale',
     kategori: 'akutkort',
-    pdf: '/akutkort/GCS.pdf',
+    pdf: 'akutkort/GCS.pdf',
     innehall: [
     {
       rubrik: 'GCS – Glasgow Coma Scale',
@@ -8692,7 +8692,7 @@ i symtomkomplexet.`
     id: 'ich',
     titel: 'ICH – Intracerebral blödning',
     kategori: 'akutkort',
-    pdf: '/akutkort/ICH.pdf',
+    pdf: 'akutkort/ICH.pdf',
     innehall: [
     {
       rubrik: 'Sida 1',
@@ -8709,7 +8709,7 @@ i symtomkomplexet.`
     id: 'ivt-evt',
     titel: 'IVT/EVT – Trombolys och trombektomi',
     kategori: 'akutkort',
-    pdf: '/akutkort/IVT_EVT.pdf',
+    pdf: 'akutkort/IVT_EVT.pdf',
     innehall: [
     {
       rubrik: 'Sida 1',
@@ -8726,7 +8726,7 @@ i symtomkomplexet.`
     id: 'nihss',
     titel: 'NIHSS – NIH Stroke Scale',
     kategori: 'akutkort',
-    pdf: '/akutkort/NIHSS.pdf',
+    pdf: 'akutkort/NIHSS.pdf',
     innehall: [
     {
       rubrik: 'Sida 1',
@@ -8751,7 +8751,7 @@ i symtomkomplexet.`
     id: 'rls',
     titel: 'RLS – Reaction Level Scale',
     kategori: 'akutkort',
-    pdf: '/akutkort/RLS.pdf',
+    pdf: 'akutkort/RLS.pdf',
     innehall: [
     {
       rubrik: 'RLS',
@@ -8764,7 +8764,7 @@ i symtomkomplexet.`
     id: 'rutinnervstatus',
     titel: 'Rutinnervstatus',
     kategori: 'akutkort',
-    pdf: '/akutkort/Rutinnervstatus.pdf',
+    pdf: 'akutkort/Rutinnervstatus.pdf',
     innehall: [
     {
       rubrik: 'Rutinnervstatus',
@@ -8777,7 +8777,7 @@ i symtomkomplexet.`
     id: 'sbar',
     titel: 'SBAR – Kommunikationsverktyg',
     kategori: 'akutkort',
-    pdf: '/akutkort/SBAR.pdf',
+    pdf: 'akutkort/SBAR.pdf',
     innehall: [
     {
       rubrik: 'SBAR',
@@ -8790,7 +8790,7 @@ i symtomkomplexet.`
     id: 'status-ep',
     titel: 'Status epilepticus',
     kategori: 'akutkort',
-    pdf: '/akutkort/Status EP.pdf',
+    pdf: 'akutkort/Status EP.pdf',
     innehall: [
     {
       rubrik: 'Sida 1',
@@ -8807,7 +8807,7 @@ i symtomkomplexet.`
     id: 'yrsel',
     titel: 'Yrsel – akut handläggning',
     kategori: 'akutkort',
-    pdf: '/akutkort/Yrsel.pdf',
+    pdf: 'akutkort/Yrsel.pdf',
     innehall: [
     {
       rubrik: 'Sida 1',
@@ -8824,7 +8824,7 @@ i symtomkomplexet.`
     id: 'eiuh',
     titel: 'Neurologisk prognos efter hjärtstopp (EIUH-2)',
     kategori: 'prognos',
-    pdf: '/prognos/EIUH-2.pdf',
+    pdf: 'prognos/EIUH-2.pdf',
     innehall: [
     {
       rubrik: 'Cerebral Performance Category (CPC)',
@@ -10744,7 +10744,7 @@ recommended.`
     id: 'ledd-kalkylator',
     titel: 'LEDD-kalkylator',
     kategori: 'kalkylatorer',
-    kalkylatorUrl: '/ledd_kalkylator.html',
+    kalkylatorUrl: 'ledd_kalkylator.html',
     innehall: [
       { rubrik: 'LEDD-kalkylator', text: 'Beräkning av levodopa-ekvivalenta dygnsdoser (LEDD) för antiparkinsonläkemedel. Baserad på Jost et al. 2023.' }
     ]
