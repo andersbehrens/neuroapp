@@ -31,7 +31,7 @@
   --sidebar-w:   280px;
 }
 
-html { font-size: 16px; overflow-x: hidden; }
+html { font-size: 16px; overflow-x: hidden; max-width: 100%; }
 body {
   font-family: var(--font);
   background: var(--grå-50);
@@ -39,6 +39,8 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* === Layout === */
@@ -654,8 +656,11 @@ body {
   font-size: 17px;
   line-height: 1.85;
   max-width: 680px;
+  width: 100%;
   margin: 24px auto 0;
   padding: 0 4px 80px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Rubriker */
@@ -732,8 +737,10 @@ body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 20px 0;
+  max-width: 100%;
+  width: 100%;
 }
-.tabell-scroll table { margin: 0; }
+.tabell-scroll table { margin: 0; width: max-content; max-width: none; }
 
 .kindle-lasare table {
   width: 100%;
