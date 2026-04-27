@@ -8683,7 +8683,7 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'GCS – Glasgow Coma Scale',
-      html: `<img src="/images/akutkort/GCS_p1.png" alt="GCS – Glasgow Coma Scale" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/GCS_p1.png" alt="GCS – Glasgow Coma Scale" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8696,11 +8696,11 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Sida 1',
-      html: `<img src="/images/akutkort/ICH_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/ICH_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 2',
-      html: `<img src="/images/akutkort/ICH_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/ICH_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8713,11 +8713,11 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Sida 1',
-      html: `<img src="/images/akutkort/IVT_EVT_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/IVT_EVT_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 2',
-      html: `<img src="/images/akutkort/IVT_EVT_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/IVT_EVT_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8730,19 +8730,19 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Sida 1',
-      html: `<img src="/images/akutkort/NIHSS_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/NIHSS_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 2',
-      html: `<img src="/images/akutkort/NIHSS_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/NIHSS_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 3',
-      html: `<img src="/images/akutkort/NIHSS_p3.png" alt="Sida 3" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/NIHSS_p3.png" alt="Sida 3" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 4',
-      html: `<img src="/images/akutkort/NIHSS_p4.png" alt="Sida 4" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/NIHSS_p4.png" alt="Sida 4" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8755,7 +8755,7 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'RLS',
-      html: `<img src="/images/akutkort/RLS_p1.png" alt="RLS" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/RLS_p1.png" alt="RLS" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8768,7 +8768,7 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Rutinnervstatus',
-      html: `<img src="/images/akutkort/Rutinnervstatus_p1.png" alt="Rutinnervstatus" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/Rutinnervstatus_p1.png" alt="Rutinnervstatus" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8781,7 +8781,7 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'SBAR',
-      html: `<img src="/images/akutkort/SBAR_p1.png" alt="SBAR" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/SBAR_p1.png" alt="SBAR" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8794,11 +8794,11 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Sida 1',
-      html: `<img src="/images/akutkort/Status_EP_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/Status_EP_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 2',
-      html: `<img src="/images/akutkort/Status_EP_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/Status_EP_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
@@ -8811,11 +8811,11 @@ i symtomkomplexet.`
     innehall: [
     {
       rubrik: 'Sida 1',
-      html: `<img src="/images/akutkort/Yrsel_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/Yrsel_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
     },
     {
       rubrik: 'Sida 2',
-      html: `<img src="/images/akutkort/Yrsel_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+      html: `<img src="images/akutkort/Yrsel_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
