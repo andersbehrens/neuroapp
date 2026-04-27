@@ -463,6 +463,15 @@ const Vy = {
   },
 
   _postprocessBilder(container) {
+    // Slå in tabeller i scrollbar wrapper så de inte orsakar horisontell sidscroll
+    container.querySelectorAll('table').forEach(t => {
+      if (t.parentElement.classList.contains('tabell-scroll')) return;
+      const w = document.createElement('div');
+      w.className = 'tabell-scroll';
+      t.parentNode.insertBefore(w, t);
+      w.appendChild(t);
+    });
+
     const containerW = container.offsetWidth || 680;
     container.querySelectorAll('img').forEach(img => {
       img.loading = 'lazy';
