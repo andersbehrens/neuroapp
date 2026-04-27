@@ -926,7 +926,12 @@ body {
   padding: 10px 4px;
 }
 
-/* Mobilanpassning: liten padding under TOC-knappen */
+/* Mobilanpassning */
 @media (max-width: 767px) {
-  .kindle-lasare { font-size: 16px; padding: 0 0 80px; }
+  .kindle-lasare { font-size: 16px; padding: 0 0 120px; }
+  /* Flytta TOC-knappen ovanför Android Chromes navigationsfält (~56px) */
+  #toc-knapp {
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    right: 16px;
+  }
 }
