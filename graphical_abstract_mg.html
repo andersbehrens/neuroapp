@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Myastenia Gravis</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:    #1B3A6B; --blå-md: #2563EB; --blå-lj: #EFF6FF;
+    --teal:   #0E7490; --teal-lj:#ECFEFF;
+    --grön:   #047857; --grön-lj:#ECFDF5;
+    --röd:    #DC2626; --röd-lj: #FEF2F2;
+    --gul:    #D97706; --gul-lj: #FFFBEB;
+    --lila:   #6D28D9; --lila-lj:#F5F3FF;
+    --grå:    #F1F5F9; --vit:#FFFFFF;
+    --text:   #0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:   -apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { background:var(--blå-lj); color:var(--blå-md); border:1px solid #BFDBFE; border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; }
+  .chip.röd { background:var(--röd-lj); color:var(--röd); border-color:#FECACA; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+  .chip.gul { background:var(--gul-lj); color:var(--gul); border-color:#FDE68A; }
+  .chip.lila { background:var(--lila-lj); color:var(--lila); border-color:#DDD6FE; }
+
+  /* Antikroppar */
+  .ab-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:14px; }
+  .ab-box { background:var(--grå); border-radius:8px; padding:10px 12px; border-left:3px solid var(--blå-md); }
+  .ab-box.mg2 { border-left-color:var(--teal); }
+  .ab-box.mg3 { border-left-color:var(--gul); }
+  .ab-name { font-weight:700; font-size:0.82rem; color:var(--blå); margin-bottom:3px; }
+  .ab-freq { font-size:0.88rem; font-weight:700; color:var(--röd); }
+  .ab-note { font-size:0.72rem; color:var(--text-lj); margin-top:3px; line-height:1.4; }
+
+  /* Behandlingsalgoritm */
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+  .alg { display:flex; flex-direction:column; gap:0; margin-bottom:12px; }
+  .alg-steg { display:grid; grid-template-columns:90px 1fr; align-items:stretch; }
+  .alg-label { background:var(--blå); color:#fff; font-size:0.7rem; font-weight:700; display:flex; align-items:center; justify-content:center; text-align:center; padding:6px; border-radius:6px 0 0 6px; line-height:1.25; }
+  .alg-content { background:var(--grå); padding:7px 10px; border-radius:0 6px 6px 0; border:1px solid #E2E8F0; border-left:none; }
+  .alg-content .drug { font-weight:600; color:var(--text); }
+  .alg-content .dose { color:var(--text-lj); font-size:0.75rem; }
+  .alg-steg + .alg-steg { margin-top:4px; }
+  .alg-arrow { text-align:center; color:var(--blå-md); font-size:1rem; line-height:1.5; }
+
+  /* Kris */
+  .kris-box { background:var(--röd-lj); border:1px solid #FECACA; border-left:4px solid var(--röd); border-radius:8px; padding:10px 12px; margin-bottom:12px; }
+  .kris-title { font-weight:700; color:var(--röd); font-size:0.82rem; margin-bottom:6px; }
+  .kris-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .kris-item { background:#fff; border-radius:6px; padding:6px 8px; }
+  .kris-item strong { display:block; font-size:0.75rem; color:var(--röd); }
+  .kris-item span { font-size:0.72rem; color:var(--text-md); }
+
+  /* Tymektomi + Special */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .info-box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .info-box.grön { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .info-box.lila { background:var(--lila-lj); border:1px solid #DDD6FE; }
+  .info-title { font-weight:700; font-size:0.78rem; color:var(--blå); margin-bottom:5px; }
+  .info-title.grön { color:var(--grön); }
+  .info-title.lila { color:var(--lila); }
+  ul.info-list { padding-left:14px; }
+  ul.info-list li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+</style>
+</head>
+<body>
+
+<h1>Myastenia Gravis – Klinisk handläggning
+  <span>Svenskt konsensusprogram 2024 | Piehl, Svenningsson, Brauner, Press</span>
+</h1>
+
+<div class="chips">
+  <span class="chip">Autoimmun NMJ-sjukdom</span>
+  <span class="chip">Fluktuerande svaghet</span>
+  <span class="chip grön">Behandlingsbar</span>
+  <span class="chip gul">Kräver neurologisk expertis</span>
+</div>
+
+<!-- Antikroppar -->
+<div class="sek">Antikroppsdiagnostik</div>
+<div class="ab-row">
+  <div class="ab-box">
+    <div class="ab-name">AChR-ak</div>
+    <div class="ab-freq">~80%</div>
+    <div class="ab-note">Generaliserad MG. Hög specificitet. Titerkorrelerar ej alltid med symtom.</div>
+  </div>
+  <div class="ab-box mg2">
+    <div class="ab-name">MuSK-ak</div>
+    <div class="ab-freq">40–70%</div>
+    <div class="ab-note">Av seronegativa. Ofta bulbärt/andning. Sämre svar på kolinesterashämmare.</div>
+  </div>
+  <div class="ab-box mg3">
+    <div class="ab-name">LRP4-ak</div>
+    <div class="ab-freq">Sällsynt</div>
+    <div class="ab-note">Tredje alternativet. Titin-ak: tymommarkör vid EOMG.</div>
+  </div>
+</div>
+
+<!-- Behandlingsalgoritm -->
+<div class="sek">Behandlingsalgoritm</div>
+<div class="alg">
+  <div class="alg-steg">
+    <div class="alg-label">Symtomatisk</div>
+    <div class="alg-content">
+      <span class="drug">Pyridostigmin (Mestinon)</span>
+      <span class="dose"> – 30–60 mg × 3–5/d. Max ~500 mg/d (kolinerg kris-risk ↑)</span>
+    </div>
+  </div>
+  <div class="alg-arrow">↓ Otillräcklig effekt / måttliga–svåra symtom</div>
+  <div class="alg-steg">
+    <div class="alg-label">Kortiko-steroider</div>
+    <div class="alg-content">
+      <span class="drug">Prednisolon</span>
+      <span class="dose"> – Pulskur eller kontinuerlig per oral. OBS: initial försämring möjlig.</span>
+    </div>
+  </div>
+  <div class="alg-arrow">↓ Immunosuppression (sätt in tidigt)</div>
+  <div class="alg-steg">
+    <div class="alg-label" style="background:var(--blå-md)">Rituximab ★</div>
+    <div class="alg-content">
+      <span class="drug">500 mg iv</span><span class="dose"> – Nu förstahandsval vid immunosuppression (evidensgrad 1b). Kontrollera CD19 inför varje dos.</span>
+    </div>
+  </div>
+  <div class="alg-arrow">↓ Alternativ / tillägg</div>
+  <div class="alg-steg">
+    <div class="alg-label">Övrig IS</div>
+    <div class="alg-content">
+      <span class="drug">Azatioprin</span><span class="dose"> 2–3 mg/kg |</span>
+      <span class="drug"> Mykofenolat</span><span class="dose"> 1g × 2 |</span>
+      <span class="drug"> Ciklosporin</span>
+    </div>
+  </div>
+  <div class="alg-arrow">↓ Refraktär sjukdom</div>
+  <div class="alg-steg">
+    <div class="alg-label" style="background:var(--lila)">Biologika</div>
+    <div class="alg-content">
+      <span class="drug">Eculizumab</span><span class="dose"> (C5) |</span>
+      <span class="drug"> Efgartigimod</span><span class="dose"> (FcRn) |</span>
+      <span class="drug"> Ravulizumab</span>
+    </div>
+  </div>
+</div>
+
+<!-- Kris -->
+<div class="kris-box">
+  <div class="kris-title">⚠ Myasten kris – akut handläggning</div>
+  <div class="kris-grid">
+    <div class="kris-item">
+      <strong>IVIG</strong>
+      <span>0,4 g/kg × 5 dagar. Effekt 1–2 veckor.</span>
+    </div>
+    <div class="kris-item">
+      <strong>Plasmaferes</strong>
+      <span>4–5 utbyten. Snabbare effekt. Väljs vid behov av snabb stabilisering.</span>
+    </div>
+    <div class="kris-item">
+      <strong>Neostigmin iv</strong>
+      <span>0,5 mg iv (≈ 60 mg pyridostigmin). Håll atropin tillgängligt.</span>
+    </div>
+    <div class="kris-item">
+      <strong>Kolinerg kris</strong>
+      <span>Sätt ut kolinesterashämmare. Atropin. Separera från myasten kris.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Tymektomi + Monitorering -->
+<div class="two-col">
+  <div class="info-box grön">
+    <div class="info-title grön">Tymektomi</div>
+    <ul class="info-list">
+      <li><strong>Tymom:</strong> alltid indicerat</li>
+      <li><strong>EOMG (&lt;50 år) utan tymom:</strong> rekommenderas</li>
+      <li><strong>LOMG / MuSK-MG:</strong> generellt ej indicerat</li>
+      <li>Sätt AzA om möjligt ≥3 mån före op.</li>
+    </ul>
+  </div>
+  <div class="info-box lila">
+    <div class="info-title lila">Uppföljning &amp; kontroller</div>
+    <ul class="info-list">
+      <li>Minst 1× år vid immunosuppression</li>
+      <li>CT thorax: vid AChR-ak + &gt;40 år (tymom-screening)</li>
+      <li>QMG / MGC för objektiv bedömning</li>
+      <li>B-cells kontroll inför varje rituximab-dos</li>
+      <li>Vaccinationer inför immunosuppression</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fotnot">
+  EOMG = early-onset MG (&lt;50 år) | LOMG = late-onset MG | IS = immunosuppression | NMJ = neuromuskulär junction | ★ Ersätter azatioprin som förstahandsval i denna version (2024)
+</div>
+</body>
+</html>

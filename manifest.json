@@ -1,0 +1,42 @@
+{
+  "name": "NeuroGuide – Neurologiska riktlinjer",
+  "short_name": "NeuroGuide",
+  "description": "Snabb tillgång till neurologiska akutkort och behandlingsriktlinjer",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1B3A6B",
+  "theme_color": "#1B3A6B",
+  "lang": "sv",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["medical", "health"],
+  "shortcuts": [
+    {
+      "name": "Akutkort",
+      "url": "/#akutkort",
+      "description": "Neurologiska akutkort"
+    },
+    {
+      "name": "Riktlinjer",
+      "url": "/#riktlinjer",
+      "description": "Behandlingsriktlinjer"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Tremor</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --rosa:#9D174D; --rosa-lj:#FDF2F8;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+
+  /* Klassifikationstabell */
+  .klass { border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .klass-hdr { display:grid; grid-template-columns:130px 90px 1fr 1fr; background:var(--blå); color:#fff; font-weight:700; font-size:0.72rem; }
+  .klass-hdr div, .klass-row div { padding:7px 9px; }
+  .klass-row { display:grid; grid-template-columns:130px 90px 1fr 1fr; border-top:1px solid #E2E8F0; }
+  .klass-row:hover { background:var(--grå); }
+  .k-name { font-weight:700; }
+  .k-et { color:var(--blå-md); }
+  .k-ps { color:var(--grön); }
+  .k-dys { color:var(--lila); }
+  .k-cer { color:var(--teal); }
+  .k-ort { color:var(--rosa); }
+  .k-fys { color:var(--gul); }
+  .k-hol { color:var(--röd); }
+  .badge { display:inline-block; border-radius:4px; padding:2px 6px; font-size:0.68rem; font-weight:700; }
+  .b-et { background:var(--blå-lj); color:var(--blå-md); }
+  .b-ps { background:var(--grön-lj); color:var(--grön); }
+  .b-dys { background:var(--lila-lj); color:var(--lila); }
+  .b-cer { background:var(--teal-lj); color:var(--teal); }
+  .b-ort { background:var(--rosa-lj); color:var(--rosa); }
+  .b-fys { background:var(--gul-lj); color:var(--gul); }
+  .b-hol { background:var(--röd-lj); color:var(--röd); }
+
+  /* Behandling */
+  .tx-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .tx-box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .tx-box.blå { border-left:3px solid var(--blå-md); }
+  .tx-box.grön { border-left:3px solid var(--grön); }
+  .tx-box.lila { border-left:3px solid var(--lila); }
+  .tx-box.teal { border-left:3px solid var(--teal); }
+  .tx-box.gul { border-left:3px solid var(--gul); }
+  .tx-box.röd { border-left:3px solid var(--röd); }
+  .tx-title { font-weight:700; font-size:0.78rem; margin-bottom:6px; color:var(--blå); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  /* Neurokirurgi */
+  .nk-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .nk-box { border:2px solid; border-radius:8px; padding:10px 12px; }
+  .nk-box.dbs { border-color:var(--blå-md); background:var(--blå-lj); }
+  .nk-box.fus { border-color:var(--teal); background:var(--teal-lj); }
+  .nk-title { font-weight:700; font-size:0.82rem; margin-bottom:5px; }
+  .nk-title.dbs { color:var(--blå-md); }
+  .nk-title.fus { color:var(--teal); }
+  table.nk-tbl { width:100%; font-size:0.72rem; border-collapse:collapse; margin-top:6px; }
+  table.nk-tbl th { background:rgba(0,0,0,.08); padding:4px 6px; text-align:left; font-weight:700; }
+  table.nk-tbl td { padding:4px 6px; border-top:1px solid rgba(0,0,0,.07); color:var(--text-md); }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+</style>
+</head>
+<body>
+
+<h1>Tremor – Klassifikation och behandling
+  <span>SWEMODIS Svenska Riktlinjer version 3, 2026</span>
+</h1>
+
+<!-- Klassifikation -->
+<div class="sek">Klassifikation (Axel 1: klinisk bild | Axel 2: etiologi)</div>
+<div class="klass">
+  <div class="klass-hdr">
+    <div>Tremortyp</div>
+    <div>Frekvens</div>
+    <div>Klinisk bild / utlösande</div>
+    <div>Nyckeldiagnostik</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-et"><span class="badge b-et">Essentiell tremor (ET)</span></div>
+    <div>4–12 Hz</div>
+    <div>Bilateral handtremor vid rörelse/postur. Lindras av alkohol. Ofta hereditet.</div>
+    <div>Kinetisk ≥ postural. Uteslut PS, dystoni, metabol orsak.</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-ps"><span class="badge b-ps">Parkinson-tremor</span></div>
+    <div>4–6 Hz</div>
+    <div>Asymmetrisk vilotremor. "Pill-rolling". Minskar vid rörelse.</div>
+    <div>Levodopa-test. DaTscan vid osäkerhet.</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-dys"><span class="badge b-dys">Dyston tremor</span></div>
+    <div>Variabel</div>
+    <div>Associerat med dystonisk felställning. Ofta nack/arm. "Nullpunkt".</div>
+    <div>Undersök noggrant för dystoni i annan kroppsdel.</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-cer"><span class="badge b-cer">Cerebellär tremor</span></div>
+    <div>&lt;5 Hz</div>
+    <div>Intention-tremor, värre nära målet. Ataxisymtom, dysmetri.</div>
+    <div>MR hjärna/ryggmärg. Tänk MS, SCA, alkohol.</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-ort"><span class="badge b-ort">Ortostatisk tremor</span></div>
+    <div>13–18 Hz</div>
+    <div>Ben-tremor vid stående, försvinner vid gång. Otrygghetskänsla.</div>
+    <div>EMG (16 Hz-mönster). Kliniskt ofta förbisett.</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-fys"><span class="badge b-fys">Förstärkt fysiologisk</span></div>
+    <div>8–12 Hz</div>
+    <div>Postural. Utlöst av: koffein, stress, tyreoidos, läkemedel (valproat, litium, β-agonister), etanolabstinens.</div>
+    <div>Anamnes, lab (TSH, B12, Mg). Läkemedelslista!</div>
+  </div>
+  <div class="klass-row">
+    <div class="k-name k-hol"><span class="badge b-hol">Holmes tremor</span></div>
+    <div>&lt;4,5 Hz</div>
+    <div>Svår blandad tremor (vila+postur+intention). Strukturell hjärnskada.</div>
+    <div>MR hjärna. Cerebellum/thalamus-lesion vanligast.</div>
+  </div>
+</div>
+
+<!-- Farmakologisk behandling -->
+<div class="sek">Farmakologisk behandling</div>
+<div class="tx-grid">
+  <div class="tx-box blå">
+    <div class="tx-title">Essentiell tremor</div>
+    <ul class="li">
+      <li><strong>Propranolol</strong> 40–120 mg/d (förstaval)</li>
+      <li><strong>Primidon</strong> 62,5 mg till natten (titrera)</li>
+      <li>Kombination vid otillräcklig effekt</li>
+      <li>Alternativ: gabapentin, topiramat, nadolol</li>
+    </ul>
+  </div>
+  <div class="tx-box grön">
+    <div class="tx-title">Parkinson-tremor</div>
+    <ul class="li">
+      <li><strong>Levodopa</strong> (rigiditet/brady, tremor variabel respons)</li>
+      <li><strong>Amantadin</strong> – måttlig tremor-effekt</li>
+      <li><strong>Klozapin</strong> 12,5–75 mg – vid terapiresistent tremor</li>
+      <li>DBS STN/GPi vid invalidiserande tremor</li>
+    </ul>
+  </div>
+  <div class="tx-box lila">
+    <div class="tx-title">Dyston tremor</div>
+    <ul class="li">
+      <li><strong>Botulinumtoxin</strong> (förstaval för nack/fokal dystoni)</li>
+      <li>Klonazepam, trihexyfenidyl</li>
+      <li>DBS GPi vid generaliserad dystoni + tremor</li>
+    </ul>
+  </div>
+  <div class="tx-box teal">
+    <div class="tx-title">Cerebellär tremor</div>
+    <ul class="li">
+      <li>Primärt: behandla grundsjukdom (MS etc.)</li>
+      <li>Klonazepam, gabapentin (begränsad effekt)</li>
+      <li>DBS VIM – kan prövas i enstaka fall</li>
+    </ul>
+  </div>
+  <div class="tx-box gul">
+    <div class="tx-title">Förstärkt fysiologisk tremor</div>
+    <ul class="li">
+      <li>Elimina utlösande faktor (läkemedel, metabol)</li>
+      <li>Propranolol vid kvarständande symtom</li>
+    </ul>
+  </div>
+  <div class="tx-box röd">
+    <div class="tx-title">Ortostatisk tremor</div>
+    <ul class="li">
+      <li><strong>Klonazepam</strong> (förstaval)</li>
+      <li>Gabapentin, primär 10 mg/d levodopa-prov</li>
+      <li>Ofta svårbehandlad</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Neurokirurgi -->
+<div class="sek">Neurokirurgisk behandling</div>
+<div class="nk-row">
+  <div class="nk-box dbs">
+    <div class="nk-title dbs">DBS – Djup hjärnstimulering</div>
+    <table class="nk-tbl">
+      <tr><th>Målpunkt</th><th>Indikation</th></tr>
+      <tr><td><strong>VIM</strong> (ventral intermedius)</td><td>ET, Parkinson-tremor</td></tr>
+      <tr><td><strong>STN</strong> (subthalamicus)</td><td>PS (tremor + motorfluktuationer)</td></tr>
+      <tr><td><strong>GPi</strong> (globus pallidus)</td><td>Dystoni, PS med dyskinesier</td></tr>
+      <tr><td><strong>cZI</strong> (caudal zona incerta)</td><td>Svår tremor, Holmes tremor</td></tr>
+    </table>
+  </div>
+  <div class="nk-box fus">
+    <div class="nk-title fus">MRgFUS – Fokuserad ultraljud (talamotomi)</div>
+    <ul class="li">
+      <li>Icke-invasiv lesionsmetod (VIM)</li>
+      <li>Indikation: ET/PS-tremor, unilateralt, terapiresistent</li>
+      <li>Kräver adekvat skalltransmission (DI-index)</li>
+      <li>Irreversibel – noggrann patientselektering</li>
+      <li>Bilateralt: diskuteras (risk dysartri/ataxi)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fotnot">
+  ET = essentiell tremor | PS = Parkinsons sjukdom | VIM = nucleus ventralis intermedius | STN = nucleus subthalamicus | GPi = globus pallidus interna | cZI = caudal zona incerta | MRgFUS = MR-guided focused ultrasound | DI = density index | DaTscan = dopamintransportörscintigrafi
+</div>
+</body>
+</html>

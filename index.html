@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeuroGuide – Neurologiska riktlinjer</title>
+  <meta name="description" content="Snabb tillgång till neurologiska akutkort och behandlingsriktlinjer">
+  <meta name="theme-color" content="#1B3A6B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NeuroGuide">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Offline-banner -->
+    <div id="offline-banner">Offline – visar cachad information</div>
+
+    <!-- Header -->
+    <header id="header">
+      <button id="tillbaka-knapp" aria-label="Gå tillbaka">‹ Tillbaka</button>
+      <div id="header-logo" role="button" tabindex="0" aria-label="NeuroGuide startsida">
+        Neuro<span>Guide</span>
+      </div>
+      <button id="hem-knapp" aria-label="Startsida">🏠</button>
+      <div id="header-search">
+        <input type="search" id="sokfalt" placeholder="Sök i alla dokument…"
+               autocomplete="off" spellcheck="false" aria-label="Sök">
+        <span id="sok-ikon" aria-hidden="true">🔍</span>
+      </div>
+    </header>
+
+    <!-- Huvudlayout -->
+    <div id="main-layout">
+      <!-- Innehållsyta -->
+      <main id="innehall" aria-live="polite"></main>
+    </div>
+  </div>
+
+  <!-- TOC-knapp (visas bara i Markdown-vy) -->
+  <button id="toc-knapp" aria-label="Innehållsförteckning">☰</button>
+
+  <!-- TOC-bakgrund + drawer -->
+  <div id="toc-bakgrund"></div>
+  <div id="toc-drawer">
+    <div class="toc-rubrik">Innehållsförteckning</div>
+    <div id="toc-lista"></div>
+  </div>
+
+  <script src="js/marked.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

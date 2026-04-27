@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEDD-kalkylator</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px 16px 40px; }
+
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.72rem; font-weight:400; opacity:.8; margin-top:3px; }
+
+  /* Total LEDD-box */
+  .ledd-total-box {
+    background:var(--blå); color:#fff; border-radius:12px;
+    padding:14px 18px; margin-bottom:16px; text-align:center;
+    position:sticky; top:0; z-index:10; box-shadow:0 2px 12px rgba(0,0,0,.18);
+  }
+  .ledd-summa { font-size:2.4rem; font-weight:800; letter-spacing:-.02em; line-height:1; }
+  .ledd-enhet { font-size:0.78rem; opacity:.8; margin:2px 0 6px; }
+  .ledd-risk { display:inline-block; padding:3px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; }
+  .risk-låg  { background:#22C55E; color:#fff; }
+  .risk-med  { background:#F59E0B; color:#fff; }
+  .risk-hög  { background:#EF4444; color:#fff; }
+
+  /* Grupp */
+  .grupp { margin-bottom:12px; }
+  .grupp-titel {
+    font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em;
+    color:var(--text-lj); margin-bottom:5px; padding-left:2px;
+  }
+  .grupp-kort {
+    border:1px solid #E2E8F0; border-radius:8px; overflow:hidden;
+  }
+
+  /* Läkemedelsrad */
+  .lm-rad {
+    display:grid; grid-template-columns:1fr auto auto;
+    align-items:center; gap:8px;
+    padding:7px 10px; border-bottom:1px solid #F1F5F9;
+    transition: background .15s;
+  }
+  .lm-rad:last-child { border-bottom:none; }
+  .lm-rad.aktiv { background:var(--blå-lj); }
+  .lm-namn { font-size:0.76rem; font-weight:600; color:var(--text); line-height:1.3; }
+  .lm-preparat { font-size:0.67rem; color:var(--text-lj); margin-top:1px; }
+  .lm-faktor { font-size:0.65rem; color:var(--text-lj); white-space:nowrap; }
+
+  .mg-wrap { position:relative; }
+  .mg-input {
+    width:72px; padding:5px 28px 5px 7px;
+    border:1.5px solid #CBD5E1; border-radius:6px;
+    font-size:0.8rem; text-align:right; font-family:var(--font);
+    transition: border-color .15s;
+  }
+  .mg-input:focus { outline:none; border-color:var(--blå-md); }
+  .mg-unit {
+    position:absolute; right:7px; top:50%; transform:translateY(-50%);
+    font-size:0.62rem; color:var(--text-lj); pointer-events:none;
+  }
+
+  .lm-ledd {
+    font-size:0.8rem; font-weight:700; color:var(--blå-md);
+    min-width:52px; text-align:right; white-space:nowrap;
+  }
+  .lm-ledd.noll { color:var(--text-lj); font-weight:400; }
+
+  /* Safinamid checkbox */
+  .safin-rad {
+    display:grid; grid-template-columns:1fr auto auto;
+    align-items:center; gap:8px; padding:7px 10px;
+  }
+  .safin-toggle {
+    display:flex; align-items:center; gap:7px; cursor:pointer;
+  }
+  .safin-toggle input[type=checkbox] { width:16px; height:16px; accent-color:var(--blå-md); cursor:pointer; }
+
+  /* Kliniska tips */
+  .tips-box { border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:10px; }
+  .tips-hdr { background:var(--blå); color:#fff; padding:7px 12px; font-size:0.72rem; font-weight:700; }
+  .tips-rad {
+    display:grid; grid-template-columns:90px 1fr;
+    border-bottom:1px solid #F1F5F9; font-size:0.72rem;
+  }
+  .tips-rad:last-child { border-bottom:none; }
+  .tips-dos {
+    padding:6px 10px; font-weight:700; border-right:1px solid #F1F5F9;
+    display:flex; align-items:center;
+  }
+  .tips-dos.låg { color:var(--grön); background:var(--grön-lj); }
+  .tips-dos.med { color:var(--gul); background:var(--gul-lj); }
+  .tips-dos.hög { color:var(--röd); background:var(--röd-lj); }
+  .tips-text { padding:6px 10px; color:var(--text-md); line-height:1.4; }
+
+  .varning-box {
+    background:var(--gul-lj); border:1px solid #FDE68A;
+    border-left:4px solid var(--gul); border-radius:8px;
+    padding:9px 12px; margin-bottom:10px; font-size:0.72rem;
+    color:var(--text-md); line-height:1.5;
+  }
+  .varning-box strong { color:var(--gul); }
+
+  .fotnot { font-size:0.65rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:8px; line-height:1.7; }
+  .fotnot sup { color:var(--blå-md); font-weight:700; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:14px 0 6px; }
+</style>
+</head>
+<body>
+
+<h1>LEDD-kalkylator
+  <span>Levodopa-ekvivalenta dygnsdoser | Baserad på Jost et al. 2023 (SWEMODIS)</span>
+</h1>
+
+<!-- Totalt LEDD – sticky -->
+<div class="ledd-total-box">
+  <div class="ledd-summa" id="ledd-summa">0</div>
+  <div class="ledd-enhet">mg LEDD / dygn</div>
+  <div class="ledd-risk" id="ledd-risk"></div>
+</div>
+
+<!-- Levodopa -->
+<div class="grupp">
+  <div class="grupp-titel">Levodopa</div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-sinemet">
+      <div><div class="lm-namn">Levodopa/karbidopa</div><div class="lm-preparat">Sinemet®, Flexilev®</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-sinemet">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-madopark">
+      <div><div class="lm-namn">Levodopa/benserazid</div><div class="lm-preparat">Madopark®</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-madopark">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-depot">
+      <div><div class="lm-namn">Levodopa depot</div><div class="lm-preparat">Madopark Depot®</div><div class="lm-faktor">× 0,75</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-depot">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-inbrija">
+      <div><div class="lm-namn">Levodopa inhalationspulver</div><div class="lm-preparat">Inbrija®</div><div class="lm-faktor">× 0,69</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-inbrija">– mg</div>
+    </div>
+  </div>
+</div>
+
+<!-- Levodopa + COMT-hämmare -->
+<div class="grupp">
+  <div class="grupp-titel">Levodopa + COMT-hämmare <span style="font-weight:400;text-transform:none">(ange mg levodopa/dygn)</span></div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-stalevo">
+      <div><div class="lm-namn">Levodopa + entakapon</div><div class="lm-preparat">Stalevo®, Sastravi®</div><div class="lm-faktor">× 1,33 <sup>4</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-stalevo">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-tolkapon">
+      <div><div class="lm-namn">Levodopa + tolkapon</div><div class="lm-preparat"></div><div class="lm-faktor">× 1,5 <sup>5</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-tolkapon">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-opikapon">
+      <div><div class="lm-namn">Levodopa + opikapon</div><div class="lm-preparat">Ongentys®</div><div class="lm-faktor">× 1,5 <sup>6</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="25" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-opikapon">– mg</div>
+    </div>
+  </div>
+</div>
+
+<!-- Infusionsbehandling -->
+<div class="grupp">
+  <div class="grupp-titel">Infusionsbehandling</div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-duodopa">
+      <div><div class="lm-namn">Levodopa/karbidopa intestinal gel</div><div class="lm-preparat">Duodopa®</div><div class="lm-faktor">× 1,11</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="10" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-duodopa">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-lecigon">
+      <div><div class="lm-namn">Levodopa/karbidopa/entakapon gel</div><div class="lm-preparat">Lecigon®</div><div class="lm-faktor">× 1,46 <sup>2</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="10" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-lecigon">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-produodopa">
+      <div><div class="lm-namn">Foslevodopa/foskarbidopa sc</div><div class="lm-preparat">Produodopa®</div><div class="lm-faktor">× 0,75 <sup>3</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="10" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-produodopa">– mg</div>
+    </div>
+  </div>
+</div>
+
+<!-- Dopaminagonister -->
+<div class="grupp">
+  <div class="grupp-titel">Dopaminagonister</div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-pramipexol">
+      <div><div class="lm-namn">Pramipexol <span style="color:var(--röd);font-size:0.67rem">(mg bas)</span></div><div class="lm-preparat">Mirapexin® – se fotnot <sup>*</sup></div><div class="lm-faktor">× 143</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="0.1" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-pramipexol">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-ropinirol">
+      <div><div class="lm-namn">Ropinirol</div><div class="lm-preparat">ReQuip®</div><div class="lm-faktor">× 20</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="0.5" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-ropinirol">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-rotigotin">
+      <div><div class="lm-namn">Rotigotin</div><div class="lm-preparat">Neupro® (plåster)</div><div class="lm-faktor">× 30</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="1" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-rotigotin">– mg</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAO-B-hämmare -->
+<div class="grupp">
+  <div class="grupp-titel">MAO-B-hämmare <sup>7</sup></div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-rasagilin">
+      <div><div class="lm-namn">Rasagilin</div><div class="lm-preparat">Azilect®</div><div class="lm-faktor">× 100 per mg</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="0.5" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-rasagilin">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-selegilin">
+      <div><div class="lm-namn">Selegilin</div><div class="lm-preparat">Eldepryl®</div><div class="lm-faktor">× 10 per mg</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="2.5" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-selegilin">– mg</div>
+    </div>
+    <div class="grupp-kort" style="border:none">
+      <div class="safin-rad">
+        <label class="safin-toggle">
+          <input type="checkbox" id="safin-check" onchange="uppdatera()">
+          <div><div class="lm-namn">Safinamid</div><div class="lm-preparat">Xadago® (fast tillägg) <sup>7</sup></div></div>
+        </label>
+        <div></div>
+        <div class="lm-ledd noll" id="ledd-safin">– mg</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Övrigt -->
+<div class="grupp">
+  <div class="grupp-titel">Övrigt</div>
+  <div class="grupp-kort">
+    <div class="lm-rad" id="rad-amantadin">
+      <div><div class="lm-namn">Amantadin</div><div class="lm-preparat">Symmetrel®</div><div class="lm-faktor">× 1</div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="50" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-amantadin">– mg</div>
+    </div>
+    <div class="lm-rad" id="rad-apomorfin">
+      <div><div class="lm-namn">Apomorfin</div><div class="lm-preparat">sc injektion/infusion</div><div class="lm-faktor">× 10 <sup>8</sup></div></div>
+      <div class="mg-wrap"><input class="mg-input" type="number" min="0" step="1" placeholder="0" oninput="uppdatera()"><span class="mg-unit">mg/d</span></div>
+      <div class="lm-ledd noll" id="ledd-apomorfin">– mg</div>
+    </div>
+  </div>
+</div>
+
+<!-- Kliniska tips -->
+<div class="sek">Kliniska riktmärken</div>
+<div class="tips-box">
+  <div class="tips-hdr">LEDD och klinisk tolkning</div>
+  <div class="tips-rad">
+    <div class="tips-dos låg">&lt; 500 mg</div>
+    <div class="tips-text">Relativt låg dopaminerg intensitet. Byte till rotigotinplåster perioperativt möjligt. Lägre risk för motoriska komplikationer.</div>
+  </div>
+  <div class="tips-rad">
+    <div class="tips-dos med">500–1000 mg</div>
+    <div class="tips-text">Måttlig–hög intensitet. Bevaka dyskinesier och motorfluktuationer. Överväg Device-aided therapy vid tilltagande fluktuationer.</div>
+  </div>
+  <div class="tips-rad">
+    <div class="tips-dos hög">&gt; 1000 mg</div>
+    <div class="tips-text">Hög intensitet. Ökad risk för dyskinesier och psykiatriska biverkningar. Diskutera DBS, Duodopa eller Produodopa.</div>
+  </div>
+</div>
+
+<div class="varning-box">
+  <strong>Prediktorer för dyskinesi:</strong> ung debutålder, låg kroppsvikt, kvinna, sjukdomsduration &gt; 3 år, levodopadoser &gt; 450 mg/dag. Det terapeutiska fönstret smalnar med sjukdomens progress.<br><br>
+  <strong>COMT-hämmare:</strong> Tillägg höjer peak-koncentration av levodopa – dosjustering neråt av enskilda levodopadoser kan behövas vid insättning.<br><br>
+  <strong>Vid Duodopa↔Lecigon-byte:</strong> ta hänsyn till LEDD vid doskonvertering.
+</div>
+
+<div class="fotnot">
+  Omräkningsfaktorer enligt Jost et al. 2023 (metaanalys), citerade i SWEMODIS Parkinsonriktlinjer v10 2025.<br>
+  <sup>*</sup> Pramipexol säljs i Sverige som saltet (t.ex. 0,088 mg / 0,18 mg / 0,35 mg). Saltfaktor ≈ 0,71: mg bas = mg salt × 0,71. IR 0,088 mg salt ≈ 0,063 mg bas.<br>
+  <sup>2</sup> Lecigon: för total programmerad dos efter avdrag av 60 mg (3 ml) per ny förfylld spruta.<br>
+  <sup>3</sup> Produodopa: avser mg foslevodopa.<br>
+  <sup>4</sup> Entakapon multiplicerar LED för levodopa givet inom 4 h efter 200 mg entakapon.<br>
+  <sup>5</sup> Tolkapon multiplicerar LED för total levodopa under vaken tid.<br>
+  <sup>6</sup> Opikapon multiplicerar LED för total levodopados under dygnet.<br>
+  <sup>7</sup> MAO-B-hämmare: i monoterapi rasagilin/selegilin ≈ 100 mg LEDD, safinamid ≈ 150 mg LEDD. I kombination med levodopa kan effekten vara mer proportionell till levodopados.<br>
+  Safinamid: kalkylator adderar fast +150 mg LEDD oavsett dos (konservativ uppskattning).<br>
+  <sup>8</sup> Apomorfin vid kontinuerlig infusion: omräkningsfaktorn är mer osäker.
+</div>
+
+<script>
+const drugs = [
+  { input: document.querySelector('#rad-sinemet input'),    leddEl: document.getElementById('ledd-sinemet'),    radEl: document.getElementById('rad-sinemet'),    factor: 1 },
+  { input: document.querySelector('#rad-madopark input'),   leddEl: document.getElementById('ledd-madopark'),   radEl: document.getElementById('rad-madopark'),   factor: 1 },
+  { input: document.querySelector('#rad-depot input'),      leddEl: document.getElementById('ledd-depot'),      radEl: document.getElementById('rad-depot'),      factor: 0.75 },
+  { input: document.querySelector('#rad-inbrija input'),    leddEl: document.getElementById('ledd-inbrija'),    radEl: document.getElementById('rad-inbrija'),    factor: 0.69 },
+  { input: document.querySelector('#rad-stalevo input'),    leddEl: document.getElementById('ledd-stalevo'),    radEl: document.getElementById('rad-stalevo'),    factor: 1.33 },
+  { input: document.querySelector('#rad-tolkapon input'),   leddEl: document.getElementById('ledd-tolkapon'),   radEl: document.getElementById('rad-tolkapon'),   factor: 1.5 },
+  { input: document.querySelector('#rad-opikapon input'),   leddEl: document.getElementById('ledd-opikapon'),   radEl: document.getElementById('rad-opikapon'),   factor: 1.5 },
+  { input: document.querySelector('#rad-duodopa input'),    leddEl: document.getElementById('ledd-duodopa'),    radEl: document.getElementById('rad-duodopa'),    factor: 1.11 },
+  { input: document.querySelector('#rad-lecigon input'),    leddEl: document.getElementById('ledd-lecigon'),    radEl: document.getElementById('rad-lecigon'),    factor: 1.46 },
+  { input: document.querySelector('#rad-produodopa input'), leddEl: document.getElementById('ledd-produodopa'), radEl: document.getElementById('rad-produodopa'), factor: 0.75 },
+  { input: document.querySelector('#rad-pramipexol input'), leddEl: document.getElementById('ledd-pramipexol'), radEl: document.getElementById('rad-pramipexol'), factor: 143 },
+  { input: document.querySelector('#rad-ropinirol input'),  leddEl: document.getElementById('ledd-ropinirol'),  radEl: document.getElementById('rad-ropinirol'),  factor: 20 },
+  { input: document.querySelector('#rad-rotigotin input'),  leddEl: document.getElementById('ledd-rotigotin'),  radEl: document.getElementById('rad-rotigotin'),  factor: 30 },
+  { input: document.querySelector('#rad-rasagilin input'),  leddEl: document.getElementById('ledd-rasagilin'),  radEl: document.getElementById('rad-rasagilin'),  factor: 100 },
+  { input: document.querySelector('#rad-selegilin input'),  leddEl: document.getElementById('ledd-selegilin'),  radEl: document.getElementById('rad-selegilin'),  factor: 10 },
+  { input: document.querySelector('#rad-amantadin input'),  leddEl: document.getElementById('ledd-amantadin'),  radEl: document.getElementById('rad-amantadin'),  factor: 1 },
+  { input: document.querySelector('#rad-apomorfin input'),  leddEl: document.getElementById('ledd-apomorfin'),  radEl: document.getElementById('rad-apomorfin'),  factor: 10 },
+];
+
+function uppdatera() {
+  let total = 0;
+
+  drugs.forEach(d => {
+    const mg = parseFloat(d.input.value) || 0;
+    const ledd = Math.round(mg * d.factor);
+    if (mg > 0) {
+      d.leddEl.textContent = ledd + ' mg';
+      d.leddEl.classList.remove('noll');
+      d.radEl.classList.add('aktiv');
+    } else {
+      d.leddEl.textContent = '– mg';
+      d.leddEl.classList.add('noll');
+      d.radEl.classList.remove('aktiv');
+    }
+    total += ledd;
+  });
+
+  // Safinamid
+  const safinCheck = document.getElementById('safin-check');
+  const safinEl = document.getElementById('ledd-safin');
+  if (safinCheck.checked) {
+    safinEl.textContent = '150 mg';
+    safinEl.classList.remove('noll');
+    total += 150;
+  } else {
+    safinEl.textContent = '– mg';
+    safinEl.classList.add('noll');
+  }
+
+  // Visa totalt
+  document.getElementById('ledd-summa').textContent = Math.round(total);
+
+  // Riskindikator
+  const riskEl = document.getElementById('ledd-risk');
+  if (total === 0) {
+    riskEl.textContent = '';
+    riskEl.className = 'ledd-risk';
+  } else if (total < 500) {
+    riskEl.textContent = 'Låg intensitet  < 500 mg';
+    riskEl.className = 'ledd-risk risk-låg';
+  } else if (total <= 1000) {
+    riskEl.textContent = 'Måttlig–hög intensitet';
+    riskEl.className = 'ledd-risk risk-med';
+  } else {
+    riskEl.textContent = 'Hög intensitet  > 1000 mg';
+    riskEl.className = 'ledd-risk risk-hög';
+  }
+}
+</script>
+</body>
+</html>

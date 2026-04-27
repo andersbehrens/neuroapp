@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Parkinsons sjukdom</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { background:var(--blå-lj); color:var(--blå-md); border:1px solid #BFDBFE; border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; }
+  .chip.röd { background:var(--röd-lj); color:var(--röd); border-color:#FECACA; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+  .chip.gul { background:var(--gul-lj); color:var(--gul); border-color:#FDE68A; }
+
+  /* Diagnos */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .box.grön { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .box.röd { background:var(--röd-lj); border:1px solid #FECACA; }
+  .box.gul { background:var(--gul-lj); border:1px solid #FDE68A; }
+  .box.teal { background:var(--teal-lj); border:1px solid #A5F3FC; }
+  .box.lila { background:var(--lila-lj); border:1px solid #DDD6FE; }
+  .box-title { font-weight:700; font-size:0.78rem; margin-bottom:5px; }
+  .box-title.grön { color:var(--grön); }
+  .box-title.röd { color:var(--röd); }
+  .box-title.gul { color:var(--gul); }
+  .box-title.teal { color:var(--teal); }
+  .box-title.lila { color:var(--lila); }
+  .box-title.blå { color:var(--blå); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  /* Fas-tabell */
+  .fas-grid { display:grid; grid-template-columns:80px 1fr 1fr 1fr; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .fas-hdr { background:var(--blå); color:#fff; font-weight:700; padding:7px 8px; font-size:0.72rem; }
+  .fas-cell { padding:7px 8px; border-bottom:1px solid #E2E8F0; border-right:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; }
+  .fas-cell:last-child { border-right:none; }
+  .fas-row:last-child .fas-cell { border-bottom:none; }
+  .fas-row { display:contents; }
+
+  /* LED-box */
+  .led-box { background:var(--blå-lj); border:1px solid #BFDBFE; border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  .led-title { font-weight:700; color:var(--blå-md); font-size:0.78rem; margin-bottom:6px; }
+  .led-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+  .led-item { background:#fff; border-radius:6px; padding:6px 8px; text-align:center; }
+  .led-val { font-size:1rem; font-weight:800; color:var(--blå); }
+  .led-drug { font-size:0.68rem; color:var(--text-lj); }
+
+  /* Avancerad */
+  .adv-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .adv-box { border-radius:8px; padding:10px 12px; border:2px solid; text-align:center; }
+  .adv-box.dbs { border-color:var(--blå-md); background:var(--blå-lj); }
+  .adv-box.duo { border-color:var(--grön); background:var(--grön-lj); }
+  .adv-box.apo { border-color:var(--teal); background:var(--teal-lj); }
+  .adv-icon { font-size:1.5rem; margin-bottom:4px; }
+  .adv-name { font-weight:700; font-size:0.78rem; margin-bottom:3px; }
+  .adv-name.dbs { color:var(--blå-md); }
+  .adv-name.duo { color:var(--grön); }
+  .adv-name.apo { color:var(--teal); }
+  .adv-desc { font-size:0.7rem; color:var(--text-md); line-height:1.35; }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+</style>
+</head>
+<body>
+
+<h1>Parkinsons sjukdom – Utredning och behandling
+  <span>SWEMODIS Riktlinjer version 10, 2025</span>
+</h1>
+
+<div class="chips">
+  <span class="chip">Neurodegenerativ</span>
+  <span class="chip">α-synuklein</span>
+  <span class="chip grön">Levodopa-responsiv</span>
+  <span class="chip gul">Progressiv</span>
+</div>
+
+<!-- Diagnos -->
+<div class="sek">MDS-diagnostiska kriterier – Parkinsons sjukdom</div>
+<div class="two-col">
+  <div class="box grön">
+    <div class="box-title grön">Kardinalsymtom (krav: Bradykinesi + ≥1)</div>
+    <ul class="li">
+      <li><strong>Bradykinesi</strong> – obligat</li>
+      <li>Muskelrigiditet</li>
+      <li>Vilotremor 4–6 Hz</li>
+      <li>Posturala reflexstörningar (senare)</li>
+    </ul>
+  </div>
+  <div class="box röd">
+    <div class="box-title röd">⚠ Röda flaggor – tänk atypisk PS</div>
+    <ul class="li">
+      <li>Fall inom 3 år från debut</li>
+      <li>Snabb progress (&lt;5 år till rullstol)</li>
+      <li>Tidig svår autonom dysfunktion</li>
+      <li>Symmetrisk debut</li>
+      <li>Vertikal blickpares (PSP)</li>
+      <li>Dålig/ingen levodopa-respons</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Behandlingsfaser -->
+<div class="sek">Farmakologisk behandling per sjukdomsfas</div>
+<div class="fas-grid">
+  <div class="fas-hdr">Fas</div>
+  <div class="fas-hdr">Förstaval</div>
+  <div class="fas-hdr">Alternativ / tillägg</div>
+  <div class="fas-hdr">Kommentar</div>
+
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--grön)">Tidig</div>
+    <div class="fas-cell"><strong>Levodopa/karbidopa</strong> (Sinemet, Madopar)</div>
+    <div class="fas-cell">DA-agonist (yngre &lt;60 år): pramipexol, ropinirol, rotigotin<br>MAO-B: rasagilin, selegilin</div>
+    <div class="fas-cell">Levodopa ger bäst symptomlindring. DA-agonist kan fördröja fluktuationer.</div>
+  </div>
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--gul)">Fluktuationer</div>
+    <div class="fas-cell">Upptrappning levodopa, kortare intervall</div>
+    <div class="fas-cell">COMT-hämmare (entakapon), MAO-B-hämmare, amantadin (dyskinesier), apomorfin sc pen</div>
+    <div class="fas-cell">Beräkna LED. Identifiera OFF-perioder noggrant.</div>
+  </div>
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--röd)">Avancerad</div>
+    <div class="fas-cell">DBS / Duodopa / Apomorfin pump</div>
+    <div class="fas-cell">Multidisciplinär bedömning krävs. Refer. till rörelsestörnings-enhet.</div>
+    <div class="fas-cell">Beslut enligt nationella riktlinjer. LED-krav varierar.</div>
+  </div>
+</div>
+
+<!-- LED -->
+<div class="led-box">
+  <div class="led-title">Levodopa-ekvivalenta dygnsdoser (LED) – viktiga referensvärden</div>
+  <div class="led-grid">
+    <div class="led-item"><div class="led-val">100%</div><div class="led-drug">Levodopa 100 mg = 1 LED-enhet</div></div>
+    <div class="led-item"><div class="led-val">×1,33</div><div class="led-drug">Levodopa + COMT-hämmare</div></div>
+    <div class="led-item"><div class="led-val">×100</div><div class="led-drug">DA-agonist (pramipexol 1 mg = 100)</div></div>
+    <div class="led-item"><div class="led-val">×10</div><div class="led-drug">MAO-B-hämmare (rasagilin 1 mg = 100)</div></div>
+    <div class="led-item"><div class="led-val">×3,33</div><div class="led-drug">Apomorfin sc</div></div>
+    <div class="led-item"><div class="led-val">&gt;1000</div><div class="led-drug">LED-trösklar för avancerad terapi</div></div>
+  </div>
+</div>
+
+<!-- Avancerad behandling -->
+<div class="sek">Avancerad behandling – Device-aided therapy (DAT)</div>
+<div class="adv-row">
+  <div class="adv-box dbs">
+    <div class="adv-icon">🧠</div>
+    <div class="adv-name dbs">DBS</div>
+    <div class="adv-desc">Djup hjärnstimulering STN eller GPi. Effektiv vid motorfluktuationer och tremor. Kräver god kognitiv funktion.</div>
+  </div>
+  <div class="adv-box duo">
+    <div class="adv-icon">💉</div>
+    <div class="adv-name duo">Duodopa®</div>
+    <div class="adv-desc">Intestinal levodopa-gel via PEG-J. Vid svåra OFF-perioder. Undviker peak-dose-dyskinesier.</div>
+  </div>
+  <div class="adv-box apo">
+    <div class="adv-icon">⚙️</div>
+    <div class="adv-name apo">Apomorfin pump</div>
+    <div class="adv-desc">Subkutan infusion. Snabb titrering. Alternativ vid DBS-kontraindikation.</div>
+  </div>
+</div>
+
+<!-- Icke-motoriska -->
+<div class="sek">Icke-motoriska symtom – kliniskt viktiga</div>
+<div class="three-col">
+  <div class="box teal">
+    <div class="box-title teal">Neuropsykiatriskt</div>
+    <ul class="li">
+      <li>Depression (50%)</li>
+      <li>Ångest, apati</li>
+      <li>Psykos (levodopa-utlöst)</li>
+      <li>Demens (PDD) – quetiapine/klozapin</li>
+      <li>ICD (impulskontroll) – DA-agonist</li>
+    </ul>
+  </div>
+  <div class="box lila">
+    <div class="box-title lila">Sömn &amp; autonomt</div>
+    <ul class="li">
+      <li>RBD (REM sleep behaviour)</li>
+      <li>Ortostatism – fludrokortison</li>
+      <li>Blåsproblem – oxybutynin</li>
+      <li>Obstipation</li>
+      <li>Hypersalivation – botulinumtoxin</li>
+    </ul>
+  </div>
+  <div class="box gul">
+    <div class="box-title gul">Akuta tillstånd</div>
+    <ul class="li">
+      <li>Hyperpyrexi-syndrom vid abrupt utsättning</li>
+      <li>Psykos – sätt ut DA-agonist först</li>
+      <li>OFF-relaterat andningsproblem</li>
+      <li>NMS – sätt in levodopa akut</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fotnot">
+  DBS = deep brain stimulation | STN = nucleus subthalamicus | GPi = globus pallidus interna | LED = levodopa-ekvivalenta dygnsdoser | COMT = katekol-O-metyltransferas | MAO-B = monoaminoxidas B | ICD = impulskontrollstörning | PDD = Parkinson disease dementia | NMS = neuroleptikamaligsyndrom
+</div>
+</body>
+</html>

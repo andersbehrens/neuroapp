@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Polyneuropati</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+
+  /* Etiologi-triangel */
+  .etio-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .etio-box { border-radius:8px; padding:10px 12px; }
+  .etio-box.ärv { background:var(--blå-lj); border:1px solid #BFDBFE; }
+  .etio-box.förv { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .etio-box.idio { background:var(--grå); border:1px solid #E2E8F0; }
+  .etio-title { font-weight:700; font-size:0.78rem; margin-bottom:5px; }
+  .etio-title.ärv { color:var(--blå-md); }
+  .etio-title.förv { color:var(--grön); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  /* Utredningskategorier */
+  .kat-tbl { width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.72rem; }
+  .kat-tbl thead th { background:var(--blå); color:#fff; padding:7px 8px; text-align:left; font-weight:700; }
+  .kat-tbl tbody td { padding:6px 8px; border-bottom:1px solid #E2E8F0; color:var(--text-md); line-height:1.35; vertical-align:top; }
+  .kat-tbl tbody tr:last-child td { border-bottom:none; }
+  .kat-tbl tbody tr:nth-child(even) td { background:var(--grå); }
+  .kat-nr { font-weight:700; color:var(--blå-md); white-space:nowrap; }
+
+  /* Smärtbehandling */
+  .smärta { margin-bottom:12px; }
+  .smärta-steg { display:grid; grid-template-columns:70px 1fr; align-items:stretch; margin-bottom:4px; }
+  .smärta-lbl { border-radius:6px 0 0 6px; display:flex; align-items:center; justify-content:center; padding:6px; font-size:0.7rem; font-weight:700; color:#fff; text-align:center; line-height:1.2; }
+  .lbl1 { background:var(--blå-md); }
+  .lbl2 { background:var(--teal); }
+  .lbl3 { background:var(--lila); }
+  .smärta-content { background:var(--grå); padding:7px 10px; border-radius:0 6px 6px 0; border:1px solid #E2E8F0; border-left:none; font-size:0.75rem; color:var(--text-md); line-height:1.4; }
+  .smärta-content strong { color:var(--text); }
+
+  /* Specifik behandling */
+  .spec-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .spec-box { background:var(--grå); border-radius:8px; padding:9px 11px; }
+  .spec-title { font-weight:700; font-size:0.75rem; color:var(--blå); margin-bottom:4px; }
+
+  /* Varningssignaler */
+  .warn-box { background:var(--röd-lj); border:1px solid #FECACA; border-left:4px solid var(--röd); border-radius:8px; padding:10px 12px; margin-bottom:12px; }
+  .warn-title { font-weight:700; color:var(--röd); font-size:0.78rem; margin-bottom:5px; }
+  .warn-grid { display:grid; grid-template-columns:1fr 1fr; gap:4px; }
+  .warn-item { font-size:0.72rem; color:var(--text-md); }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+</style>
+</head>
+<body>
+
+<h1>Polyneuropati – Utredning och behandling
+  <span>Karolinska Universitetssjukhuset, Neurologiska kliniken | Revision Dec 2023</span>
+</h1>
+
+<!-- Etiologi -->
+<div class="sek">Etiologisk klassifikation</div>
+<div class="etio-row">
+  <div class="etio-box ärv">
+    <div class="etio-title ärv">Ärftliga</div>
+    <ul class="li">
+      <li><strong>CMT</strong> (Charcot-Marie-Tooth) – vanligast</li>
+      <li>HNPP (tryckkänslig)</li>
+      <li>HSAN (sensorisk/autonom)</li>
+      <li>ATTRv-amyloidos (Skelleftesjukan)</li>
+      <li>SCA, CANVAS, FXTAS</li>
+    </ul>
+  </div>
+  <div class="etio-box förv">
+    <div class="etio-title förv">Förvärvade – vanliga orsaker</div>
+    <ul class="li">
+      <li><strong>Diabetes mellitus</strong> (vanligast)</li>
+      <li>CIDP / GBS (immunmedierad)</li>
+      <li>Alkohol / B12-brist</li>
+      <li>Läkemedel (cisplatin, INH, colchicin)</li>
+      <li>Paramalignitet</li>
+      <li>Vaskulit, sarkoidos</li>
+      <li>HIV, borrelia, CMV</li>
+    </ul>
+  </div>
+  <div class="etio-box idio">
+    <div class="etio-title">Idiopatiska</div>
+    <ul class="li">
+      <li>Ingen orsak påvisas trots utredning</li>
+      <li>CISP (kronisk idiopatisk sensorisk PNP)</li>
+      <li>Vanligare vid äldre ålder</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Varningssignaler – akut -->
+<div class="warn-box">
+  <div class="warn-title">⚠ Tecken på akut/allvarlig polyneuropati – remiss akut eller snart</div>
+  <div class="warn-grid">
+    <div class="warn-item">• Snabb progress (&lt;4–8 veckor) → GBS?</div>
+    <div class="warn-item">• Andningspåverkan, sväljningssvårigheter</div>
+    <div class="warn-item">• Svår distal-proximal motorsvaghet</div>
+    <div class="warn-item">• Autonom instabilitet (blodtrycksfall, arytmi)</div>
+    <div class="warn-item">• CSF-albumin ↑ med cytoalbumin-dissociation → GBS</div>
+    <div class="warn-item">• Anti-gangliosid-ak, CASPR2, anti-MAG</div>
+  </div>
+</div>
+
+<!-- Utredningskategorier -->
+<div class="sek">Utredningskategorier (Karolinska-modellen) – klinisk bild + neurofys</div>
+<table class="kat-tbl">
+  <thead><tr><th>Kat.</th><th>Klinisk profil</th><th>Trolig etiologi / utredning</th></tr></thead>
+  <tbody>
+    <tr><td class="kat-nr">1</td><td>Sensorisk &gt; motorisk, distal, långsam progress</td><td>Diabetes, alkohol, B12-brist, idiopatisk. Lab: HbA1c, B12, elfores, TSH.</td></tr>
+    <tr><td class="kat-nr">2</td><td>Sensor+motor, distal&gt;prox, rel. långsam, demyeliniserande</td><td>CIDP, CMT, paraprotein-neuropati. NCS, elfores, genetisk testning.</td></tr>
+    <tr><td class="kat-nr">3</td><td>Motor &gt; sensor, distal+prox, relativt snabbt förlopp</td><td>GBS (subakut), CIDP, vaskulit, multifokal motor neuropati. Anti-GM1, ANCA.</td></tr>
+    <tr><td class="kat-nr">4</td><td>Rent motorisk polyneuropati</td><td>MMN (anti-GM1+), Kennedys sjukdom, ALS-uteslutning. EMG, genetik.</td></tr>
+    <tr><td class="kat-nr">5</td><td>Rent sensorisk, areflexi i benen</td><td>Sensorisk neuronopati (paraneoplastisk, Sjögrens, cisplatin). Anti-Hu, SSA/SSB.</td></tr>
+    <tr><td class="kat-nr">6</td><td>Fintrådsneuropati (C-fibrer), normal NCS</td><td>Diabetes, Fabrys, HSAN. Hudstansbiopsi (intra-epidermala nervfibrer), genetik.</td></tr>
+    <tr><td class="kat-nr">7</td><td>Multipla mononeuriter</td><td>Vaskulit, sarkoidos, borrelia, leprosy. Nervbiopsi, ANCA, ACE.</td></tr>
+  </tbody>
+</table>
+
+<!-- Specifik behandling -->
+<div class="sek">Specifik behandling (vid känd etiologi)</div>
+<div class="spec-grid">
+  <div class="spec-box">
+    <div class="spec-title">Immunmedierad (CIDP, vaskulit, MMN)</div>
+    <ul class="li">
+      <li>IVIG, plasmaferes, kortison</li>
+      <li>Rituximab vid nodopati/autoimmun</li>
+      <li>Immunosuppression: AZA, mykofenolatmofetil</li>
+    </ul>
+  </div>
+  <div class="spec-box">
+    <div class="spec-title">Hereditär / Metabol</div>
+    <ul class="li">
+      <li>ATTRv: transtyretinstabiliserare (tafamidis), genterapi</li>
+      <li>Fabrys sjd: enzymersättningsterapi</li>
+      <li>B12-brist: substitution im/po</li>
+      <li>Diabetes: optimera glykemi</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Symtomatisk smärtbehandling -->
+<div class="sek">Symtomatisk smärtbehandling – Neurogen smärta</div>
+<div class="smärta">
+  <div class="smärta-steg">
+    <div class="smärta-lbl lbl1">1:a val</div>
+    <div class="smärta-content">
+      <strong>TCA:</strong> Amitriptylin/Nortriptylin 10–75 mg till natten &nbsp;|&nbsp;
+      <strong>SNRI:</strong> Duloxetin 30–60 mg × 1 (lägre kardiell risk vs TCA)
+    </div>
+  </div>
+  <div class="smärta-steg">
+    <div class="smärta-lbl lbl2">2:a val</div>
+    <div class="smärta-content">
+      <strong>Gabapentin</strong> 300 mg × 3 → 1 800–3 600 mg/d &nbsp;|&nbsp;
+      <strong>Pregabalin</strong> 75 mg → 150–600 mg/d (titrering viktig)
+    </div>
+  </div>
+  <div class="smärta-steg">
+    <div class="smärta-lbl lbl3">3:a val</div>
+    <div class="smärta-content">
+      <strong>Karbamazepin</strong> 400–600 mg/d &nbsp;|&nbsp;
+      <strong>Tramadol</strong> (kortverkande vid genombrottssmärta) &nbsp;|&nbsp;
+      <strong>Topiramat, Oxkarbazepin</strong>
+    </div>
+  </div>
+</div>
+
+<div class="fotnot">
+  CMT = Charcot-Marie-Tooth | CIDP = kronisk inflammatorisk demyeliniserande polyneuropati | GBS = Guillain-Barré syndrom | MMN = multifokal motorisk neuropati | HSAN = hereditär sensorisk och autonom neuropati | ATTRv = ärftlig transtyretinamyloidos | NCS = nervledningsstudie | TCA = tricykliska antidepressiva | SNRI = serotonin-noradrenalin-återupptagshämmare
+</div>
+</body>
+</html>

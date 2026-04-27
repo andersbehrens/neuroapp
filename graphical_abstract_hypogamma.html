@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Hypogammaglobulinemi & LON vid anti-CD20</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blå:    #1B3A6B;
+    --blå-md: #2563EB;
+    --blå-lj: #EFF6FF;
+    --teal:   #0E7490;
+    --teal-lj:#ECFEFF;
+    --grön:   #047857;
+    --grön-lj:#ECFDF5;
+    --röd:    #DC2626;
+    --röd-lj: #FEF2F2;
+    --gul:    #D97706;
+    --gul-lj: #FFFBEB;
+    --grå:    #F1F5F9;
+    --vit:    #FFFFFF;
+    --text:   #0F172A;
+    --text-md:#334155;
+    --text-lj:#64748B;
+    --font:   -apple-system, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font);
+    background: #F0F4F8;
+    color: var(--text);
+    min-height: 100vh;
+    padding: 24px 16px 40px;
+  }
+
+  .abstract {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--vit);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.12);
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--blå);
+    color: var(--vit);
+    padding: 24px 28px 20px;
+    position: relative;
+  }
+  .header-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 6px;
+  }
+  .header h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .header-sub {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,.7);
+  }
+  .header-drugs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+  }
+  .drug-chip {
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--vit);
+  }
+
+  /* ── Pathophysiology row ── */
+  .patofys {
+    background: #F8FAFC;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .patofys-box {
+    background: var(--vit);
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .patofys-box .ikon { font-size: 1.4rem; display: block; margin-bottom: 4px; }
+  .patofys-box .label { font-size: 0.78rem; font-weight: 600; color: var(--text-md); }
+  .patofys-box .sub { font-size: 0.68rem; color: var(--text-lj); margin-top: 2px; }
+  .arrow {
+    flex: 1;
+    min-width: 24px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #94A3B8;
+    padding: 0 4px;
+  }
+  .risk-box {
+    background: #FEF9C3;
+    border: 1.5px solid #FDE047;
+    border-radius: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .risk-box .ikon { font-size: 1.4rem; display: block; margin-bottom: 4px; }
+  .risk-box .label { font-size: 0.78rem; font-weight: 700; color: #713F12; }
+  .risk-box .sub { font-size: 0.68rem; color: #92400E; margin-top: 2px; }
+
+  /* ── Main content: two columns ── */
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  @media (max-width: 640px) {
+    .columns { grid-template-columns: 1fr; }
+  }
+
+  .col {
+    padding: 20px 22px;
+    border-right: 1px solid #E2E8F0;
+  }
+  .col:last-child { border-right: none; }
+
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid currentColor;
+  }
+  .col-header.blå  { color: var(--blå-md); border-color: var(--blå-md); }
+  .col-header.teal { color: var(--teal);   border-color: var(--teal); }
+
+  .col-header-ikon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .blå  .col-header-ikon { background: var(--blå-lj); }
+  .teal .col-header-ikon { background: var(--teal-lj); }
+
+  .col-header-text h2 { font-size: 0.92rem; font-weight: 800; }
+  .col-header-text p  { font-size: 0.72rem; color: var(--text-lj); margin-top: 1px; }
+
+  /* ── Threshold boxes ── */
+  .thresh-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .thresh-badge {
+    min-width: 90px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 1.3;
+  }
+  .badge-grön  { background: var(--grön-lj); color: var(--grön); border: 1px solid #A7F3D0; }
+  .badge-gul   { background: var(--gul-lj);  color: var(--gul);  border: 1px solid #FDE68A; }
+  .badge-röd   { background: var(--röd-lj);  color: var(--röd);  border: 1px solid #FECACA; }
+  .badge-lila  { background: #F5F3FF; color: #6D28D9; border: 1px solid #DDD6FE; }
+  .badge-grå   { background: var(--grå); color: var(--text-md); border: 1px solid #CBD5E1; }
+
+  .thresh-text {
+    font-size: 0.78rem;
+    color: var(--text-md);
+    line-height: 1.4;
+  }
+  .thresh-text strong { color: var(--text); }
+
+  /* ── Sections within column ── */
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--text-lj);
+    margin: 14px 0 8px;
+  }
+
+  /* ── Step list ── */
+  .step-list { display: flex; flex-direction: column; gap: 7px; }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--text-md);
+    line-height: 1.45;
+  }
+  .step-num {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--blå);
+    color: var(--vit);
+    font-size: 0.68rem;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step-num.teal { background: var(--teal); }
+  .step strong { color: var(--text); }
+
+  /* ── Alert box ── */
+  .alert {
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .alert-ikon { font-size: 1rem; flex-shrink: 0; }
+  .alert.röd  { background: var(--röd-lj); color: #9F1239; border-left: 3px solid var(--röd); }
+  .alert.gul  { background: var(--gul-lj); color: #78350F; border-left: 3px solid var(--gul); }
+  .alert.blå  { background: var(--blå-lj); color: #1E3A8A; border-left: 3px solid var(--blå-md); }
+
+  /* ── Ivig big number ── */
+  .big-stat {
+    background: var(--blå-lj);
+    border: 1.5px solid #BFDBFE;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .big-stat .num {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--blå-md);
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .big-stat .desc { font-size: 0.74rem; color: var(--text-md); line-height: 1.4; }
+
+  /* ── Prevention footer ── */
+  .prevention {
+    background: var(--grön-lj);
+    border-top: 1px solid #A7F3D0;
+    padding: 16px 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+  .prev-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .prev-item .ikon { font-size: 1.1rem; flex-shrink: 0; }
+  .prev-item .text { font-size: 0.76rem; color: #065F46; line-height: 1.4; }
+  .prev-item .text strong { display: block; font-weight: 700; margin-bottom: 1px; }
+
+  /* ── Source ── */
+  .source {
+    padding: 10px 28px;
+    font-size: 0.68rem;
+    color: var(--text-lj);
+    background: var(--grå);
+    border-top: 1px solid #E2E8F0;
+  }
+</style>
+</head>
+<body>
+
+<div class="abstract">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-tag">Graphical Abstract · MS-behandling</div>
+    <h1>Hypogammaglobulinemi och late-onset neutropeni<br>vid anti-CD20-behandling</h1>
+    <div class="header-sub">Monitorering, riskstratifiering och klinisk handläggning</div>
+    <div class="header-drugs">
+      <span class="drug-chip">Rituximab</span>
+      <span class="drug-chip">Ocrelizumab</span>
+      <span class="drug-chip">Ofatumumab</span>
+      <span class="drug-chip">Ublituximab</span>
+    </div>
+  </div>
+
+  <!-- Pathophysiology -->
+  <div class="patofys">
+    <div class="patofys-box">
+      <span class="ikon">💊</span>
+      <div class="label">Anti-CD20</div>
+      <div class="sub">monoklonal antikropp</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="patofys-box">
+      <span class="ikon">🧬</span>
+      <div class="label">B-cellsdepletion</div>
+      <div class="sub">pre-B → plasmablaster</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="patofys-box">
+      <span class="ikon">📉</span>
+      <div class="label">↓ IgG</div>
+      <div class="sub">11 % av patienter</div>
+    </div>
+    <div class="arrow">&</div>
+    <div class="patofys-box">
+      <span class="ikon">🔴</span>
+      <div class="label">↓ Neutrofiler</div>
+      <div class="sub">2–4 % av patienter</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="risk-box">
+      <span class="ikon">⚠️</span>
+      <div class="label">Ökad infektionsrisk</div>
+      <div class="sub">HR 1,7 vs. injektion</div>
+    </div>
+  </div>
+
+  <!-- Two-column content -->
+  <div class="columns">
+
+    <!-- Left: Hypogammaglobulinemi -->
+    <div class="col">
+      <div class="col-header blå">
+        <div class="col-header-ikon">🧪</div>
+        <div class="col-header-text">
+          <h2>Hypogammaglobulinemi</h2>
+          <p>IgG normal: 7–15 g/L</p>
+        </div>
+      </div>
+
+      <div class="section-label">Riskfaktorer</div>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-num">!</div>
+          Ålder &gt;50 år och lågt initialt IgG
+        </div>
+        <div class="step">
+          <div class="step-num">!</div>
+          IgG sjunker med ~0,27 g/L per år (rituximab)
+        </div>
+      </div>
+
+      <div class="section-label">Monitorering</div>
+      <div class="thresh-row">
+        <span class="thresh-badge badge-grön">IgG ≥ ref.</span>
+        <span class="thresh-text">Fortsätt behandling. Registrera i SMSreg.</span>
+      </div>
+      <div class="thresh-row">
+        <span class="thresh-badge badge-gul">↓ &gt;0,4 g/L/år</span>
+        <span class="thresh-text"><strong>Modifiera regimen.</strong> Invänta B-celler ≥2 %.</span>
+      </div>
+      <div class="thresh-row">
+        <span class="thresh-badge badge-röd">IgG &lt;3,0 g/L</span>
+        <span class="thresh-text"><strong>Avsluta anti-CD20.</strong> Konsultera immunbrist.</span>
+      </div>
+
+      <div class="section-label">Dosjustering (stegvis)</div>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-num">1</div>
+          <span><strong>Utglesning</strong> – invänta B-celler ≥2 %/0,04×10⁹/L<br>
+          <span style="font-size:.72rem;color:var(--text-lj)">(ev. switchade minnes-B-celler CD27⁺IgD⁻IgM⁻)</span></span>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <span><strong>Dosreduktion</strong> – om B-celler återkommer sent (≥18 mån)<br>
+          <span style="font-size:.72rem;color:var(--text-lj)">t.ex. 100 mg rituximab</span></span>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <span><strong>Utsättning</strong> – infektionsproblematik, ålder &gt;50, hög EDSS</span>
+        </div>
+      </div>
+
+      <div class="alert röd" style="margin-top:14px">
+        <span class="alert-ikon">🚨</span>
+        <div><strong>Frekventa/svåra bakteriella infektioner:</strong><br>
+        Avsluta anti-CD20 + IVIG 100 mg/kg/vecka (20–30 g/mån × 6–12 mån)</div>
+      </div>
+
+      <div class="big-stat">
+        <div class="num">500 mg</div>
+        <div class="desc">Rituximab/år är ofta tillräckligt efter första behandlingsåret (RIDOSE-studien)</div>
+      </div>
+    </div>
+
+    <!-- Right: LON -->
+    <div class="col">
+      <div class="col-header teal">
+        <div class="col-header-ikon">🔬</div>
+        <div class="col-header-text">
+          <h2>Late-onset neutropeni (LON)</h2>
+          <p>Neutrofiler &lt;1,5×10⁹/L, ≥1 mån efter dos</p>
+        </div>
+      </div>
+
+      <div class="section-label">Karakteristika</div>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-num teal">i</div>
+          Incidens 0,66/100 behandlingsår. Mediantid till normalisering: <strong>11 dagar</strong>
+        </div>
+        <div class="step">
+          <div class="step-num teal">i</div>
+          Vanligen mild och självbegränsande. Risk för recidiv vid ny dos: ~20 %
+        </div>
+      </div>
+
+      <div class="section-label">Grader och åtgärder</div>
+
+      <div class="thresh-row">
+        <div>
+          <span class="thresh-badge badge-grön" style="display:inline-block;margin-bottom:4px">
+            Lindrig<br>1,0–1,5×10⁹
+          </span>
+        </div>
+        <span class="thresh-text">
+          Anti-CD20 kan ofta <strong>fortsätta</strong> efter samråd.<br>
+          Informera patient om infektionstecken.
+        </span>
+      </div>
+
+      <div class="thresh-row" style="margin-top:8px">
+        <div>
+          <span class="thresh-badge badge-gul" style="display:inline-block;margin-bottom:4px">
+            Måttlig<br>0,5–1,0×10⁹
+          </span>
+        </div>
+        <span class="thresh-text">
+          <strong>Veckovis neutrofilkontroll</strong> till normalisering.<br>
+          Behandling ej kontraindicerad – <strong>överväg alternativ.</strong>
+        </span>
+      </div>
+
+      <div class="thresh-row" style="margin-top:8px">
+        <div>
+          <span class="thresh-badge badge-röd" style="display:inline-block;margin-bottom:4px">
+            Svår<br>&lt;0,5×10⁹
+          </span>
+        </div>
+        <span class="thresh-text">
+          Konsultera <strong>infektionsläkare</strong>. Utredning på akutsjukhus.<br>
+          Antibiotika + ställningstagande till <strong>G-CSF*</strong>.<br>
+          <strong>Undvik fortsatt anti-CD20.</strong>
+        </span>
+      </div>
+
+      <div class="alert gul" style="margin-top:12px">
+        <span class="alert-ikon">⚠️</span>
+        <div>
+          <strong>* OBS G-CSF:</strong> Enstaka fallrapporter om MS-skov vid G-CSF-behandling.
+          Väg risk mot nytta individuellt.
+        </div>
+      </div>
+
+      <div class="alert blå" style="margin-top:10px">
+        <span class="alert-ikon">ℹ️</span>
+        <div>
+          <strong>Diagnostik:</strong> Blodstatus med differentialräkning.<br>
+          Patienten ska informeras om att <strong>söka akut</strong> vid hög feber och allmänpåverkan.
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-top:14px">Svår hypogammaglobulinemi (IgG &lt;3,0 g/L)</div>
+      <div class="step-list">
+        <div class="step">
+          <div class="step-num teal">1</div>
+          Avsluta anti-CD20 (om ej redan gjort)
+        </div>
+        <div class="step">
+          <div class="step-num teal">2</div>
+          Samråd med <strong>immunbristenhet</strong>
+        </div>
+        <div class="step">
+          <div class="step-num teal">3</div>
+          IV eller SC immunglobulinsubstitution vid infektionsbenägenhet
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prevention footer -->
+  <div class="prevention">
+    <div class="prev-item">
+      <span class="ikon">💉</span>
+      <div class="text">
+        <strong>Vaccinera innan start</strong>
+        Se SMSS rekommendationer. Sämre vaccinsvar under anti-CD20.
+      </div>
+    </div>
+    <div class="prev-item">
+      <span class="ikon">🩺</span>
+      <div class="text">
+        <strong>Screening innan start</strong>
+        Infektionsanamnes + baslinjevärde IgG. Avvakta om Ig-brist föreligger.
+      </div>
+    </div>
+    <div class="prev-item">
+      <span class="ikon">📊</span>
+      <div class="text">
+        <strong>Följ IgG inför varje infusion</strong>
+        Tätare om snabb nedgång. Registrera trender i SMSreg.
+      </div>
+    </div>
+    <div class="prev-item">
+      <span class="ikon">🔄</span>
+      <div class="text">
+        <strong>Längre doseringsintervall</strong>
+        Associerat med lägre risk för hypogammaglobulinemi. Minsta effektiva dos.
+      </div>
+    </div>
+  </div>
+
+  <!-- Source -->
+  <div class="source">
+    Källa: Svenningsson A. Handläggning av hypogammaglobulinemi och late-onset neutropeni vid anti-CD20-behandling, 2025-08-21 · NeuroGuide
+  </div>
+
+</div>
+</body>
+</html>

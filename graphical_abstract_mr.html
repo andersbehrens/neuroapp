@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – MR vid neuroinflammation</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; border:1px solid; }
+  .chip.blå { background:var(--blå-lj); color:var(--blå-md); border-color:#BFDBFE; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+
+  /* Indikationstabell */
+  .ind-tbl { width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.72rem; }
+  .ind-tbl thead th { background:var(--blå); color:#fff; padding:7px 8px; text-align:left; font-weight:700; }
+  .ind-tbl tbody td { padding:6px 8px; border-bottom:1px solid #E2E8F0; color:var(--text-md); line-height:1.35; vertical-align:top; }
+  .ind-tbl tbody tr:last-child td { border-bottom:none; }
+  .ind-tbl tbody tr:nth-child(even) td { background:var(--grå); }
+  .prot { display:inline-block; border-radius:4px; padding:2px 6px; font-size:0.68rem; font-weight:700; }
+  .p-ni { background:var(--blå-lj); color:var(--blå-md); }
+  .p-rc { background:var(--grön-lj); color:var(--grön); }
+  .p-rn { background:var(--teal-lj); color:var(--teal); }
+
+  /* Protokoll-boxar */
+  .prot-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .prot-box { border-radius:8px; padding:10px 12px; border:2px solid; }
+  .prot-box.ni { border-color:var(--blå-md); background:var(--blå-lj); }
+  .prot-box.rc { border-color:var(--grön); background:var(--grön-lj); }
+  .prot-box.rn { border-color:var(--teal); background:var(--teal-lj); }
+  .prot-name { font-weight:700; font-size:0.78rem; margin-bottom:2px; }
+  .prot-name.ni { color:var(--blå-md); }
+  .prot-name.rc { color:var(--grön); }
+  .prot-name.rn { color:var(--teal); }
+  .prot-desc { font-size:0.68rem; color:var(--text-lj); margin-bottom:6px; }
+  .seq-list { list-style:none; padding:0; }
+  .seq-list li { font-size:0.73rem; color:var(--text-md); padding:3px 0; border-bottom:1px solid rgba(0,0,0,.06); display:flex; align-items:center; gap:5px; }
+  .seq-list li:last-child { border-bottom:none; }
+  .seq-num { background:rgba(0,0,0,.12); border-radius:3px; padding:1px 5px; font-size:0.65rem; font-weight:700; min-width:18px; text-align:center; }
+  .post-kontrast { font-size:0.68rem; font-style:italic; color:var(--text-lj); margin-top:4px; }
+
+  /* Frekvens */
+  .frek-tbl { width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.72rem; }
+  .frek-tbl thead th { background:var(--teal); color:#fff; padding:7px 8px; text-align:left; font-weight:700; }
+  .frek-tbl tbody td { padding:6px 8px; border-bottom:1px solid #E2E8F0; color:var(--text-md); vertical-align:top; }
+  .frek-tbl tbody tr:last-child td { border-bottom:none; }
+  .frek-tbl tbody tr:nth-child(even) td { background:var(--grå); }
+
+  /* McDonald 2024 */
+  .mcd-box { background:var(--lila-lj); border:1px solid #DDD6FE; border-radius:8px; padding:10px 14px; margin-bottom:12px; }
+  .mcd-title { font-weight:700; color:var(--lila); font-size:0.82rem; margin-bottom:6px; }
+  .mcd-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .mcd-item { background:#fff; border-radius:6px; padding:7px 9px; }
+  .mcd-item strong { display:block; font-size:0.72rem; color:var(--lila); margin-bottom:2px; }
+  .mcd-item span { font-size:0.7rem; color:var(--text-md); line-height:1.4; }
+
+  /* Varning */
+  .warn-box { background:var(--gul-lj); border:1px solid #FDE68A; border-left:4px solid var(--gul); border-radius:8px; padding:9px 12px; margin-bottom:12px; }
+  .warn-title { font-weight:700; color:var(--gul); font-size:0.78rem; margin-bottom:4px; }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+</style>
+</head>
+<body>
+
+<h1>MR vid neuroinflammation – Nationella rekommendationer
+  <span>Konsensus MS-sällskapet &amp; Neuroradiologi | Version 3.1, 2025-10-10</span>
+</h1>
+
+<div class="chips">
+  <span class="chip blå">MS / CIS / RIS</span>
+  <span class="chip blå">NMOSD / MOGAD</span>
+  <span class="chip grön">Anpassad till McDonald 2024</span>
+</div>
+
+<!-- Indikationer -->
+<div class="sek">Indikationer och protokollval</div>
+<table class="ind-tbl">
+  <thead><tr><th>Situation</th><th>Syfte</th><th>Protokoll</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Utredning misstänkt neuroinflammation</strong></td>
+      <td>Diagnostik, DIS/DIT, uteslut diff.diagnoser</td>
+      <td><span class="prot p-ni">MR hjärna NI</span> ± <span class="prot p-rn">MR rygg NI</span></td>
+    </tr>
+    <tr>
+      <td><strong>Rutinkontroll MS</strong></td>
+      <td>Sjukdomsaktivitet, biverkning (PML), atrofi</td>
+      <td><span class="prot p-rc">MR hjärna RC</span> (kontrast: på begäran)</td>
+    </tr>
+    <tr>
+      <td><strong>Inför/efter behandlingsändring</strong></td>
+      <td>Baslinje, effektkontroll, säkerhet</td>
+      <td><span class="prot p-ni">MR hjärna NI</span></td>
+    </tr>
+    <tr>
+      <td><strong>Skov / oväntad försämring</strong></td>
+      <td>Ny aktivitet, diff.diagn., PML-screening</td>
+      <td><span class="prot p-ni">MR hjärna NI</span> ± rygg. <em>Skovbehandling ska ej avvakta MR.</em></td>
+    </tr>
+    <tr>
+      <td><strong>RIS / CIS / NMOSD uppföljning</strong></td>
+      <td>Ny aktivitet, progressionsbedömning</td>
+      <td><span class="prot p-ni">MR hjärna NI</span> ± <span class="prot p-rn">MR rygg NI</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Protokoll -->
+<div class="sek">MR-protokoll (rekommenderade miniminivåer)</div>
+<div class="prot-row">
+  <div class="prot-box ni">
+    <div class="prot-name ni">MR hjärna Neuroinflammation</div>
+    <div class="prot-desc">Brett protokoll – diagnostik &amp; differentialdiagnoser</div>
+    <ul class="seq-list">
+      <li><span class="seq-num">1</span> 3D T2-FLAIR</li>
+      <li><span class="seq-num">2</span> 3D T1WI</li>
+      <li><span class="seq-num">3</span> STIR synnerver ★</li>
+      <li style="border-top:2px solid rgba(0,0,0,.15);font-style:italic;font-size:0.68rem;color:var(--text-lj)">— Kontrastmedel —</li>
+      <li><span class="seq-num">4</span> SWI</li>
+      <li><span class="seq-num">5</span> DWI</li>
+      <li><span class="seq-num">6</span> T2WI</li>
+      <li><span class="seq-num">7</span> 3D T1WI (post-kontrast)</li>
+    </ul>
+  </div>
+  <div class="prot-box rc">
+    <div class="prot-name rc">MR hjärna MS-rutinkontroll</div>
+    <div class="prot-desc">Smalt protokoll – planerade kontroller</div>
+    <ul class="seq-list">
+      <li><span class="seq-num">1</span> 3D FLAIR</li>
+      <li><span class="seq-num">2</span> 3D T1WI</li>
+    </ul>
+    <div class="post-kontrast">Kontrastmedel: enbart på explicit begäran. Axiala T2 behövs ej längre.</div>
+  </div>
+  <div class="prot-box rn">
+    <div class="prot-name rn">MR rygg Neuroinflammation</div>
+    <div class="prot-desc">Indikationer: symtom, NMOSD, CIS, spinalt skov</div>
+    <ul class="seq-list">
+      <li><span class="seq-num">1</span> Sag T2WI</li>
+      <li><span class="seq-num">2</span> Sag STIR</li>
+      <li><span class="seq-num">3</span> Axial T2WI (misstänkt lesion)</li>
+      <li style="border-top:2px solid rgba(0,0,0,.15);font-style:italic;font-size:0.68rem;color:var(--text-lj)">— Kontrastmedel —</li>
+      <li><span class="seq-num">4</span> Sag T1WI</li>
+      <li><span class="seq-num">5</span> Sag T1WI post-kontrast</li>
+    </ul>
+  </div>
+</div>
+
+<!-- McDonald 2024 -->
+<div class="mcd-box">
+  <div class="mcd-title">McDonald 2024 – MR-kriterier (nyckeländringar)</div>
+  <div class="mcd-grid">
+    <div class="mcd-item">
+      <strong>Spridning i rum (DIS)</strong>
+      <span>Lesioner i ≥2 av 5 områden: periventrikulärt, kortikalt/juxtakortikalt, infratentoriellt, spinalt, synnerv</span>
+    </div>
+    <div class="mcd-item">
+      <strong>Spridning i tid (DIT)</strong>
+      <span>Ny T2/kontrast-lesion vid uppföljning, ELLER samtidig kontrast-laddande + icke-laddande lesion</span>
+    </div>
+    <div class="mcd-item">
+      <strong>Synnerv – ny i 2024</strong>
+      <span>Ingår nu som standard vid MR hjärna NI. Viktig för DIS. STIR-sekvens.</span>
+    </div>
+    <div class="mcd-item">
+      <strong>Central vensymtom</strong>
+      <span>SWI-synlig central ven i lesioner stärker MS-diagnos. Kräver EV-ratio &gt;40%.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Frekvenser -->
+<div class="sek">Rekommenderad MR-frekvens vid MS</div>
+<table class="frek-tbl">
+  <thead><tr><th>Skede</th><th>Rekommendation</th></tr></thead>
+  <tbody>
+    <tr><td>Nydiagnostik / behandlingsstart</td><td>MR inom 3–6 månader (baslinje)</td></tr>
+    <tr><td>Första 2 åren på behandling</td><td>Var 6:e månad (annuellt om stabil)</td></tr>
+    <tr><td>Stabil sjukdom på behandling</td><td>1–2 gånger per år</td></tr>
+    <tr><td>Byte till högefficiens-behandling</td><td>Baslinje-MR, sedan 3–6 mån, sedan årsvis</td></tr>
+    <tr><td>Avsluta MR-uppföljning</td><td>Kan övervägas vid lång stabil remission + hög ålder + ingen DMT</td></tr>
+  </tbody>
+</table>
+
+<!-- Varning -->
+<div class="warn-box">
+  <div class="warn-title">⚠ Kliniska påminnelser</div>
+  <ul style="padding-left:16px;font-size:0.75rem;color:var(--text-md)">
+    <li>Skovbehandling ska <strong>aldrig fördröjas</strong> av väntan på MR</li>
+    <li>7T MR: kan användas men protokoll ej standardiserat – undviks vid klaustrofobi, implantat</li>
+    <li>Kontrastmedel vid rutinkontroll: begär aktivt – ingår ej som standard</li>
+    <li>Pseudoskov (infektion, värme) bör alltid uteslutas kliniskt innan akut MR</li>
+  </ul>
+</div>
+
+<div class="fotnot">
+  NI = Neuroinflammation-protokoll | RC = Rutinkontroll-protokoll | DIS = dissemination in space | DIT = dissemination in time | FLAIR = fluid-attenuated inversion recovery | SWI = susceptibility weighted imaging | DWI = diffusion weighted imaging | STIR = short tau inversion recovery | ★ Nytt i v3.1: synnerv ingår som standard
+</div>
+</body>
+</html>
