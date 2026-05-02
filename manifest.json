@@ -2,7 +2,8 @@
   "name": "NeuroGuide – Neurologiska riktlinjer",
   "short_name": "NeuroGuide",
   "description": "Snabb tillgång till neurologiska akutkort och behandlingsriktlinjer",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#1B3A6B",
@@ -30,12 +31,12 @@
   "shortcuts": [
     {
       "name": "Akutkort",
-      "url": "/#akutkort",
+      "url": "./#akutkort",
       "description": "Neurologiska akutkort"
     },
     {
       "name": "Riktlinjer",
-      "url": "/#riktlinjer",
+      "url": "./#riktlinjer",
       "description": "Behandlingsriktlinjer"
     }
   ]
