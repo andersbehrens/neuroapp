@@ -158,14 +158,25 @@ const Vy = {
         <button id="install-dismiss" onclick="event.stopPropagation();App.avvisaInstall()" aria-label="Stäng">×</button>
       </div>` : '';
 
-    const kat = topKat.map(k => `
+    const kat = topKat.map(k => {
+      const click = k.externalUrl
+        ? `window.open('${k.externalUrl}', '_blank', 'noopener,noreferrer')`
+        : `Router.gå('${k.id}')`;
+      const keydown = k.externalUrl
+        ? `if(event.key==='Enter')window.open('${k.externalUrl}', '_blank', 'noopener,noreferrer')`
+        : `if(event.key==='Enter')Router.gå('${k.id}')`;
+      const antal = k.externalUrl
+        ? `<div class="kategori-antal">Öppnar i webbläsaren ↗</div>`
+        : `<div class="kategori-antal">${antalPerKat(k)} dokument</div>`;
+      return `
       <div class="kategori-kort ${k.farg}" role="button" tabindex="0"
-           onclick="Router.gå('${k.id}')"
-           onkeydown="if(event.key==='Enter')Router.gå('${k.id}')">
+           onclick="${click}"
+           onkeydown="${keydown}">
         <span class="kategori-ikon">${k.ikon}</span>
         <div class="kategori-namn">${k.namn}</div>
-        <div class="kategori-antal">${antalPerKat(k)} dokument</div>
-      </div>`).join('');
+        ${antal}
+      </div>`;
+    }).join('');
 
     return `
       <div id="startsida">

@@ -8,7 +8,8 @@ const KATEGORIER = [
   { id: 'polyneuropati', namn: 'Polyneuropati',     beskrivning: 'Polyneuropati – vårdprogram Karolinska', ikon: '🔬', farg: 'kategori-prognos', parent: 'riktlinjer' },
   { id: 'akutkort',      namn: 'Akutkort',          beskrivning: 'Neurologiska akutkort för akuta situationer', ikon: '⚡', farg: 'kategori-akut' },
   { id: 'prognos',       namn: 'Prognos & PM',      beskrivning: 'Prognosverktyg och lokala PM', ikon: '📊', farg: 'kategori-prognos' },
-  { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' }
+  { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
+  { id: 'fass', namn: 'FASS', beskrivning: 'Läkemedelsinformation – öppnar fass.se', ikon: '💊', farg: 'kategori-akut', externalUrl: 'https://fass.se/health' }
 ];
 
 const DOKUMENT = [
