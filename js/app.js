@@ -565,7 +565,10 @@ const Vy = {
   _scrollaTill(id) {
     this._stängToc();
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!el) return;
+    const headerH = document.getElementById('header')?.offsetHeight || 56;
+    const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   },
 
   _scrollaTillRubrik(container, rubrik) {
@@ -581,7 +584,11 @@ const Vy = {
       const poäng = ord.filter(w => txt.includes(w)).length;
       if (poäng > bästaPoäng) { bästaPoäng = poäng; bäst = h; }
     }
-    if (bäst && bästaPoäng > 0) bäst.scrollIntoView({ behavior: 'auto', block: 'start' });
+    if (bäst && bästaPoäng > 0) {
+      const headerH = document.getElementById('header')?.offsetHeight || 56;
+      const y = bäst.getBoundingClientRect().top + window.scrollY - headerH - 8;
+      window.scrollTo({ top: y, behavior: 'auto' });
+    }
   },
 
   _toggleToc() {

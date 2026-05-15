@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v9';
+const CACHE_NAME = 'neuroguide-v10';
 const ASSETS = [
   './',
   'index.html',
