@@ -223,17 +223,24 @@ const Vy = {
     const kat = KATEGORIER.find(k => k.id === katId);
     const dok = DOKUMENT.filter(d => d.kategori === katId);
 
-    const dokKort = dok.length ? dok.map(d => `
+    const isArtikelKat = katId === 'artiklar';
+    const dokKort = dok.length ? dok.map(d => {
+      const openPdf = isArtikelKat && d.pdf;
+      const onclick  = openPdf ? `window.open('${d.pdf}','_blank','noopener,noreferrer')` : `Router.gå('dokument',{id:'${d.id}'})`;
+      const onkeydown = openPdf ? `if(event.key==='Enter')window.open('${d.pdf}','_blank','noopener,noreferrer')` : `if(event.key==='Enter')Router.gå('dokument',{id:'${d.id}'})`;
+      const meta = d.källa || `${d.innehall.length} avsnitt`;
+      return `
       <div class="dok-kort" role="button" tabindex="0"
-           onclick="Router.gå('dokument', {id:'${d.id}'})"
-           onkeydown="if(event.key==='Enter')Router.gå('dokument',{id:'${d.id}'})">
+           onclick="${onclick}"
+           onkeydown="${onkeydown}">
         <div class="dok-kort-ikon ${kat.farg}">${kat.ikon}</div>
         <div class="dok-kort-text">
           <div class="dok-kort-titel">${Sök._esc(d.titel)}</div>
-          <div class="dok-kort-meta">${d.innehall.length} avsnitt</div>
+          <div class="dok-kort-meta">${meta}</div>
         </div>
         <span class="dok-kort-pil">›</span>
-      </div>`).join('')
+      </div>`;
+    }).join('')
     : '<p style="color:var(--text-ljus);padding:20px 0">Inga dokument ännu.</p>';
 
     return `

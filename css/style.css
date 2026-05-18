@@ -2,25 +2,25 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --blå-mörk:    #1B3A6B;
-  --blå-medium:  #2563EB;
-  --blå-ljus:    #EFF6FF;
-  --blå-kant:    #BFDBFE;
-  --teal:        #0E7490;
-  --teal-ljus:   #ECFEFF;
-  --grön:        #047857;
-  --grön-ljus:   #ECFDF5;
-  --lila:        #6D28D9;
-  --lila-ljus:   #F5F3FF;
+  --blå-mörk:    #2C2C2C;
+  --blå-medium:  #B87333;
+  --blå-ljus:    #FBF0E6;
+  --blå-kant:    #E8DFD0;
+  --teal:        #8B6914;
+  --teal-ljus:   #FBF0E6;
+  --grön:        #6B5A3A;
+  --grön-ljus:   #F7F3EE;
+  --lila:        #9A7030;
+  --lila-ljus:   #FDF3D8;
   --vit:         #FFFFFF;
-  --grå-50:      #F8FAFC;
-  --grå-100:     #F1F5F9;
-  --grå-200:     #E2E8F0;
-  --grå-400:     #94A3B8;
-  --grå-600:     #475569;
-  --text-mörk:   #0F172A;
-  --text-medium: #334155;
-  --text-ljus:   #64748B;
+  --grå-50:      #FAFAF8;
+  --grå-100:     #EFEDE7;
+  --grå-200:     #E8E6E0;
+  --grå-400:     #AAA89E;
+  --grå-600:     #7A7668;
+  --text-mörk:   #2C2C2C;
+  --text-medium: #504E48;
+  --text-ljus:   #888580;
   --radius-sm:   8px;
   --radius-md:   12px;
   --radius-lg:   16px;
@@ -48,8 +48,8 @@ body {
 
 /* Header */
 #header {
-  background: var(--blå-mörk);
-  color: var(--vit);
+  background: #FAFAF8;
+  color: #2C2C2C;
   padding: 0 16px;
   display: flex;
   align-items: center;
@@ -60,17 +60,19 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  box-shadow: var(--skugga-md);
+  border-bottom: 1px solid #E8E6E0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
 #header-logo {
   font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   white-space: nowrap;
   cursor: pointer;
   flex-shrink: 0;
+  color: #2C2C2C;
 }
-#header-logo span { color: #60A5FA; }
+#header-logo span { color: #B87333; font-weight: 700; }
 #header-search {
   flex: 1;
   position: relative;
@@ -80,15 +82,15 @@ body {
   width: 100%;
   padding: 8px 36px 8px 14px;
   border-radius: 20px;
-  border: none;
-  background: rgba(255,255,255,.15);
-  color: var(--vit);
+  border: 1px solid #E8E6E0;
+  background: #EFEDE7;
+  color: #2C2C2C;
   font-size: 0.95rem;
   outline: none;
-  transition: background .2s;
+  transition: background .2s, border-color .2s;
 }
-#sokfalt::placeholder { color: rgba(255,255,255,.6); }
-#sokfalt:focus { background: rgba(255,255,255,.25); }
+#sokfalt::placeholder { color: #AAA89E; }
+#sokfalt:focus { background: #E9E6DF; border-color: #B87333; }
 #sok-ikon {
   position: absolute;
   right: 10px; top: 50%;
@@ -100,7 +102,7 @@ body {
 #tillbaka-knapp {
   background: none;
   border: none;
-  color: var(--vit);
+  color: #2C2C2C;
   font-size: 1.4rem;
   cursor: pointer;
   padding: 4px 8px;
@@ -112,12 +114,12 @@ body {
   font-size: 0.9rem;
   white-space: nowrap;
 }
-#tillbaka-knapp:hover { background: rgba(255,255,255,.1); }
+#tillbaka-knapp:hover { background: rgba(0,0,0,.06); }
 #tillbaka-knapp.synlig { display: flex; }
 #hem-knapp {
   background: none;
   border: none;
-  color: var(--vit);
+  color: #2C2C2C;
   font-size: 1.15rem;
   cursor: pointer;
   padding: 6px 8px;
@@ -125,7 +127,7 @@ body {
   flex-shrink: 0;
   line-height: 1;
 }
-#hem-knapp:hover { background: rgba(255,255,255,.1); }
+#hem-knapp:hover { background: rgba(0,0,0,.06); }
 
 /* === Layout === */
 #main-layout { flex: 1; padding-top: 56px; }
@@ -624,7 +626,7 @@ body {
 
 /* Fokus-ring för tillgänglighet */
 :focus-visible {
-  outline: 2px solid var(--blå-medium);
+  outline: 2px solid #B87333;
   outline-offset: 2px;
 }
 
@@ -638,10 +640,10 @@ body {
    ================================================================ */
 
 :root {
-  --kindle-bg:     #FBF8F0;
-  --kindle-text:   #1A1A18;
-  --kindle-rubrik: #1B3A6B;
-  --kindle-kant:   #D4C8A0;
+  --kindle-bg:     #FFFEFB;
+  --kindle-text:   #2C2C2C;
+  --kindle-rubrik: #3A2E1E;
+  --kindle-kant:   #E8DFD0;
 }
 
 /* Wrapper för markdown-dokumentsida – tar bort standard max-width */
@@ -722,6 +724,7 @@ body {
   background: #EDE8D8;
   padding: 2px 5px;
   border-radius: 3px;
+  color: #3A2E1E;
 }
 .kindle-lasare pre {
   background: #EDE8D8;
@@ -936,7 +939,7 @@ body {
 .kindle-nav {
   position: sticky;
   top: 56px;
-  background: rgba(251,248,240,0.96);
+  background: rgba(255,254,251,0.96);
   backdrop-filter: blur(6px);
   z-index: 10;
   border-bottom: 1px solid var(--kindle-kant);

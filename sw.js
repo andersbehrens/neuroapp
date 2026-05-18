@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v10';
+const CACHE_NAME = 'neuroguide-v11';
 const ASSETS = [
   './',
   'index.html',
@@ -53,7 +53,9 @@ const ASSETS = [
   'riktlinjer/Polyneuropati Karolinska 2023v2.pdf',
   'riktlinjer/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf',
   'riktlinjer/Tremor-riktlinjer-SWEMODIS-2026.pdf',
-  'prognos/EIUH-2.pdf',
+  'papers/4A7884B3-820E-4B4C-8587-133D336C1012.pdf',
+  'papers/51F1599A-2FCA-423A-B1D4-AC8026090E6C.pdf',
+  'papers/EE288F17-635C-43FB-95C7-374F680DFC3E.pdf',
   // Graphical abstracts
   'graphical_abstract_hypogamma.html',
   'graphical_abstract_mg.html',
