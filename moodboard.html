@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroGuide – Designförslag</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+    background: #F5F5F2;
+    color: #1a1a1a;
+    padding: 40px 24px 80px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    letter-spacing: 0.04em;
+    margin-bottom: 60px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .card {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.10);
+  }
+  .card-label {
+    padding: 20px 24px 16px;
+    background: white;
+    border-top: 1px solid #eee;
+  }
+  .card-label h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 4px;
+  }
+  .card-label p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .card-label .swatches {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.08);
+    flex-shrink: 0;
+  }
+  /* ============================
+     MOCK APP UI STYLES
+     ============================ */
+  .mock {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+  }
+  .mock-header {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 52px;
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .mock-logo {
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+  .mock-search {
+    flex: 1;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 10px;
+    font-size: 12px;
+    outline: none;
+  }
+  .mock-body {
+    flex: 1;
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mock-section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    opacity: 0.55;
+  }
+  .mock-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .mock-card {
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .mock-card-icon {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  .mock-card-title {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .mock-card-sub {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+  .mock-doc-item {
+    border-radius: 6px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .mock-doc-title {
+    font-size: 11.5px;
+    font-weight: 500;
+  }
+  .mock-doc-tag {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 2px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .mock-kindle {
+    flex: 1;
+    padding: 16px 20px;
+    overflow: hidden;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+  }
+  .mock-kindle h3 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .mock-kindle p {
+    font-size: 11px;
+    color: inherit;
+    opacity: 0.8;
+  }
+  .mock-toc-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+  }
+
+
+  /* ==============================
+     TEMA 1: FJORD
+     Djupblå + isgrå + varm sand
+     ============================== */
+  .fjord .mock { background: #F0EDE8; color: #1C2B3A; }
+  .fjord .mock-header { background: #1C2B3A; color: #fff; }
+  .fjord .mock-logo span { color: #7BB8C9; }
+  .fjord .mock-search { background: rgba(255,255,255,0.12); color: #fff; }
+  .fjord .mock-search::placeholder { color: rgba(255,255,255,0.45); }
+  .fjord .mock-card { background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+  .fjord .mock-card-title { color: #1C2B3A; }
+  .fjord .mock-doc-item { background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .fjord .mock-doc-tag { background: #E8F3F7; color: #2A7B93; }
+  .fjord .mock-kindle { background: #FBF9F4; color: #1C2B3A; }
+  .fjord .mock-toc-btn { background: #1C2B3A; color: #7BB8C9; }
+
+
+  /* ==============================
+     TEMA 2: BIRCH
+     Varmt off-white + ask-grå + koppar
+     ============================== */
+  .birch .mock { background: #FAFAF8; color: #2C2C2C; }
+  .birch .mock-header { background: #FAFAF8; color: #2C2C2C; border-bottom: 1px solid #E8E6E0; }
+  .birch .mock-logo { color: #2C2C2C; font-weight: 300; letter-spacing: 0.02em; font-size: 1rem; }
+  .birch .mock-logo span { color: #B87333; font-weight: 700; }
+  .birch .mock-search { background: #EFEDE7; color: #2C2C2C; }
+  .birch .mock-search::placeholder { color: #AAA89E; }
+  .birch .mock-card { background: #fff; border: 1px solid #E8E6E0; }
+  .birch .mock-card-title { color: #2C2C2C; }
+  .birch .mock-doc-item { background: #fff; border: 1px solid #E8E6E0; }
+  .birch .mock-doc-tag { background: #FBF0E6; color: #B87333; }
+  .birch .mock-kindle { background: #FFFEFB; color: #2C2C2C; }
+  .birch .mock-toc-btn { background: #2C2C2C; color: #FAFAF8; }
+
+
+  /* ==============================
+     TEMA 3: GLACIER
+     Kall vit + mintgrön + slate
+     ============================== */
+  .glacier .mock { background: #F2F6F5; color: #1A2E2B; }
+  .glacier .mock-header { background: #1A3330; color: #fff; }
+  .glacier .mock-logo span { color: #5DC9B0; }
+  .glacier .mock-search { background: rgba(255,255,255,0.14); color: #fff; }
+  .glacier .mock-search::placeholder { color: rgba(255,255,255,0.4); }
+  .glacier .mock-card { background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+  .glacier .mock-card-title { color: #1A2E2B; }
+  .glacier .mock-doc-item { background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .glacier .mock-doc-tag { background: #E2F5F0; color: #2A8C74; }
+  .glacier .mock-kindle { background: #FAFFFE; color: #1A2E2B; }
+  .glacier .mock-toc-btn { background: #1A3330; color: #5DC9B0; }
+
+
+  /* ==============================
+     TEMA 4: GRAPHITE
+     Mörkgrå + platina + elblå accent
+     ============================== */
+  .graphite .mock { background: #ECECEC; color: #1A1A1A; }
+  .graphite .mock-header { background: #222222; color: #fff; }
+  .graphite .mock-logo span { color: #5B9CF6; }
+  .graphite .mock-search { background: rgba(255,255,255,0.10); color: #fff; }
+  .graphite .mock-search::placeholder { color: rgba(255,255,255,0.35); }
+  .graphite .mock-card { background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .graphite .mock-card-title { color: #1A1A1A; }
+  .graphite .mock-doc-item { background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+  .graphite .mock-doc-tag { background: #EBF2FF; color: #2563EB; }
+  .graphite .mock-kindle { background: #FFFFFF; color: #1A1A1A; }
+  .graphite .mock-toc-btn { background: #222; color: #5B9CF6; }
+
+
+  /* ==============================
+     TEMA 5: LINEN
+     Varmt naturvitt + skogsgrön + guld
+     ============================== */
+  .linen .mock { background: #F7F3EE; color: #2A2116; }
+  .linen .mock-header { background: #2A4A35; color: #fff; }
+  .linen .mock-logo span { color: #C9A84C; }
+  .linen .mock-search { background: rgba(255,255,255,0.14); color: #fff; }
+  .linen .mock-search::placeholder { color: rgba(255,255,255,0.45); }
+  .linen .mock-card { background: #FFF9F0; border: 1px solid #E8DFD0; }
+  .linen .mock-card-title { color: #2A2116; }
+  .linen .mock-doc-item { background: #FFF9F0; border: 1px solid #E8DFD0; }
+  .linen .mock-doc-tag { background: #FDF3D8; color: #9A7010; }
+  .linen .mock-kindle { background: #FFFDF7; color: #2A2116; }
+  .linen .mock-toc-btn { background: #2A4A35; color: #C9A84C; }
+
+
+  /* ==============================
+     TEMA 6: NORDIC NIGHT
+     Mörkt tema – marinblå + silver
+     ============================== */
+  .nordic-night .mock { background: #111827; color: #E8EDF5; }
+  .nordic-night .mock-header { background: #0D1520; color: #E8EDF5; border-bottom: 1px solid #1E3050; }
+  .nordic-night .mock-logo span { color: #93C5FD; }
+  .nordic-night .mock-search { background: #1E2D45; color: #E8EDF5; }
+  .nordic-night .mock-search::placeholder { color: #4A6080; }
+  .nordic-night .mock-section-title { color: #6B8CB0; }
+  .nordic-night .mock-card { background: #1A2535; border: 1px solid #1E3050; }
+  .nordic-night .mock-card-title { color: #E8EDF5; }
+  .nordic-night .mock-card-sub { color: #6B8CB0; }
+  .nordic-night .mock-doc-item { background: #1A2535; border: 1px solid #1E3050; }
+  .nordic-night .mock-doc-title { color: #D0DAE8; }
+  .nordic-night .mock-doc-tag { background: #1E3050; color: #93C5FD; }
+  .nordic-night .mock-kindle { background: #141C28; color: #D0DAE8; }
+  .nordic-night .mock-toc-btn { background: #1E3050; color: #93C5FD; }
+</style>
+</head>
+<body>
+
+<h1>NeuroGuide</h1>
+<p class="subtitle">Designförslag — Skandinavisk minimalism</p>
+
+<div class="grid">
+
+  <!-- ===== FJORD ===== -->
+  <div class="card fjord">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">Neuro<span>Guide</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Fjord</h2>
+      <p>Djupblå marinton möter varm sandbeige. Lugnt och auktoritativt – som norsk kust i skymning.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#1C2B3A" title="Nattblå"></div>
+        <div class="swatch" style="background:#7BB8C9" title="Isblå"></div>
+        <div class="swatch" style="background:#F0EDE8" title="Sand"></div>
+        <div class="swatch" style="background:#FBF9F4" title="Linne"></div>
+        <div class="swatch" style="background:#ffffff" title="Vit"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BIRCH ===== -->
+  <div class="card birch">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">neuro<span>GUIDE</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Birch</h2>
+      <p>Ljust och pappersnära. Varm off-white, kopparaccenter och luftig typografi – björk och naturmaterial.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#2C2C2C" title="Kol"></div>
+        <div class="swatch" style="background:#B87333" title="Koppar"></div>
+        <div class="swatch" style="background:#FAFAF8" title="Off-white"></div>
+        <div class="swatch" style="background:#EFEDE7" title="Ask"></div>
+        <div class="swatch" style="background:#E8E6E0" title="Lin"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GLACIER ===== -->
+  <div class="card glacier">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">Neuro<span>Guide</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Glacier</h2>
+      <p>Kall nymintgrönt mot djupskogsgrön header. Frisk och klinisk – som ren skandinavisk natur.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#1A3330" title="Djupskog"></div>
+        <div class="swatch" style="background:#5DC9B0" title="Mint"></div>
+        <div class="swatch" style="background:#F2F6F5" title="Dimvit"></div>
+        <div class="swatch" style="background:#E2F5F0" title="Isgrön"></div>
+        <div class="swatch" style="background:#ffffff" title="Vit"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GRAPHITE ===== -->
+  <div class="card graphite">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">Neuro<span>Guide</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Graphite</h2>
+      <p>Svart header, rent vitt innehåll, elektrisk blå accent. Tidlöst och skarpt – som väldesignad professionell mjukvara.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#222222" title="Grafit"></div>
+        <div class="swatch" style="background:#5B9CF6" title="Elblå"></div>
+        <div class="swatch" style="background:#ECECEC" title="Platina"></div>
+        <div class="swatch" style="background:#EBF2FF" title="Himmelblå"></div>
+        <div class="swatch" style="background:#ffffff" title="Vit"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LINEN ===== -->
+  <div class="card linen">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">Neuro<span>Guide</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Linen</h2>
+      <p>Skogsgrön header med guldaccent mot varmt naturvitt. Organiskt och varmt – som Scandi-inredning och naturmaterial.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#2A4A35" title="Skogsgrön"></div>
+        <div class="swatch" style="background:#C9A84C" title="Guld"></div>
+        <div class="swatch" style="background:#F7F3EE" title="Naturvitt"></div>
+        <div class="swatch" style="background:#FFF9F0" title="Grädde"></div>
+        <div class="swatch" style="background:#E8DFD0" title="Sand"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NORDIC NIGHT ===== -->
+  <div class="card nordic-night">
+    <div class="mock">
+      <div class="mock-header">
+        <div class="mock-logo">Neuro<span>Guide</span></div>
+        <input class="mock-search" type="text" placeholder="Sök riktlinjer…" readonly>
+      </div>
+      <div class="mock-body">
+        <div class="mock-section-title">Kategorier</div>
+        <div class="mock-cards">
+          <div class="mock-card">
+            <div class="mock-card-icon">🧠</div>
+            <div class="mock-card-title">MS & Neuroinflammation</div>
+            <div class="mock-card-sub">4 dokument</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-icon">🫀</div>
+            <div class="mock-card-title">Parkinsons sjukdom</div>
+            <div class="mock-card-sub">2 dokument</div>
+          </div>
+        </div>
+        <div class="mock-section-title" style="margin-top:4px">Senaste</div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">MR vid neuroinflammation v3.1</div>
+          <div class="mock-doc-tag">MR</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Tremor – SWEMODIS 2026</div>
+          <div class="mock-doc-tag">Rörelse</div>
+        </div>
+        <div class="mock-doc-item">
+          <div class="mock-doc-title">Myastenia gravis 2024</div>
+          <div class="mock-doc-tag">NMJ</div>
+        </div>
+      </div>
+      <button class="mock-toc-btn">☰</button>
+    </div>
+    <div class="card-label">
+      <h2>Nordic Night</h2>
+      <p>Mörkt tema. Djupblå natt med silvrig text och isblå accenter – skonsamt för ögonen vid nattjour.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#0D1520" title="Midnatt"></div>
+        <div class="swatch" style="background:#1A2535" title="Marinblå"></div>
+        <div class="swatch" style="background:#93C5FD" title="Isblå"></div>
+        <div class="swatch" style="background:#E8EDF5" title="Silver"></div>
+        <div class="swatch" style="background:#1E3050" title="Stålblå"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center; margin-top:60px; font-size:0.8rem; color:#aaa; letter-spacing:0.06em;">
+  NEUROGUIDE — DESIGNMOODBOARD 2026
+</p>
+
+</body>
+</html>

@@ -267,9 +267,35 @@ Filer och tillhörande dokument:
 | `graphical_abstract_polyneuropati.html` | Polyneuropati (Karolinska 2023) |
 | `graphical_abstract_mr.html` | MR vid neuroinflammation (v3.1, 2025) |
 
+## Publicering på GitHub Pages
+
+Appen hostar på `https://andersbehrens.github.io/neuroapp/`. Repot är publikt på GitHub (`andersbehrens/neuroapp`).
+
+### Pusha ändringar (t.ex. ny riktlinje)
+
+```bash
+git add .
+git commit -m "Lägg till [dokumentnamn]"
+git push
+```
+
+GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönster.
+
+### Viktiga regler för paths
+
+**Alla URL-sökvägar i projektet måste vara relativa** (inte börja med `/`), annars fungerar de inte på GitHub Pages:
+
+- `data.js`: `markdownUrl`, `pdf`, `graphicalAbstract`, `kalkylatorUrl` – alla utan ledande `/`
+- `sw.js`: alla poster i `ASSETS`-arrayen utan ledande `/` (använd `'./'` för rooten, `'index.html'` etc.)
+- `app.js`: bildlänkar skrivs om till `riktlinjerMarkdown/images/` (utan ledande `/`)
+
+### Bumpa service worker-version
+
+Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas (t.ex. `neuroguide-v9` → `neuroguide-v10`). Annars använder installerade appar gammal cache och ser inte de nya dokumenten.
+
 ## Service Worker (sw.js)
 
-Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Varje gång assets ändras måste `CACHE_NAME` bumpa version (nuvarande: `neuroguide-v7`) för att gamla cachen ska rensas.
+Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Varje gång assets ändras måste `CACHE_NAME` bumpa version (nuvarande: `neuroguide-v9`) för att gamla cachen ska rensas.
 
 Vid lokal testning: använd inkognitofönster eller avregistrera SW i DevTools → Application → Service Workers.
 
