@@ -106,6 +106,8 @@ const Vy = {
 
       case 'akutkort':
       case 'artiklar':
+      case 'neuroonkologi':
+      case 'stroke':
       case 'kalkylatorer':
         tillbaka.classList.add('synlig');
         el.innerHTML = this.kategoriVy(vy);
@@ -573,9 +575,13 @@ const Vy = {
     this._stängToc();
     const el = document.getElementById(id);
     if (!el) return;
-    const headerH = document.getElementById('header')?.offsetHeight || 56;
-    const y = el.getBoundingClientRect().top + window.scrollY - headerH - 8;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+    const beräknaY = () => {
+      const headerH = document.getElementById('header')?.offsetHeight || 56;
+      return el.getBoundingClientRect().top + window.scrollY - headerH - 20;
+    };
+    window.scrollTo({ top: beräknaY(), behavior: 'smooth' });
+    // Korrigera efter smooth-animationen – lazy-laddade bilder kan ha skiftat layouten
+    setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 650);
   },
 
   _scrollaTillRubrik(container, rubrik) {

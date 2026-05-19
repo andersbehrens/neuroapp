@@ -6,6 +6,8 @@ const KATEGORIER = [
   { id: 'tremor',        namn: 'Tremortillstånd',   beskrivning: 'Svenska riktlinjer för utredning och behandling av tremortillstånd', ikon: '〰️', farg: 'kategori-akut', parent: 'riktlinjer' },
   { id: 'myasteni',      namn: 'Myasteni',          beskrivning: 'Myastenia Gravis – svenskt konsensusprogram', ikon: '💪', farg: 'kategori-riktlinje', parent: 'riktlinjer' },
   { id: 'polyneuropati', namn: 'Polyneuropati',     beskrivning: 'Polyneuropati – vårdprogram Karolinska', ikon: '🔬', farg: 'kategori-prognos', parent: 'riktlinjer' },
+  { id: 'neuroonkologi', namn: 'Neuroonkologi',     beskrivning: 'Hjärntumörer och neuroonkologiska riktlinjer', ikon: '🧬', farg: 'kategori-riktlinje', parent: 'riktlinjer' },
+  { id: 'stroke',        namn: 'Stroke',             beskrivning: 'Strokevårdprogram och riktlinjer', ikon: '🩺', farg: 'kategori-akut', parent: 'riktlinjer' },
   { id: 'akutkort',      namn: 'Akutkort',          beskrivning: 'Neurologiska akutkort för akuta situationer', ikon: '⚡', farg: 'kategori-akut' },
   { id: 'artiklar',      namn: 'Artiklar',           beskrivning: 'Kliniskt användbara vetenskapliga artiklar', ikon: '📖', farg: 'kategori-riktlinje' },
   { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
@@ -8861,6 +8863,38 @@ i symtomkomplexet.`
     pdf: 'papers/EE288F17-635C-43FB-95C7-374F680DFC3E.pdf',
     innehall: [
       { rubrik: 'Late-onset cerebellar ataxia', text: 'Practical diagnostic approach to sporadic late-onset slowly progressive cerebellar ataxia. Differential diagnosis including genetic, inflammatory and degenerative causes.' }
+    ]
+  },
+  {
+    id: 'asia-worksheet',
+    titel: 'ASIA/ISNCSCI Spinal Cord Injury Classification Worksheet',
+    kategori: 'artiklar',
+    källa: 'ASIA/ISCoS',
+    pdf: 'papers/ASIA-Worksheet.pdf',
+    innehall: [
+      { rubrik: 'ASIA Worksheet', text: 'International Standards for Neurological Classification of Spinal Cord Injury (ISNCSCI). Klassificeringsformulär för ryggmärgsskador med motoriska och sensoriska nivåer.' }
+    ]
+  },
+
+  // ── Neuroonkologi ──────────────────────────────────────────
+  {
+    id: 'pm-hjarntumor-akut',
+    titel: 'Handläggning vid akut försämring av hjärntumörpatienter',
+    kategori: 'neuroonkologi',
+    pdf: 'riktlinjer/PM akut försämrning av hjärntumörpatienter  Södra Sjukvårdsegionen.pdf',
+    innehall: [
+      { rubrik: 'Akut försämring av hjärntumörpatienter', text: 'PM i akut neuroonkologi för handläggning av vuxna patienter med hjärntumörsjukdom i Södra Regionen. Råd vid akut försämring för jourhavande utanför behandlande klinik.' }
+    ]
+  },
+
+  // ── Stroke ──────────────────────────────────────────
+  {
+    id: 'vardprogram-stroke-2020',
+    titel: 'Vårdprogram stroke – Blekingesjukhuset 2020',
+    kategori: 'stroke',
+    pdf: 'riktlinjer/Vårdprogram stroke 2020 revförslag 191111.docx',
+    innehall: [
+      { rubrik: 'Vårdprogram stroke', text: 'Medicinsk och rehabiliterande del. Slutenvård Blekingesjukhuset 2020.' }
     ]
   }
 ];
