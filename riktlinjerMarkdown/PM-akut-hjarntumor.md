@@ -20,7 +20,6 @@ psykiatriska symptom och sena komplikationer av behandlingen.
 Wejdan Almasoudi ST-läkare Neurologiska mottagningen Lund & Anna Rydelius
 biträdande överläkare Neuro-onkologiska mottagningen VO neurologi, Lund.
 
-### 1. Tumörrelaterad epilepsi.……………………………………………………..2 2. Hjärnödem…………………………………………………………………………..4 3. Kortisonbehandling, biverkningar/åtgärder ……………………….. 6 4. Blod-benmärgspåverkan……………………………………………………..8 5. Infektion som komplikation hos hjärntumörpatienter.………..8 6. Tromboembolisk sjukdom………………………………………………….10 7. Psykiska symptom………..……………………………………………………11 8. Multidisciplinärt team……………………………………………………….11 9. Biverkningar av strålbehandling…………………………………………12
 
 
 1

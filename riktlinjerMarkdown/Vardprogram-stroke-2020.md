@@ -211,10 +211,10 @@ Utdrag ur Riksstrokes diagnoslathund 27
 6
 
 
-A. Medicinsk del
+## A. Medicinsk del
 
 
-1. Akut handläggning
+### 1. Akut handläggning
 
 
 1.1 Patienter med misstänkt stroke och TIA
@@ -237,7 +237,7 @@ A. Medicinsk del
 övrigt kan undantas.
 
 
-**OBS! Strokepatienter skall med högsta prioritet inläggas på strokeenhet!**
+_OBS! Strokepatienter skall med högsta prioritet inläggas på strokeenhet!_
 
 
 1.1.3 Laboratorieprover
@@ -261,7 +261,7 @@ halskärl direkt om patienten är operabel, om ej DT angio har uteslutit stenos.
 sekundärprofylax.
 
 
-1.2 Cerebral blödning
+### 1.2 Cerebral blödning
 
 
 1.2.1 Subarachnoidalblödning
@@ -358,7 +358,7 @@ utvalda fall, t.ex. vid ytligt hematom enligt ovan eller medvetandepåverkad
 operabel patient.
 
 
-1.3 Ischemisk stroke/TIA
+### 1.3 Ischemisk stroke/TIA
 
 
 _1.3.1 Akutbehandling av TIA och hjärninfarkt_
@@ -418,8 +418,7 @@ betablockerare) om inte BT <130/80 under första dygnet.
 9
 
 
-2. Generellt omhändertagande av samtliga strokepatienter i
-akutskedet (dvs. de första 3 dygnen)
+### 2. Generellt omhändertagande
 
 
 2.1 Cirkulation i övrigt och elektrolytrubbningar
@@ -506,8 +505,7 @@ samråd med logoped.
 11
 
 
-3. Fortsatt utredning med fokus på bakomliggande orsak till
-hjärninfarkt/TIA och hjärnblödning samt sekundärprofylax
+### 3. Utredning, sekundärprofylax och specifika tillstånd
 
 
 3.1 Undersökningar/provtagningar
@@ -652,7 +650,7 @@ hyperglykemi, elektrolytrubbningar, intoxikationer, UVI, viros med mera.
 13
 
 
-3.5 Sekundärprofylax
+### 3.5 Sekundärprofylax
 
  - ASA-behandling från akutskedet fortsätter vanligtvis som sekundärprofylax. Vid ASAallergi används istället Clopidogrel. Vid fynd av förmaksflimmer eller annan potent
 kardiell embolikälla; NOAK behandling.
@@ -704,7 +702,7 @@ dokumenterat vid lindrig hjärninfarkt.
 14
 
 
-4. Uppföljning/Utskrivning
+### 4. Uppföljning/Utskrivning
 
 
 Vid utskrivning från strokeenheten får patienten ett utskrivningsmeddelande och
@@ -744,7 +742,7 @@ Riksstroke.
 15
 
 
-B. Rehabiliterande del
+## B. Rehabiliterande del
 
 
 Rehabilitering efter stroke är nödvändig för att återfå eller förbättra kroppsfunktioner. I
@@ -1368,18 +1366,18 @@ Appendix II
 |**Signatur**<br>|||||||
 
 
-**Datum:_________________**
+Datum:_________________
 
 Rev. 191111/acnc
 **Övrig information** : ......................................................................................................................................................................
 
-**OBS! Utförda strokekontroller, inklusive ev. övrig information, ska dokumenteras i patientens journal, dels som**
+OBS! Utförda strokekontroller, inklusive ev. övrig information, ska dokumenteras i patientens journal, dels som
 
 
-**rapportvärden och dels som funktionsstatus i omvårdnadsanteckning under sökordet ”>Strokekontroll”.**
+rapportvärden och dels som funktionsstatus i omvårdnadsanteckning under sökordet “>Strokekontroll”.
 
 
-**Medvetandegrad enl. ACVPU-skalan**
+Medvetandegrad enl. ACVPU-skalan
 
 
 
@@ -1399,10 +1397,10 @@ Rev. 191111/acnc
 |**U **<br>(Unresponsive)|<br>Coma. Okontaktbar. Reagerar ej vid tilltal eller smärtstimulering.<br>Stereotypa böj-eller sträckrörelser eller ingen reaktion alls (RLS 4-8)<br>|
 
 
-**Sväljningstest till vaken patient**
+Sväljningstest till vaken patient
 
 
-**Ge 1 tsk vatten.**
+Ge 1 tsk vatten.
 
 
 
@@ -1419,7 +1417,7 @@ Våt/gurglig röst
 ft älj i
 
 
-**0 per os:**
+0 per os:
 Kontakta logoped för
 
 bedömning.
