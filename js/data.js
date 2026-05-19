@@ -8892,7 +8892,7 @@ i symtomkomplexet.`
     id: 'vardprogram-stroke-2020',
     titel: 'Vårdprogram stroke – Blekingesjukhuset 2020',
     kategori: 'stroke',
-    pdf: 'riktlinjer/Vårdprogram stroke 2020 revförslag 191111.docx',
+    pdf: 'riktlinjer/Vardprogram-stroke-2020.pdf',
     innehall: [
       { rubrik: 'Vårdprogram stroke', text: 'Medicinsk och rehabiliterande del. Slutenvård Blekingesjukhuset 2020.' }
     ]
