@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v13';
+const CACHE_NAME = 'neuroguide-v14';
 const ASSETS = [
   './',
   'index.html',
@@ -39,6 +39,8 @@ const ASSETS = [
   'riktlinjerMarkdown/Tremor-riktlinjer-SWEMODIS-2026.md',
   'riktlinjerMarkdown/MGkonsensus2024v2.md',
   'riktlinjerMarkdown/Polyneuropati_Karolinska_2023v2.md',
+  'riktlinjerMarkdown/PM-akut-hjarntumor.md',
+  'riktlinjerMarkdown/Vardprogram-stroke-2020.md',
   // PDF-filer
   'akutkort/GCS.pdf',
   'akutkort/ICH.pdf',
