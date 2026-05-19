@@ -105,7 +105,7 @@ const Vy = {
         break;
 
       case 'akutkort':
-      case 'prognos':
+      case 'artiklar':
       case 'kalkylatorer':
         tillbaka.classList.add('synlig');
         el.innerHTML = this.kategoriVy(vy);
