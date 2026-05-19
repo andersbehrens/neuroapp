@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Akut försämring hjärntumörpatienter</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { background:var(--blå-lj); color:var(--blå-md); border:1px solid #BFDBFE; border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; }
+  .chip.röd { background:var(--röd-lj); color:var(--röd); border-color:#FECACA; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+  .chip.gul { background:var(--gul-lj); color:var(--gul); border-color:#FDE68A; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .box.grön { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .box.röd { background:var(--röd-lj); border:1px solid #FECACA; }
+  .box.gul { background:var(--gul-lj); border:1px solid #FDE68A; }
+  .box.teal { background:var(--teal-lj); border:1px solid #A5F3FC; }
+  .box.lila { background:var(--lila-lj); border:1px solid #DDD6FE; }
+  .box-title { font-weight:700; font-size:0.78rem; margin-bottom:5px; }
+  .box-title.grön { color:var(--grön); }
+  .box-title.röd { color:var(--röd); }
+  .box-title.gul { color:var(--gul); }
+  .box-title.teal { color:var(--teal); }
+  .box-title.lila { color:var(--lila); }
+  .box-title.blå { color:var(--blå); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  /* Tabell – mörk header */
+  .tbl { width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .tbl th { background:var(--blå); color:#fff; font-weight:700; padding:7px 9px; text-align:left; font-size:0.72rem; }
+  .tbl td { padding:6px 9px; border-bottom:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; vertical-align:top; }
+  .tbl tr:last-child td { border-bottom:none; }
+  .tbl tr:nth-child(even) td { background:#F8FAFC; }
+
+  /* Betametason-tabell */
+  .beta-tbl { width:100%; border-collapse:collapse; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .beta-tbl th { background:var(--blå); color:#fff; font-weight:700; padding:7px 9px; text-align:left; font-size:0.72rem; }
+  .beta-tbl td { padding:5px 9px; border-bottom:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; }
+  .beta-tbl tr:last-child td { border-bottom:none; }
+  .beta-tbl tr:nth-child(even) td { background:#F8FAFC; }
+  .beta-tbl td.dag { font-weight:600; color:var(--blå); white-space:nowrap; }
+  .beta-tbl td.noll { color:var(--grön); font-weight:700; }
+
+  /* Varningsbox */
+  .warn-box { border-left:4px solid var(--röd); background:var(--röd-lj); border-radius:0 8px 8px 0; padding:9px 12px; margin-bottom:12px; }
+  .warn-box .warn-title { font-weight:700; color:var(--röd); font-size:0.78rem; margin-bottom:4px; }
+  .warn-box ul.li li { color:var(--text); }
+
+  .info-box { border-left:4px solid var(--gul); background:var(--gul-lj); border-radius:0 8px 8px 0; padding:9px 12px; margin-bottom:12px; }
+  .info-box .info-title { font-weight:700; color:var(--gul); font-size:0.78rem; margin-bottom:4px; }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+
+  @media (max-width: 480px) {
+    .two-col, .three-col { grid-template-columns: 1fr; }
+    .tbl, .beta-tbl { font-size:0.7rem; }
+    .tbl th, .beta-tbl th, .tbl td, .beta-tbl td { padding:5px 7px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Akut försämring vid hjärntumör
+  <span>Handläggning – Södra regionen</span>
+</h1>
+
+<div class="chips">
+  <span class="chip">Gliom</span>
+  <span class="chip">Metastaser</span>
+  <span class="chip röd">Epilepsi</span>
+  <span class="chip gul">Ödem</span>
+  <span class="chip">Tromboembolism</span>
+</div>
+
+<!-- 1. Tumörrelaterad epilepsi -->
+<div class="sek">1. Tumörrelaterad epilepsi – AED-val</div>
+
+<div class="info-box">
+  <div class="info-title">⚠ Undvik enzyminducerande AED vid onkologisk behandling</div>
+  <p style="font-size:0.75rem;color:var(--text-md);line-height:1.45;">Karbamazepin och valproat interagerar med <strong>temozolomid</strong> och <strong>kortikosteroider</strong> – välj icke-inducerande alternativ.</p>
+</div>
+
+<table class="tbl">
+  <thead>
+    <tr>
+      <th>Preparat</th>
+      <th>Dos</th>
+      <th>Viktiga biverkningar / kommentar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Levetiracetam</strong> (Keppra)</td>
+      <td>500–1500 mg × 2</td>
+      <td>Irritabilitet, ångest. Inga interaktioner. Kan ges iv. Förstahandsval.</td>
+    </tr>
+    <tr>
+      <td><strong>Lamotrigin</strong></td>
+      <td>100 mg × 2 (underhåll)</td>
+      <td>Kräver <em>långsam upptrappning</em> (Stevens-Johnson-risk). Ej lämplig vid akut debut.</td>
+    </tr>
+    <tr>
+      <td><strong>Lacosamid</strong> (Vimpat)</td>
+      <td>50–300 mg × 2</td>
+      <td>God tolerabilitet. Kan ges iv. Tillägg eller monoterapi vid LEV-svikt.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 2. Hjärnödem – Betametason -->
+<div class="sek">2. Hjärnödem – Betametason-nedtrappning</div>
+<p style="font-size:0.75rem;color:var(--text-md);margin-bottom:8px;line-height:1.4;">Betapred <strong>0,5 mg</strong> tabletter / inj <strong>4 mg/ml</strong></p>
+
+<table class="beta-tbl">
+  <thead>
+    <tr>
+      <th>Dag</th>
+      <th>Tabletter (0,5 mg)</th>
+      <th>Injektion (4 mg/ml)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="dag">Dag 1</td><td>16 tabl × 2</td><td>2 ml × 2</td></tr>
+    <tr><td class="dag">Dag 2</td><td>16 tabl × 1 + 12 tabl × 1</td><td>—</td></tr>
+    <tr><td class="dag">Dag 3–4</td><td>8 tabl × 2</td><td>1 ml × 2</td></tr>
+    <tr><td class="dag">Dag 5–6</td><td>4 tabl × 2</td><td>0,5 ml × 2</td></tr>
+    <tr><td class="dag">Dag 7</td><td>4 tabl × 1</td><td>—</td></tr>
+    <tr><td class="dag">Dag 8–9</td><td>2 tabl × 1</td><td>—</td></tr>
+    <tr><td class="dag">Dag 10–11</td><td>1 tabl × 1</td><td>—</td></tr>
+    <tr><td class="dag">Dag 12</td><td class="noll">0 – avsluta</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<div class="warn-box">
+  <div class="warn-title">Hotande inklämning – akuta åtgärder</div>
+  <ul class="li">
+    <li>Höj huvudänden <strong>15°</strong></li>
+    <li>Kontakta <strong>narkosjour</strong> omgående</li>
+    <li>Ring <strong>neurokirurg akut</strong></li>
+    <li>Dubbla venösa infarter + <strong>Ringer-acetat</strong></li>
+  </ul>
+</div>
+
+<!-- 3. Kortison-biverkningar -->
+<div class="sek">3. Kortison-biverkningar – övervakning och åtgärder</div>
+
+<table class="tbl">
+  <thead>
+    <tr>
+      <th>Biverkning</th>
+      <th>Åtgärd / profylax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Hypertoni</strong></td><td>Blodtryckskontroll, antihypertensiva vid behov</td></tr>
+    <tr><td><strong>Hyperglykemi</strong></td><td>fP-glukos 1 gång/vecka; insulinbehandling vid behov</td></tr>
+    <tr><td><strong>Infektion / PCP-risk</strong></td><td>Bactrim forte-profylax vid TMZ + strålning (se avsnitt 5)</td></tr>
+    <tr><td><strong>Sömnstörning</strong></td><td>Ge kortison-dos senast <strong>kl 16</strong></td></tr>
+    <tr><td><strong>Psykiska biverkningar</strong></td><td>Minska dos + ev. antidepressiva eller neuroleptika</td></tr>
+    <tr><td><strong>Gastrit / ulcus</strong></td><td>Omeprazol 20 mg vid riskfaktorer (NSAID, ulcusanamnes)</td></tr>
+    <tr><td><strong>Osteoporos</strong></td><td>Alendronat 70 mg/v + Calcichew D3</td></tr>
+    <tr><td><strong>Binjurebarkssvikt</strong></td><td>Hydrokortison 100 mg iv akut vid utsättning/stress</td></tr>
+  </tbody>
+</table>
+
+<!-- 4. Tromboembolism -->
+<div class="sek">4. Tromboembolism – behandling</div>
+
+<div class="two-col">
+  <div class="box grön">
+    <div class="box-title grön">Förstahandsval – LMWH</div>
+    <ul class="li">
+      <li><strong>Dalteparin</strong> (Fragmin): 200 E/kg/dygn × 1</li>
+      <li>Utbredd DVT: 120 E/kg × 2 första dygnen</li>
+      <li><strong>Tinzaparin</strong> (Innohep): 175 E/kg/dygn × 1</li>
+      <li>Behandlingstid: <strong>≥6 månader</strong>, ofta livslång</li>
+      <li>NOAK (Xarelto): viss dokumentation i stabilt skede</li>
+    </ul>
+  </div>
+  <div class="box röd">
+    <div class="box-title röd">Undvik Waran</div>
+    <ul class="li">
+      <li>Interaktioner med kortison, cytostatika och AED</li>
+      <li>Ökad blödningsrisk i tumör</li>
+      <li>Svårtitrerbart vid onkologisk behandling</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 5. Infektionsprofylax -->
+<div class="sek">5. Infektionsprofylax och behandling</div>
+
+<div class="three-col">
+  <div class="box teal">
+    <div class="box-title teal">PCP-profylax</div>
+    <ul class="li">
+      <li>Ges vid TMZ + strålbehandling</li>
+      <li>Oavsett lymfocytantal</li>
+      <li><strong>Bactrim forte</strong> 800/160 mg × 3/vecka</li>
+    </ul>
+  </div>
+  <div class="box lila">
+    <div class="box-title lila">PCP-behandling</div>
+    <ul class="li">
+      <li>Trimetoprim <strong>15–20 mg/kg/dygn</strong></li>
+      <li>Sulfametoxazol <strong>75–100 mg/kg/dygn</strong></li>
+      <li>Uppdelat på 2–3 doser</li>
+    </ul>
+  </div>
+  <div class="box gul">
+    <div class="box-title gul">Oral candidos</div>
+    <ul class="li">
+      <li><strong>Nystatin</strong> 100 000 IU 1 ml × 4 i 7–14 dagar</li>
+      <li><em>ELLER</em> <strong>Flukonazol</strong>: laddningsdos 200–400 mg dag 1, sedan 100–200 mg/dag</li>
+    </ul>
+  </div>
+</div>
+
+<div class="fotnot">
+  AED = antiepileptika | TMZ = temozolomid | LMWH = lågmolekylärt heparin | DVT = djup ventrombos | NOAK = nya orala antikoagulantia | PCP = Pneumocystis jirovecii-pneumoni | LEV = levetiracetam | fP = fasteplasma
+</div>
+</body>
+</html>

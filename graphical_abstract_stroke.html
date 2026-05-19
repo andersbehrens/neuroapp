@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Stroke</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.75rem; font-weight:400; opacity:.8; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:12px 0 6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { background:var(--blå-lj); color:var(--blå-md); border:1px solid #BFDBFE; border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; }
+  .chip.röd { background:var(--röd-lj); color:var(--röd); border-color:#FECACA; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+  .chip.gul { background:var(--gul-lj); color:var(--gul); border-color:#FDE68A; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:12px; }
+  .box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .box.grön { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .box.röd { background:var(--röd-lj); border:1px solid #FECACA; }
+  .box.gul { background:var(--gul-lj); border:1px solid #FDE68A; }
+  .box.teal { background:var(--teal-lj); border:1px solid #A5F3FC; }
+  .box.lila { background:var(--lila-lj); border:1px solid #DDD6FE; }
+  .box-title { font-weight:700; font-size:0.78rem; margin-bottom:5px; }
+  .box-title.grön { color:var(--grön); }
+  .box-title.röd { color:var(--röd); }
+  .box-title.gul { color:var(--gul); }
+  .box-title.teal { color:var(--teal); }
+  .box-title.lila { color:var(--lila); }
+  .box-title.blå { color:var(--blå); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  /* Fas-tabell */
+  .fas-grid { display:grid; grid-template-columns:120px 1fr 1fr; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .fas-hdr { background:var(--blå); color:#fff; font-weight:700; padding:7px 8px; font-size:0.72rem; }
+  .fas-cell { padding:7px 8px; border-bottom:1px solid #E2E8F0; border-right:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; }
+  .fas-cell:last-child { border-right:none; }
+  .fas-row:last-child .fas-cell { border-bottom:none; }
+  .fas-row { display:contents; }
+
+  /* ICD-tabell */
+  .icd-grid { display:grid; grid-template-columns:90px 1fr; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:12px; font-size:0.75rem; }
+  .icd-hdr { background:var(--blå); color:#fff; font-weight:700; padding:7px 8px; font-size:0.72rem; }
+  .icd-cell { padding:6px 8px; border-bottom:1px solid #E2E8F0; border-right:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; }
+  .icd-cell:last-child { border-right:none; }
+  .icd-row:last-child .icd-cell { border-bottom:none; }
+  .icd-row { display:contents; }
+  .icd-code { font-weight:700; color:var(--blå); }
+
+  /* Varningsbox */
+  .warn-box { border-left:4px solid var(--röd); background:var(--röd-lj); border-radius:0 8px 8px 0; padding:9px 12px; margin-bottom:12px; }
+  .warn-box.gul { border-left-color:var(--gul); background:var(--gul-lj); }
+  .warn-title { font-weight:700; font-size:0.78rem; color:var(--röd); margin-bottom:4px; }
+  .warn-title.gul { color:var(--gul); }
+  .warn-box p, .warn-box ul { font-size:0.75rem; color:var(--text-md); }
+  .warn-box ul { padding-left:14px; }
+  .warn-box li { margin-bottom:2px; line-height:1.4; }
+
+  /* Sekundärprofylax-grid */
+  .sek-prof { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:10px; border-top:1px solid #E2E8F0; padding-top:6px; }
+
+  @media (max-width: 480px) {
+    .two-col, .three-col, .sek-prof { grid-template-columns: 1fr; }
+    .fas-grid { grid-template-columns: 1fr; }
+    .icd-grid { grid-template-columns: 1fr; }
+    .fas-hdr, .fas-cell, .icd-hdr, .icd-cell { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Stroke &amp; TIA – Akut handläggning och sekundärprofylax
+  <span>Vårdprogram Stroke – Blekingesjukhuset 2020</span>
+</h1>
+
+<div class="chips">
+  <span class="chip röd">Akut neurologi</span>
+  <span class="chip">Strokeenhet – högsta prioritet</span>
+  <span class="chip grön">Ischemisk stroke</span>
+  <span class="chip gul">Cerebral blödning</span>
+</div>
+
+<!-- 1. Akut checklista -->
+<div class="sek">1. Akut handläggning – checklista vid misstänkt stroke/TIA</div>
+<div class="two-col">
+  <div class="box grön">
+    <div class="box-title grön">Akut bilddiagnostik &amp; lab</div>
+    <ul class="li">
+      <li><strong>DT hjärna</strong> – akut (oberoende av tid)</li>
+      <li><strong>DT-angio</strong> – i normalfallet</li>
+      <li>EKG</li>
+      <li>PK, APTT, blodsocker, blodstatus</li>
+      <li>CRP, elstatus, HbA1c, kreatinin</li>
+      <li>Blodfetter inkl LDL, leverstatus</li>
+    </ul>
+  </div>
+  <div class="warn-box" style="margin-bottom:0;">
+    <div class="warn-title">&#9888; Strokeenhet – HÖGSTA prioritet</div>
+    <ul>
+      <li>Lägg in på strokeenhet omedelbart</li>
+      <li>Strokekontroller var 4:e timme dygn 1</li>
+      <li>Rädda hjärnan-patient: se separat PM</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 2. Cerebral blödning -->
+<div class="sek">2. Cerebral blödning – akut handläggning</div>
+<div class="three-col">
+  <div class="box röd">
+    <div class="box-title röd">a) Reversering antikoagulantia</div>
+    <ul class="li">
+      <li><strong>Warfarin:</strong> Ocplex (K-vitaminberoende faktorer) + Konakion 10 mg iv</li>
+      <li>Konsultera koagulationsjour akut!</li>
+      <li><strong>NOAK:</strong> antidot om tillgängligt</li>
+      <li>Praxbind (till Pradaxa) finns på IVA</li>
+    </ul>
+  </div>
+  <div class="box gul">
+    <div class="box-title gul">b) BT-behandling</div>
+    <ul class="li">
+      <li>Mål: SBP <strong>140–180 mmHg</strong></li>
+      <li>Trandate (labetalol)</li>
+      <li>Furix (furosemid)</li>
+      <li>Catapresan (klonidin)</li>
+    </ul>
+  </div>
+  <div class="box">
+    <div class="box-title blå">c) Neurokirurgi?</div>
+    <ul class="li">
+      <li><strong>Cerebellär blödning:</strong> &gt;3 cm / progress → operation (bred indikation, kontakta NK)</li>
+      <li><strong>Storhjärna:</strong> ytligt hematom &lt;1 cm från ytan eller medvetandepåverkad operabel patient → kontakta NK</li>
+      <li>Hematomvolym &gt;100 ml: mycket dålig prognos</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 3. Ischemisk stroke/TIA -->
+<div class="sek">3. Ischemisk stroke/TIA – specifik behandling</div>
+<div class="fas-grid">
+  <div class="fas-hdr">Situation</div>
+  <div class="fas-hdr">Åtgärd</div>
+  <div class="fas-hdr">Kommentar</div>
+
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--grön)">Initial antitrombotisk</div>
+    <div class="fas-cell"><strong>ASA 300 mg</strong> direkt efter DT → ASA 75 mg/dag<br>Vid intolerans: Clopidogrel 300 mg laddning → 75 mg/dag</div>
+    <div class="fas-cell">Ges omedelbart om blödning utesluten på DT</div>
+  </div>
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--blå-md)">Förmaksflimmer / kardiell emboli</div>
+    <div class="fas-cell"><strong>NOAK</strong> (förstahandsval)<br>Kontroll-DT efter 1 vecka vid stor infarkt</div>
+    <div class="fas-cell">Ställningstagande till AK-start efter kontroll-DT</div>
+  </div>
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--röd)">Expansiv mediainfarkt</div>
+    <div class="fas-cell"><strong>Hemikranektomi</strong> – kontakt NK under 1:a dygnet</div>
+    <div class="fas-cell">Livsräddande ingrepp vid malign mediainfarkt</div>
+  </div>
+  <div class="fas-row">
+    <div class="fas-cell" style="font-weight:700;color:var(--gul)">Högt BT (ischemisk)</div>
+    <div class="fas-cell">Akutbehandla vid &gt;230/130 mmHg<br>Sätt ej ut betablockerare om BT &gt;130/80</div>
+    <div class="fas-cell">Försiktig BT-sänkning initialt vid ischemisk stroke</div>
+  </div>
+</div>
+
+<!-- 4. Generellt omhändertagande -->
+<div class="sek">4. Generellt omhändertagande – de första 3 dygnen</div>
+<div class="three-col">
+  <div class="box teal">
+    <div class="box-title teal">Vätska &amp; metabolism</div>
+    <ul class="li">
+      <li><strong>Ringer-acetat</strong> dag 1–2 (undvik glukos)</li>
+      <li>Normoglykemi – acceptera upp till 15 mmol/l</li>
+      <li>Feber &gt;37,5°C → Paracetamol 1 g</li>
+      <li>Feber &gt;38°C → CRP, LPK, urinsticka</li>
+    </ul>
+  </div>
+  <div class="box lila">
+    <div class="box-title lila">Andning &amp; profylax</div>
+    <ul class="li">
+      <li>Syrgas vid saturation &lt;94% (2–4 L/min)</li>
+      <li><strong>Trombosprofylax LMH dag 2</strong> (hjärninfarkt)</li>
+      <li>Krampanfall → levetiracetam (iv/po)</li>
+    </ul>
+  </div>
+  <div class="box gul">
+    <div class="box-title gul">Monitorering</div>
+    <ul class="li">
+      <li>Strokekontroller var 4:e timme dygn 1</li>
+      <li>EKG-monitorering för arytmidetektion</li>
+      <li>Sväljbedömning innan oralt intag</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 5. Sekundärprofylax -->
+<div class="sek">5. Sekundärprofylax</div>
+<div class="sek-prof">
+  <div class="box grön">
+    <div class="box-title grön">Läkemedel</div>
+    <ul class="li">
+      <li><strong>ASA 75 mg</strong> (Clopidogrel vid allergi)</li>
+      <li><strong>NOAK</strong> vid förmaksflimmer</li>
+      <li><strong>Statin</strong> – LDL-mål &lt;1,8 mmol/L (alla patienter rutinmässigt)</li>
+      <li><strong>BT</strong> – målvärde &lt;140/90 mmHg</li>
+    </ul>
+  </div>
+  <div class="box">
+    <div class="box-title blå">Kirurgi &amp; körförbud</div>
+    <ul class="li">
+      <li><strong>Carotiskirurgi:</strong> stenos &gt;70%, inom 2 veckor</li>
+      <li><strong>Körförbud hjärninfarkt/blödning:</strong> 3 mån (yrkesbil 6 mån)</li>
+      <li><strong>Körförbud TIA:</strong> 1 månad</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 6. ICD-10 -->
+<div class="sek">6. ICD-10 – diagnostikkoder</div>
+<div class="icd-grid">
+  <div class="icd-hdr">Kod</div>
+  <div class="icd-hdr">Diagnos</div>
+
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I60</div>
+    <div class="icd-cell">Subarachnoidalblödning</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I61</div>
+    <div class="icd-cell">Intracerebral blödning</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I63.0</div>
+    <div class="icd-cell">Cerebral infarkt – storkärl</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I63.3</div>
+    <div class="icd-cell">Cerebral infarkt – småkärl</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I63.4</div>
+    <div class="icd-cell">Cerebral infarkt – kardioembolisk</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I63.9</div>
+    <div class="icd-cell">Cerebral infarkt – okänd orsak</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">I64.9</div>
+    <div class="icd-cell">Stroke UNS</div>
+  </div>
+  <div class="icd-row">
+    <div class="icd-cell icd-code">G45</div>
+    <div class="icd-cell">TIA (transitorisk ischemisk attack)</div>
+  </div>
+</div>
+
+<div class="fotnot">
+  TIA = transitorisk ischemisk attack | NOAK = icke-vitamin-K-antagonist oralt antikoagulantia | NK = neurokirurg | SBP = systoliskt blodtryck | LMH = lågmolekylvärt heparin | LDL = lågdensitetslipoprotein | DT = datortomografi | ASA = acetylsalicylsyra | IVA = intensivvårdsavdelning
+</div>
+</body>
+</html>

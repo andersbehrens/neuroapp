@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v14';
+const CACHE_NAME = 'neuroguide-v15';
 const ASSETS = [
   './',
   'index.html',
@@ -68,6 +68,8 @@ const ASSETS = [
   'graphical_abstract_tremor.html',
   'graphical_abstract_polyneuropati.html',
   'graphical_abstract_mr.html',
+  'graphical_abstract_hjarntumor.html',
+  'graphical_abstract_stroke.html',
   'ledd_kalkylator.html'
 ];
 

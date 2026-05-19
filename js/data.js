@@ -8883,6 +8883,7 @@ i symtomkomplexet.`
     kategori: 'neuroonkologi',
     pdf: 'riktlinjer/PM akut försämrning av hjärntumörpatienter  Södra Sjukvårdsegionen.pdf',
     markdownUrl: 'riktlinjerMarkdown/PM-akut-hjarntumor.md',
+    graphicalAbstract: 'graphical_abstract_hjarntumor.html',
     innehall: [
       { rubrik: 'Akut försämring av hjärntumörpatienter', text: 'PM i akut neuroonkologi för handläggning av vuxna patienter med hjärntumörsjukdom i Södra Regionen. Råd vid akut försämring för jourhavande utanför behandlande klinik.' }
     ]
@@ -8895,6 +8896,7 @@ i symtomkomplexet.`
     kategori: 'stroke',
     pdf: 'riktlinjer/Vardprogram-stroke-2020.pdf',
     markdownUrl: 'riktlinjerMarkdown/Vardprogram-stroke-2020.md',
+    graphicalAbstract: 'graphical_abstract_stroke.html',
     innehall: [
       { rubrik: 'Vårdprogram stroke', text: 'Medicinsk och rehabiliterande del. Slutenvård Blekingesjukhuset 2020.' }
     ]
