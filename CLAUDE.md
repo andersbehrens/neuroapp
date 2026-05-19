@@ -1,4 +1,4 @@
- # NeuroGuide – Projektbeskrivning för Claude
+# NeuroGuide – Projektbeskrivning för Claude
 
 ## Vad är NeuroGuide?
 
@@ -19,9 +19,9 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v7)
+├── sw.js                               # Service worker (cache-version: neuroguide-v15)
 ├── manifest.json                       # PWA-manifest
-├── css/style.css                       # All CSS (layout, Kindle-läsare, TOC, etc.)
+├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
 │   ├── app.js                          # Router, Vy, Sök, App-init
 │   ├── data.js                         # KATEGORIER + DOKUMENT (stor fil)
@@ -33,6 +33,8 @@ neuroApp/
 │   ├── Tremor-riktlinjer-SWEMODIS-2026.md
 │   ├── MGkonsensus2024v2.md
 │   ├── Polyneuropati_Karolinska_2023v2.md
+│   ├── PM-akut-hjarntumor.md
+│   ├── Vardprogram-stroke-2020.md
 │   └── images/                         # Bilder extraherade av pymupdf4llm
 ├── graphical_abstract_hypogamma.html   # Standalone HTML-abstrakt
 ├── graphical_abstract_mg.html
@@ -40,9 +42,13 @@ neuroApp/
 ├── graphical_abstract_parkinson.html
 ├── graphical_abstract_polyneuropati.html
 ├── graphical_abstract_tremor.html
+├── graphical_abstract_hjarntumor.html
+├── graphical_abstract_stroke.html
+├── ledd_kalkylator.html                # Fristående kalkylator (iframe i data.js)
+├── moodboard.html                      # Designmoodboard (ej del av appen)
 ├── akutkort/                           # PDF-filer (GCS, ICH, NIHSS, etc.)
 ├── riktlinjer/                         # PDF-filer (källdokument)
-├── prognos/                            # PDF-filer (EIUH-2)
+├── papers/                             # Kliniska artiklar i PDF-format
 └── images/                             # Övriga bilder (figurer i dokument)
 ```
 
@@ -54,29 +60,39 @@ Data är strukturerad i två globala arrays:
 ```js
 { id, namn, beskrivning, ikon, farg, parent? }
 ```
-Toppnivå: `riktlinjer`, `akutkort`, `prognos`. Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`.
+Toppnivå: `riktlinjer`, `akutkort`, `artiklar`.
+Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`.
 
 **`DOKUMENT`** – varje dokument:
 ```js
 {
   id, titel, kategori,
-  pdf?,           // länk till original-PDF
-  markdownUrl?,   // länk till .md-fil → aktiverar Kindle-läge
+  pdf?,                // länk till original-PDF (relativ sökväg, ingen ledande /)
+  markdownUrl?,        // länk till .md-fil → aktiverar Kindle-läge
   graphicalAbstract?,  // länk till graphical_abstract_*.html → visas ovanpå texten
+  källa?,              // visas som meta-text för artiklar (t.ex. "Brain 2024")
+  kalkylatorUrl?,      // länk till fristående HTML-kalkylator (öppnas i iframe)
   innehall: [{ rubrik, text?, html? }]  // sektioner (används av sökning)
 }
 ```
 
 Dokument utan `markdownUrl` visas som avsnittslista (akutkort) eller bildgalleri.
 
+**Artiklar-kategorin** (`artiklar`) beter sig annorlunda: ett tryck på dokumentkortet öppnar PDF direkt i nytt fönster (`window.open()`) istället för att navigera till dokumentvy. Fältet `källa` visas som meta-text under titeln.
+
 ## Applogik (app.js)
 
 ### Router
 Hash-baserad. Anropar `Vy.rendera(vy, params)` vid varje hashchange.
+Switch-case täcker: `start`, `riktlinjer`, `akutkort`, `artiklar`, `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`, `dokument`, `sektion`, `sok`.
 
 ### Vy.rendera()
 - Döljer TOC-knappen och stänger TOC-drawer vid varje vybyte
-- Switchar på vy-typ: `start`, `riktlinjer`, kategori-ID, `dokument`, `sektion`, `sok`
+- Switchar på vy-typ
+
+### kategoriVy(katId)
+- **Artiklar** (`isArtikelKat = katId === 'artiklar'`): varje dokumentkort har `onclick` som kör `window.open(d.pdf, '_blank', 'noopener,noreferrer')`. Meta-text visar `d.källa` istället för antal avsnitt.
+- **Övriga kategorier**: navigerar till `#dokument/id`
 
 ### dokumentVy(dokId)
 - **Akutkort**: visar bilder direkt
@@ -93,9 +109,9 @@ Asynkron, med in-memory cache (`_mdCache`):
 1. Hämtar `.md`-filen (om ej cachad)
 2. Förbehandlar markdown:
    - Tar bort filnamns-h1 och eventuell duplikat-dokumenttitel/datum i toppen
-   - Fixar bildlänkar (`images/` → `/riktlinjerMarkdown/images/`)
+   - Fixar bildlänkar (`images/` → `riktlinjerMarkdown/images/`) – **utan ledande /**
    - Tar bort försättsbladsbilder (`.pdf-0-N.png`)
-   - Konverterar blank-omgivna `**bold**`-rader till `##`-rubriker (PDF-artefakt)
+   - Konverterar blank-omgivna `**bold**`-rader till `##`-rubriker (PDF-artefakt); upprepade → `###`
    - Kör `_reflowMd()` för radbrytningsreparation
 3. Parsar med `marked.parse()`
 4. Tilldelar rubrik-ID:n (`_addaRubrikIds`)
@@ -112,6 +128,14 @@ Reparerar PDF-extraktionsartefakter:
 - Sätter `loading="lazy"` på alla bilder
 - Filtrerar bort logotyp-banners (bredd/höjd-ratio > 2,5 och höjd < 180px)
 - Skalar bilder till 70% av naturlig pixelbredd (200 DPI → skärmanpassad), stora diagram (>900px) fyller containerns bredd
+
+### _scrollaTill(id) – TOC-scroll
+Dubbelscroll för att kompensera för lazy-loaded bilder som förskjuter layouten:
+```js
+window.scrollTo({ top: beräknaY(), behavior: 'smooth' });
+setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 650);
+```
+First smooth scroll till beräknad position, sedan instant-korrigering efter 650 ms när bilder har laddats och layout stabiliserats.
 
 ### TOC (innehållsförteckning)
 - `#toc-knapp` (☰, fixad nere till höger) visas bara i Kindle-vy
@@ -193,51 +217,51 @@ md = pymupdf4llm.to_markdown(
 pathlib.Path(ut).write_text(md)
 ```
 
+**OBS .docx-filer**: Konvertera till PDF via Word (AppleScript) innan pymupdf4llm körs.
+
 ### 2. Granska och rensa markdown-filen
 
-Öppna `.md`-filen och kontrollera:
+Kör QA-scriptet och kontrollera:
 
-- **Sidfötter**: Vissa PDF:er upprepar dokumentnamn + författare på varje sida. Ta bort dessa rader manuellt (sök på dokumentnamnet). Gjort för hypogamma, inte nödvändigt för övriga ännu.
-- **Rubriker**: Dokumentet kan använda `**fet text**` istället för `##`-rubriker. JS hanterar detta automatiskt — du behöver inte fixa det i filen.
-- **Bilder**: Bildlänkarna i .md-filen pekar på `images/` (relativ) — JS skriver om dem till `/riktlinjerMarkdown/images/` automatiskt.
+- **Sidfötter**: Vissa PDF:er upprepar dokumentnamn + författare på varje sida. Ta bort med Python/sed.
+- **Inbyggd TOC**: Om dokumentet har en sidnumrerad innehållsförteckning extraheras den som en enda `###`-rubrik – ta bort den manuellt.
+- **Rubriker**: Dokumentet kan använda `**fet text**` istället för `##`-rubriker. JS hanterar detta automatiskt. Men se till att standalone bold-rader som är formulärfält eller varningsboxar (ej rubriker) saknar omgivande tomrader, annars konverteras de felaktigt.
+- **Bilder**: Bildlänkarna i .md-filen pekar på `images/` (relativ) — JS skriver om dem automatiskt.
 - **Försättsblad**: Bilder med `.pdf-0-N.png` (förstasida) filtreras bort automatiskt av JS.
 
 ### 3. Lägg till dokumentet i data.js
 
-Hitta rätt kategori-id (t.ex. `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`) och lägg till ett nytt objekt i `DOKUMENT`-arrayen:
+Hitta rätt kategori-id och lägg till ett nytt objekt i `DOKUMENT`-arrayen.
+**Alla sökvägar måste vara relativa – ingen ledande `/`.**
 
 ```js
 {
   id: 'nytt-dokument-id',
   titel: 'Titel på dokumentet',
-  kategori: 'ms',                             // kategori-id
-  pdf: '/riktlinjer/NyttDokument.pdf',
-  markdownUrl: '/riktlinjerMarkdown/NyttDokument.md',
-  graphicalAbstract: '/graphical_abstract_nytt.html',  // om du skapar ett
+  kategori: 'ms',                               // kategori-id
+  pdf: 'riktlinjer/NyttDokument.pdf',           // ingen ledande /
+  markdownUrl: 'riktlinjerMarkdown/NyttDokument.md',
+  graphicalAbstract: 'graphical_abstract_nytt.html',
   innehall: [
     { rubrik: 'Bakgrund', text: 'Kort sammanfattning för sökning...' },
-    // Lägg till fler sektioner för bättre sökbarhet
   ]
 }
 ```
 
 ### 4. Skapa graphical abstract (rekommenderat)
 
-Kopiera en befintlig `graphical_abstract_*.html` som mall. Använd `/skapa-graphical-abstract` för AI-genererad hjälp. Spara som `graphical_abstract_nytt.html` i projektrotenroten.
+Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i projektroten.
 
 ### 5. Uppdatera service worker (sw.js)
 
-Två saker måste göras:
-
 ```js
-// 1. Bumpa cache-versionen (annars används gammal cache på installerade enheter)
-const CACHE_NAME = 'neuroguide-v8';  // öka siffran
+// 1. Bumpa cache-versionen
+const CACHE_NAME = 'neuroguide-v16';  // öka siffran (nuvarande: v15)
 
-// 2. Lägg till alla nya filer i ASSETS-arrayen:
-'/riktlinjerMarkdown/NyttDokument.md',
-'/riktlinjer/NyttDokument.pdf',
-'/graphical_abstract_nytt.html',
-// + eventuella bilder: '/riktlinjerMarkdown/images/NyttDokument_p1_img0.png', ...
+// 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
+'riktlinjerMarkdown/NyttDokument.md',
+'riktlinjer/NyttDokument.pdf',
+'graphical_abstract_nytt.html',
 ```
 
 ### 6. Testa
@@ -246,7 +270,7 @@ const CACHE_NAME = 'neuroguide-v8';  // öka siffran
 python3 -m http.server 8000
 ```
 
-Öppna `http://localhost:8000` i ett **inkognitofönster** (vanligt fönster kan ha gammal SW-cache). Verifiera:
+Öppna `http://localhost:8000` i ett **inkognitofönster**. Verifiera:
 - Dokumentet syns i rätt kategori
 - Kindle-vy öppnas med graphical abstract ovanför texten
 - TOC (☰) listar sektioner korrekt
@@ -266,16 +290,20 @@ Filer och tillhörande dokument:
 | `graphical_abstract_tremor.html` | Tremortillstånd (SWEMODIS v3, 2026) |
 | `graphical_abstract_polyneuropati.html` | Polyneuropati (Karolinska 2023) |
 | `graphical_abstract_mr.html` | MR vid neuroinflammation (v3.1, 2025) |
+| `graphical_abstract_hjarntumor.html` | Akut försämring hjärntumörpatienter (Södra regionen) |
+| `graphical_abstract_stroke.html` | Vårdprogram stroke – Blekingesjukhuset 2020 |
+
+CSS-mall: CSS-variabler `--blå`, `--grön`, `--röd`, `--gul`, `--lila`, `--teal` med `-lj`/`-md`-varianter. Tabeller med mörk header (`background:var(--blå)`). Läs `graphical_abstract_parkinson.html` som referensimplementation.
 
 ## Publicering på GitHub Pages
 
 Appen hostar på `https://andersbehrens.github.io/neuroapp/`. Repot är publikt på GitHub (`andersbehrens/neuroapp`).
 
-### Pusha ändringar (t.ex. ny riktlinje)
+### Pusha ändringar
 
 ```bash
-git add .
-git commit -m "Lägg till [dokumentnamn]"
+git add <filer>
+git commit -m "Beskrivande meddelande"
 git push
 ```
 
@@ -291,20 +319,26 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas (t.ex. `neuroguide-v9` → `neuroguide-v10`). Annars använder installerade appar gammal cache och ser inte de nya dokumenten.
+Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v15`**.
 
 ## Service Worker (sw.js)
 
-Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Varje gång assets ändras måste `CACHE_NAME` bumpa version (nuvarande: `neuroguide-v9`) för att gamla cachen ska rensas.
+Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Varje gång assets ändras måste `CACHE_NAME` bumpa version för att gamla cachen ska rensas.
 
 Vid lokal testning: använd inkognitofönster eller avregistrera SW i DevTools → Application → Service Workers.
 
-## Stil & Design
+## Stil & Design – Birch-tema
 
-- **Kindle-läsare**: Georgia serif, 17px, line-height 1.85, max-width 680px, varm bakgrund `#FBF8F0`
-- **Rubriker**: h1 1.55rem, h2 1.2rem med border-bottom, h3–h6 progressivt mindre
+Appen använder ett skandinaviskt minimalistiskt "Birch"-tema:
+
+- **Header**: `background: #FAFAF8`, `color: #2C2C2C`, `border-bottom: 1px solid #E8E6E0`
+- **Logotyp**: `font-weight: 300; color: #2C2C2C` / `<span>` med `color: #B87333` (koppar), `font-weight: 700`
+- **Accentfärg**: `#B87333` (koppar) – knappar, fokusringar, sökfält-fokus
+- **Sökfält**: `background: #EFEDE7; color: #2C2C2C`
+- **CSS-variabler**: `--blå-mörk: #2C2C2C`, `--blå-medium: #B87333`, `--blå-ljus: #FBF0E6`, `--blå-kant: #E8DFD0`
+- **Kindle-läsare**: Georgia serif, 17px, line-height 1.85, max-width 680px
+  - `--kindle-bg: #FFFEFB`, `--kindle-rubrik: #3A2E1E`, `--kindle-kant: #E8DFD0`
 - **Tabeller**: mörk header (`#1B3A6B`), alternerande rader
-- **Bilder**: centrerade, skugga, border-radius, JS-satt bredd
-- **TOC-knapp**: cirkulär, mörk blå, fixad `bottom: 28px; right: 20px`
-- **Hemknapp** (🏠): i headern bredvid logotypen, navigerar till startsidan
-- Sidebar (desktop-navigation) är borttagen – all navigation sker via header och TOC
+- **TOC-knapp**: cirkulär, fixad `bottom: 28px; right: 20px`
+- **Hemknapp** (🏠): i headern bredvid logotypen
+- Sidebar är borttagen – all navigation sker via header och TOC-drawer
