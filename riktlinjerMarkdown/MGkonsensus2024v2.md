@@ -1263,7 +1263,7 @@ Använd gärna patientens mobilkamera för att dokumentera effekten.
 
 ### Bilaga 4: Provtagningsrutiner
 
-**Rituximab**
+###### Rituximab
 
 
 Före behandlingsstart: Blodstatus med diff, CRP, ALAT, Krea, U- sticka, LPK, neutrofiler, S
@@ -1334,8 +1334,7 @@ CK, myoglobin 1gång/vecka i 4 veckor, därefter 1 gång/månad första kvartale
 kvartalsvis. Blodtryck kvartalsvis. Blodfetter och urinsticka minst en gång per år.
 
 
-
-**Bilaga 5**
+### Bilaga 5
 
 ### Behandlingstabell – myasten kris
 

@@ -8,13 +8,13 @@ _FÖR SLUTENVÅRD_
 
 _Neurologiska kliniken Karolinska Universitetssjukhuset_
 
-**Rayomand Press, överläkare**
+###### Rayomand Press, överläkare
 
 _Senaste revision Dec 2023_
 
 
 
-**Innehåll**
+###### Innehåll
 
 _sidan_
 
@@ -45,9 +45,9 @@ Specifik behandling 20
 
 Symtomatisk behandling 21
 
-**B. Paramedicinska insatser och hjälpmedelsaspekter** 24
+B. Paramedicinska insatser och hjälpmedelsaspekter
 
-**C. Omhändertagandenivå och vårdorganisation** 24
+C. Omhändertagandenivå och vårdorganisation
 
 
 
@@ -55,7 +55,7 @@ Symtomatisk behandling 21
 ## A. Medicinska aspekter
 
 
-**Definition**
+### Definition
 
 Polyneuropati innebär en rubbning i funktion av ett flertal perifera nervtrådar i kroppen. Dessa
 nervtrådar ligger i den del av nervsystemet som ligger utanför hjärnan och ryggmärgen, och
@@ -64,7 +64,7 @@ få störning av funktion av motoriska-, sensoriska eller autonoma nervtrådar. 
 vanligaste symtomen vid polyneuropati störning av känseln, muskelsvaghet i benen och armarna,
 balansstörning, och även störning av blodtrycksreglering, svettning, tarm- och urinblåsefunktion.
 
-**Symtom**
+### Symtom
 
 _Känselsymtom_
 
@@ -105,7 +105,7 @@ Påverkan på icke-viljestyrda nerver tillhörande det sympatiska- eller parasym
 kan leda till förstoppning, svårigheter med att kissa, yrsel och svimningskänsla vid uppresning,
 hjärtklappning pga hjärtrytmstörning, muntorrhet, samt riklig- eller nedsatt svettningsförmåga.
 
-**Uppdelning av polyneuropati**
+### Uppdelning av polyneuropati
 
 Polyneuropatier kan delas upp enligt olika principer. Vid uppdelningen brukar man ta hänsyn till
 den kliniska symtombilden samt resultat av den neurofysiologiska undersökningen. Vid den
@@ -123,7 +123,7 @@ eller på de tunna, kutana sensoriska fibrerna (C-fibrer)?
 Uppdelning av polyneuropati enligt dessa kriterier leder till en lättare identifiering av de
 bakomliggande orsakerna till polyneuropatin; se Tabell 1 och även sektionen ”utredningsplan”.
 
-**Etiologi och patogenes**
+### Etiologi och patogenes
 
 Ur etiologisk synvinkel delas polyneuropatier upp i de ärftliga och de förvärvade. De
 polyneuropatier vars etiologi inte går att identifiera benämnes idiopatiska.
@@ -293,7 +293,7 @@ identifiera en bakomliggande orsak. Idiopatiska polyneuropatier anses till stör
 okända ärftliga faktorer och kroppsliga sjukdomstillstånd samt troligen inverkan av miljöfaktorer
 som man ännu inte lyckats identifiera.
 
-**Förlopp**
+### Förlopp
 
 Förlopp av polyneuropati är beroende på typ av polyneuropati, dvs den etiologiska faktorn som
 givit upphov till polyneuropatin. Som regel fortskrider hereditära polyneuropatier samt förvärvade
@@ -305,7 +305,7 @@ oftast omfattande då symtombilden domineras av motoriska bortfallsymtom.
 
 
 
-**Diagnostik**
+### Diagnostik
 
 Diagnostiken syftar till att a) fastställa att patientens symtom beror på polyneuropati samt b) försöka
 identifiera den bakomliggande etiologiska mekanismen.
@@ -426,7 +426,7 @@ adrenomyeloneuropati, metakromatisk
 leukodystrofi, Refsums & Krabbes sjukdom
 samt mitokondriell sjukdom.
 
-**Utredningsplan**
+### Utredningsplan
 
 a) På neurologisk klinik
 
@@ -840,7 +840,7 @@ hos patienter ca < 85 åå
 d) Multipla mononeuriter
 d)  Snabb progress av symtom
 
-**Differentialdiagnostisk utredning på neurologisk klinik**
+### Differentialdiagnostisk utredning på neurologisk klinik
 
 Den differentialdiagnostiska utredningen inriktas främst mot uteslutandet av behandlingsbara
 åkommor som i vissa fall kan härma polyneuropati. De viktigaste av dessa är:
@@ -891,7 +891,7 @@ sensoriska symtom vid polyneuropati. Avsaknad av den typiska distalt symmetriska
 och förekomst av normala statusfynd hjälper med differentiering av funktionella symtom från
 polyneuropati.
 
-**Specifik behandling**
+### Specifik behandling
 
 Vid en rad förvärvade polyneuropatier samt enstaka hereditära polyneuropatier kan specifik
 behandling erbjudas.
@@ -932,7 +932,7 @@ rituximab företrädesvis.
 g) Paramalignitet En effektiv behandling av primärtumören till skillnad från immunterapi,
 kan leda till förbättring av den paramaligna polyneuropatin.
 
-**Symtomatisk behandling**
+### Symtomatisk behandling
 
 Avsaknaden av effektiv specifik behandling hos många patienter med polyneuropati ökar kraven på
 ett effektivt utnyttjande av tillgängliga symtomatiska behandlingsalternativ. De symtom som i
@@ -1077,7 +1077,7 @@ fall bör lämpliga förflyttningshjälpmedel erbjudas för att stabilisera bala
 
 
 
-**B. PARAMEDICINSKA INSATSER OCH HJÄLPMEDELSASPEKTER**
+## B. Paramedicinska insatser och hjälpmedelsaspekter
 
 De paramedicinska insatserna i omhändertagandet av patienter med progressiv polyneuropati
 innefattar insatser från sjukgymnaster, arbetsterapeuter, sjuksköterskor och i förekommande fall
@@ -1105,7 +1105,7 @@ _Kurator_
 Kurators uppgift är dels social rådgivning om samhällets resurser och vägledning, dels terapeutisk
 med inriktning mot krishantering för patient och anhöriga.
 
-**C. OMHÄNDERTAGANDE OCH VÅRDORGANISATION**
+## C. Omhändertagande och vårdorganisation
 
 För de allra flesta patienter med polyneuropati är omhändertagandenivån, av utredning och
 behandling, tillräcklig i primärvården. Utredning av specifika subgrupper av patienter med

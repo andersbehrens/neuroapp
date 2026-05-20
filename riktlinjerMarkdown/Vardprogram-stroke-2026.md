@@ -1180,7 +1180,7 @@ _**Observera**_ _:_ Intracerebral blödning ska vara verifierad med bilddiagnost
 patienter med nytillkommen blödning i relation till det aktuella vårdtillfället får denna diagnoskod.
 För tidigare stroke – se nedan, under punkt 4. Vid traumatiska blödningar – se nedan, under punkt 8.
 
-**Cerebral infarkt** **I63**
+###### Cerebral infarkt** **I63
 Storkärlssjukdom I63.0
 Småkärlssjukdom (lakunär) I63.3
 Kardioembolisk stroke I63.4

@@ -90,7 +90,7 @@ _Levetiracetam_ och _lamotrigin_ ses som förstahandsval till patienter under on
 behandling. Även _lakosamid_ saknar interaktioner och tolereras väl och är ett bra
 alternativ hos denna patientgrupp, men dokumentationen är mer begränsad. _(6)_
 
-**Tabell 1**
+###### Tabell 1
 **Karaktäristika för några antiepileptika som ofta används vid hjärntumör.**
 
 
@@ -256,7 +256,7 @@ Sörj för god cirkulerande volym, undvik hypotension.
 4.Ring neurokirurg akut.
 
 
-**Tabell 2.**
+###### Tabell 2.
 **Förslag till hjärnödembehandlingen i samband med hjärntumör**
 
 |Col1|Förmiddag (kl. 08)|Col3|Kväll (kl. 16)|Col5|
@@ -283,7 +283,7 @@ kortisondos bör eftersträvas för att undvika sena biverkningar. Ofta är det 
 med en dos om 2–4 mg betametason dagligen.
 
 
-**Kortisonbehandling, biverkningar/åtgärder:**
+###### Kortisonbehandling, biverkningar/åtgärder:
 
 |Biverkningar|Åtgärder|
 |---|---|

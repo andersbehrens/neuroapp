@@ -7,7 +7,7 @@
 
 _Version 3.1, 2025-10-10_
 
-**Innehåll**
+###### Innehåll
 
 Innehåll ................................................................................................................................................... 1
 
@@ -190,7 +190,7 @@ _DWI = diffusionsviktad bild, FLAIR = fluid-attenuated inversion recovery, STIR 
 _Recovery, SWI = susceptibilitetsviktad bild, WI = viktad bild._
 
 
-**Kommentarer**
+###### Kommentarer
 
 
  - _**Nytt:**_ Protokollet ” _MR hjärna MS-diagnostik_ ” byter namn till ” _MR hjärna Neuroinflammation_ ”.
@@ -254,7 +254,7 @@ nya/förstorade lesioner.
 _**Tabell 2.**_ _Indikationer för MR rygg._
 
 
-**Situation** **Syfte med MR-undersökningen**
+###### Situation** **Syfte med MR-undersökningen
 
 |Nydiagnostik|• Detektera både symtomatiska och kliniskt tysta lesioner.<br>• Öka sensitivitet och specificitet för MS-diagnos.<br>• Påvisa alternativa diagnoser.<br>• Etablera baslinje för framtida undersökningar|
 |---|---|
@@ -287,7 +287,7 @@ _Kontrastmedelsadministration_
 _STIR = Short Tau Inversion Recovery._
 
 
-**Kommentarer**
+###### Kommentarer
 
 
  - Sagitella bilder ska utföras som två överlappande bildfält (cervikalt och thorakalt) med en
@@ -366,7 +366,7 @@ Långsiktig MR-uppföljning
 MR var 12:e månad, kan på sikt glesas ut till var 18-24:e månad om stabilt förlopp
 
 
-**Kommentarer**
+###### Kommentarer
 
 
   - Vid byte av terapi rekommenderas MR inför bytet samt 3-12 månader efter, beroende av hur
@@ -453,7 +453,7 @@ _Tabell 3. Rekommenderat innehåll i remisstext och remissvar_
 ### Svarsmallar
 
 
-**MR HJÄRNA NEUROINFLAMMATION**
+###### MR HJÄRNA NEUROINFLAMMATION
 
 
 MR hjärna [utan|utan och med] i.v. kontrastmedel på [1,5 Tesla|3 Tesla|7 Tesla]
@@ -496,7 +496,7 @@ sjukdom med tanke på kommentarer enligt ovan?). OBS: Denna mall ska enbart anv�
 neuroinflammation.
 
 
-**MR HJÄRNA MS RUTINKONTROLL**
+###### MR HJÄRNA MS RUTINKONTROLL
 
 
 MR hjärna [utan|med] i.v. kontrastmedel på [1,5 Tesla|3 Tesla|7 Tesla]
@@ -522,7 +522,7 @@ BEDÖMNING:
 
 
 
-**MR RYGG NEUROINFLAMMATION**
+###### MR RYGG NEUROINFLAMMATION
 
 
 MR ryggmärg [utan|utan och med] i.v. kontrastmedel.
@@ -568,7 +568,7 @@ McDonald criteria. The Lancet Neurology. Elsevier; 2025;24:850–865.
 
 ## Konsensuspanel
 
-**Deltagare vid ursprunglig panel**
+###### Deltagare vid ursprunglig panel
 
 
 Mattias Vågberg (ordförande), Richard Birgander, Joachim Burman, Carmen Cananau, Yngve Forslin,
@@ -576,14 +576,14 @@ Tobias Granberg, Lars Jönsson, Virginija Karrenbauer, Thomas Lindqvist, Jan Lyc
 Eleni Mentesidou, Fredrik Piehl, Anders Svenningsson, Anders von Heijne.
 
 
-**Deltagare vid revision 2019**
+###### Deltagare vid revision 2019
 
 
 Tobias Granberg (ordförande), Katharina Fink, Sara Haghighi, Johan Mellergård, Yumin Link, Anders
 von Heijne.
 
 
-**Deltagare vid revision 2024**
+###### Deltagare vid revision 2024
 
 
 Tobias Granberg (ordförande, neuroradiolog Karolinska), Sara Haghighi (vice ordförande, neurolog

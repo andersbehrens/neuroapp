@@ -23,7 +23,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _6_
 
 ### Bakgrund, SWEMODIS
 
-**Syfte med riktlinjer**
+###### Syfte med riktlinjer
 
 _Svenska riktlinjer för utredning och behandling av tremortillstånd_ är rekommendationer som
 avser att underlätta handläggning vid utredning, remittering, behandling och uppföljning av
@@ -44,7 +44,7 @@ ses som ett samlat dokument för den samstämmighet som råder inom landet kring
 patienter med tremor. Expertgruppen har bl.a. haft tillgång till publicerade systematiska
 översikter.
 
-**Målgrupp**
+###### Målgrupp
 
 Riktlinjerna vänder sig till vårdpersonal, på alla nivåer, som kommer i kontakt med individer
 med tremor; från diagnostiska överväganden, under etablerad sjukdom, till omhändertagande
@@ -54,7 +54,7 @@ _Primärvården_ ser ofta patienten initialt och sedan sker främst fortsatt kon
 _specialistområdena neurologi, geriatrik och neurokirurgi_ . Tyngdpunkten i denna text är lagd
 på specialistvården. Mer högspecialiserad vård beskrivs översiktligt.
 
-**Ansvariga för riktlinjerna**
+###### Ansvariga för riktlinjerna
 
 Riktlinjerna är utarbetade av en arbetsgrupp inom SWEMODIS styrelse, och beslutad av
 styrelsen 2026, och revideras och uppdateras fortlöpande.
@@ -89,7 +89,7 @@ _Jan Linder, överläkare, Norrlands Universitetssjukhus, Umeå_
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _7_
 
 
-**Restriktioner och begränsningar**
+###### Restriktioner och begränsningar
 
 I texten skrivs preparatnamn med substansnamn. Vid eventuell rekommendation av ett visst
 preparat där liknande medel finns tillgängliga kommenteras detta separat.
@@ -103,7 +103,7 @@ individuella patienten och att adekvata medicinska bedömningar alltid avgör.
 
 Dessa riktlinjer är rekommendationer och inte juridiskt bindande.
 
-**Behandlingsansvaret ligger hos patientens läkare.**
+###### Behandlingsansvaret ligger hos patientens läkare.
 
 Deklaration av jävs- och bindningsförhållanden – samtliga deltagare har lämnat jävsunderlag
 på samma blankett som för uppdrag till myndigheterna Socialstyrelsen, Läkemedelsverket,
@@ -121,17 +121,17 @@ kommersiellt användande eller annan spridning förutsätter avtal med SWEMODIS 
 
 ### Definitioner
 
-**1.** **Tremor**
+###### 1.** **Tremor
 
 Ofrivillig, rytmisk oscillation av en kroppsdel.
 
-**2.** **Vilotremor**
+###### 2.** **Vilotremor
 
 Tremor som framkommer när en extremitet har stöd och inte motverkar gravitationen.
 Aktivitet minskar tremorn prompt, men kan återkomma (re-emerging tremor;”återkommen
 (vilo-) tremor”) i ett nytt viloläge eller posturalt.
 
-**3.** **Aktionstremor**
+###### 3.** **Aktionstremor
 
 
 _**Kinetisk tremor**_
@@ -267,7 +267,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _11
 ### Undersökningsteknik
 
 
-**Enkelt standardiserat tremortest:**
+###### Enkelt standardiserat tremortest:
 1. Vilotremor: Patienten får sitta i stol, och avlastar armarna på karmar eller i knät. Patienten
 skall ha händerna fria, och bör avledas för att lättare framhäva tremor.
 
@@ -334,7 +334,7 @@ Föreligger ataxi (oregelbundenhet vid rörelse)?
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _12_
 
 
-**Rit/skrivtest**
+###### Rit/skrivtest
 
 
 Testet utförs med instruktionen att patienten skall hålla i pennan, men får inte avlasta armen mot
@@ -344,12 +344,12 @@ skrivprov med en fullständig valfri mening kompletterar - detta kan genomföras
 underlaget för att dokumentera eventuella kompensationer mot tremor som patienten har funnit vara
 effektiva.
 
-**Muggtest**
+###### Muggtest
 
 Två muggar/glas (helst hårda) med en del vatten hålls med utsträckta armar och vattnet hälls mellan
 kärlen. Försök till att föra kärlet till munnen som för att dricka.
 
-**Videodokumentation**
+###### Videodokumentation
 
 Om patient och teknik tillåter är en kort videoinspelning av stort värde. Bedömning av tremor
 för diagnostik och för att följa behandlingseffekt lämpar sig mycket väl för dokumentation med
@@ -377,7 +377,7 @@ R 25.1 Ospecifik tremor
 
 ### Differentialdiagnostik - fenomenologi
 
-**Ataxi**
+###### Ataxi
 
 Tremor kan misstas för ataxi och tvärtom. Definitionsmässigt är ataxi oregelbunden, och inte
 oscillerande. Ataxi förekommer i extremiteter, men också bål. Samtidig förekomst av nystagmus är
@@ -385,7 +385,7 @@ ett observandum och talar för ataxi eller två samtidiga tillstånd. Ataxi kan 
 essentiell tremor plus-tillstånd, och kan utgöra ett svårbehandlat resttillstånd efter framgångsrik
 behandling mot en kinetisk och/eller positionell tremorkomponent exv vid DBS-behandling.
 
-**Dystoni**
+###### Dystoni
 
 En svår differentialdiagnos till essentiell tremor är dyston tremor. Tremor vid samtidig
 förekomst av dystoni, i samma eller annan del av kroppen, är vanligen dyston tremor.
@@ -402,7 +402,7 @@ eller förekomst av ett sensoriskt trick.
 
 ### Patofysiologi
 
-**1. Översikt – neurobiologiskt underlag**
+###### 1. Översikt – neurobiologiskt underlag
 
 De patofysiologiska mekanismerna skiljer sig åt för olika tremorformer. Såväl perifera faktorer
 som faktorer i det centrala nervsystemet medverkar till att tremor uppstår.
@@ -440,7 +440,7 @@ mot tremor.
 De centrala tremormekanismerna är elektrofysiologiska system där läkemedel kan
 frekvensmodulera taktgivare.
 
-**Översikt – farmakologi**
+###### Översikt – farmakologi
 
 Anatomiska intracerebrala taktgivare och deras farmakologi:
 
@@ -459,7 +459,7 @@ Anatomiska intracerebrala taktgivare och deras farmakologi:
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _14_
 
 
-**Farmakologiska observationer**
+###### Farmakologiska observationer
 
 Alkohol i små mänger kan ha en unik effekt på essentiell tremor – som kan minska på 1 – 2 cl
 starksprit. Större mängder alkohol har en allmänt sederande effekt och kan då ha en tremorreducerande effekt t.ex. på Parkinsontremor. Anamnestiskt är det en (mycket) låg dos av
@@ -479,7 +479,7 @@ kolinesterashämmare inleds, är det ovanligt att tremor påverkas eller utveckl
 
 Behandling med olika betaadrenerga stimulerande medel ökar ofta tremor.
 
-**Funktionsinskränkning på grund av tremor**
+###### Funktionsinskränkning på grund av tremor
 
 Tremor är också ett visuellt symtom, och det är inte ovanligt att patienter är själva omedvetna
 om att de har tremor eller inte uppfattar tremorn som störande, medan anhöriga och andra
@@ -489,7 +489,7 @@ viktigt att klargöra för vems skull utredning och eventuell behandling görs.
 
 ### Icke-farmakologiska behandlingar
 
-**Information**
+###### Information
 
 Information om vad tremor står för och dess orsaker och möjliga behandlingar är
 grundläggande för att hjälpa patienter med många former av tremor.
@@ -503,7 +503,7 @@ De flesta former av tremor ökar vid muskulär och mental trötthet. Faktorer so
 detta i form av bättre ergonomi, anpassade arbetsuppgifter, eller sömnförbättrande åtgärder kan
 ha effekt.
 
-**Stressreduktion**
+###### Stressreduktion
 
 Många tremorformer ökar vid vissa situationer och patienter kan vittna om att försök till att
 aktivt undertrycka tremor motverkar sitt syfte; tremorn ökar ofta istället.
@@ -517,7 +517,7 @@ påverkande situationerna; tex att hålla rörelserna närmare kroppen istället
 utsträckta armar; att använda tyngre föremål som inte påverkas lika mycket av tremor som
 lätta.
 
-**Hjälpmedel**
+###### Hjälpmedel
 
 En arbetsterapeut kan bedöma om hjälpmedel kan avhjälpa svårigheter pga tremor, med
 anpassning av arbetsställningar. Vissa hjälpmedel, som tyngre bestick kan vara effektiva. Det
@@ -528,7 +528,7 @@ elektroniska tremordämpningsystem som kan reducera tremoreffekter
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _15_
 
 
-**Referenser**
+###### Referenser
 
 
 Albanese, A et al. Phenomenology and Classification of Dystonia: A Consensus Update. Movement
@@ -542,12 +542,12 @@ Louis, ED. Essential tremor: a nuanced approach to the clinical features. Pract 
 
 ### Förstärkt fysiologisk tremor
 
-**Förekomst**
+###### Förekomst
 
 Tillståndet är vanligt och delvis åldersberoende. Prevalensen uppskattas till 10% av personer
 över 50 års ålder.
 
-**Etiologi**
+###### Etiologi
 
 Alla friska individer har en knappt synlig fysiologisk tremor och det är ett normaltillstånd.
 Fysiologisk tremor kan påvisas över alla leder, och är en del av den normala kontrollen av
@@ -558,13 +558,13 @@ har lägre frekvens.
 Förstärkning av den fysiologiska tremorn kan ske genom förstärkta perifert verkande
 reflexer, eller en påverkan av de centrala oscillatorerna (taktgivare).
 
-**Primär form**
+###### Primär form
 
 Utan identifierbar (icke-fysiologisk) faktor:
 Kyla Muskulär uttröttning Anspänning Stress Oro
 
 
-**Sekundär form**
+###### Sekundär form
 
 Med identifierbar (yttre eller endogen) faktor:
 Enkla stimulantia
@@ -584,7 +584,7 @@ Amfetamin
 Läkemedelsutlöst se även separat avsnitt
 Betaadrenerga medel Adrenalin
 
-**Symtom**
+###### Symtom
 
 Bilateral extremitetstremor med relativt hög frekvens, finvågig men kan ha hög amplitud.
 Övergående. Kan finnas i ansikte och stämband. Vanligen intermittent och utlöst av entydiga
@@ -602,11 +602,11 @@ ut tremor på andra sidan. Lesionen kan vara central eller perifer.
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _16_
 
 
-**Differentialdiagnostik**
+###### Differentialdiagnostik
 
 Utredning av sekundära former bör ske, då kausal behandling kan finnas.
 
-**Diagnostik**
+###### Diagnostik
 
 Anamnes Neurologiskt status
 Allmänt somatiskt status Provtagning efter riktad anamnes
@@ -615,7 +615,7 @@ Allmänt somatiskt status Provtagning efter riktad anamnes
 Individuellt inriktad utredning med undersökningar och provtagning baserat på anamnes och
 symtom.
 
-**Provtagning som kan övervägas**
+###### Provtagning som kan övervägas
 
 
 Hypertyreos T4/TSH eller annan rekommenderad lokal utredningstradition
@@ -625,7 +625,7 @@ Njurinsufficiens eGFR, kreatinin
 B12 brist homocystein, kobalamin samt folsyra
 Alkohol PEth, CDT
 
-**Behandling**
+###### Behandling
 
 Kausal behandling är indicerad för de sekundära formerna.
 
@@ -634,7 +634,7 @@ till kausal behandling är genomförd. Om man inte får tillräcklig effekt av b
 grundorsaken kan kompletterande icke-farmakologisk och farmakologisk tilläggsbehandling
 minska symtom.
 
-**Icke-farmakologisk**
+###### Icke-farmakologisk
 
 Tydlig information om tillståndet är viktig för att skapa förståelse för tillståndet. Analys av
 situationer, funktionsinskränkningar av reell tremor bör tas upp till diskussion.
@@ -642,7 +642,7 @@ situationer, funktionsinskränkningar av reell tremor bör tas upp till diskussi
 För stressutlösta symtom kan stresshantering, ev situationsbetingad, och annan målinriktad
 behandling vara effektiv.
 
-**Farmakologisk**
+###### Farmakologisk
 
 Är sällan indicerad, men om inga kontraindikationer föreligger för betablockad är vanligen
 propranolol effektivt (doser mellan 10-320 mg) intermittent eller kontinuerligt.
@@ -652,14 +652,14 @@ Det är värt att notera att metoprolol enligt kontrollerade studier inte har ti
 Om kontraindikation till betablockad föreligger kan gabapentin, intermittent eller
 kontinuerligt ha effekt.
 
-**Kirurgisk**
+###### Kirurgisk
 
 Kirurgisk behandling är aldrig aktuell mot förstärkt fysiologisk tremor. Ifrågasätt diagnos om
 tremorn är så uttalad att kirurgi övervägs.
 
 ### Läkemedelsframkallad tremor
 
-**Epidemiologi**
+###### Epidemiologi
 
 Tremor är en vanlig läkemedelsbiverkan.
 
@@ -674,7 +674,7 @@ förekomst av hjärnlesioner
 polyfarmaci med interaktioner
 
 
-**Tremorkarakteristik**
+###### Tremorkarakteristik
 
 Alla typer av tremor kan förekomma; vilotremor, positionell och kinetisk tremor, ofta med
 
@@ -684,7 +684,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _17
 
 blandformer. Vanligen symmetrisk.
 
-**Diagnostik**
+###### Diagnostik
 
 Läkemedelsanamnesen är viktig för att kartlägga samband mellan tremorförekomst och ändrad
 läkemedelsbehandling.
@@ -693,7 +693,7 @@ Utsättningsförsök ger ofta ledtrådar.
 
 Glöm inte att i diagnossättande ange Y-kod.
 
-**Vanliga läkemedelsgrupper som kan ge upphov till tremor**
+###### Vanliga läkemedelsgrupper som kan ge upphov till tremor
 
 
 Anti-astmatiska / beta-adrenerga medel
@@ -713,7 +713,7 @@ Kolinesterashämmare
 Immunofiliner, cyklosporin, tacrolimus, sirolimus
 Cytostatika t ex vinkristin, onkovin mfl
 
-**Diagnoskoder**
+###### Diagnoskoder
 
 
 G25.1 Läkemedelsutlöst tremor
@@ -723,7 +723,7 @@ tremor R 25.1 Ospecifik tremor
 
 ### Essentiell tremor och essentiell tremor plus
 
-**Definition**
+###### Definition
 
 Essentiell tremor (ET), är i regel ett godartat och oftast mycket långsamt progressivt
 neurologiskt tillstånd som främst uttrycks som bilateral aktionstremor i övre extremiteter,
@@ -767,7 +767,7 @@ påtagligt handikapp i vardagen. En vanlig oro hos patienter och anhöriga är a
 Parkinsons sjukdom och osäkerhet i diagnostiken kan motivera bedömning av neurolog, även
 om ET i sina mildare former ofta kan handläggas inom primärvård.
 
-**Epidemiologi**
+###### Epidemiologi
 
 ET och ET-plus förekommer i alla folkslag och drabbar bägge könen i ungefär samma
 utsträckning. Förekomsten är uppskattad till 0,4% av populationen. Förekomsten av ET och
@@ -775,7 +775,7 @@ ET-plus ökar successivt med åldern och hos personer över 65 års ålder har m
 prevalens på 4.6%. De familjära formerna debuterar före 40 års ålder och ET som debuterar
 efter 60-65 års ålder kan misstänkas ha annan genes och vara associerad med sämre prognos.
 
-**Diagnos**
+###### Diagnos
 
 Diagnosen ställs baserat på anamnes och neurologisk kroppsundersökning. Vid ET skall
 neurologisk undersökning vara normal frånsett tremor i händerna. Tremor uppstår/ökar när
@@ -788,7 +788,7 @@ tremor är svårbedömd och det är svårt att utesluta parkinsonism kan unders�
 isotopavbildning av DAT ofta särskilja ET från Parkinsons sjukdom eftersom personer med ET
 har normal undersökning. Diagnoskriterier i bilaga H.
 
-**Patofysiologi**
+###### Patofysiologi
 
 Den patofysiologiska mekanismen bakom skakningarna vid ET är okänd. Många
 experimentella fynd talar för en abnormt ökad aktivitet i nervbanor mellan talamus,
@@ -797,14 +797,14 @@ aktivitet i hämmande GABA-transmission i dessa bansystem. Små lesioner i talam
 skakningarna. Det är också känt att alkohol redan i små mängder kan ha en dämpande
 inflytande på skakningarna.
 
-**Etiologi**
+###### Etiologi
 
 ET är en dominant ärftlig sjukdom i ca 60% av fallen vilket medför att risken för patientens
 barn att få sjukdomen är 50%. Man har dock ej funnit enskilda gener som förklarar familjär
 ET. I en mycket omfattande studie fann man association till vissa polymorfismer, men de
 genetiska orsakerna till ET är fortfarande oklara.
 
-**Behandling**
+###### Behandling
 
 När skakningarna ger upphov till funktionsinskränkning (motoriskt och/eller socialt) kan
 behandling övervägas. Bäst evidens finns för propranolol i doser upp till 240-360 mg/d som
@@ -835,7 +835,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _19
 [En patientorganisation (Riksföreningen för Essentiell Tremor; https://essentielltremor.se/ )](https://essentielltremor.se/)
 kan erbjuda information och stöd.
 
-**Referenser**
+###### Referenser
 
 
 Louis ED and Ferreira JJ. How common is the most common adult movement disorder? Update on the worldwide
@@ -862,7 +862,7 @@ händer påverkas oftast. De vanligaste orsakerna är stroke i bakre cirkulation
 degenerativa sjukdomar. Man bör i första hand behandla bakomliggande sjukdom men
 propranolol, klonazepam, karbamazepin och topiramat har visats ha effekt.
 
-**Referens**
+###### Referens
 
 
 Lenka A, Louis ED. Revisiting the Clinical Phenomenology of "Cerebellar Tremor": Beyond the Intention
@@ -870,7 +870,7 @@ Tremor. Cerebellum. 2019;18(3):565-574.
 
 ### Ortostatisk tremor
 
-**Fenomenologi**
+###### Fenomenologi
 
 Ortostatisk tremor (OT) är en ofta förbisedd diagnos som yttrar sig som en högfrekvent (13-18
 Hz) tremor i stående position vilket ger en känsla av ostadighet som kan vara mer påtaglig än
@@ -886,7 +886,7 @@ Man skiljer mellan primär OT (13-18 Hz och avsaknad av andra neurologiska symto
 långsam OT (under 10 Hz) och OT plus. Vid OT plus kan bland annat vaskulär parkinsonism,
 Parkinsons sjukdom eller Willis-Ekboms sjukdom förekomma.
 
-**Utredning**
+###### Utredning
 
 Tremorn vid OT kan vara svår att se och neurologiskt status kan vara invändningsfritt vilket
 gör att diagnosen ofta fördröjs. Även om tremorn kan registreras visuellt, palperas och
@@ -894,7 +894,7 @@ auskulteras med stetoskop (”helicopter sign”), bör EMG i stående göras f�
 diagnosticera OT. Det typiska EMG-fyndet är en tremorös aktivitet med en frekvens runt 16
 Hz. OT kan ofta påvisas på balansplatta.
 
-**Etiologi**
+###### Etiologi
 
 Då tremorn är synkroniserad och alltid uppkommer bilateralt är den sannolikt utlöst på central
 nivå. Patofysiologin är oklar. Det diskuteras om det finns ett centrum som fungerar som en
@@ -905,7 +905,7 @@ cerebello-thalamo-kortikala nätverk som justerar rörelser för att bibehålla 
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _20_
 
 
-**Behandling**
+###### Behandling
 
 OT har visat sig vara svår att behandla med läkemedel. En del patienter svarar dock på
 klonazepam eller bensodiazepiner. Även gabapentin har visats ge symtomlindring i två små
@@ -918,7 +918,7 @@ patienter med behandlingsrefraktär OT, vilket stärker tesen att det finns en s
 cerebello-talamo-kortikala nätverket. Effekten är dock inte lika stor som vid behandling av ET,
 vilket tyder på att den primära patologin vid OT inte är belägen i VIM.
 
-**Referens**
+###### Referens
 
 
 Rigby HB, Rigby MH, Caviness JN. Orthostatic tremor: a spectrum of fast and slow frequencies or distinct
@@ -926,7 +926,7 @@ entities? Tremor Other Hyperkinet Mov 2015; 5-11.
 
 ### Tremor vid idiopatisk Parkinsons sjukdom
 
-**Patofysiologi**
+###### Patofysiologi
 
 Vilotremor, bradykinesi och rigiditet vid Parkinsons sjukdom orsakas primärt av nigrostriatal
 degeneration. Tremor beror på oscillerande neuronal aktivitet i centrala nervsystemet och anses
@@ -934,7 +934,7 @@ inte vara kopplad till några perifera faktorer. Talamus har en särskild betyde
 mellan basala ganglier och motorcortex och är därför ett lämpligt mål för DBS vid
 tremordominant sjukdom.
 
-**Klinisk bild**
+###### Klinisk bild
 
 Vid idiopatisk Parkinsons sjukdom är vilotremor typisk, men inte patognomon. Skakningarna
 uppträder i vila – vid debuten oftast i en arm – och kan vara det symtom som för patienten till
@@ -980,7 +980,7 @@ och anses vara mer lättbehandlad men också förenad med mer motoriska fluktuat
 något vanligare med tremor bland kvinnor med Parkinsons sjukdom. I sena stadier av
 sjukdomen kan tremor avta och bradykinesi blir dominerande.
 
-**Differentialdiagnostik**
+###### Differentialdiagnostik
 
 Monosymtomatisk vilotremor;
 Parkinsons sjukdomsdiagnos kan inte ställas förrän bradykinesi och rigiditet tillkommer, vilket
@@ -998,7 +998,7 @@ dyston tremor. Upp till 10% av patienter som bedömts ha tidig Parkinsons sjukdo
 deltagit i studier med tidigt debuterande sjukdomstillstånd, men dominerande tremor som
 symtom, har efter utredning bedömts vara SWEDD.
 
-**Behandling**
+###### Behandling
 
 Tremor vid idiopatisk Parkinsons sjukdom behandlas i första hand med dopaminerga läkemedel
 (L-DOPA, dopaminagonister, MAO-B-hämmare). Effekten kan dröja veckor till månader tidigt
@@ -1022,7 +1022,7 @@ Zonisamide i låga doser (≤ 50 mg) kan också lindra parkinsontremor i vissa f
 
 ###### Från SWEMODIS Terapiråd vid Parkinsons sjukdom 2025 version 10
 
-**Tremor**
+###### Tremor
 
 Behandlingen av tremor bör inrikta sig på faktiska funktionshinder för arbete, störningar i
 ADL-funktioner eller sömn. Man bör diskutera med patient och anhöriga vad som utgör
@@ -1040,7 +1040,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _22
 
 ### Dyston tremor och tremor associerad med dystoni
 
-**Fenomenologi**
+###### Fenomenologi
 
 Dyston tremor är tremor i en kroppsdel som även uppvisar tecken till dystoni. Om dystoni
 saknas i den tremordrabbade kroppsdelen men förekommer i annan kroppsdel heter tillståndet
@@ -1076,13 +1076,13 @@ tremor eller en helt unik, isolerad tremor.
 Dyston tremor kan förväxlas med essentiell tremor om det dystona inslaget är diskret och
 kan missas. Den kan ibland även förväxlas med tremor vid Parkinsons sjukdom.
 
-**Etiologiska och utredningsmässiga aspekter**
+###### Etiologiska och utredningsmässiga aspekter
 
 Liksom dystoni kan dyston tremor vara idiopatisk, sekundär till andra sjukdomar [t.ex. Wilsons
 sjukdom (kontrollera leverstatus, ceruloplasmin, S-koppar, mm)], sporadisk eller ärftlig
 (överväg genetiska tester t ex DYT1).
 
-**Behandling**
+###### Behandling
 
 Behandlingen är i princip densamma som vid dystoni, där följande alternativ kan övervägas
 utifrån symtombild:
@@ -1108,7 +1108,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _23
 
  - djup hjärnstimulering (DBS) – i första hand i globus pallidus (GPi).
 
-**Referenser**
+###### Referenser
 
 
 Bhatia KP, Bain P, Bajaj N, Elble RJ, Hallett M, Louis ED, Raethjen J, Stamelou M, Testa CM, Deuschl G;
@@ -1119,12 +1119,12 @@ Louis ED. Tremor. Continuum (Minneap Minn). 2019 Aug;25(4):959-975.
 
 ### Neuropatisk tremor
 
-**Fenomenologi**
+###### Fenomenologi
 
 Postural och kinetisk tremor som liknar förstärkt fysiologisk eller essentiell tremor, med en
 frekvens på 6-8 Hz.
 
-**Etiologi**
+###### Etiologi
 
 Kan misstänkas vid gradvis uppkommande tremor hos en patient med säkerställd polyneuropati
 som vid
@@ -1137,7 +1137,7 @@ Multifokal motorisk neuropati (MMN)
 Hereditär polyneuropati
 Checkpointhämmare
 
-**Behandling**
+###### Behandling
 
 Kausal behandling av den underliggande neurologiska sjukdomen
 
@@ -1151,14 +1151,14 @@ effekt på tremorkomponenten och undvik tremorförstärkande preparat
 
 VIM-DBS har prövats.
 
-**Referens**
+###### Referens
 
 
 Becktepe JS, Goevert F, Deuschl G. Rare tremor syndromes. Nervenarzt 2018; 89(4): 386-393.
 
 ### Palatal tremor (Tremor i mjuka gommen)
 
-**Fenomenologi**
+###### Fenomenologi
 
 I. Primär palatal tremor (mjuka gomstremor, gomtremor) – (engelska ”essential palatal
 tremor”)
@@ -1187,7 +1187,7 @@ kombinationen kallas okulopalatal tremor
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _24_
 
 
-**Etiologi**
+###### Etiologi
 
 Den primära formen är idiopatisk.
 De sekundära formerna kan ha olika etiologi:
@@ -1201,7 +1201,7 @@ Alexanders sjukdom
 Polymeras gamma-mutationer
 Spinocerebellär ataxi 20, neurodegeneration kan vara associerad med cerebellär atrofi
 
-**Utredning**
+###### Utredning
 
 Viktigt att utreda bakre skallgropen med tanke på möjlig etiologi.
 MR-hjärna; fynd: hypertrofisk degeneration av oliva inferior, dock ej alltid förekommande.
@@ -1209,12 +1209,12 @@ En viktig differentialdiagnos är funktionell palatal tremor som kännetecknas a
 ”entrainment”, vilket innebär att tremorfrekvensen antar samma frekvens som annan
 aktivitet, t ex handknytning.
 
-**Behandling**
+###### Behandling
 
 Bilateral botulinumtoxininjektion i mm. tensor och levator veli palatini. Rapporter finns om
 trihexyfenidyl, gabapentin och memantin (de två sista för nystagmuskomponenten).
 
-**Referenser**
+###### Referenser
 
 
 Tilikete C, Desestret V. Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor. Front Neurol.
@@ -1224,7 +1224,7 @@ Otolaryngol. 2013; 934386.
 
 ### Holmes tremor och talamisk tremor
 
-**Klinisk bild**
+###### Klinisk bild
 
 Följande kriterier kännetecknar Holmes-tremor:
 
@@ -1245,7 +1245,7 @@ Kliniskt kan man vid båda tillstånden finna en variabel kombination av vilo-, 
 intentions-tremor samt dystoni, och endast radiologiska undersökningar möjliggör
 differentialdiagnos.
 
-**Behandling**
+###### Behandling
 
 Farmakoterapi är sällan framgångsrik vid dessa former av tremor.
 I enskilda fall fungerar:
@@ -1269,7 +1269,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _25
 Behandling av talamus-tremor med djup hjärnstimulering är särskilt svår, eftersom VIM ligger i
 det skadade området.
 
-**Referens**
+###### Referens
 
 
 Deuschl G, Bain P, Brin M. Consensus statement of the Movement Disorder Society on Tremor. Ad Hoc
@@ -1285,7 +1285,7 @@ motoriken, som upplevs som ofrivilliga. De karaktäriseras av extern påverkbarh
 distraktion och ökar med uppmärksamhet. Symtomen är inkonsistenta och inte kongruenta med andra
 neurologiska orsaker.
 
-**Fenomenologi**
+###### Fenomenologi
 
 Akut debut är vanligt, ibland vid en speciell händelse såsom panikattack. Funktionell tremor kan
 uppkomma varsomhelst i kroppen, till och med som palatal tremor. Det är vanligast att den sitter i
@@ -1307,7 +1307,7 @@ takt med undersökaren (entrainment). Andra karaktäristiska fynd är tonisk ko-
 tremorstart och att när undersökaren fixerar den skakande kroppsdelen, sprider sig tremorn till en
 annan kroppsdel (”whack-a-mole sign”).
 
-**Etiologi / patofysiologi**
+###### Etiologi / patofysiologi
 
 Etiologin är ofullständigt kartlagd, men det rör sig om en störning i cerebrala nätverk som inkluderar
 motorisk kontroll, prediktiv kodning, uppmärksamhet, emotionella processer, interoception, och
@@ -1331,14 +1331,14 @@ undvikandebeteende och låg motivation för tillfrisknande.
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _26_
 
 
-**Epidemiologi**
+###### Epidemiologi
 
 Funktionella neurologiska tillstånd är vanliga, men det finns betydande osäkerhet i epidemiologiska
 studier, där incidens har beräknats till minst 10-22/100 000, och prevalens minst 80-140/100 000.
 Svenska och skotska studier anger incidens av motoriska funktionella symtom till 4-5 /100.000 och
 funktionell tremor anges till 40 – 50% av dessa.
 
-**Behandling**
+###### Behandling
 
 Behandlingens första steg är att patienten och närstående ska förstå och lita på diagnosen. Det görs
 genom noggrann undersökning i kombination med att man etablerar en tillitsfull och empatisk
@@ -1353,7 +1353,7 @@ avledbarhet och entrainment, i kombination med avslappningsövningar med mera. B
 beakta eventuell samtidig psykiatrisk / psykologisk samsjuklighet och vidmakthållande faktorer.
 Multidisciplinära team-insatser kan vara värdefulla.
 
-**Differentialdiagnoser**
+###### Differentialdiagnoser
 
 **Alla andra orsaker till tremor.** De positiva funktionella statusfynden skiljer tillståndet från dessa.
 
@@ -1365,10 +1365,10 @@ individnivå ännu inte skiljas ifrån funktionell tremor.
 vanligt normalt tillstånd med tremor i benet, som uppstår vid belastning mot underlaget och med
 tonus över lederna. Kan även uppstå i övre extremitet.
 
-**Diagnos**
+###### Diagnos
 ICD-10 kod: F 44.4W Annan specificerad psykogen motorisk störning
 
-**Referenser**
+###### Referenser
 
 
 Bartl M, Kewitsch R, Hallett M, Tegenthoff M, Paulus W. Diagnosis and therapy of functional tremor a systematic review
@@ -1677,7 +1677,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _31
 
 det operativa ingreppet är liten, och behandlingstiden och återhämtningstiden är vanligen kort.
 
-**Indikationer**
+###### Indikationer
 ET med symtom till den grad att skakningarnas inverkan på livskvalitet överväger riskerna med
 ingreppet och där läkemedel ej tolererats, kontraindicerade eller ej givit önskvärd effekt.
 
@@ -1688,7 +1688,7 @@ bli aktuellt för bilateral behandling men då bör det gå minst 9 månader mel
 behandlingssessionerna. Risken för biverkningar är högre efter den andra talamotomin.
 
 
-**Kontraindikationer för MRgFUS-behandling:**
+###### Kontraindikationer för MRgFUS-behandling:
 
 - Icke MR-kompatibla implantat. Man bör även beakta mindre implantat: stentar och clips som kan
 påverka möjligheten till MRgFUS-behandlingen.
@@ -1711,7 +1711,7 @@ göra ett tillfälligt uppehåll inför behandlingen och upp till 2 veckor efter
 - Patienter som behöver lyft för att flyttas till MR-bordet.
 
 
-**Hur ingreppet går till:**
+###### Hur ingreppet går till:
 1. Patientens helrakas på huvudet; krävs för att optimera kontakt mellan ultraljudstransducers och
 
 skallben.
@@ -1735,7 +1735,7 @@ ca 3-4 timmar i anspråk varav 2 timmar inne i MR-kameran. Varje uppvärmning ta
 Vanligen görs 4-8 uppvärmningar men fler kan behövas.
 
 
-**Effekt**
+###### Effekt
 Effekt och biverkningar som redovisas i litteraturen får tolkas med hänsyn till att flertalet studier
 genomförts när MRgFUS fortfarande var under utveckling. Med utveckling av såväl hårdvara,
 mjukvara och MR protokoll samt ökad erfarenhet är det sannolikt att effekten idag är något bättre och
@@ -1753,7 +1753,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _32
 armtremor kring 70% och ADL kring 65% efter 6-12 månader. De fåtal långtidsstudier har visat en
 förbättring av specifikt postural armtremor kring 70% och ADL 35-45% upp till 5 år efter ingreppet.
 
-**Referenser**
+###### Referenser
 
 
 Cosgrove GR, Lipsman N, Lozano AM, et al. Magnetic resonance imaging-guided focused ultrasound
@@ -1776,7 +1776,7 @@ ihållande lindring med upp emot 80% enligt CTRS 1 år efter ingreppet medan and
 redovisat en recidivfrekvens av Parkinsontremor kring 30% redan efter ett år.
 
 
-**Biverkningar**
+###### Biverkningar
 De flesta patienter upplever övergående biverkningar under själva ingreppet:
 
 - Smärta vid injektion av lokalbedövning/av skruvar från ramen
@@ -1912,7 +1912,7 @@ Tremor också modifierats, enligt nedan fria översättning.
 Det fanns sedan tidigare 2 kriterier, dels konsensus kriterier från 1998, sk TRIG kriterierna och
 de sk Washington Heights kriterierna från 1997.
 
-**Referenser:**
+###### Referenser:
 
 
 Bhatia KP, Bain P, Bajaj N et al. Consensus Statement on the Classification of Tremors. From the Task Force on
@@ -1997,7 +1997,7 @@ skallbensdensitetsmätning (SDR). DT skall utföras utifrån specifikationerna n
 kommer att genomföra de nödvändiga beräkningarna.
 
 
-**Specifikationer för DT undersökning:**
+###### Specifikationer för DT undersökning:
 
 - Siemens: H60s, H60f, Hr56f, Hr60f, Hr60s
 
