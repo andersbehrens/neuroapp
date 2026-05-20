@@ -228,10 +228,10 @@ const Vy = {
 
     const isArtikelKat = katId === 'artiklar';
     const dokKort = dok.length ? dok.map(d => {
-      const openPdf = isArtikelKat && d.pdf;
+      const openPdf = (isArtikelKat || d.direktPdf) && d.pdf;
       const onclick  = openPdf ? `window.open('${d.pdf}','_blank','noopener,noreferrer')` : `Router.gå('dokument',{id:'${d.id}'})`;
       const onkeydown = openPdf ? `if(event.key==='Enter')window.open('${d.pdf}','_blank','noopener,noreferrer')` : `if(event.key==='Enter')Router.gå('dokument',{id:'${d.id}'})`;
-      const meta = d.källa || `${d.innehall.length} avsnitt`;
+      const meta = d.källa || (d.direktPdf ? 'PDF' : `${d.innehall.length} avsnitt`);
       return `
       <div class="dok-kort" role="button" tabindex="0"
            onclick="${onclick}"

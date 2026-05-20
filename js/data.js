@@ -8896,11 +8896,8 @@ i symtomkomplexet.`
     titel: 'Antiepileptika vid graviditet',
     kategori: 'epilepsi',
     pdf: 'riktlinjer/epilepsiGraviditet.pdf',
-    innehall: [
-      { rubrik: 'Graviditetsfysiologi och farmakokinetik', text: 'Ökad renal clearance, östrogen inducerar UGT-enzymer, ökad fördelningsvolym. Reducerad serumkoncentration av de flesta AED. Lamotrigin minskar 50–60 %, levetiracetam 40–60 %.' },
-      { rubrik: 'Provtagningsrutiner', text: 'Lamotrigin och levetiracetam: provtagning var 4:e vecka. Övriga AED var 6–8:e vecka. Dosjustering: minska 3 dagar efter partus, återgå till måldos på 7–9 dagar.' },
-      { rubrik: 'Amning', text: 'Rekommenderas. AED passerar i bröstmjölk i liten mängd. Undvik amning vid bensodiazepiner. Observera trött/slö eller skrikig/skakig bebis.' }
-    ]
+    direktPdf: true,
+    innehall: []
   },
 
   // ── Stroke ──────────────────────────────────────────
