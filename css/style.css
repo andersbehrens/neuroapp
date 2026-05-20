@@ -959,7 +959,60 @@ body {
 }
 
 /* === Lunch-widget === */
-#lunch-widget { margin: 4px 0 12px; }
+#widgets-rad {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+#widgets-rad > * { flex: 1; min-width: 0; }
+
+@media (max-width: 520px) {
+  #widgets-rad { flex-direction: column; }
+}
+
+#lunch-widget, #forelasning-widget { }
+
+.forelasning-kort {
+  background: var(--grön-ljus);
+  border-left: 3px solid var(--teal);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: var(--font);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.forelasning-rubrik {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+}
+
+.forelasning-tid {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--text-ljus);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.forelasning-titel {
+  font-size: 0.88rem;
+  color: var(--text-mörk);
+  line-height: 1.4;
+}
+
+.forelasning-forelasare {
+  font-size: 0.8rem;
+  color: var(--text-medium);
+  margin-top: 3px;
+}
 
 .lunch-kort {
   background: var(--blå-ljus);

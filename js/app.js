@@ -183,6 +183,7 @@ const Vy = {
     }).join('');
 
     setTimeout(() => Lunch.visa(), 0);
+    setTimeout(() => Forelasning.visa(), 0);
 
     return `
       <div id="startsida">
@@ -191,7 +192,10 @@ const Vy = {
           <h1>NeuroGuide</h1>
           <p>Neurologiska riktlinjer och akutkort</p>
         </div>
-        <div id="lunch-widget"></div>
+        <div id="widgets-rad">
+          <div id="lunch-widget"></div>
+          <div id="forelasning-widget"></div>
+        </div>
         <div class="avsnitt-rubrik">Välj kategori</div>
         <div class="kategori-grid">${kat}</div>
       </div>`;
@@ -909,6 +913,38 @@ const Lunch = {
     d.setDate(d.getDate() + 3 - (d.getDay() + 6) % 7);
     const v1 = new Date(d.getFullYear(), 0, 4);
     return 1 + Math.round(((d - v1) / 864e5 - 3 + (v1.getDay() + 6) % 7) / 7);
+  }
+};
+
+// ============================================================
+// Föreläsning-widget – nästa föreläsning i akut neurologi
+// Uppdatera FORELASNINGAR inför ny termin
+// ============================================================
+const Forelasning = {
+  FORELASNINGAR: [
+    { datum: '2026-05-27', titel: 'Lätt kan vara svårt ibland – ett neurokirurgiskt perspektiv på lätta skallskador', forelasare: 'Lars-Owe Koskinen, Umeå' },
+    { datum: '2026-06-03', titel: 'Kontrastencefalopati', forelasare: 'Jeanette Carlqvist, Sahlgrenska' }
+  ],
+
+  visa() {
+    const el = document.getElementById('forelasning-widget');
+    if (!el) return;
+    const idag = new Date(); idag.setHours(0, 0, 0, 0);
+    const nästa = this.FORELASNINGAR.find(f => new Date(f.datum) >= idag);
+    if (!nästa) return; // inga fler föreläsningar – dölj widgeten
+    const d = new Date(nästa.datum);
+    const dagNamn = d.toLocaleDateString('sv-SE', { weekday: 'long' });
+    const datumStr = d.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+    el.innerHTML = `
+      <div class="forelasning-kort">
+        <div class="forelasning-rubrik">
+          <span class="forelasning-ikon">🎓</span>
+          <span>Akut neurologi</span>
+          <span class="forelasning-tid">${dagNamn} ${datumStr}</span>
+        </div>
+        <div class="forelasning-titel">${nästa.titel}</div>
+        <div class="forelasning-forelasare">${nästa.forelasare}</div>
+      </div>`;
   }
 };
 
