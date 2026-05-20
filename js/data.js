@@ -12,7 +12,8 @@ const KATEGORIER = [
   { id: 'akutkort',      namn: 'Akutkort',          beskrivning: 'Neurologiska akutkort för akuta situationer', ikon: '⚡', farg: 'kategori-akut' },
   { id: 'artiklar',      namn: 'Artiklar',           beskrivning: 'Kliniskt användbara vetenskapliga artiklar', ikon: '📖', farg: 'kategori-riktlinje' },
   { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
-  { id: 'fass', namn: 'FASS', beskrivning: 'Läkemedelsinformation – öppnar fass.se', ikon: '💊', farg: 'kategori-akut', externalUrl: 'https://fass.se/health' }
+  { id: 'fass', namn: 'FASS', beskrivning: 'Läkemedelsinformation – öppnar fass.se', ikon: '💊', farg: 'kategori-akut', externalUrl: 'https://fass.se/health' },
+  { id: 'lankar', namn: 'Länkar', beskrivning: 'Externa resurser och referenslänkar', ikon: '🔗', farg: 'kategori-riktlinje' }
 ];
 
 const DOKUMENT = [
@@ -8943,5 +8944,15 @@ i symtomkomplexet.`
     pdf: 'riktlinjer/Inklusionskriterier-strokeavd-2026.pdf',
     direktPdf: true,
     innehall: []
+  },
+
+  // ── Länkar ──────────────────────────────────────────
+  {
+    id: 'akut-internmedicin',
+    titel: 'Akut internmedicin – behandlingshandbok',
+    kategori: 'lankar',
+    pdf: 'https://kunskapsstodforvardgivare.se/omraden/akut-vard/regionala-kunskapsstod/akut-internmedicin-behandlingshandbok',
+    källa: 'Kunskapsstöd för vårdgivare',
+    innehall: [{ rubrik: 'Akut internmedicin', text: 'Regional behandlingshandbok för akut internmedicin.' }]
   }
 ];

@@ -212,37 +212,23 @@ operabel patient.
 ### 1.3 Ischemisk stroke/TIA
 
 
-_1.3.1 Akutbehandling av TIA och hjärninfarkt_
+#### 1.3.1 Akutbehandling av TIA och hjärninfarkt
 
 - **Rädda hjärnan-patient**    - Se särskilt PM i Rädda hjärnan-mappen.
 
 - **Trombocythämmare**    - Rutinbehandling i de allra flesta fall!
 
-`o` Oavsett patogenetisk mekanism; Acetylsalicylsyra (ASA) 300 mg ges direkt
+- Oavsett patogenetisk mekanism; Acetylsalicylsyra (ASA) 300 mg ges direkt efter DT hjärna följt av 75 mg dagligen. Ansvarig sjuksköterska kontaktar ansvarig läkare efter DT-svaret. Efter trombolys ges ASA först efter kontrollDT av hjärnan.
 
-efter DT hjärna följt av 75 mg dagligen. Ansvarig sjuksköterska kontaktar
-ansvarig läkare efter DT-svaret. Efter trombolys ges ASA först efter kontrollDT av hjärnan.
+- Mild hjärninfarkt (NIHSS ≤3) och vid ”högrisk-TIA” (4–7 poäng på riskskalan för TIA, ABCD 2, se appendix III), ges dubbel trombocythämning med laddningsdos från insjuknandedagen till och med dag 21.
 
-`o` Mild hjärninfarkt (NIHSS ≤3) och vid ”högrisk-TIA” (4–7 poäng på riskskalan
+- Patienter som redan behandlas med annan trombocythämmare än ASA; oförändrad trombocythämmande behandling under första dygnet.
 
-för TIA, ABCD 2, se appendix III), ges dubbel trombocythämning med
-laddningsdos från insjuknandedagen till och med dag 21.
+- Vid amaurosis fugax kan behandlingen inledas utan föregående datortomografi (DT).
 
-`o` Patienter som redan behandlas med annan trombocythämmare än ASA;
+- Om patienten inte kan svälja eller är medvetandesänkt ge supp. Acetylsalicylsyra (ASA) 130 mg x2 i laddningsdos följt av 130 mg dagligen.
 
-oförändrad trombocythämmande behandling under första dygnet.
-
-`o` Vid amaurosis fugax kan behandlingen inledas utan föregående
-
-datortomografi (DT).
-
-`o` Om patienten inte kan svälja eller är medvetandesänkt ge supp.
-
-Acetylsalicylsyra (ASA) 130 mg x2 i laddningsdos följt av 130 mg dagligen.
-
-`o` Vid intolerans mot ASA ges Clopidogrel laddningsdos 300 mg följt av 75 mg
-
-dagligen.
+- Vid intolerans mot ASA ges Clopidogrel laddningsdos 300 mg följt av 75 mg dagligen.
 
 
 #### 1.3.2 Vid förmaksflimmer eller annan kardiell embolikälla

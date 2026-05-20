@@ -110,6 +110,7 @@ const Vy = {
       case 'stroke':
       case 'epilepsi':
       case 'kalkylatorer':
+      case 'lankar':
         tillbaka.classList.add('synlig');
         el.innerHTML = this.kategoriVy(vy);
         this._bindaKategori(vy);
@@ -229,7 +230,7 @@ const Vy = {
     const kat = KATEGORIER.find(k => k.id === katId);
     const dok = DOKUMENT.filter(d => d.kategori === katId);
 
-    const isArtikelKat = katId === 'artiklar';
+    const isArtikelKat = katId === 'artiklar' || katId === 'lankar';
     const dokKort = dok.length ? dok.map(d => {
       const openPdf = (isArtikelKat || d.direktPdf) && d.pdf;
       const onclick  = openPdf ? `window.open('${d.pdf}','_blank','noopener,noreferrer')` : `Router.gå('dokument',{id:'${d.id}'})`;
