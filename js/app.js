@@ -454,7 +454,7 @@ const Vy = {
 
         // Spara TOC-data som enkel array (inte DOM-noder)
         const tocData = Array.from(tmp.querySelectorAll('h2,h3,h4,h5,h6')).map(h => ({
-          id: h.id, lvl: h.tagName.toLowerCase(),
+          id: h.id, lvl: parseInt(h.tagName.slice(1)),
           txt: h.textContent.trim().replace(/\*/g, '')
         }));
 
@@ -567,7 +567,7 @@ const Vy = {
     }
     const textCount = {};
     lista.innerHTML = headings.map(h => {
-      const lvl = h.tagName.toLowerCase();
+      const lvl = parseInt(h.tagName.slice(1));
       const base = h.textContent.trim().replace(/\*/g, '');
       textCount[base] = (textCount[base] || 0) + 1;
       const txt = textCount[base] > 1 ? `${base} (${textCount[base]})` : base;
