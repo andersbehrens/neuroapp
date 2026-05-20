@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v18)
+├── sw.js                               # Service worker (cache-version: neuroguide-v19)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -114,7 +114,7 @@ Asynkron, med in-memory cache (`_mdCache`):
    - Tar bort filnamns-h1 och eventuell duplikat-dokumenttitel/datum i toppen
    - Fixar bildlänkar (`images/` → `riktlinjerMarkdown/images/`) – **utan ledande /**
    - Tar bort försättsbladsbilder (`.pdf-0-N.png`)
-   - Konverterar blank-omgivna `**bold**`-rader till `##`-rubriker (PDF-artefakt); upprepade → `###`
+   - Konverterar standalone `**bold**`-rader till rubriker (PDF-artefakt). **Exakt JS-regex**: `/\n\n((?:\*\*[^\n*][^\n]*\*\*\n?)+)\n/g` – kräver blank rad FÖRE men bara EN radbrytning EFTER (inte nödvändigtvis blank rad efter). Första förekomst → `##`, upprepade → `###`. **Konsekvens**: en `**Tremor**`-rad med text direkt på nästa rad konverteras ändå till `##`.
    - Kör `_reflowMd()` för radbrytningsreparation
 3. Parsar med `marked.parse()`
 4. Tilldelar rubrik-ID:n (`_addaRubrikIds`)
@@ -144,13 +144,12 @@ Smooth scroll direkt → instant-korrigering vid 650 ms (snabba bilder) → inst
 ### TOC (innehållsförteckning)
 - `#toc-knapp` (☰, fixad nere till höger) visas bara i Kindle-vy
 - Klick öppnar `#toc-drawer` (slide-in från höger)
-- Innehåller knappar för h2–h6-rubriker, byggda från `tocData`-arrayen
+- Innehåller knappar för **h2–h4** (h5/h6 exkluderas), byggda från `tocData`-arrayen
 - Klick scrollar till rubrik och stänger drawern
-- **CSS-klasser**: JS genererar `.toc-2`/`.toc-3`/`.toc-4`/`.toc-5`/`.toc-6` (INTE `.toc-h2` etc.)
+- **CSS-klasser**: JS genererar `.toc-2`/`.toc-3`/`.toc-4` via `parseInt(h.tagName.slice(1))` (INTE `.toc-h2` etc.)
   - `.toc-2` = fet med vänster kantlinje (mest prominent)
   - `.toc-3` = indenterat 28px, 0.82rem
   - `.toc-4` = indenterat 40px, 0.78rem, ljusgrå
-  - `.toc-5`/`.toc-6` = indenterat 52px, 0.74rem, ljusgrå
 
 ## Slash-commands och sub-agenter
 
@@ -235,13 +234,24 @@ Kör QA-scriptet och kontrollera:
 - **Sidfötter**: Vissa PDF:er upprepar dokumentnamn + författare på varje sida. Ta bort med Python/sed.
 - **Inbyggd TOC**: Om dokumentet har en sidnumrerad innehållsförteckning extraheras den som text med `##`-rubrik (`## Innehåll`). Ta bort rubrik-markören eller hela sektionen – annars förorenar den TOC-menyn.
 - **Compound headings**: pymupdf4llm sammanfogar ibland två rubriker på samma rad, t.ex. `###### **A. Inledning** **Bakgrund, SWEMODIS**`. Dela upp dessa manuellt: `## A. Inledning\n\n### Bakgrund, SWEMODIS`.
-- **Rubriker**: Dokumentet kan använda `**fet text**` istället för `##`-rubriker. JS hanterar detta automatiskt. Men se till att standalone bold-rader som är formulärfält eller varningsboxar (ej rubriker) saknar omgivande tomrader, annars konverteras de felaktigt.
-- **Rubrikhierarki** – använd dessa nivåer konsekvent för klinisk TOC-navigering:
-  - `##` = Huvud-sektioner (t.ex. A. Medicinsk del, V. Läkemedelsöversikt)
+- **Standalone bold-rader (KRITISKT)**: JS konverterar `**bold**`-rader med blank rad före till `##`/`###` vid rendering. Detta ger felaktig TOC där subsektioner hamnar på samma nivå som huvudsektioner. **Åtgärd: konvertera ALLTID alla standalone bold-rader till `######` i markdown** (eller `##`/`###` om de verkligen är huvudsektioner). Kör detta efter konvertering:
+  ```python
+  import re
+  with open('fil.md') as f: content = f.read()
+  # Visar alla rader som JS kommer att konvertera till ## eller ###:
+  print(re.findall(r'\n\n(\*\*[^\n*][^\n]*\*\*)\n', content))
+  ```
+  Sedan: ersätt varje träff med `###### text` (eller rätt nivå). Bulk-konvertering till `######`:
+  ```python
+  content = re.sub(r'\n\n(\*\*[^\n*][^\n]*\*\*)\n\n', lambda m: f'\n\n###### {m.group(1).strip("* ")}\n\n', content)
+  content = re.sub(r'\n\n(\*\*[^\n*][^\n]*\*\*)\n(?!\n)', lambda m: f'\n\n###### {m.group(1).strip("* ")}\n', content)
+  ```
+- **Rubrikhierarki** – TOC-knappen visar **bara h2–h4** (JS querySelectorAll `h2,h3,h4`). h5/h6 syns aldrig i TOC. Använd dessa nivåer:
+  - `##` = Huvud-sektioner (t.ex. romanska siffror, A/B/C-delar)
   - `###` = Kliniska undersektioner (t.ex. enskilda läkemedel, diagnoser, behandlingstyper)
-  - `####` = Detaljer som kliniker söker (t.ex. doseringssteg, kriterier)
-  - `######` = Implementeringsdetaljer som EJ ska synas i TOC (lämna som `######`)
-  - Frontmatter (sjukhusnamn, datum, inbyggd TOC) → ta bort rubrik-markören, lämna som plain text
+  - `####` = Detaljer som kliniker navigerar till (doseringssteg, diagnoskriterier) – använd sparsamt
+  - `######` = Allt som EJ ska synas i TOC: sub-detaljer, metadata, Fenomenologi/Etiologi-rubriker per tremor-typ, etc.
+  - Frontmatter (sjukhusnamn, datum, inbyggd TOC) → `######` eller plain text
 - **Bilder**: Bildlänkarna i .md-filen pekar på `images/` (relativ) — JS skriver om dem automatiskt.
 - **Försättsblad**: Bilder med `.pdf-0-N.png` (förstasida) filtreras bort automatiskt av JS.
 
@@ -272,7 +282,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v19';  // öka siffran (nuvarande: v18)
+const CACHE_NAME = 'neuroguide-v20';  // öka siffran (nuvarande: v19)
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -335,7 +345,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v18`**.
+Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v19`**.
 
 ## Service Worker (sw.js)
 
