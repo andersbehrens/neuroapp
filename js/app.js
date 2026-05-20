@@ -799,7 +799,7 @@ const App = {
 // Lunch-widget – hämtar dagens lunch från Blekingesjukhuset
 // ============================================================
 const Lunch = {
-  PROXY:    'https://api.allorigins.win/raw?url=',
+  PROXY:    'https://api.allorigins.win/get?url=',
   HUVUD:    'https://regionblekinge.se/halsa-och-vard/sa-fungerar-varden-i-blekinge/blekingesjukhuset/matsedlar-for-sjukhusrestauranger/restaurangen-i-karlskrona.html',
   BASE:     'https://regionblekinge.se',
   DAGAR:    ['Måndag','Tisdag','Onsdag','Torsdag','Fredag'],
@@ -845,9 +845,16 @@ const Lunch = {
   },
 
   async _hämta(url) {
-    const r = await fetch(this.PROXY + encodeURIComponent(url), { signal: AbortSignal.timeout(8000) });
-    if (!r.ok) throw new Error(r.status);
-    return r.text();
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 10000);
+    try {
+      const r = await fetch(this.PROXY + encodeURIComponent(url), { signal: ctrl.signal });
+      if (!r.ok) throw new Error(r.status);
+      const json = await r.json();
+      return json.contents || '';
+    } finally {
+      clearTimeout(timer);
+    }
   },
 
   _finnVeckoUrl(doc, vecka) {
