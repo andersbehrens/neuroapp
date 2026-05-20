@@ -799,7 +799,7 @@ const App = {
 // Lunch-widget – hämtar dagens lunch från Blekingesjukhuset
 // ============================================================
 const Lunch = {
-  PROXY:    'https://api.allorigins.win/get?url=',
+  PROXY:    'https://api.codetabs.com/v1/proxy/?quest=',
   HUVUD:    'https://regionblekinge.se/halsa-och-vard/sa-fungerar-varden-i-blekinge/blekingesjukhuset/matsedlar-for-sjukhusrestauranger/restaurangen-i-karlskrona.html',
   BASE:     'https://regionblekinge.se',
   DAGAR:    ['Måndag','Tisdag','Onsdag','Torsdag','Fredag'],
@@ -850,8 +850,7 @@ const Lunch = {
     try {
       const r = await fetch(this.PROXY + encodeURIComponent(url), { signal: ctrl.signal });
       if (!r.ok) throw new Error(r.status);
-      const json = await r.json();
-      return json.contents || '';
+      return await r.text();
     } finally {
       clearTimeout(timer);
     }
@@ -870,25 +869,35 @@ const Lunch = {
   },
 
   _parsaDag(doc, dagNamn) {
+    // Tabellformat: Dag | Mål | Maträtt (rad-baserad, med rowspan för dag-cellen)
+    // Ex: ['Måndag','Lunch','Stekt kyckling'] + ['Grön lunch','Nudelwok'] (2 celler pga rowspan)
     const tabell = doc.querySelector('table');
     if (!tabell) return null;
 
     const rader = [...tabell.querySelectorAll('tr')];
-    if (rader.length < 2) return null;
-
-    // Första raden = rubriker (Dag, Måndag, Tisdag …)
-    const rubriker = [...rader[0].querySelectorAll('th,td')].map(c => c.textContent.trim());
-    const kolIdx = rubriker.findIndex(t => t.toLowerCase().startsWith(dagNamn.toLowerCase()));
-    if (kolIdx < 0) return null;
-
     const resultat = {};
+    let hittadDag = false;
+
     for (const rad of rader.slice(1)) {
       const celler = [...rad.querySelectorAll('th,td')];
-      const etikett = (celler[0]?.textContent || '').trim().toLowerCase();
-      const text    = (celler[kolIdx]?.textContent || '').trim();
-      if (!text) continue;
-      if (etikett.includes('grön') || etikett.includes('vegetar')) resultat.grönt = text;
-      else if (!resultat.lunch) resultat.lunch = text;
+
+      if (celler.length >= 3) {
+        // Rad med dagnamn: Dag | Mål | Maträtt
+        const dag  = celler[0].textContent.trim();
+        const mål  = celler[1].textContent.trim().toLowerCase();
+        const rätt = celler[2].textContent.trim();
+        if (dag && hittadDag) break; // ny dag → sluta
+        if (dag.toLowerCase().startsWith(dagNamn.toLowerCase())) {
+          hittadDag = true;
+          if (!resultat.lunch) resultat.lunch = rätt;
+        }
+      } else if (celler.length === 2 && hittadDag) {
+        // Fortsättningsrad (dag-cell är rowspan): Mål | Maträtt
+        const mål  = celler[0].textContent.trim().toLowerCase();
+        const rätt = celler[1].textContent.trim();
+        if (mål.includes('grön') || mål.includes('vegetar')) resultat.grönt = rätt;
+        else if (!resultat.lunch) resultat.lunch = rätt;
+      }
     }
     return Object.keys(resultat).length ? resultat : null;
   },
