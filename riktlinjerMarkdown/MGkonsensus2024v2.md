@@ -153,7 +153,9 @@ förekomma.
 ## Utredning vid misstänkt MG
 
 
-**[1] Kliniska uttröttningstester (se bilaga 1):** Kvantitativ testning av uttröttbarhetssymptom
+### Kliniska uttröttningstester
+
+Kvantitativ testning av uttröttbarhetssymptom
 
 
 med antingen QMG eller MGC skalorna är viktigt för att kunna värdera grad av
