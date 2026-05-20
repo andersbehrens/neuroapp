@@ -241,7 +241,7 @@ VUS Variant of Unknown Significance // av oklar signifikans
 
 ## III. Inledning
 ### Bakgrund, SWEMODIS
-#### Syfte
+###### Syfte
 
 Swemodis riktlinjer för utredning och behandling vid Parkinsons sjukdom (PS) är rekommendationer som avser
 att underlätta handläggning vid utredning, remittering, behandling och uppföljning av individer med PS.
@@ -288,7 +288,7 @@ där det är tillämpbart.
 
 Strävan är att förbättra omhändertagandet i hela vårdkedjan varför också vårdnivåer och vårdformer redovisas.
 Regionala eller lokala förutsättningar avgör ytterst hur de mest adekvata och effektiva vårdinsatserna utformas.
-#### Målgrupp
+###### Målgrupp
 
 Riktlinjerna vänder sig till vårdpersonal, på alla nivåer, som kommer i kontakt med individer med PS; från
 diagnostiska överväganden, under etablerad sjukdom till omhändertagande i sjukdomens komplikations- och
@@ -301,7 +301,7 @@ beskrivs översiktligt.
 
 
 
-#### Ansvariga för riktlinjerna
+###### Ansvariga för riktlinjerna
 
 Riktlinjerna är utarbetade av en arbetsgrupp inom SWEMODIS nuvarande och tidigare styrelser:
 
@@ -326,7 +326,7 @@ Håkan Widner, Docent, Överläkare, Neurologiska kliniken, Skånes universitets
 
 
 Riktlinjerna är fastställda av SWEMODIS styrelse och revideras och uppdateras regelbundet.
-#### Restriktioner och begränsningar
+###### Restriktioner och begränsningar
 
 Dessa riktlinjer är rekommendationer och är inte juridiskt bindande.
 

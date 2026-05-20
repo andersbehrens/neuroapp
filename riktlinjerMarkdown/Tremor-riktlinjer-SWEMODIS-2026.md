@@ -1020,7 +1020,7 @@ propranolol kan lindra parkinsontremor. Klozapin, ett atypiskt neuroleptikum, ka
 parkinsontremor, men kräver monitorering av leukocyter pga risk för agranulocytos.
 Zonisamide i låga doser (≤ 50 mg) kan också lindra parkinsontremor i vissa fall.
 
-#### Från SWEMODIS Terapiråd vid Parkinsons sjukdom 2025 version 10
+###### Från SWEMODIS Terapiråd vid Parkinsons sjukdom 2025 version 10
 
 **Tremor**
 

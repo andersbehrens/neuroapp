@@ -453,7 +453,7 @@ const Vy = {
         this._addaRubrikIds(tmp);
 
         // Spara TOC-data som enkel array (inte DOM-noder)
-        const tocData = Array.from(tmp.querySelectorAll('h2,h3,h4,h5,h6')).map(h => ({
+        const tocData = Array.from(tmp.querySelectorAll('h2,h3,h4')).map(h => ({
           id: h.id, lvl: parseInt(h.tagName.slice(1)),
           txt: h.textContent.trim().replace(/\*/g, '')
         }));
@@ -560,7 +560,7 @@ const Vy = {
   _byggToc(container) {
     const lista = document.getElementById('toc-lista');
     if (!lista) return;
-    const headings = Array.from(container.querySelectorAll('h2,h3,h4,h5,h6'));
+    const headings = Array.from(container.querySelectorAll('h2,h3,h4'));
     if (!headings.length) {
       lista.innerHTML = '<p class="toc-tom">Inga avsnitt hittades.</p>';
       return;
