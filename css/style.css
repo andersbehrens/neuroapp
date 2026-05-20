@@ -957,3 +957,47 @@ body {
     right: 16px;
   }
 }
+
+/* === Lunch-widget === */
+#lunch-widget { margin: 4px 0 12px; }
+
+.lunch-kort {
+  background: var(--blå-ljus);
+  border-left: 3px solid var(--blå-medium);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: var(--font);
+}
+
+.lunch-rubrik {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--blå-medium);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+}
+
+.lunch-tid {
+  margin-left: auto;
+  font-weight: 400;
+  color: var(--text-ljus);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.lunch-rätt {
+  font-size: 0.92rem;
+  color: var(--text-mörk);
+  line-height: 1.4;
+}
+
+.lunch-grönt {
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  margin-top: 3px;
+  line-height: 1.4;
+}

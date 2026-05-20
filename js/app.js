@@ -181,6 +181,8 @@ const Vy = {
       </div>`;
     }).join('');
 
+    setTimeout(() => Lunch.visa(), 0);
+
     return `
       <div id="startsida">
         ${installPrompt}
@@ -188,6 +190,7 @@ const Vy = {
           <h1>NeuroGuide</h1>
           <p>Neurologiska riktlinjer och akutkort</p>
         </div>
+        <div id="lunch-widget"></div>
         <div class="avsnitt-rubrik">Välj kategori</div>
         <div class="kategori-grid">${kat}</div>
       </div>`;
@@ -789,6 +792,106 @@ const App = {
   avvisaInstall() {
     window._installEvent = null;
     document.getElementById('install-prompt')?.remove();
+  }
+};
+
+// ============================================================
+// Lunch-widget – hämtar dagens lunch från Blekingesjukhuset
+// ============================================================
+const Lunch = {
+  PROXY:    'https://api.allorigins.win/raw?url=',
+  HUVUD:    'https://regionblekinge.se/halsa-och-vard/sa-fungerar-varden-i-blekinge/blekingesjukhuset/matsedlar-for-sjukhusrestauranger/restaurangen-i-karlskrona.html',
+  BASE:     'https://regionblekinge.se',
+  DAGAR:    ['Måndag','Tisdag','Onsdag','Torsdag','Fredag'],
+
+  async visa() {
+    const el = document.getElementById('lunch-widget');
+    if (!el) return;
+
+    const nu = new Date();
+    const dagIdx = nu.getDay() - 1; // 0=mån … 4=fre
+    if (dagIdx < 0 || dagIdx > 4) return; // helg – visa inget
+
+    const dagNamn = this.DAGAR[dagIdx];
+
+    try {
+      // Steg 1: hämta huvudsidan, hitta länk för innevarande vecka
+      const vecka = this._isoVecka(nu);
+      const huvudHtml = await this._hämta(this.HUVUD);
+      const doc1 = new DOMParser().parseFromString(huvudHtml, 'text/html');
+      const veckoUrl = this._finnVeckoUrl(doc1, vecka);
+      if (!veckoUrl) return;
+
+      // Steg 2: hämta veckomatsedeln och parsa
+      const veckoHtml = await this._hämta(veckoUrl);
+      const doc2 = new DOMParser().parseFromString(veckoHtml, 'text/html');
+      const rätter = this._parsaDag(doc2, dagNamn);
+      if (!rätter) return;
+
+      // Visa widgeten
+      el.innerHTML = `
+        <div class="lunch-kort">
+          <div class="lunch-rubrik">
+            <span class="lunch-ikon">🍽</span>
+            <span>Dagens lunch</span>
+            <span class="lunch-tid">11:15–13:30</span>
+          </div>
+          ${rätter.lunch   ? `<div class="lunch-rätt">${rätter.lunch}</div>` : ''}
+          ${rätter.grönt   ? `<div class="lunch-grönt">🌿 ${rätter.grönt}</div>` : ''}
+        </div>`;
+    } catch (e) {
+      // Tyst fel – widgeten förblir tom
+    }
+  },
+
+  async _hämta(url) {
+    const r = await fetch(this.PROXY + encodeURIComponent(url), { signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error(r.status);
+    return r.text();
+  },
+
+  _finnVeckoUrl(doc, vecka) {
+    const länkar = [...doc.querySelectorAll('a')];
+    for (const a of länkar) {
+      const text = (a.textContent || '').toLowerCase();
+      if (text.includes(`vecka ${vecka}`)) {
+        const href = a.getAttribute('href') || '';
+        return href.startsWith('http') ? href : this.BASE + href;
+      }
+    }
+    return null;
+  },
+
+  _parsaDag(doc, dagNamn) {
+    const tabell = doc.querySelector('table');
+    if (!tabell) return null;
+
+    const rader = [...tabell.querySelectorAll('tr')];
+    if (rader.length < 2) return null;
+
+    // Första raden = rubriker (Dag, Måndag, Tisdag …)
+    const rubriker = [...rader[0].querySelectorAll('th,td')].map(c => c.textContent.trim());
+    const kolIdx = rubriker.findIndex(t => t.toLowerCase().startsWith(dagNamn.toLowerCase()));
+    if (kolIdx < 0) return null;
+
+    const resultat = {};
+    for (const rad of rader.slice(1)) {
+      const celler = [...rad.querySelectorAll('th,td')];
+      const etikett = (celler[0]?.textContent || '').trim().toLowerCase();
+      const text    = (celler[kolIdx]?.textContent || '').trim();
+      if (!text) continue;
+      if (etikett.includes('grön') || etikett.includes('vegetar')) resultat.grönt = text;
+      else if (!resultat.lunch) resultat.lunch = text;
+    }
+    return Object.keys(resultat).length ? resultat : null;
+  },
+
+  _isoVecka(datum) {
+    const d = new Date(datum);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + 3 - (d.getDay() + 6) % 7);
+    const v1 = new Date(d.getFullYear(), 0, 4);
+    return 1 + Math.round(((d - v1) / 864e5 - 3 + (v1.getDay() + 6) % 7) / 7);
   }
 };
 
