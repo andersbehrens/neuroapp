@@ -8902,14 +8902,46 @@ i symtomkomplexet.`
 
   // ── Stroke ──────────────────────────────────────────
   {
-    id: 'vardprogram-stroke-2020',
-    titel: 'Vårdprogram stroke – Blekingesjukhuset 2020',
+    id: 'vardprogram-stroke-2026',
+    titel: 'Vårdprogram stroke – Blekingesjukhuset 2026',
     kategori: 'stroke',
-    pdf: 'riktlinjer/Vardprogram-stroke-2020.pdf',
-    markdownUrl: 'riktlinjerMarkdown/Vardprogram-stroke-2020.md',
+    pdf: 'riktlinjer/Vardprogram-stroke-2026.pdf',
+    markdownUrl: 'riktlinjerMarkdown/Vardprogram-stroke-2026.md',
     graphicalAbstract: 'graphical_abstract_stroke.html',
     innehall: [
-      { rubrik: 'Vårdprogram stroke', text: 'Medicinsk och rehabiliterande del. Slutenvård Blekingesjukhuset 2020.' }
+      { rubrik: 'Vårdprogram stroke 2026', text: 'Medicinsk och rehabiliterande del. Slutenvård Blekingesjukhuset 2026.' }
     ]
+  },
+  {
+    id: 'radda-hjarnan-lakare',
+    titel: 'Rädda hjärnan – Läkare Medicin',
+    kategori: 'stroke',
+    pdf: 'riktlinjer/Radda-hjarnan-lakare-2024.pdf',
+    direktPdf: true,
+    innehall: []
+  },
+  {
+    id: 'radda-hjarnan-flodesschema',
+    titel: 'Rädda hjärnan – Flödesschema vid strokemisstanke',
+    kategori: 'stroke',
+    pdf: 'riktlinjer/Radda-hjarnan-flodesschema-2024.pdf',
+    direktPdf: true,
+    innehall: []
+  },
+  {
+    id: 'i-catcher-pocketcard',
+    titel: 'I-CATCHER pocketcard – Region Blekinge',
+    kategori: 'stroke',
+    pdf: 'riktlinjer/I-CATCHER-pocketcard-2026.pdf',
+    direktPdf: true,
+    innehall: []
+  },
+  {
+    id: 'inklusionskriterier-strokeavd',
+    titel: 'Inklusionskriterier strokeavdelning',
+    kategori: 'stroke',
+    pdf: 'riktlinjer/Inklusionskriterier-strokeavd-2026.pdf',
+    direktPdf: true,
+    innehall: []
   }
 ];

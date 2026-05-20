@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v16';
+const CACHE_NAME = 'neuroguide-v17';
 const ASSETS = [
   './',
   'index.html',
@@ -40,7 +40,7 @@ const ASSETS = [
   'riktlinjerMarkdown/MGkonsensus2024v2.md',
   'riktlinjerMarkdown/Polyneuropati_Karolinska_2023v2.md',
   'riktlinjerMarkdown/PM-akut-hjarntumor.md',
-  'riktlinjerMarkdown/Vardprogram-stroke-2020.md',
+  'riktlinjerMarkdown/Vardprogram-stroke-2026.md',
   // PDF-filer
   'akutkort/GCS.pdf',
   'akutkort/ICH.pdf',
@@ -56,7 +56,11 @@ const ASSETS = [
   'riktlinjer/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf',
   'riktlinjer/Tremor-riktlinjer-SWEMODIS-2026.pdf',
   'riktlinjer/PM akut försämrning av hjärntumörpatienter  Södra Sjukvårdsegionen.pdf',
-  'riktlinjer/Vardprogram-stroke-2020.pdf',
+  'riktlinjer/Vardprogram-stroke-2026.pdf',
+  'riktlinjer/Radda-hjarnan-lakare-2024.pdf',
+  'riktlinjer/Radda-hjarnan-flodesschema-2024.pdf',
+  'riktlinjer/I-CATCHER-pocketcard-2026.pdf',
+  'riktlinjer/Inklusionskriterier-strokeavd-2026.pdf',
   'riktlinjer/epilepsiGraviditet.pdf',
   'papers/ASIA-Worksheet.pdf',
   'papers/4A7884B3-820E-4B4C-8587-133D336C1012.pdf',
