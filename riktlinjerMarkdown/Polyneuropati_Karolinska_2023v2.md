@@ -452,9 +452,9 @@ Dessa kategorier av polyneuropati är:
 
 
 
-**Kategori 1)**
-**Sensorisk > motorisk symmetrisk polyneuropati med distal utbredning och mkt. långsam**
-**progress**
+### Kategori 1 – Sensorisk > motorisk symmetrisk PN, långsam progress
+
+
 
 Klinisk bild: Debut oftast > 60 åå med en långsam progress. Symtomen som sällan brukar orsaka
 något omfattande handikapp, består av parestesier distalt i fötter och underben samt ev. händerna.
@@ -480,9 +480,9 @@ tagning av ”basala prover”.
 
 - Utvidgad polyneuropatiutredning är _inte_ indicerad.
 
-**Kategori 2)**
-**Sensorisk och motorisk polyneuropati med distal > proximal utbredning och rel. långsam**
-**progress**
+### Kategori 2 – Sensorisk och motorisk PN (distal > proximal), långsam progress
+
+
 
 Klinisk bild: Denna polyneuropatiform är tämligen vanlig och ger ofta upphov till differentialdiagnostiska svårigheter. Debuterar oftast i medelåldern, men debut båda i barndomen, samt äldrevuxenåldern kan förekomma. Progresstakten kan vara allt ifrån mkt långsam till ett förlopp på 3-5
 års tid. Det som framför allt skiljer denna polyneuropatikategori, från den föregående (kategori 1),
@@ -541,9 +541,9 @@ mutationsanalys för CMT övervägas.
 - _För utredning, diagnostik och uppföljningsrutiner av patienter med ATTRv-amyloidos hänvisas till det_
 _separata vårdprogrammet för FAP på Karolinska._
 
-**Kategori 3)**
-**Motorisk > sensorisk polyneuropati med distal och proximal utbredning och relativt snabbt**
-**förlopp**
+### Kategori 3 – Motorisk > sensorisk PN (distal + proximal), relativt snabbt förlopp
+
+
 
 Klinisk bild: Debut i alla åldrar inklusive barn, med en akut- (< 4 veckor; Guillain-Barré syndrom
 och panneurofascin autoimmun nodopati), eller subakut debut och progress under en 2-6 (-12)
@@ -598,8 +598,8 @@ förekomst av IgM paraprotein (se sid 9), även anti-gangliosid (GD1b) antikropp
 som symtomen är klart asymmetriska. Nervbiopsi är inte indicerad då den har en låg sensitivitet för
 diagnostisering av CIDP.
 
-**Kategori 4)**
-**Rent motorisk polyneuropati**
+### Kategori 4 – Rent motorisk polyneuropati
+
 
 Klinisk bild: Denna kategori består av patienter med övervägande motoriska symtom och som
 neurofysiologiskt har engagemang enbart av motoriska nerver, dvs multifokal motorisk neuropati
@@ -642,8 +642,8 @@ svårdiagnostiserade fall.
 likvor. Patologiskt stegrat likvoralbumin talar snarare för en övervägande motorisk CIDP. Antigangliosid antikroppar i serum skickas till kemlab Karolinska (ca 40-80% av patienter med MMN
 har förhöjning av anti-GM1 IgM antikroppar i serum).
 
-**Kategori 5)**
-**Rent sensoriskt polyneuropati med areflexi i benen**
+### Kategori 5 – Rent sensorisk PN med areflexi i benen
+
 
 Klinisk bild: Debut i alla åldrar, med en subakut eller långsamt tilltagande förlopp. Symtomen
 består av parestesier och hypoestesi distalt i benen och armarna, och tidvis även proximalt, över
@@ -692,8 +692,8 @@ kollega.
 Vid förekomst av kronisk hosta, cerebellär atrofi eller vestibular dysfunktion (patol HIT) överväg
 riktad sekvensering av RFC1 genen (CANVAS).
 
-**Kategori 6)**
-**Rent sensorisk polyneuropati utan areflexi i benen- dvs. fintrådsneuropati**
+### Kategori 6 – Fintrådsneuropati
+
 
 Klinisk bild: Debut i alla åldrar, med ett subakut eller långsamt tilltagande förlopp. En subakut
 debut brukar kunna vara associerad med en inflammatorisk genes. Vanligaste symtom är konstanta
@@ -751,8 +751,8 @@ _antingen debut i barndom/tonår eller ett förlopp med pågående smärta som t
 _feber, fysisk aktivitet eller båda. Man får också överväga att utreda för Fabrys sjukdom om det finns annan_
 _typisk organpåverkan såsom hjärta, njure, hud och hjärna._
 
-**Kategori 7)**
-**Multipla mononeuriter**
+### Kategori 7 – Multipla mononeuriter
+
 
 Klinisk bild: Debut i alla åldrar med ett akut, subakut eller långsamt förlopp. Symtomen består av
 parestesier, neuralgisk smärta och lätt-måttlig svaghet i utbredning av 2-3 st. enskilda perifera
@@ -780,8 +780,8 @@ sensorimotorisk axonal-, eller demyeliniserande polyneuropati.
 -Utvidgad utredning: LP; vaskulitutredning (se kategori 5!), ev mutationsanalys för HNPP, muskeloch ev. även nervbiopsi (vaskulit?). Nervultraljud i vissa fall för att differentiera HNPP från
 MADSAM.
 
-**Tabell 1. Sammanställning av neuropatikategorier med hänsyn till kliniska och neurofys-**
-**iologiska parametrar**
+### Tabell 1 – Neuropatikategorier: kliniska och neurofysiologiska parametrar
+
 
 
 |PNP<br>Kategori|Vanligaste<br>orsak|Förlopp -<br>progress|Sens /<br>Motor/<br>Autonom|Utbredning|Neurofysiologiska<br>fynd|
@@ -799,8 +799,8 @@ _Tid för debut av symtom till maximal-symtomnivå:_ =Akut: < 4 veckor; =Subakut
 
 
 
-**Tabell 2. Sammanställning av neuropatikategorier med hänsyn till etiologi och utrednings-**
-**förslag**
+### Tabell 2 – Neuropatikategorier: etiologi och utredningsförslag
+
 
 
 |PNP<br>Kategori|Etiologi|Utredningsförslag|

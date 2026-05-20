@@ -41,7 +41,7 @@ doseringsintervall utifrån grad av B-cells depletion var i en studie associerat
 hypogammaglobulinemi (15).
 
 
-## Praktisk handläggning och strategier för att undvika sjunkande immunglobulinnivåer under rituximab-behandling
+## Förebygga immunoglobulinnedgång under rituximab
 
 
 - För in värden under lab-fliken i SMSreg för att få överblick över trender i IgG-nivåer.
@@ -110,7 +110,7 @@ man överväga annan behandling än anti-B-cells behandling.
 - Följ IgG inför varje infusion och tätare om tendens till att IgG sjunker snabbt.
 
 
-## Åtgärder vid frekventa eller svåra bakteriella infektioner med eller utan hypogammaglobulinemi
+## Åtgärder vid frekventa/svåra infektioner
 
 
 - Avsluta anti-CD20 behandlingen

@@ -1,4 +1,4 @@
-### Förkortningar
+## Förkortningar
 
 
 DaT-PET Fe-PE2I PET
@@ -1923,7 +1923,7 @@ scientific committee. Movement Disord 1998; 13 (suppl 3): 2-23.
 Louis ED, Ottman R, Ford B, et al. The Washington Heights-Inwood Genetic Study of Essential Tremor:
 Methodologic issues in essential-tremor research. Neuroepidemiology 1997; 16: 124-133.
 
-### Essentiell tremor
+#### Essentiell tremor
 
 
 1)Isolerad bilateral aktionstremor i övre extremiteter med
@@ -1931,7 +1931,7 @@ Methodologic issues in essential-tremor research. Neuroepidemiology 1997; 16: 12
 3) med eller utan tremor i andra delar av kroppen (huvud, röst, nedre extremiteter t ex) samt
 4) avsaknad av andra neurologiska fynd som dystoni, ataxi, parkinsonism.
 
-### Essentiell tremor plus
+#### Essentiell tremor plus
 
 Tremor som har de för Essentiell Tremor typiska karakteristiska, och har ytterligare neurologiska
 statusfynd av oklar signifikans, såsom nedsatt tandemgång, oklara dystona hållningar, nedsatta

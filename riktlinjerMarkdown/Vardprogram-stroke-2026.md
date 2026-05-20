@@ -285,7 +285,7 @@ arterioscleros och vid misstanke om perfusionsrelaterade symtom.
 10
 
 
-### 2. Generellt omhändertagande av samtliga strokepatienter i akutskedet dvs. de första 3 dygnen
+### 2. Generellt omhändertagande – akutskedet (dag 1–3)
 
 2.1 Cirkulation i övrigt och elektrolytrubbningar
 
