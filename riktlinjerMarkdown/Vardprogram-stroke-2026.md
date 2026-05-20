@@ -65,14 +65,14 @@ Maja Pettersson Avdelningschef Arbetsterapi/Sjukgymnastik Karlskrona
 
 1.1.1 Datortomografi (DT) hjärna
 
-    - Akut (oberoende av tid på dygnet)
+- Akut (oberoende av tid på dygnet)
 
-    - TIA med endast amaurosis fugax är dock **inte** indikation för akut DT hjärna.
+- TIA med endast amaurosis fugax är dock **inte** indikation för akut DT hjärna.
 
 
 1.1.2 Datortomografi hjärna med kontrast (DT angio)
 
-    - I normalfallet. Patienter med njursvikt, multisjuklighet och stort ADL-behov kan
+- I normalfallet. Patienter med njursvikt, multisjuklighet och stort ADL-behov kan
 undantas.
 
 
@@ -81,9 +81,9 @@ _OBS! Strokepatienter skall med högsta prioritet inläggas på strokeenhet!_
 
 1.1.3 Laboratorieprover
 
-    - Rädda hjärnan-patient: Se Rädda hjärnan-PM.
+- Rädda hjärnan-patient: Se Rädda hjärnan-PM.
 
-    - Övriga stroke/TIA patienter: Ankomstprover vid misstänkt stroke/TIA; PK, APTT,
+- Övriga stroke/TIA patienter: Ankomstprover vid misstänkt stroke/TIA; PK, APTT,
 blodsocker, blodstatus, CRP, elstatus, Hba1c, kreatinin, blodfetter inklusive LDL,
 leverstatus.
 
@@ -93,12 +93,12 @@ Komplettera vid behov de blodprover som redan är tagna på t.ex. akutmottagning
 
 1.1.4 Övrig handläggning
 
-    - EKG (på akuten/avdelningen)
+- EKG (på akuten/avdelningen)
 
-    - Carotisultraljud om DT angio inte är gjort och om patienten är bedömd som
+- Carotisultraljud om DT angio inte är gjort och om patienten är bedömd som
 möjlig op-kandidat.
 
-    - Inled sekundärprofylax
+- Inled sekundärprofylax
 
 
 1.2 Cerebral blödning
@@ -106,19 +106,19 @@ möjlig op-kandidat.
 
 1.2.1 Subarachnoidalblödning
 
-    - Åskknallshuvudvärk
+- Åskknallshuvudvärk
 
-    - Syncope eller medvetandepåverkan möjligt debutsymtom.
+- Syncope eller medvetandepåverkan möjligt debutsymtom.
 
-    - DT hjärna inom 6 timmar från debut säkert diagnostiskt enligt Socialstyrelsen
+- DT hjärna inom 6 timmar från debut säkert diagnostiskt enligt Socialstyrelsen
 (SoS). OBS! Säker debuttid. Patienten får inte ha andra neurologiska symtom än
 huvudvärk, normalt nervstatus (inkl. ögonbottenundersökning). Granskning
 utförs av läkare med neuroradiologisk kompetens.
 
-    - Om inte ovanstående föreligger och DT hjärna är utan anmärkning utförs LP med
+- Om inte ovanstående föreligger och DT hjärna är utan anmärkning utförs LP med
 spektrofotometri tidigast 12 timmar efter debut.
 
-    - Vid positivt fynd direkt kontakt med Neurokirurgen (NK) i Lund.
+- Vid positivt fynd direkt kontakt med Neurokirurgen (NK) i Lund.
 
 
 7
@@ -214,9 +214,9 @@ operabel patient.
 
 _1.3.1 Akutbehandling av TIA och hjärninfarkt_
 
-    - **Rädda hjärnan-patient**    - Se särskilt PM i Rädda hjärnan-mappen.
+- **Rädda hjärnan-patient**    - Se särskilt PM i Rädda hjärnan-mappen.
 
-    - **Trombocythämmare**    - Rutinbehandling i de allra flesta fall!
+- **Trombocythämmare**    - Rutinbehandling i de allra flesta fall!
 
 `o` Oavsett patogenetisk mekanism; Acetylsalicylsyra (ASA) 300 mg ges direkt
 
@@ -247,14 +247,14 @@ dagligen.
 
 1.3.2 Vid förmaksflimmer eller annan kardiell embolikälla
 
-    - Antikoagulantia kan sättas in på TIA-patienter under första dygnet.
+- Antikoagulantia kan sättas in på TIA-patienter under första dygnet.
 
-    - Kontroll-DT efter 1 vecka vid större hjärninfarkt och därefter ställningstagande
+- Kontroll-DT efter 1 vecka vid större hjärninfarkt och därefter ställningstagande
 till insättning av antikoagulantia.
 
-    - NOAK (Nya Orala AntiKoagulantia) rekommenderas i första hand.
+- NOAK (Nya Orala AntiKoagulantia) rekommenderas i första hand.
 
-    - Patienter som redan behandlas med antikoagulantia; överväg tillfällig seponering
+- Patienter som redan behandlas med antikoagulantia; överväg tillfällig seponering
 (speciellt vid lillhjärnsinfarkt eller stor hemisfärinfarkt).
 
 
@@ -299,25 +299,25 @@ Ge Ringer-Acetat v.b. de två första vårddygnen (undvik glucoslösningar).
 
 2.1.1 Förhöjt blodsocker
 
-    - Normoglukemi eftersträvas. Nivåer upp till 15 mmol/l accepteras. Behandling
+- Normoglukemi eftersträvas. Nivåer upp till 15 mmol/l accepteras. Behandling
 enligt gängse principer.
 
 
 2.1.2 Feber
 
-    - Vid >37,5 [0 ] C; ge Paracetamol 1 gram.
+- Vid >37,5 [0 ] C; ge Paracetamol 1 gram.
 
-    - Vid >38 [0 ] C; Ta CRP, LPK och urinsticka. (Om ej redan taget det senaste dygnet.)
+- Vid >38 [0 ] C; Ta CRP, LPK och urinsticka. (Om ej redan taget det senaste dygnet.)
 
 
 2.1.3 Hypoxi
 
-    - Fria luftvägar, eventuellt nästub.
+- Fria luftvägar, eventuellt nästub.
 
-    - Ge syrgas vid hypoxi; vid saturation <94% ges syrgas på grimma eller öppen mask
+- Ge syrgas vid hypoxi; vid saturation <94% ges syrgas på grimma eller öppen mask
 2–4 lit/min v.b.
 
-    - Vid kronisk hypoxi (saturation <90%) och kronisk koldioxidretention (KOL)
+- Vid kronisk hypoxi (saturation <90%) och kronisk koldioxidretention (KOL)
 kontaktas läkare för vidare ordination.
 
 2.2 Trombosprofylax på helt immobiliserade patienter
@@ -422,57 +422,57 @@ patienten kan vara aktuell för SPRIH eller slutenvårdsrehabilitering.
 
 3.1.1 Carotisundersökning
 
-    - Indikation:
+- Indikation:
 
-        - Alla patienter med TIA eller lindrig hjärninfarkt inom carotisterritoriet som
+  - Alla patienter med TIA eller lindrig hjärninfarkt inom carotisterritoriet som
 potentiellt kan bli föremål för carotiskirurgi.
 
-    - DT-angio bör utföras snarast inom 2 dygn (48 timmar).
+- DT-angio bör utföras snarast inom 2 dygn (48 timmar).
 
-    - Ultraljud preoperativt eller vid oklart CT angio-fynd.
+- Ultraljud preoperativt eller vid oklart CT angio-fynd.
 
-    - Carotisoperation skall ske skyndsamt, senast inom 2 veckor.
+- Carotisoperation skall ske skyndsamt, senast inom 2 veckor.
 
 
 3.1.2 Diagnostik av förmaksflimmer
 
-    - Remiss till thoraxkliniken för 48 tim långtidsEKG-registrering (LTER);
+- Remiss till thoraxkliniken för 48 tim långtidsEKG-registrering (LTER);
 
-        - Diagnos ischemisk stroke eller TIA där orsaken är okänd.
+  - Diagnos ischemisk stroke eller TIA där orsaken är okänd.
 
-        - Inget tidigare känt förmaksflimmer.
+  - Inget tidigare känt förmaksflimmer.
 
-        - Bedöms vara kandidat för antikoagulantiabehandling om förmaksflimmer
+  - Bedöms vara kandidat för antikoagulantiabehandling om förmaksflimmer
 diagnostiseras.
 
 
 3.1.3 Ekokardiografi
 
-    - Indikation:
+- Indikation:
 
-        - Hjärninfarkt eller TIA om fynd av kardiell embolikälla i det enskilda fallet
+  - Hjärninfarkt eller TIA om fynd av kardiell embolikälla i det enskilda fallet
 påverkar behandlingen (t.ex. antikoagulantiabehandling, endokarditbehandling).
 
-        - Rutin hos unga (<60 år) om annan orsak till stroke inte framkommit.
+  - Rutin hos unga (<60 år) om annan orsak till stroke inte framkommit.
 
-    - Indikationen mindre stark vid annan misstänkt huvudmekanism (t.ex. signifikant
+- Indikationen mindre stark vid annan misstänkt huvudmekanism (t.ex. signifikant
 carotisstenos påvisad vid duplexundersökning).
 
-    - Indikationen bortfaller vid kroniskt förmaksflimmer.
+- Indikationen bortfaller vid kroniskt förmaksflimmer.
 
-    - Ej rutin hos patienter äldre än 60 år och utan tecken på hjärtsjukdom.
+- Ej rutin hos patienter äldre än 60 år och utan tecken på hjärtsjukdom.
 
 
 3.1.4 Magnetresonanstomografi (MRT)
 
-    - Kan vara indicerad vid oklar diagnos i synnerhet i bakre skallgropen där DTdiagnostik är svårare.
+- Kan vara indicerad vid oklar diagnos i synnerhet i bakre skallgropen där DTdiagnostik är svårare.
 
-    - Vid differentialdiagnostiska problem, t.ex. misstanke på multipel skleros.
+- Vid differentialdiagnostiska problem, t.ex. misstanke på multipel skleros.
 
-    - För diagnostik av sinustrombos, extrakraniell dissektion, intracerebralt hematom
+- För diagnostik av sinustrombos, extrakraniell dissektion, intracerebralt hematom
 (senare än 2 veckor efter insjuknandet).
 
-    - Diffusions-MRT kan vara av värde för differentialdiagnostik och för att påvisa en
+- Diffusions-MRT kan vara av värde för differentialdiagnostik och för att påvisa en
 akut infarkts läge och storlek.
 
 3.2 Utvidgad utredning hos yngre patienter med stroke (18–55 år)
@@ -499,15 +499,15 @@ kärldissektion.
 
 3.2.1 Ovanliga diagnoser
 
-    - Sinustrombos
+- Sinustrombos
 
-    - Paradoxal embolism
+- Paradoxal embolism
 
-    - Fabrys sjukdom
+- Fabrys sjukdom
 
-    - Antikardiolipinsyndrom
+- Antikardiolipinsyndrom
 
-    - Vaskulit
+- Vaskulit
 
 3.3 Cerebral blödning
 
@@ -528,35 +528,35 @@ t.ex. infektion eller annan allmänpåverkan t.ex. dehydrering.
 
 3.4.1 Neurologiska sjukdomar
 
-    - Epilepsi;
+- Epilepsi;
 
-        - Partiell epilepsi som i sin tur kan bero på till exempel hjärntumör eller
+  - Partiell epilepsi som i sin tur kan bero på till exempel hjärntumör eller
 kärlmissbildning.
 
-        - Postapoplektisk epilepsi bör alltid övervägas om patienten drabbas av nya
+  - Postapoplektisk epilepsi bör alltid övervägas om patienten drabbas av nya
 neurologiska symptom motsvarande det tidigare drabbade området.
 
-    - Intrakraniell expansivitet
+- Intrakraniell expansivitet
 
-    - Herpesencephalit
+- Herpesencephalit
 
-    - Skov av demyeliniserande sjukdom
+- Skov av demyeliniserande sjukdom
 
-    - Migrän (inklusive retinal migrän)
+- Migrän (inklusive retinal migrän)
 
 
 3.4.2 Icke neurologiska sjukdomar
 
-    - Metabola störningar och allmänna infektionssjukdomar, feber, hypo- eller
+- Metabola störningar och allmänna infektionssjukdomar, feber, hypo- eller
 hyperglykemi, elektrolytrubbningar, intoxikationer med mera.
 
-    - Temporalisarterit
+- Temporalisarterit
 
-    - Ögonsjukdomar
+- Ögonsjukdomar
 
-    - Öronsjukdomar
+- Öronsjukdomar
 
-    - Funktionella symptom
+- Funktionella symptom
 
 
 14
