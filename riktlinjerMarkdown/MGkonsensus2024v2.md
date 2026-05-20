@@ -1,4 +1,4 @@
-## Riktlinjer för utredning och behandling av Myastenia Gravis (MG)
+# Riktlinjer för utredning och behandling av Myastenia Gravis (MG)
 
 MG är en kronisk autoimmun neurologisk sjukdom, som karaktäriseras av abnorm
 
@@ -165,7 +165,7 @@ sjukdomspåverkan och för att på kort och lång sikt följa sjukdomsförloppet
 effekt av behandlingar.
 
 
-### [2] Reversibilitetstester
+### Reversibilitetstester
 
 
 **-Edrofoniumtest** (”Tensilontest”; sensitivitet ca 60%) kan göras om patienten har tydliga och
@@ -217,7 +217,7 @@ farmakologisk hämning. Notera att specificitet och sensitivitet är begränsad 
 falla ut både som falskt positivt och negativt.
 
 
-### [3] Serum för analys av antikroppar
+### Antikroppsanalys
 
 
 - **Acetylcholinreceptorantikroppar (AChR-ak)** detekteras hos ca 80% med generaliserad
@@ -271,7 +271,7 @@ tymom före en eventuell tymektomi. Det prediktiva värdet gäller dock enbart v
 eftersom titin-antikroppar är relativt vanligt förekommande vid LOMG (Wieslab).
 
 
-### [4] Neurofysiologiska undersökningar
+### Neurofysiologiska undersökningar
 
 
 Dessa görs för att objektivt verifiera utbredning och grad av påverkad neuromuskulär
@@ -378,10 +378,10 @@ tymom) och inför insättning av all typ av immunosuppressiv behandling.
 
 
 
-## Behandling:
+## Behandling
 
 
-### [1] Symtomatisk terapi
+### Symtomatisk terapi
 
 
 **Kolinesterashämmare:** Good practice point, evidensgrad 4.
@@ -452,7 +452,7 @@ uppleva muskulära överdoseringssymtom (muskelsvaghet och muskelkramper) vid l�
 doser än vad som angivits ovan.
 
 
-### [2] Immunoterapi
+### Immunoterapi
 
 
 **-Kortikosteroider:** Good practice point, evidensgrad 2b
@@ -782,7 +782,7 @@ patienter ofta upplever påtaglig symtomförsämring. Behandling ges då som ens
 (20 till 40g) med 4 till 12 veckors intervall.
 
 
-### Behandlingsalternativ vid terapisvikt på rituximab, steroider och andra immunosuppressiva, dvs terapirefraktär myasteni
+### Terapirefraktär myasteni
 
 
 Om ovanstående behandlingar inte ger tillfredställande effekt eller ger oacceptabla
@@ -1034,7 +1034,7 @@ behandling så som för myasten kris/försämring. Patienter bör också informe
 själva höja dosen av pyridostigmin 60 mg över 6 till 8 tabletter per dag.
 
 
-### Överväganden gällande användning av röntgenkontrastmedel
+### Röntgenkontrastmedel
 
 
 Nuvarande nationella och internationella radiologiska riktlinjer anger att
@@ -1086,7 +1086,7 @@ inneliggande ett dygn efter undersökning.
 
 
 
-## Referenser:
+## Referenser
 
 Punga AR, et al. Epidemiology, diagnostics, and biomarkers of autoimmune
 neuromuscular junction disorders. Lancet Neurol 2022;21:176–188.
@@ -1115,7 +1115,7 @@ patients with myasthenia gravis. Radiology. 2013;267(3):727-34.
 
 
 
-## MG- behandlingsalgoritm
+## MG-behandlingsalgoritm
 
 Alternativ immunsuppression till rituximab: per orala immunosuppressiva, cyklofosfamid, eculizumab,
 efgartigimod, tocilizumab, kladribin, hematogen stamcellsbehandling.
@@ -1131,7 +1131,9 @@ LOMG = Late-onset Myasthenia gravis
 ![](images/MGkonsensus2024v2/MGkonsensus2024v2.pdf-15-0.png)
 
 
-## Bilaga 1: Instruktioner för utförande av uttröttningstest
+## Bilagor
+
+### Bilaga 1: Uttröttningstest
 
 1. **Tal** : Be patienten säga sitt namn och sedan att räkna högt till hundra. Uppmärksamma
 tecken till dysartri eller nasalt ljud. Be patienten säga sitt namn igen när han/hon räknat klart.
@@ -1180,7 +1182,7 @@ blåshastighet snarare än att tömma lungorna helt!
 
 
 
-## Bilaga 2 : Kvantitativt MG status (QMG)
+### Bilaga 2: MG-statusskalor (QMG, MGC, PEF)
 
 Det maximala antalet repetitioner räknas som det antal patienten kan utföra ett korrekt sätt, det vill säga behålla
 
@@ -1196,18 +1198,18 @@ hållas längre
 
 
 ![](images/MGkonsensus2024v2/MGkonsensus2024v2.pdf-17-0.png)
-## Bilaga 2 (forts): MG Kompositskala (MGC)
+#### MG Kompositskala (MGC)
 
 
 ![](images/MGkonsensus2024v2/MGkonsensus2024v2.pdf-18-0.png)
 
 
-## Bilaga 2 (forts): PEF
+#### PEF
 
 
 
 ![](images/MGkonsensus2024v2/MGkonsensus2024v2.pdf-19-0.png)
-## Bilaga 3: Neostigmin test
+### Bilaga 3: Neostigmintest
 
 Ge först **Atropin 0,5 mg i.v** (Atropin , 0,5 mg/ml, 1 ml) och vänta 5 till 10 minuter.
 
@@ -1238,7 +1240,7 @@ Effekten förväntas sitta i 1 till 2 timmar efter att Neostigminet administrera
 
 gradvis klinga av.
 
-## Istest
+#### Istest
 
 
 Om patienten har ptos kan istest utföras som ett alternativ/komplement till
@@ -1257,7 +1259,7 @@ Använd gärna patientens mobilkamera för att dokumentera effekten.
 
 
 
-## Bilaga 4: Provtagningsrutiner
+### Bilaga 4: Provtagningsrutiner
 
 **Rituximab**
 
@@ -1333,7 +1335,7 @@ kvartalsvis. Blodtryck kvartalsvis. Blodfetter och urinsticka minst en gång per
 
 **Bilaga 5**
 
-## Tabell för i.v/s.c Neostigminbehandling vid myasten kris
+### Behandlingstabell – myasten kris
 
 
 Neostigmin i.v 0,5 mg eller s.c 1.5 mg motsvarar 60 mg pyridostigmin (Mestinon) respektive
