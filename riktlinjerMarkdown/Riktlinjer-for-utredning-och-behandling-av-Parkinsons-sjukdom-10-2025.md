@@ -596,7 +596,7 @@ Allmän genetisk screening av alla Parkinsonpatienter rekommenderas däremot int
 rekommenderas idag gentest som stöd för val av avancerad terapi.
 
 
-**När gentesta?**
+###### När gentesta?
 
 Symtombild och förlopp skiljer sig mellan de enskilda monogenetiska formerna av PS. Om sådan form
 identifieras kan bättre information om långsiktiga prognosen kan ges och utredning och uppföljning bli mer
@@ -623,7 +623,7 @@ _Behandling med levodopa har mycket stor effekt på viktiga effektmått såsom m
 _i dagliga livet och har prioritet 1 vid behandling av Parkinsons sjukdom från och med tidig fas (NR, PD11)_ .
 
 
-**Farmakologiska egenskaper**
+###### Farmakologiska egenskaper
 
 Levodopa är en prekursor till dopamin och kan till skillnad från dopamin passera blod-hjärnbarriären. Av en
 peroral dos är det ca 10% som passerar blod-hjärnbarriären när levodopa ges med dekarboxylashämmare.
@@ -639,7 +639,7 @@ Levodopa (och dopaminagonister) har utöver direkt-effekt också en långtidseff
 uppstår efter veckors behandling, och avtar inom veckor efter att man slutar tillföra preparatet.
 
 
-**Beredningsformer/preparatöversikt**
+###### Beredningsformer/preparatöversikt
 
 Det finns konventionella tabletter, dispergerbara tabletter, depot-tabletter, och depotkapslar. Europeiskt
 godkännade finns också för en inhalationsberedning (Inbrija®). Levodopa/karbidopa kan också ges kontinuerligt
@@ -650,7 +650,7 @@ fluktuationer finns även möjlighet till individualiserad oral dosering med mik
 (Flexilev®) som administreras från en dosautomat upp till 16 ggr per dygn.
 
 
-**Praktiska råd angående farmakologisk behandling med levodopa**
+###### Praktiska råd angående farmakologisk behandling med levodopa
 
 Behandling med levodopa ökar den förväntade livslängden hos patienter genom att följdtillstånd till PS kan
 undvikas, men behandlingen bidrar också till utveckling av terapikomplikationer, särskilt dyskinesier.
@@ -708,7 +708,7 @@ biverkningarna. Träning av patient och anhöriga i rätt inhalationsteknik kan 
 och öka behandlingseffekten
 
 
-**Levodopabaserad infusionsterapi**
+###### Levodopabaserad infusionsterapi
 
 Subkutan administration av levodopa/karbidopa prodrug foslevodopa/foskarbidopa (Produodopa®) eller
 intrajejunal administration av levodopa/karbidopa-gel (Duodopa [®] ) alternativt levodopa/karbidopa/entakapongel (Lecigon®) via PEG med bärbar pump kan övervägas hos patienter i fluktuationsfas som har besvärande
@@ -729,7 +729,7 @@ _symtomfluktuationer kan reducera off-tid, förbättra Activities of Daily Livin
 _reducera behovet av levodopa (prioritet 2, NR PD17)_
 
 
-**Farmakologiska egenskaper**
+###### Farmakologiska egenskaper
 
 Dopaminagonister stimulerar dopaminreceptorer genom en direkt agonistisk effekt. Effekten är inte selektiv för
 centrala nervsystemet (CNS) och perifera biverkningar tenderar att vara mer uttalade än med levodopa.
@@ -755,14 +755,14 @@ levodopa vid fluktuationer för att reducera tid i ”off”. Förutsatt att lev
 förbättring avseende fluktuationerna vid tillägg av agonister.
 
 
-**Beredningsformer/preparatöversikt**
+###### Beredningsformer/preparatöversikt
 
 Rotigotin tillförs med plåster perkutant; apomorfin ges som subkutan injektion eller infusion; övriga agonister
 ges peroralt. Rotigotin subventioneras endast för patienter med PS som behöver dopaminagonister och som inte
 kan ta tabletter.
 
 
-**Terapi med penna/pump: Apomorfin**
+###### Terapi med penna/pump: Apomorfin
 
 Apomorfin är den dopaminagonist som har en antiparkinsoneffekt som är mest jämförbar med endogent
 dopamin. Apomorfinbehandling kan ges som subkutana injektioner med injektionspenna (apomorfin hydroklorid
@@ -775,7 +775,7 @@ se avsnitt ”VIII. Avancerad behandling ” samt ScandMODIS detaljerade behandl
 ![](images/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf-20-0.png)
 
 
-**Biverkningar**
+###### Biverkningar
 
 Dopaminagonister har gemensamma perifera biverkningar: illamående, ortostatisk hypotension, yrsel och
 perifera ödem. Risken för CNS-biverkningar som hallucinos är större än med levodopa.Särskilda
@@ -850,7 +850,7 @@ Utsättning av agonister bör ske gradvis. I de fall detta inte är möjligt och
 särskilt om det är en impulskontrollproblematik.
 
 
-**Praktiska råd**
+###### Praktiska råd
 
 De långverkande formerna av pramipexol, ropinirol och rotigotin har främst fördelar vad avser
 läkemedelshantering och sannolikt förbättrad compliance. De har föreslagits medföra mindre tendens till
@@ -877,7 +877,7 @@ vara särskilt viktigt när biverkningarna kommer smygande och kan misstolkas, v
 impulskontrollstörningar.
 
 
-**Domperidon**
+###### Domperidon
 
 Domperidon är en perifer dopaminerg antagonist, som inte passerar blod-hjärnbarriären (i doser <100 mg), och
 kan användas för att att minska dopaminreceptormedierade biverkningar. Den numera rekommenderade dosen
@@ -905,7 +905,7 @@ COMT-hämmare kan användas för att förstärka effekten av levodopamedicinerin
 (Prioritet 2, NR, PD19).
 
 
-**Farmakologiska egenskaper**
+###### Farmakologiska egenskaper
 
 COMT-hämmare bromsar metabolismen av levodopa och dopamin och förlänger därigenom effekten (L-dopa
 ekvivalensdosen räknas vanligen upp upp med 33 % vid tillägg av entakapon och med 50% vid tillägg av tolkapon
@@ -917,7 +917,7 @@ visade ingen signifikant skillnad i effekt avseende detta. COMT-hämning tidigt 
 ännu inte har fluktuationer, har inte visats förebygga utvecklingen av dyskinesier eller fluktuationer.
 
 
-**Beredningsformer/preparatöversikt**
+###### Beredningsformer/preparatöversikt
 
 Entakapon, Tolkapon och opikapon är de tre COMT-hämmare som är registrerade i Sverige eller centralt i Europa
 via Europeiska läkemedelsmyndigheten (European Medicines Agency, EMA). Fasta kombinationer av levodopa,
@@ -925,7 +925,7 @@ karbidopa och entakapon finns på marknaden i form av tabletter (Stalevo®, Sast
 intestinal gel (Lecigon®). Opikapon (Ongentys®) är registrerat men ingår ej i läkemedelsförmånen.
 
 
-**Praktiska råd**
+###### Praktiska råd
 
 Vid insättning av COMT-hämmare bör man beakta att max-koncentrationen av levodopa stiger, vilket kan leda
 till ökade levodopa-relaterade biverkningar. Justering neråt av den totala dagliga
@@ -979,7 +979,7 @@ Hos patienter med fluktuationer uppnås en stabilisering av symtomatologin med r
 jämförda). Användning av MAO-B-hämmare vid Parkinsons sjukdom med fluktuationer har prioritet 2 (NR, PD16).
 
 
-**Farmakologiska egenskaper**
+###### Farmakologiska egenskaper
 
 MAO-hämmare hämmar enzymet monoamin oxidas som bryter ner aminer. Isoformen MAO-A har större affinitet
 för serotonin och noradrenalin, medan dopamin har likartad affinitet till MAO-A och MAO-B. Substanser som
@@ -994,14 +994,14 @@ natriumkanaler även påverka glutamatfrisättning. Man har därför framfört h
 dyskinesier, men den kliniska betydelsen av detta är inte fastställd.
 
 
-**Beredningsformer/preparatöversikt**
+###### Beredningsformer/preparatöversikt
 
 Selegilin (Eldepryl®) finns sedan tidigt 90-tal på marknaden. Rasagilin är liksom selegilin är registrerat för
 monoterapi och tilläggsterapi.. Safinamid (Xadago®) är till skillnad från selegilin och rasagilin en reversibel
 MAO-B hämmare och är endast registrerat som tilläggspreparat till levodopa.
 
 
-**Praktiska råd**
+###### Praktiska råd
 
 Såväl rasagilin (1 mg/d) som selegilin (5 - 10 mg/d) och safinamid (50 - 100 mg/d) kan ges en gång dagligen. Med
 selegilin och rasagilin byggs den MAO-B hämmande effekten upp gradvis under de första 7 - 14 dagarnas
@@ -1189,7 +1189,7 @@ levodopa-ekvivalenta dygnsdoser. Beräkningar av LED och LEDD baserar sig en met
 Det finns individuella variationer i hur patienter reagerar på dopaminagonister, MAO-B hämmare och COMThämmare varför beräkningarna endast utgör uppskattningar.
 
 
-**LED-beräkningsfaktorer**
+###### LED-beräkningsfaktorer
 
 
 2) För total programmerad/given dos efter avdrag av 60 mg (3 ml) per ny förfylld spruta
@@ -2036,7 +2036,7 @@ effekt.
 ### Depression
 
 
-**Bakgrund**
+###### Bakgrund
 
 Depressiv symtomatologi förekommer under sjukdomsförloppet för många patienter med PS och kräver ofta
 någon form av specifik behandlingsåtgärd.
@@ -2052,12 +2052,12 @@ depressiva symtomatologi som uppträder vid PS är associerad med grundsjukdomen
 några huvudgrupper:
 
 
-**Reaktiva symtom på diagnos och konsekvens av sjukdomen**
+###### Reaktiva symtom på diagnos och konsekvens av sjukdomen
 
 Åtgärd: Insikts- och stödsamtal med patient och anhöriga.
 
 
-**Led i Parkinsons sjukdom och dess behandling**
+###### Led i Parkinsons sjukdom och dess behandling
 
 Depressiva symtom kan också vara uttryck för icke-motoriska fluktuationer. Dessa kan, menbehöver inte,
 samvariera med motoriska fluktuationer. Dessa viker ofta när patienten kommer i motorisk ”on”-fas.
@@ -2067,7 +2067,7 @@ samvariera med motoriska fluktuationer. Dessa viker ofta när patienten kommer i
 dopaminagonist med D3-receptor selektivitet (pramipexol, Sifrol®) som kan ha en god antidepressiv effekt.
 
 
-**Depression som är förenlig med kriterierna för DSM – V**
+###### Depression som är förenlig med kriterierna för DSM – V
 
 Det finns inget klart samband mellan parkinsonsjukdomens svårighetsgrad och depressionens vanlighet eller
 djup.
@@ -2146,7 +2146,7 @@ marknadsför DBS-utrustning.
 ### Ångest och panikattacker
 
 
-**Bakgrund**
+###### Bakgrund
 
 Ångestsymtom är vanliga vid PS. Uppträder hos minst 25-40 % av patienterna d v s i högre frekvens än vid andra
 kroniska sjukdomar som diabetes eller reumatoid artrit. Ångest kan vara alltifrån ängslan och oro till fruktan och
@@ -2159,7 +2159,7 @@ sjukdomstillståndet utan mera en följd av den underliggande sjukdomen. Många 
 ångestsymtom, ofta i förening med depression, långt innan den motoriska störningen kan konstateras.
 
 
-**Led i Parkinsons sjukdom och dess behandling**
+###### Led i Parkinsons sjukdom och dess behandling
 
 Ångestsymtom kan vara en följd av svängningar i motoriska och limbiska nätverk som förstärks via
 läkemedelseffekter och uppträder såväl under ”peak-dose”-fas som under ”off”-period. Man kan se en uttalad
@@ -2180,7 +2180,7 @@ farmakologisk effekt av att levodopa blockerar noradrenalinfrisättning.
 stödsamtal med patient och anhöriga.
 
 
-**Del i kognitiv nedsättning**
+###### Del i kognitiv nedsättning
 
 Ångest kan också vara en följd av tilltagande kognitiva svårigheter som gör att man får svårare att klara tidigare
 inlärda situationer. Detta förstärks av en minskad psykomotorisk flexibilitet. Allt medverkar till nedsatt kontroll
@@ -2191,7 +2191,7 @@ av känslouttryck med, som följd, oro, ångest eller apati.
 ”kognitiv mottagning / minnesmottagning” för utvidgad bedömning.
 
 
-**Diagnostik/Gradering**
+###### Diagnostik/Gradering
 
 Det är viktigt med en utförlig anamnes, gärna kompletterad med uppgifter från anhöriga, personal m fl. Det är
 värdefullt att komplettera med så kallade ”ångestskalor” för diagnostik, svårighetsgrad eller behandlingseffekt,
@@ -2199,7 +2199,7 @@ t ex HAM-A (Hamilton-Anxiety scale). Det finns också kombinationsskalor för å
 Anxiety and Depression Scale, HADS).
 
 
-**Behandling**
+###### Behandling
 
 Det finns inga stora placebokontrollerade studier av terapi mot ångest vid PS.
 
@@ -2225,7 +2225,7 @@ påverkan på smärtmodulering och den direkta smärtprocessen genom de dopamine
 kolinerga förändringarna som sjukdomen medför.
 
 
-**Smärta vid Parkinsons sjukdom kan klassificeras enligt nedan**
+###### Smärta vid Parkinsons sjukdom kan klassificeras enligt nedan
 
 Muskuloskeletal smärta: Vanligaste orsaken till smärta och finns hos upp till 70% av patienterna. Ensidig
 axelsmärta är ett vanligt debutsymtom. Kan vara direkt sjukdomsrelaterad, orsakad av rigiditet, bradykinesi,
@@ -2256,7 +2256,7 @@ Sensoriska off-fenomen: ’Burning mouth’ och genital smärta kan vara sensori
 hypotension och orsakas av nedsatt blodflöde till muskulaturen i nacken och övre delen av ryggen.
 
 
-**Behandling**
+###### Behandling
 
 Innan man behandlar smärta är det viktigt att noggrant kartlägga vilken typ av smärta det rör sig om samt när
 den uppkommer. The King's Parkinson's Pain Scale är en smärtskala som är validerad vid PS. Med hjälp av den
@@ -2688,7 +2688,7 @@ behandlingar (L-dopa (minst 5 dagliga doser), dopaminagonister, COMT-hämmare oc
 eller bedömts vara kontraindicerade.
 ###### **Neurokirurgisk behandling**
 
-**Metoder, biverkningar**
+###### Metoder, biverkningar
 
 Neurokirurgisk stereotaktisk behandling av rörelserubbningar har lång tradition i Sverige. Pallidotomi och
 thalamotomi föregick effektiv farmakologisk behandling vid sjukdomar med rörelserubbning. Den lesionella
@@ -2732,7 +2732,7 @@ stimuleringsbiverkningar kan minskas genom omprogrammering av polaritet och övr
 
 
 
-**Indikationer – kontraindikationer**
+###### Indikationer – kontraindikationer
 
 Generellt är neurokirurgisk behandling vid PS indicerad när medicinsk behandling inte längre ger
 tillfredsställande funktionellt resultat i det individuella fallet. Allmänna riktlinjer för användande av DBS finns
@@ -2753,7 +2753,7 @@ risk för kognitiv påverkan, hög ålder. För vissa målpunkter utgörs de av 
 autonoma symtom och psykossymtom.
 
 
-**Postoperativ medicinering och elektrostimulering**
+###### Postoperativ medicinering och elektrostimulering
 
 Innebär en kombinationsbehandling där medicinering måste balanseras med stimulatorinställning. Båda
 behandlingarna påverkar varandra och för optimalt resultat, både avseende biverkningar och symtomreduktion,
@@ -2766,7 +2766,7 @@ teamen vid universitetsklinikerna, som inlett behandlingen. Individuella arrange
 med andra kliniker.
 
 
-**Speciellt handhavande**
+###### Speciellt handhavande
 
 Vid EKG stängs impulsgivarna av och startas efteråt.
 
@@ -2957,14 +2957,14 @@ behandling nödvändiggör stora medicinreduktioner. Detta sker i samråd mellan
 motorikteam i samband med operationerna, se avsnitt Neurokirurgisk behandling.
 
 
-**Operationsdagen, preoperativt**
+###### Operationsdagen, preoperativt
 
 Om det tar tid innan operationen kommer till stånd, kan man ge T. Madopark Quick Mite® 50 mg, 1-2 st upplöst i
 liten mängd vätska och ge under tungan i 5 mL spruta. Om man förväntar sig att ventrikel/tarmar påverkas kan
 man med fördel sätta en V-sond peroperativt och ge medicineringen postoperativt i liten mängd vätska.
 
 
-**Operationsdagen, postoperativt**
+###### Operationsdagen, postoperativt
 
 Ge endast levodopa-medicineringen och ge första dosen efter uppvaknandet i form av Madopark Quick®, 50-100
 mg eventuellt i sond eller under tungan om sväljning inte är möjlig. Kan ges så snart patienten kan ta emot
@@ -2973,17 +2973,17 @@ medlet. Om det dröjer mer än 4h tills patienten kan svälja kan Produodopa® g
 doseringstillfälle före operationsdagen. Gör uppehåll med alla övriga medel.
 
 
-**Första post-operativa dygnet**
+###### Första post-operativa dygnet
 
 Ge ordinarie levodopa från morgonen men inte övriga typer antiparkinsonmedicinering.
 
 
-**Andra post-operativa dygnet**
+###### Andra post-operativa dygnet
 
 Ge ordinarie doser från morgonen av alla typer antiparkinsonmedicinering.
 
 
-**Vid hallucinos eller oro**
+###### Vid hallucinos eller oro
 
 Undvik att ge mer levodopa. Cave alla former av neuroleptika! Vid behov av sedering, ge bensodiazepiner eller
 Heminevrin® 300-600 mg.
@@ -3462,7 +3462,7 @@ innehavare av taxiförarlegitimation, tidigare hade inte förändringen genomfö
 **av körkort m.m.**
 
 
-**1 kap. Inledande bestämmelser Allmänt**
+###### 1 kap. Inledande bestämmelser Allmänt
 
 **1 §** Dessa föreskrifter innehåller bestämmelser om
 
@@ -3490,7 +3490,7 @@ Vid en sammantagen bedömning av olika medicinska förhållanden kan hinder för
 förhållandena var för sig inte utgör hinder enligt 2–15 kap.
 
 
-**Läkarundersökning m.m.**
+###### Läkarundersökning m.m.
 
 
 **6** **§** Läkarundersökning och annan undersökning som ska ligga till grund för intyg enligt 3 kap. 1 eller 6 §
@@ -3513,7 +3513,7 @@ _eller annat medicinskt underlag. Inför en sådan undersökning bör läkaren o
 _körkortsmyndighetens eller prövningsmyndighetens handlingar i ärendet._
 
 
-**7 kap. Neurologiska sjukdomar**
+###### 7 kap. Neurologiska sjukdomar
 
 **För innehav av behörigheterna AM, A1, A, B, BE, C, CE, D, DE, traktorkort eller**
 **taxiförarlegitimation 1 §** Sjukdomar i nervsystemet som innebär trafiksäkerhetsrisker utgör
@@ -3533,7 +3533,7 @@ _Vid Parkinsons sjukdom bör förekomst av s.k. on-off-symtom särskilt beaktas.
 körning av motordrivet fordon särskilt beaktas och bedömas enligt 12 kap. 16 §.
 
 
-**Villkor om läkarintyg**
+###### Villkor om läkarintyg
 
 
 **5 §** Vid progressiv sjukdom, t. ex. Parkinsons sjukdom, multipel skleros eller annan neurodegenerativ sjukdom
@@ -3541,9 +3541,9 @@ ska villkor om läkarintyg föreskrivas och prövning av frågan om fortsatt inn
 bedöms lämpligt i varje enskilt fall.
 
 
-**10 kap. Demens och andra kognitiva störningar**
+###### 10 kap. Demens och andra kognitiva störningar
 
-**För innehav av behörigheterna AM, A1, A, B, BE, C, CE, D, DE, traktorkort eller taxiförarlegitimation**
+###### För innehav av behörigheterna AM, A1, A, B, BE, C, CE, D, DE, traktorkort eller taxiförarlegitimation
 
 **1 §** Allvarlig kognitiv störning utgör hinder för innehav. Vid bedömning av om störningen ska anses som allvarlig
 ska särskild hänsyn tas till nedsättning av uppmärksamhet, omdöme och förmågan att ta in och bearbeta
@@ -3552,7 +3552,7 @@ Dessutom ska känslomässig labilitet och ökad uttröttbarhet beaktas. Apraxi o
 uppmärksammas.
 
 
-**Innehav vid demens**
+###### Innehav vid demens
 
 
 **3 §** Demens utgör hinder för innehav. Vid lindrig demens kan dock innehav av behörigheterna AM, A1, A,
@@ -3567,7 +3567,7 @@ _yrkesarbete och sociala aktiviteter, ändå har förmågan att föra ett själv
 _förhållandevis intakt omdöme._
 
 
-**Villkor om läkarintyg**
+###### Villkor om läkarintyg
 
 
 **6** **§** Vid lindrig demens ska villkor om läkarintyg föreskrivas och prövning av frågan om fortsatt innehav göras
@@ -3605,7 +3605,7 @@ _uppmärksamhet och till uppmärksamhet över tid samt effekter av tidspress pr�
 _trafiksäkerheten._
 
 
-**SFS 2010:799 Lag om ändring i körkortslagen (1998:488); 10 kap.**
+###### SFS 2010:799 Lag om ändring i körkortslagen (1998:488); 10 kap.
 
 **2 §** 5 Om en läkare vid undersökning av en körkortshavare finner att körkortshavaren av medicinska skäl är
 olämplig att ha körkort, ska läkaren anmäla det till Transportstyrelsen. Innan anmälan görs ska läkaren
@@ -3634,7 +3634,7 @@ kategoriseringar av arbetets typ av belastning och krav. Rekommendationerna är 
 tankekedja möjlig att applicera på den individuella situationen.
 
 
-**Samsjuklighet**
+###### Samsjuklighet
 
 De specifika rekommendationerna är skrivna utifrån en tänkt situation där patienten endast har en,
 väldefinierad, diagnos. I den verklighet som läkarkåren möter, är samsjuklighet och svårigheter att sortera olika
@@ -3646,7 +3646,7 @@ tillstånd där det är svårt eller irrelevant att utse någon huvuddiagnos ska
 underlaget (läkarintyget).
 
 
-**Sammanfattning av det försäkringsmedicinska beslutsstödet vid Parkinsons sjukdom:**
+###### Sammanfattning av det försäkringsmedicinska beslutsstödet vid Parkinsons sjukdom:
 
 - I den tidiga fasen har patienten ofta behov av återkommande korttidssjukskrivning för att återhämta sig.
 
@@ -3664,7 +3664,7 @@ dagen hålla kvar viss arbetskapacitet. Kunskaper och erfarenhet kan finnas i go
 - I komplikationsfasen är det ovanligt med arbetsförmåga.
 
 
-**Försäkringsmedicinsk information**
+###### Försäkringsmedicinsk information
 
 Det finns en spännvidd för hur en given sjukdom påverkar olika individers arbetsförmåga och förmåga att utföra
 olika aktiviteter. Därför måste bedömningen av arbetsförmågan ske individuellt utifrån individens unika
@@ -3688,7 +3688,7 @@ Sjukskrivande läkare bör försäkra sig om att patienten har kontakt med Förs
 Partiell sjukskrivning för att gradvis öka belastningen vid återgång i arbetet är ofta att föredra.
 
 
-**Symtom, prognos, behandling**
+###### Symtom, prognos, behandling
 
 Parkinsons sjukdom beror på ett gradvis bortfall av nervceller i hjärnan och medför långsamt tilltagande
 problem med försämrad rörlighet och kognitiv svikt. Sjukdomsförloppet består av tre faser:
@@ -3715,7 +3715,7 @@ ut. Livslängden är dock idag endast obetydligt förkortad. En neuro psykolog b
 ibland även trötthet.
 
 
-**Funktionsnedsättning**
+###### Funktionsnedsättning
 
 Parkinson kan medföra problem i form av darrning (tremor), nedsatt rörlighet och påverkan på gångmönstret.
 Även kognitiva problem (som hjärntrötthet, nedsatt psykisk uthållighet, arbetsminne, tankeförmåga och
@@ -3725,7 +3725,7 @@ påverkat De kognitiva problemen upptäcks inte alltid i den tidiga sjukdomsfase
 nedsatt tolerans för fysiskt arbete.
 
 
-**Aktivitetsbegränsning**
+###### Aktivitetsbegränsning
 
 Parkinson kan medföra nedsatt handmotorik, svårigheter att lyfta och bära föremål från en plats till en annan,
 samt att använda arm och hand. Patienten kan få svårigheter att gå, gå i trappor och att röra sig omkring på
@@ -3737,7 +3737,7 @@ företa komplexa uppgifter och att lära sig nya färdigheter. patienten kan få
 påverkas och därmed förmågan att kunna konversera. Även förmågan att framföra fordon kan påverkas.
 
 
-**Information om rehabilitering**
+###### Information om rehabilitering
 
 Överväg rehabilitering med utformning av hjälpmedel, andra arbetsuppgifter eller omskolning till annat arbete i
 tid. Diskutera eventuell anpassning av arbetsuppgifter. Företagshälsovård och arbetsgivare bör tidigt kopplas in
@@ -3748,7 +3748,7 @@ arbetsbelastning vid tilltagande funktionsnedsättningar.
 
 ## XIII. Referenser
 
-**1.** **Andra Guidelines, översikter, länkar**
+###### 1.** **Andra Guidelines, översikter, länkar
 
   - American Academy for Neurology, guidelines
 
@@ -3811,7 +3811,7 @@ Nationella Riktlinjer för Parkinsons sjukdom:
 [Idiopathisches Parkinson-Syndrom (www.dgn.org)](https://dgn.org/)
 
 
-**2.** **Utvalda källreferenser**
+###### 2.** **Utvalda källreferenser
 
 Ahlskog JE. Parkinson's disease progression is multifaceted: Evidence for the underlying benchmarks.
 Parkinsonism RelatDisord. 2024;121:106037.
@@ -4013,7 +4013,7 @@ samt visuospatial funktion.
 flera olika domäner kan undergruppering ske i PD-MCI en domän eller PD-MCI multipla domäner.
 
 
-**DIAGNOSTISKA KRITERIER FÖR PD-MCI**
+###### DIAGNOSTISKA KRITERIER FÖR PD-MCI
 
 
 _Inklusionskriterier_
@@ -4044,7 +4044,7 @@ _Emre M, Aasland D, Brown R et al. Clinical Diagnostic Criteria for Dementia Ass
 _Disease. Movem. Dis. 2007; 12: 1689-1707._
 
 
-**Kliniska huvudkarakteristiska:**
+###### Kliniska huvudkarakteristiska:
 
 _1._ PSs diagnos enligt UKQS Brain Bank kriterier
 
@@ -4063,7 +4063,7 @@ personlig ADL) oberoende av motoriska eller dysautonoma symtom.
 
 
 
-**Associerade kliniska tecken**
+###### Associerade kliniska tecken
 
 
 _3._ _Kliniska tecken på kognitiva störningar_
@@ -4100,7 +4100,7 @@ inneboende person), omtolkningar.
   - Betydande dagtrötthet.
 
 
-**Kliniska tecken som inte utesluter PDD, men som inger diagnostisk tveksamhet**
+###### Kliniska tecken som inte utesluter PDD, men som inger diagnostisk tveksamhet
 
   - Samtidig närvaro av ett onormalt tillstånd som i sig kan ge upphov till kognitiv svikt, men som inte
 bedöms vara orsak till demensen, t ex förekomst av hjärnavbildningstecken på vaskulär(a) lesion(er).
@@ -4131,13 +4131,13 @@ tillstånd genom att en av följande gäller: debut av demens inom 3 månader ef
 försämring av kognitiva funktioner.
 
 
-**Kliniska diagnoskriterier PDD**
+###### Kliniska diagnoskriterier PDD
 
 
 OBS! notera ordningsföljd – starkare diagnoskriterier först:
 
 
-**Sannolik demens vid Parkinsons sjukdom**
+###### Sannolik demens vid Parkinsons sjukdom
 
 
 _A: Kliniska huvudkarakteristika_
@@ -4166,7 +4166,7 @@ _C: Ingen av grupp III-symtom uppfylls. D:_
 _Ingen av grupp IV-symtom uppfylls._
 
 
-**Möjlig demens vid Parkinsons sjukdom**
+###### Möjlig demens vid Parkinsons sjukdom
 
 
 _A: Kliniska huvudkarakteristika_
@@ -4244,7 +4244,7 @@ _diagnosis of progressive supranuclear palsy: The movement disorder society crit
 _Jun;32(6):853-864._
 
 
-**Grundläggande karakteristika**
+###### Grundläggande karakteristika
 
 Grundläggande egenskaper måste föreligga hos en patient för att en diagnos av PSP skall kunna övervägas,
 oberoende av vilken fenotyp och i vilket stadium patienten uppvisar (tabell 1). Obligatoriska inklusionskriterier
@@ -4257,7 +4257,7 @@ Kontextberoende uteslutningskriterier (tabell 1, B3): dessa utesluter också PSP
 patienter med antydda, ovanliga kliniska egenskaper som motiverar ytterligare utredning.
 
 
-**Kärnfunktioner**
+###### Kärnfunktioner
 
 Fyra centrala funktions domäner med karakteristiska kliniska manifestationer av PSP (okulär motorisk
 dysfunktion [O], postural instabilitet [P], akinesi [A] och kognitiv dysfunktion [C]; Tabell 2). Inom varje domän,
@@ -4266,20 +4266,20 @@ föreligger ytterligare tre karakteristiska centrala kliniska egenskaper, strati
 [hög], 2 [medel] och 3 [låg]) bidrar till diagnosen PSP (tabell 2).
 
 
-**Stödjande kliniska fynd**
+###### Stödjande kliniska fynd
 
 Stödjande kliniska fynd (tabell 3) är prediktiva sjukdomsyttringar, men är otillräckliga för att vara diagnostiska
 kännetecken. De kan ge användbara kompletterande underlag med ökad diagnostisk säkerhet. Dessa klassificeras
 som kliniska fynd (CC1–CC4) och avbildningsfynd (IF1, IF2).
 
 
-**Operationaliserade definitioner**
+###### Operationaliserade definitioner
 
 De centrala kliniska egenskaperna, stödjande kliniska ledtrådar och stödjande avbildningsfynd
 operationaliserades i ett försök att standardisera tillämpningen av MDS-PSP-kriterierna (tabell 4).
 
 
-**Grad av diagnostisk säkerhet**
+###### Grad av diagnostisk säkerhet
 
 Fyra nivåer av diagnostisk säkerhet:
 
@@ -4302,7 +4302,7 @@ Förekommer ytterligare av avbildningsfynd (IF1 eller IF2) förenligt med PSP me
 misstanke med avbildnings stöd”.
 
 
-**Kliniska typer**
+###### Kliniska typer
 
 Kliniska dominanstyper bestäms baserat på kombinationen av kliniska egenskaper (tabell 5):
 
@@ -4357,7 +4357,7 @@ Nedsatt uppmärksamhet, nedsatta exekutiv funktion, och nedsatt visuoperceptuell
 framträdande och uppträda tidigt.
 
 
-**Centrala kliniska egenskaper:**
+###### Centrala kliniska egenskaper:
 
 (De första 3 inträffar vanligtvis tidigt och kan kvarstå under hela sjukdomsfasen)
 
@@ -4383,7 +4383,7 @@ vilotremor
 rigiditet / stelhet.
 
 
-**Stödjande kliniska egenskaper**
+###### Stödjande kliniska egenskaper
 
 Uttalad känslighet för anti psykotiska medel (som medför allvarlig försämring av rörlighet eller kognition)
 
@@ -4412,7 +4412,7 @@ systematiserade vanföreställningar;
 apati, ångest och depression.
 
 
-**Indikativa biomarkörer**
+###### Indikativa biomarkörer
 
 Minskat upptag av dopamintransportörer i basala ganglier demonstreras av SPECT eller PET.
 
@@ -4423,7 +4423,7 @@ Onormal (lågt upptag) 123jod-MIBG myokardscintigrafi.
 Polysomnografisk bekräftelse av REM-sömn utan atoni.
 
 
-**Stödjande biomarkörer**
+###### Stödjande biomarkörer
 
 Relativt bevarande av mediala temporallobsstrukturer på CT/MRI-skanning.
 
@@ -4461,7 +4461,7 @@ a. Endast en central klinisk egenskap hos DLB föreligger, utan indikativa bioma
 b. En eller flera indikativa biomarkörer föreligger men centrala kliniska egenskaper saknas.
 
 
-**DLB är mindre sannolikt:**
+###### DLB är mindre sannolikt:
 
 a. I närvaro av någon annan fysisk sjukdom eller hjärnsjukdom inklusive cerebrovaskulär sjukdom, med en
 omfattning som kan förklara delvis eller delvis den kliniska bilden.
@@ -4475,7 +4475,7 @@ b. Om parkinsoniska drag är det enda centrala kliniska kännetecknet och upptr�
 stadium av svår demens.
 
 
-**DLB ska diagnostiseras när demens inträffar före eller samtidigt med parkinsonism.**
+###### DLB ska diagnostiseras när demens inträffar före eller samtidigt med parkinsonism.
 
 Termen PSs demens (PDD) bör användas för att beskriva demens som uppstår i kontext av väletablerad PS.
 
@@ -4524,9 +4524,9 @@ identifierar kliniskt möjlig CBD, som kan orsakas av CBD men även av andra tau
 |**Progressiv**<br>**supranukleär pares**<br>**(PSP)**|Tre av: a) axial eller symmetrisk rigiditet i arm/ben eller akinesi,<br>b) postural instabilitet eller fall, c) inkontinens, d)<br>beteendeförändring, <br>e) supranukleär vertikal blickpares eller sänkt vertikal<br>sackadhastighet|
 
 
-**a)** **Exklusionskriterier för både trolig CBD (kliniska forskningskriterier) och för möjlig CBD (kliniska**
+###### a)** **Exklusionskriterier för både trolig CBD (kliniska forskningskriterier) och för möjlig CBD (kliniska
 
-**kriterier):**
+###### kriterier):
 
 Tecken till Lewy-kroppssjukdom: klassisk 4 Hz Parkinsontremor, utmärkt och bestående levodoparespons eller
 hallucinationer
@@ -4553,9 +4553,9 @@ talar starkt för Alzheimer såsom låg CSF betaamyloid/tau kvot; (2) positiv 11
 (3) genetisk mutation talande för AD.
 
 
-**b)** **Möjlig CBD innebär ett kliniskt syndrom som är förenligt med CBD men som också kan överlappa**
+###### b)** **Möjlig CBD innebär ett kliniskt syndrom som är förenligt med CBD men som också kan överlappa
 
-**med andra tau-patier.**
+###### med andra tau-patier.
 
 ### Essentiell Tremor (ET)
 
@@ -4699,7 +4699,7 @@ all dopaminverkande behandling utsättas.
 
 
 
-**Typiska symtom (alla behöver inte föreligga)**
+###### Typiska symtom (alla behöver inte föreligga)
 
   - Feber
 
@@ -4758,7 +4758,7 @@ FDA),dels Parkinson Kinetigraph, PKG (Global Kinetics Corporation), dels PDMonit
 dels STAT-ON (Sense4care), varav de tre sista också har CE-märkning. I Sverige används främst PKG och STATON.
 
 
-**Bakgrund:**
+###### Bakgrund:
 
 PKG är en handledsburen aktigraf som mäter spontant rörelsemönster under upp till 6 dygn. Mätdata uttolkas
 baserat på tre parkinsonrelaterade rörelsemått, Bradykinesi-index (BK), Dyskinesi-index (DK) och tremorepisoder. Med hjälp av BK beäknas också inaktivitet och sömnlik immobilitet som kan ge en uppfattning om
@@ -4777,7 +4777,7 @@ Vid genomförande av ambulatorisk rörelsemätning kan åtgärdskod AN100 Långt
 aktivitet/rörelse användas.
 
 
-**Indikationer för ambulatorisk rörelsemätning:**
+###### Indikationer för ambulatorisk rörelsemätning:
 
 Rörelsemätning med bärbara enheterär ett komplement till sedvanlig anamnes och är av störst värde när
 patientens anamnestiska uppgifter är svåra att tolka, om patienten har svårt återge eller komma ihåg sina
@@ -4791,7 +4791,7 @@ användning av PKG leder till förbättrade resultat i form av livskvalitet. Ett
 mätningar får störst effekt för patienter vars behandlande läkare träffar relativt få Parkinsonpatienter.
 
 
-**Mätning och uttolkning:**
+###### Mätning och uttolkning:
 
 PKG-mätningar görs vid de flesta Universitetssjukhus i Sverige och kan oftast genomföras utan att patienten
 kommer till kliniken eftersom apparaturen kan sändas fram och åter med post. Vid mätning bör man notera
@@ -4808,7 +4808,7 @@ fördelar framför PKG när patienten främst har gångrelaterade fluktuationer,
 som är svårt eller omöjligt att detektera med PKG.
 
 
-**Allmänna rekommendationer om uttolkning av rörelsmätningar:**
+###### Allmänna rekommendationer om uttolkning av rörelsmätningar:
 
 SWEMODIS rekommenderar att uttolkning sker av person med betydande erfarenhet av att tolka PKG-rapporter.
 Efter mätning bör resultaten diskuteras med patient/anhörig för att undvika att aktivitetsrelaterade artefakter
@@ -4829,7 +4829,7 @@ Uttolkning av STAT-ON rapporter är enklare och den utrustningen kan därför va
 mätningar eller om patientens symtom är övervägande axiala.
 
 
-**Användning av PKG-mått som målvärden för behandling**
+###### Användning av PKG-mått som målvärden för behandling
 
 I allmänhet är bradykinesi det viktigaste symtomet som skall behandlas. Följande målnivåer har föreslagits (Odin
 et al. 2018) [6], men är ännu inte tillräckligt utvärderade kliniskt:
@@ -4864,7 +4864,7 @@ p.g.a ortostatism eller hallucinationer och de faktiska behandlingsmålen är so
 
 ## Bilaga IV: Klinisk genetisk utredning och genetisk vägledning
 
-**Allmänna aspekter**
+###### Allmänna aspekter
 
 I tidigare språkbruk betecknades en genetisk variant som **“mutation”** när man höll den ansvarig för en sjukdom
 och som ”polymorfism” när man menade att den inte var kopplad till en sjukdom. Man föredrar numera det
@@ -4893,7 +4893,7 @@ originalutlåtandet från genetisk undersökning och behöver kunna återfinnas 
 tyvärr ändras genom åren.
 
 
-**Patienter med symtomdebut innan 30 – 35 års ålder**
+###### Patienter med symtomdebut innan 30 – 35 års ålder
 
 Gentestning avseende **recessiv PS** anses indicerad för personer med ovanligt tidig symtomdebut, upp till 30-35
 års ålder. Gentest bör omfatta både sekvensanalys av **PRKN, PINK1 eller DJ1**, och analys avseende
@@ -4978,21 +4978,21 @@ En specifik variant RAB32 Ser71Arg har beskrivits hos personer med PS med förh�
 än så länge förhållandvis begränsad.
 
 
-**MSA i familjär anhopning**
+###### MSA i familjär anhopning
 
 MSA anses generellt vara en sporadisk sjukdom och uppträdandet av MSA hos två eller fler släktingar bör
 föranleda omprövning av diagnoserna och testning för SNCA varianter, som beskrivet ovan. Vid misstänkt MSA-C
 med hereditet rekommenderas testning för genetiska ataxisjukdomar.
 
 
-**PSP i familjär anhopning**
+###### PSP i familjär anhopning
 
 Även detta är mycket ovanligt men flera familjer med Richardsons syndrom (eller snarlik fenotyp) i autosomal
 dominant nedärvning har haft mutationer i MAPT eller GRN (gener för frontotemporal demenssjukdom, FTD).
 Som regel fanns dock även kognitiv påverkan som vid FTD.
 
 
-**Parkinsonism i kombination med andra neurologiska/neuro psykiatriska symtom**
+###### Parkinsonism i kombination med andra neurologiska/neuro psykiatriska symtom
 
 Ett flertal neurologiska sjukdomar kan leda till Parkinsonism som ett mer eller mindre framstående delsymtom i
 en komplex symtombild. Många olika kombinationer finns men vanligare kombinationer inkluderar ataxiparkinsonism syndromet, dystoni-parkinsonism syndromet, Parkinsonism med epilepsi eller utvecklingsstörning,
@@ -5003,7 +5003,7 @@ familjehistorik är essentiell för att kunna välja rätt genetisk analys och t
 svar (se nedan). Remiss till specialiserad enhet (oftast inom universitetssjukvården) rekommenderas.
 
 
-**Att tänka på inför gentest**
+###### Att tänka på inför gentest
 
 Genetisk utredning med genpanel-/helexom-/helgenomundersökning kan relativt ofta leda till fynd som inte är
 helt entydiga. Detta kan föranleda ytterligare kliniska eller genetiska utredningar. En noggrann beskrivning av
@@ -5020,7 +5020,7 @@ vad gäller frågeställning sjukdomen och genfyndet behöver tillhandahållas f
 och som förmedlar kontakt med krishanteringsenheten.
 
 
-**När genetiska testresultatet erhållits**
+###### När genetiska testresultatet erhållits
 
 Gentestresultatet måste vägas in i en helhetsbedömning och andra undersökningsfynd. Patienten kan vara
 bärare av en genetisk variant men även ha symtom av annan sjukdom. Gentestning av släktingar med eller utan
@@ -5066,7 +5066,7 @@ Vid hög misstanke på genetisk orsak kan förnyade eller fördjupade genetiska 
 analys genomföras vid Kliniska genetiska kliniker eller inom klinisk forskning.
 
 
-**Remiss till klinisk genetik**
+###### Remiss till klinisk genetik
 
 Vid positiv gentest: patient (proband) och familjemedlemmar bör erbjudas mer ingående information till
 patient, släktmedlemmar, anhöriga och vidare familjeutredning. Om gentestningen har genomförts på externt
