@@ -8,6 +8,7 @@ const KATEGORIER = [
   { id: 'polyneuropati', namn: 'Polyneuropati',     beskrivning: 'Polyneuropati – vårdprogram Karolinska', ikon: '🔬', farg: 'kategori-prognos', parent: 'riktlinjer' },
   { id: 'neuroonkologi', namn: 'Neuroonkologi',     beskrivning: 'Hjärntumörer och neuroonkologiska riktlinjer', ikon: '🧬', farg: 'kategori-riktlinje', parent: 'riktlinjer' },
   { id: 'stroke',        namn: 'Stroke',             beskrivning: 'Strokevårdprogram och riktlinjer', ikon: '🩺', farg: 'kategori-akut', parent: 'riktlinjer' },
+  { id: 'epilepsi',      namn: 'Epilepsi',           beskrivning: 'Epilepsi – handläggning och riktlinjer', ikon: '⚡', farg: 'kategori-riktlinje', parent: 'riktlinjer' },
   { id: 'akutkort',      namn: 'Akutkort',          beskrivning: 'Neurologiska akutkort för akuta situationer', ikon: '⚡', farg: 'kategori-akut' },
   { id: 'artiklar',      namn: 'Artiklar',           beskrivning: 'Kliniskt användbara vetenskapliga artiklar', ikon: '📖', farg: 'kategori-riktlinje' },
   { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
@@ -8886,6 +8887,19 @@ i symtomkomplexet.`
     graphicalAbstract: 'graphical_abstract_hjarntumor.html',
     innehall: [
       { rubrik: 'Akut försämring av hjärntumörpatienter', text: 'PM i akut neuroonkologi för handläggning av vuxna patienter med hjärntumörsjukdom i Södra Regionen. Råd vid akut försämring för jourhavande utanför behandlande klinik.' }
+    ]
+  },
+
+  // ── Epilepsi ──────────────────────────────────────────
+  {
+    id: 'epilepsi-graviditet',
+    titel: 'Antiepileptika vid graviditet',
+    kategori: 'epilepsi',
+    pdf: 'riktlinjer/epilepsiGraviditet.pdf',
+    innehall: [
+      { rubrik: 'Graviditetsfysiologi och farmakokinetik', text: 'Ökad renal clearance, östrogen inducerar UGT-enzymer, ökad fördelningsvolym. Reducerad serumkoncentration av de flesta AED. Lamotrigin minskar 50–60 %, levetiracetam 40–60 %.' },
+      { rubrik: 'Provtagningsrutiner', text: 'Lamotrigin och levetiracetam: provtagning var 4:e vecka. Övriga AED var 6–8:e vecka. Dosjustering: minska 3 dagar efter partus, återgå till måldos på 7–9 dagar.' },
+      { rubrik: 'Amning', text: 'Rekommenderas. AED passerar i bröstmjölk i liten mängd. Undvik amning vid bensodiazepiner. Observera trött/slö eller skrikig/skakig bebis.' }
     ]
   },
 

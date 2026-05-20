@@ -108,6 +108,7 @@ const Vy = {
       case 'artiklar':
       case 'neuroonkologi':
       case 'stroke':
+      case 'epilepsi':
       case 'kalkylatorer':
         tillbaka.classList.add('synlig');
         el.innerHTML = this.kategoriVy(vy);

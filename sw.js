@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v15';
+const CACHE_NAME = 'neuroguide-v16';
 const ASSETS = [
   './',
   'index.html',
@@ -57,6 +57,7 @@ const ASSETS = [
   'riktlinjer/Tremor-riktlinjer-SWEMODIS-2026.pdf',
   'riktlinjer/PM akut försämrning av hjärntumörpatienter  Södra Sjukvårdsegionen.pdf',
   'riktlinjer/Vardprogram-stroke-2020.pdf',
+  'riktlinjer/epilepsiGraviditet.pdf',
   'papers/ASIA-Worksheet.pdf',
   'papers/4A7884B3-820E-4B4C-8587-133D336C1012.pdf',
   'papers/51F1599A-2FCA-423A-B1D4-AC8026090E6C.pdf',
