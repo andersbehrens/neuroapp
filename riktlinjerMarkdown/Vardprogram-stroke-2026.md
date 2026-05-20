@@ -54,23 +54,23 @@ Maja Pettersson Avdelningschef Arbetsterapi/Sjukgymnastik Karlskrona
 
 ## A. Medicinsk del
 
-### 1. Akut handläggning
+## 1. Akut handläggning
 
-1.1 Patienter med misstänkt stroke och TIA
+### 1.1 Patienter med misstänkt stroke och TIA
 
   - Plötsligt insättande fokala neurologiska bortfall.
 
   - Om insjuknande i stroke inom 24 timmar. Se Rädda hjärnan – PM.
 
 
-1.1.1 Datortomografi (DT) hjärna
+#### 1.1.1 Datortomografi (DT) hjärna
 
 - Akut (oberoende av tid på dygnet)
 
 - TIA med endast amaurosis fugax är dock **inte** indikation för akut DT hjärna.
 
 
-1.1.2 Datortomografi hjärna med kontrast (DT angio)
+#### 1.1.2 Datortomografi hjärna med kontrast (DT angio)
 
 - I normalfallet. Patienter med njursvikt, multisjuklighet och stort ADL-behov kan
 undantas.
@@ -79,7 +79,7 @@ undantas.
 _OBS! Strokepatienter skall med högsta prioritet inläggas på strokeenhet!_
 
 
-1.1.3 Laboratorieprover
+#### 1.1.3 Laboratorieprover
 
 - Rädda hjärnan-patient: Se Rädda hjärnan-PM.
 
@@ -91,7 +91,7 @@ leverstatus.
 Komplettera vid behov de blodprover som redan är tagna på t.ex. akutmottagningen.
 
 
-1.1.4 Övrig handläggning
+#### 1.1.4 Övrig handläggning
 
 - EKG (på akuten/avdelningen)
 
@@ -101,10 +101,10 @@ möjlig op-kandidat.
 - Inled sekundärprofylax
 
 
-1.2 Cerebral blödning
+### 1.2 Cerebral blödning
 
 
-1.2.1 Subarachnoidalblödning
+#### 1.2.1 Subarachnoidalblödning
 
 - Åskknallshuvudvärk
 
@@ -124,7 +124,7 @@ spektrofotometri tidigast 12 timmar efter debut.
 7
 
 
-1.2.2 Intracerebral blödning
+#### 1.2.2 Intracerebral blödning
 
   - Hematom ökar i storlek under det första dygnet i en stor andel av fallen.
 
@@ -134,7 +134,7 @@ Patienter med blödningar >110 ml, medellinjeöverskjutning >10 mm, hög ålder
 och/eller djup medvetslöshet har dålig prognos oavsett åtgärd.
 
 
-1.2.3 Akut handläggning av cerebral blödning
+#### 1.2.3 Akut handläggning av cerebral blödning
 
 a) Reversering av antikoagulantia
 b) Blodtrycksbehandling
@@ -209,7 +209,7 @@ utvalda fall, t.ex. vid ytligt hematom enligt ovan eller medvetandepåverkad
 operabel patient.
 
 
-1.3 Ischemisk stroke/TIA
+### 1.3 Ischemisk stroke/TIA
 
 
 _1.3.1 Akutbehandling av TIA och hjärninfarkt_
@@ -245,7 +245,7 @@ Acetylsalicylsyra (ASA) 130 mg x2 i laddningsdos följt av 130 mg dagligen.
 dagligen.
 
 
-1.3.2 Vid förmaksflimmer eller annan kardiell embolikälla
+#### 1.3.2 Vid förmaksflimmer eller annan kardiell embolikälla
 
 - Antikoagulantia kan sättas in på TIA-patienter under första dygnet.
 
@@ -261,7 +261,7 @@ till insättning av antikoagulantia.
 9
 
 
-1.3.3 Behandling av expansiv hjärninfarkt
+#### 1.3.3 Behandling av expansiv hjärninfarkt
 
   - Vid expansiv mediainfarkt kan hemikranektomi vara aktuell.
 OBS! Kontakt med neurokirurg under 1: a dygnet. Oftast något yngre patient,
@@ -270,7 +270,7 @@ expansiva fynd på DT-hjärna och medvetandepåverkan.
   - Vid expansiv lillhjärnsinfarkt kan dekompressionskirurgi övervägas.
 
 
-1.3.4 Blodtryck vid ischemisk stroke
+#### 1.3.4 Blodtryck vid ischemisk stroke
 
  - Akut behandling endast vid blodtryck >230/130 mmHg efter observation under 2
 timmar på vårdavdelningen. Helst peroral behandling. Ges i gängse doser.
@@ -285,9 +285,9 @@ arterioscleros och vid misstanke om perfusionsrelaterade symtom.
 10
 
 
-### 2. Generellt omhändertagande – akutskedet (dag 1–3)
+## 2. Generellt omhändertagande – akutskedet (dag 1–3)
 
-2.1 Cirkulation i övrigt och elektrolytrubbningar
+### 2.1 Cirkulation i övrigt och elektrolytrubbningar
 
   - OBS! Viktigt att optimera systemfaktorer för att minimera risken för att den
 ischemiska randzonen (penumbran) omvandlas till infarkt och blir permanent. Första
@@ -297,20 +297,20 @@ dygnen efter stroke kan vara avgörande för utbredningen av penumbrazonen.
 Ge Ringer-Acetat v.b. de två första vårddygnen (undvik glucoslösningar).
 
 
-2.1.1 Förhöjt blodsocker
+#### 2.1.1 Förhöjt blodsocker
 
 - Normoglukemi eftersträvas. Nivåer upp till 15 mmol/l accepteras. Behandling
 enligt gängse principer.
 
 
-2.1.2 Feber
+#### 2.1.2 Feber
 
 - Vid >37,5 [0 ] C; ge Paracetamol 1 gram.
 
 - Vid >38 [0 ] C; Ta CRP, LPK och urinsticka. (Om ej redan taget det senaste dygnet.)
 
 
-2.1.3 Hypoxi
+#### 2.1.3 Hypoxi
 
 - Fria luftvägar, eventuellt nästub.
 
@@ -320,19 +320,19 @@ enligt gängse principer.
 - Vid kronisk hypoxi (saturation <90%) och kronisk koldioxidretention (KOL)
 kontaktas läkare för vidare ordination.
 
-2.2 Trombosprofylax på helt immobiliserade patienter
+### 2.2 Trombosprofylax på helt immobiliserade patienter
 
   - Lågmolekylärt heparin i profylaxdos sätts in dag 2 vid hjärninfarkt.
 
   - Vid hjärnblödning kan lågmolekylärt heparin övervägas efter några dygn om
 tillståndet är stabilt.
 
-2.3 Krampanfall
+### 2.3 Krampanfall
 
   - Vid upprepade anfall under akutskedet är det indicerat med en kortare tids anfallsbehandling. Levetiracetam kan vara en lämplig behandling för i.v. och peroralt bruk.
 
 
-2.4 Övervakning/Kontroller
+### 2.4 Övervakning/Kontroller
 
   - Strokekontroller enligt övervakningsschema - se Appendix II, är obligatoriskt. Dessa
 görs första vårddygnet var 4:e timme, om ej annat ordineras. OBS! rektal temp
@@ -363,7 +363,7 @@ I övrigt enligt ordination.
 samt vid feber x 2/dag.
 
 
-2.5 Omhändertagande av patient med sväljningssvårigheter
+### 2.5 Omhändertagande av patient med sväljningssvårigheter
 
   - Strokeobservation inklusive sväljningstest med vatten tsk-vis utförs av van avdelningspersonal för att pröva patientens sväljningsförmåga enligt anvisning på baksidan av
 strokekontrollistan (se Appendix II). Se även PM - ”Sväljscreening slutenvård”
@@ -381,7 +381,7 @@ Om detta inte är möjligt får TPN övervägas.
 samråd med logoped.
 
 
-2.6 Obstipationsprofylax på immobiliserade patienter.
+### 2.6 Obstipationsprofylax på immobiliserade patienter.
 
   - Tillräckligt med vätska och ev. anpassad kost
 
@@ -389,7 +389,7 @@ samråd med logoped.
 Forlax, Laktulos) enligt ordination om patienten kan svälja.
 
 
-2.7 Mobilisering, teambedömning och rehabilitering
+### 2.7 Mobilisering, teambedömning och rehabilitering
 
   - Mobilisering påbörjas omgående utifrån patientens förutsättningar.
 
@@ -405,7 +405,7 @@ behov av ev. hjälpmedel och träning.
 patienten kan vara aktuell för SPRIH eller slutenvårdsrehabilitering.
 
 
-2.8 Övriga resurser
+### 2.8 Övriga resurser
 
   - Kurator
 
@@ -415,12 +415,12 @@ patienten kan vara aktuell för SPRIH eller slutenvårdsrehabilitering.
 12
 
 
-### 3. Fortsatt utredning – bakomliggande orsak, sekundärprofylax
+## 3. Fortsatt utredning – bakomliggande orsak, sekundärprofylax
 
-3.1 Undersökningar/provtagningar
+### 3.1 Undersökningar/provtagningar
 
 
-3.1.1 Carotisundersökning
+#### 3.1.1 Carotisundersökning
 
 - Indikation:
 
@@ -434,7 +434,7 @@ potentiellt kan bli föremål för carotiskirurgi.
 - Carotisoperation skall ske skyndsamt, senast inom 2 veckor.
 
 
-3.1.2 Diagnostik av förmaksflimmer
+#### 3.1.2 Diagnostik av förmaksflimmer
 
 - Remiss till thoraxkliniken för 48 tim långtidsEKG-registrering (LTER);
 
@@ -446,7 +446,7 @@ potentiellt kan bli föremål för carotiskirurgi.
 diagnostiseras.
 
 
-3.1.3 Ekokardiografi
+#### 3.1.3 Ekokardiografi
 
 - Indikation:
 
@@ -463,7 +463,7 @@ carotisstenos påvisad vid duplexundersökning).
 - Ej rutin hos patienter äldre än 60 år och utan tecken på hjärtsjukdom.
 
 
-3.1.4 Magnetresonanstomografi (MRT)
+#### 3.1.4 Magnetresonanstomografi (MRT)
 
 - Kan vara indicerad vid oklar diagnos i synnerhet i bakre skallgropen där DTdiagnostik är svårare.
 
@@ -475,7 +475,7 @@ carotisstenos påvisad vid duplexundersökning).
 - Diffusions-MRT kan vara av värde för differentialdiagnostik och för att påvisa en
 akut infarkts läge och storlek.
 
-3.2 Utvidgad utredning hos yngre patienter med stroke (18–55 år)
+### 3.2 Utvidgad utredning hos yngre patienter med stroke (18–55 år)
 
   - DT-angiografi från arcus och upp.
 
@@ -497,7 +497,7 @@ akut infarkts läge och storlek.
 kärldissektion.
 
 
-3.2.1 Ovanliga diagnoser
+#### 3.2.1 Ovanliga diagnoser
 
 - Sinustrombos
 
@@ -509,7 +509,7 @@ kärldissektion.
 
 - Vaskulit
 
-3.3 Cerebral blödning
+### 3.3 Cerebral blödning
 
   - Kartlägg bakomliggande orsak;
 
@@ -521,12 +521,12 @@ kärldissektion.
 
       - Kärlmissbildning
 
-3.4 Differentialdiagnoser
+### 3.4 Differentialdiagnoser
 Vanlig felkälla är tidigare stroke eller annan hjärnsjukdom med försämring av symptom vid
 t.ex. infektion eller annan allmänpåverkan t.ex. dehydrering.
 
 
-3.4.1 Neurologiska sjukdomar
+#### 3.4.1 Neurologiska sjukdomar
 
 - Epilepsi;
 
@@ -545,7 +545,7 @@ neurologiska symptom motsvarande det tidigare drabbade området.
 - Migrän (inklusive retinal migrän)
 
 
-3.4.2 Icke neurologiska sjukdomar
+#### 3.4.2 Icke neurologiska sjukdomar
 
 - Metabola störningar och allmänna infektionssjukdomar, feber, hypo- eller
 hyperglykemi, elektrolytrubbningar, intoxikationer med mera.
@@ -562,7 +562,7 @@ hyperglykemi, elektrolytrubbningar, intoxikationer med mera.
 14
 
 
-3.5 Sekundärprofylax
+### 3.5 Sekundärprofylax
 
   - ASA-behandling från akutskedet fortsätter vanligtvis som sekundärprofylax. Vid ASAallergi används i stället Clopidogrel. Vid fynd av förmaksflimmer eller annan potent
 kardiell embolikälla; NOAK behandling.
@@ -588,21 +588,21 @@ BMI >25 och rökning. OBS! Tänk på att kontakta sjukgymnast vid låg fysisk ak
   - Vid förmaksflimmer eller annan kardiell embolikälla tidigt insatt AK-behandling.
 
 
-3.6 Behandling vid vissa specifika tillstånd
+### 3.6 Behandling vid vissa specifika tillstånd
 
 
-3.6.1 Kärldissektion
+#### 3.6.1 Kärldissektion
 Standard är ASA-behandling alternativt Clopidogrel. Vid speciellt hotfulla situationer kan
 antikoagulantiabehandling och kärlintervention övervägas.
 
 
-3.6.2 Sinustrombos
+#### 3.6.2 Sinustrombos
 Standard är lågmolekulärt heparin/antikoagulantia även om det finns en sekundär
 parenkymblödning. Utredning krävs av bakomliggande orsak. Vid svåra fall kan lokal
 trombolys vara aktuell.
 
 
-3.6.3 Vid hjärninfarkt och tidigare genomgången hjärnblödning
+#### 3.6.3 Vid hjärninfarkt och tidigare genomgången hjärnblödning
 Vid exempelvis tidigare genomgången hypertoniblödning med aktuellt välkontrollerat
 blodtryck kan ASA eller AK övervägas efter individuellt ställningstagande.
 Slutning av vänster förmaksöra (s.k. förmaksplugg) är möjlig, men betraktas av
@@ -612,7 +612,7 @@ Socialstyrelsen som åtgärd inom FoU enligt riktlinjer för stroke 2017.
 15
 
 
-### 4. Uppföljning/Utskrivning
+## 4. Uppföljning/Utskrivning
 
 Vid utskrivning från strokeenheten får patienten ett utskrivningsmeddelande och
 läkemedelslista. Vid hjärninfarkt/hjärnblödning gäller förbud att framföra motorfordon i
@@ -700,7 +700,7 @@ förändras, även om patienten initialt inte har kunnat fullfölja ett rehabili
 17
 
 
-### 1. Inneliggande Rehabilitering
+## 1. Inneliggande Rehabilitering
 
 Rehabiliteringsenheten är en specialistvårdsenhet, som i första hand främjar särskilda
 rehabiliterande insatser snarare än internmedicinska och kirurgiska insatser eller
@@ -720,7 +720,7 @@ Blekinge finns 1 strokeenhet där tidiga rehabiliteringsinsatser ges och det fin
 samarbete kring det akuta skedet och fortsatt rehabilitering.
 
 
-1.1 Förutsättningar för inneliggande rehabilitering
+### 1.1 Förutsättningar för inneliggande rehabilitering
 
 Inneliggande rehabilitering är medicinskt nödvändig när följande förutsättningar föreligger:
 
@@ -756,7 +756,7 @@ på rehabiliteringsavdelningen;
 18
 
 
-1.2. Kontraindicerade faktorer för inneliggande rehabilitering
+### 1.2. Kontraindicerade faktorer för inneliggande rehabilitering
 
 
 En annan form av rehabilitering utanför sjukhuset eller inneliggande vård bör erbjudas
@@ -804,9 +804,9 @@ av patientens medicinska/kirurgiska status.
 19
 
 
-### 2. Arbetsterapeut
+## 2. Arbetsterapeut
 
-2.1 Bedömning
+### 2.1 Bedömning
 
 
 Arbetsterapeuten på strokeenheten träffar patienten snarast efter det att denne
@@ -839,7 +839,7 @@ att bedöma patientens aktivitetsförmåga i sin hemmiljö och för att kartläg
 hon/han behöver träna på återstående tid av rehabiliteringsvistelsen.
 
 
-2.2 Insatser
+### 2.2 Insatser
 
 
 Träning på arbetsterapin och/eller på avdelningen sker alla vardagar för varje patient
@@ -888,9 +888,9 @@ sjuksköterska. Var god se vårdprogrammet för SPRIH!
 21
 
 
-### 3. Sjukgymnast/Fysioterapeut
+## 3. Sjukgymnast/Fysioterapeut
 
-3.1 Bedömning
+### 3.1 Bedömning
 
 
 Sjukgymnasten/fysioterapeuten på strokeenheten träffar patienten snarast efter
@@ -937,7 +937,7 @@ insikt om sina problem?
   - Motivation
 
 
-3.2 Insatser
+### 3.2 Insatser
 
 
 Bedömning och träning sker dagligen på vardagar.
@@ -1006,9 +1006,9 @@ kommunen, primärvården eller för specialistrehabilitering. Se separat vårdpr
 23
 
 
-### 4. Logoped
+## 4. Logoped
 
-4.1 Bedömning
+### 4.1 Bedömning
 
 
 Logopedisk bedömning sker vid behov på initiativ av övriga medlemmar i stroketeamet /sjuksköterska eller läkare på avdelningen. Vid hjärnskada kan såväl språk,
@@ -1043,7 +1043,7 @@ Fiberendoskopisk undersökning av sväljningen (FUS).
 24
 
 
-4.2 Behandling
+### 4.2 Behandling
 
 
 Logopedisk behandling sker på olika plan för att:
@@ -1064,9 +1064,9 @@ kommunikation, optimera intag av mat och dryck tillsammans med andra).
 25
 
 
-### 5. Dietist
+## 5. Dietist
 
-5.1 Bedömning
+### 5.1 Bedömning
 
 
 Bedömning av nutritionsstatus görs tidigt i sjukdomsförloppet och upprepas med
@@ -1077,7 +1077,7 @@ nutritionsbehandling avgörs av tugg- och sväljförmåga samt bedömt behov av 
 första hand energi och protein.
 
 
-5.2 Insatser
+### 5.2 Insatser
 
 Nutritionsbehandling
 
@@ -1106,9 +1106,9 @@ individuell bedömning av typ och mängd utifrån patientens behov.
 26
 
 
-### 6. Kurator
+## 6. Kurator
 
-6.1 Socialt arbete och psykosocialt behandlingsarbete
+### 6.1 Socialt arbete och psykosocialt behandlingsarbete
 
 
 Kuratorns arbete inriktar sig på sociala och psykosociala problem.
@@ -1130,7 +1130,7 @@ insatser, hjälp med ansökningar och stöd vid kontakt med exempelvis
 arbetsgivare, Arbetsförmedlingen, Försäkringskassan och LSS-handläggare.
 
 
-6.2. Utredning och bedömning av vårdbehov utifrån ett psykosocialt
+### 6.2. Utredning och bedömning av vårdbehov utifrån ett psykosocialt
 perspektiv
 
 
@@ -1149,7 +1149,7 @@ anamnes görs sedan en bedömning av behov av kuratorsåtgärder.
 27
 
 
-### 7. Sexolog
+## 7. Sexolog
 
 Arbetet med sexuell hälsa sker på olika nivåer utifrån PLISSIT-modellen (Permisson,
 Limited Information, Specific Suggestions, Intensive Therapy). Det innebär att all
