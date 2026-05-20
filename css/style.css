@@ -749,7 +749,7 @@ body {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 15px;
   margin: 20px 0;
   background: var(--vit);
   border-radius: var(--radius-sm);
@@ -762,7 +762,7 @@ body {
   color: var(--vit);
   padding: 9px 12px;
   text-align: left;
-  font-size: 0.82rem;
+  font-size: 14px;
   font-weight: 600;
   overflow-wrap: break-word;
   word-break: break-word;

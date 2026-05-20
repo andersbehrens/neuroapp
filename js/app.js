@@ -581,8 +581,10 @@ const Vy = {
       return el.getBoundingClientRect().top + window.scrollY - headerH - 20;
     };
     window.scrollTo({ top: beräknaY(), behavior: 'smooth' });
-    // Korrigera efter smooth-animationen – lazy-laddade bilder kan ha skiftat layouten
+    // Korrigera efter smooth-animationen – lazy-laddade bilder kan ha skiftat layouten.
+    // Två pass: 650ms (snabba bilder) och 1400ms (långsammare bilder).
     setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 650);
+    setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 1400);
   },
 
   _scrollaTillRubrik(container, rubrik) {
