@@ -1,6 +1,6 @@
 ## I. Nyheter och Ändringar
 
-**Nyheter och Ändringar 2025**
+###### Nyheter och Ändringar 2025
 Tillägg av text kring subkutan L-dopa behandling.
 Uppdatering av text kring Interaktioner mellan MAO hämmare och antidepressiva.
 Uppdatering av text kring Depressionsbehandling.
@@ -16,7 +16,7 @@ Uppdatering av text kring monitorering med accelometermätningar.
 Smärre språkliga och layoutmässiga justeringar har genomförts.
 
 
-**Nyheter och Ändringar 2022**
+###### Nyheter och Ändringar 2022
 Handlingsplan för genetisk testning vid Parkinsons sjukdom/Parkinsonism.
 Tillägg av text kring Opikapon.
 Tillägg av text kring Lecigon. Uppdatering kring Amantadin.
@@ -27,7 +27,7 @@ Bilaga med text kring genetisk vägledning.
 Äldre kriterier för Parkinsons sjukdom (Brain Bank och NINDS) har utgått
 Smärre språkliga och layoutmässiga justeringar har genomförts.
 
-**Nyheter 2019**
+###### Nyheter 2019
 Samtliga avsnitt har gåtts igenom och harmoniserats med Socialstyrelsens Nationella riktlinjer för vård vid
 multipel skleros och Parkinsons sjukdom (2016) där det bedömts nödvändigt.
 Den tiogradiga prioriteringsskalan som används i nationella riktlinjer markerar att frågan har behandlats och
@@ -36,13 +36,13 @@ En bilaga med råd avseende användning av Parkinson Kinetigraph (PKG) och tolkn
 accelerometrimätningar har tillkommit.
 Smärre språkliga och layoutmässiga justeringar har genomförts.
 
-**Nyheter 2014**
+###### Nyheter 2014
 Uppdatering impulskontroll störningar och Dopamine Agonist Withdrawal Syndrome
 Ortostatism
 Domperidon inom subventionering (för PD), med dosrestriktion Handlingsplan vid
 Parkinson hyperpyrexisyndrom
 
-**Nyheter och ändringar 2013**
+###### Nyheter och ändringar 2013
 Uppdatering kring diagnostiska metoder, med kommentarer kring liquor (CSF) analyser, ultraljud (sonografi) och
 SPECT undersökningar.
 Ny tabell för tydligare jämförelse av CSF, SPECT och MR, neuro psykologi fynd vid olika differentialdiagnoser.
@@ -55,7 +55,7 @@ Tydlig uppmaning att läkare regelbundet aktivt frågar om symtom på dopaminrec
 beteendestörningar.
 Tillägg om behandling av mycket svår ortostatism med Droxidopa.
 
-**Nyheter och ändringar 2011**
+###### Nyheter och ändringar 2011
 Uppdatering av personer som deltagit i arbetet med riktlinjer. ICD
 
 
@@ -75,16 +75,16 @@ Uppmärksamhet på samband mellan total L-dopa dos och polyneuropati. Råd kring
 Duodopa® och risk för polyneuropatiutveckling.
 Uppdatering av nyheter kring körkort och sjukdom.
 
-**Nyheter och ändringar 2010**
+###### Nyheter och ändringar 2010
 Mindre textförändringar vad gäller preparatnamn och enklare klargöranden.
 Tillägg av referens till ScandModis konsensus dekument om DBS.
 Uppdatering av Körkortsförordningar från Trafikverket.
 
-**Nyheter och ändringar 2009**
+###### Nyheter och ändringar 2009
 Revision av ”UK Parkinson’s Disease Society Brain Bank diagnos-kriterier”.
 Revision av MSA-diagnoskriterier.
 
-**Ändringar 2008**
+###### Ändringar 2008
 [Tillägg av länkar till www.swemodis.se, och detaljerade rekommendationer kring Duodopa®](http://www.swemodis.se/) [®], och Apo- Go
 PEN [®], samt apomorfinpump.
 Uppdatering av de nya rekommendationerna vad avser kabergolin och övriga ergotalkaloider Uppdatering av
@@ -1429,7 +1429,7 @@ symtomfluktuationer:
 
 ### Terapi mot svårbehandlade motoriska symtom
 
-**Tremor**
+###### Tremor
 Behandlingen av tremor bör inrikta sig på faktiska funktionshinder för arbete, störningar i ADL-funktioner
 eller sömn. Man bör diskutera med patient och anhöriga vad som utgör problemet. Tremor som generande
 symtom utan funktionshinder, bör man vara försiktig med insatser emot, då detta kan leda till överbehandling
@@ -3458,7 +3458,7 @@ var formuleringen ”uppenbart olämplig”. Förändringen gäller fortsättnin
 innehavare av taxiförarlegitimation, tidigare hade inte förändringen genomförts för taxiförarlegitimation.
 
 
-**Transportstyrelsens föreskrifter och allmänna råd om medicinska krav för innehav**
+###### Transportstyrelsens föreskrifter och allmänna råd om medicinska krav för innehav
 **av körkort m.m.**
 
 
@@ -3515,7 +3515,7 @@ _körkortsmyndighetens eller prövningsmyndighetens handlingar i ärendet._
 
 ###### 7 kap. Neurologiska sjukdomar
 
-**För innehav av behörigheterna AM, A1, A, B, BE, C, CE, D, DE, traktorkort eller**
+###### För innehav av behörigheterna AM, A1, A, B, BE, C, CE, D, DE, traktorkort eller
 **taxiförarlegitimation 1 §** Sjukdomar i nervsystemet som innebär trafiksäkerhetsrisker utgör
 hinder för innehav.
 **2** **§** Vid riskbedömningen ska hänsyn tas till tillståndets kliniska form och utveckling samt behandlingsresultat.
@@ -4108,7 +4108,7 @@ bedöms vara orsak till demensen, t ex förekomst av hjärnavbildningstecken på
   - Okänt tidsintervallet mellan uppkomst rörelsesymtom och kognitiva symtom.
 
 
-**Kliniska tecken som indikerar annan orsak eller sjukdom som ger upphov till kognitiv påverkan**
+###### Kliniska tecken som indikerar annan orsak eller sjukdom som ger upphov till kognitiv påverkan
 **som, om närvarande omöjliggör en tillförlitlig PDD diagnos**
 
   - Kognitiva svikt- och beteende-störningar som endast kan relateras till situationer och tillstånd som
@@ -4920,7 +4920,7 @@ genetiska former av detta syndrom undersökas, i första hand genom tillägg av 
 dystonierna. Se även avsnittet om kombinerade syndrom med Parkinsonism nedan.
 
 
-**Patienter med minst två första- eller andragradssläktingar med PS, med karakteristisk klinisk bild**
+###### Patienter med minst två första- eller andragradssläktingar med PS, med karakteristisk klinisk bild
 **eller som härstammar från särskilda populationer**
 
 Flera missensevarianter i LRRK2 och SNCA, genduplikation och -triplikation av SNCA, och en enda
