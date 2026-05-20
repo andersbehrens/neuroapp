@@ -8954,5 +8954,13 @@ i symtomkomplexet.`
     pdf: 'https://kunskapsstodforvardgivare.se/omraden/akut-vard/regionala-kunskapsstod/akut-internmedicin-behandlingshandbok',
     källa: 'Kunskapsstöd för vårdgivare',
     innehall: [{ rubrik: 'Akut internmedicin', text: 'Regional behandlingshandbok för akut internmedicin.' }]
+  },
+  {
+    id: 'janusmed-interaktioner',
+    titel: 'Janusmed interaktioner',
+    kategori: 'lankar',
+    pdf: 'https://janusmed.se/interaktioner',
+    källa: 'Janusmed – Region Stockholm',
+    innehall: [{ rubrik: 'Janusmed interaktioner', text: 'Kliniskt beslutsstöd för läkemedelsinteraktioner.' }]
   }
 ];
