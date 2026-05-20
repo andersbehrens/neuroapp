@@ -1,4 +1,4 @@
-###### **Förkortningar**
+### Förkortningar
 
 
 DaT-PET Fe-PE2I PET
@@ -19,7 +19,9 @@ ZI Zona incerta
 
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _6_
 
-###### **A. Inledning** **Bakgrund, SWEMODIS**
+## A. Inledning
+
+### Bakgrund, SWEMODIS
 
 **Syfte med riktlinjer**
 
@@ -115,7 +117,9 @@ utgöra ett jäv för att medverka i expertgruppen.
 nedladdningsbart format (pdf). Denna version kan användas för personligt bruk, men
 kommersiellt användande eller annan spridning förutsätter avtal med SWEMODIS styrelse.
 
-###### **B. Definitioner, klassificering, diagnostik och utredningsgång vid** **tremor** **Definitioner**
+## B. Definitioner, klassificering, diagnostik och utredningsgång vid tremor
+
+### Definitioner
 
 **1.** **Tremor**
 
@@ -168,7 +172,7 @@ _**Isometrisk tremor**_
 Tremor vid ökad muskelspänning i muskler exv hållningsmuskler vid ortostatisk tremor och
 fysiologisk sträckreflexmedierad tremor över en flekterad led under spänning.
 
-###### **Klassifikation**
+### Klassifikation
 
 
 Den senaste klassificeringen av tremorsyndrom infördes 2018 (Bhatia et al. 2018), uppbyggd
@@ -194,7 +198,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _9_
 
 **Figur 2** : Översikt av etiologi till tremor, axel 2.
 
-#### Axel 2: etiologi
+### Axel 2: etiologi
 
 
 ![](images/Tremor-riktlinjer-SWEMODIS-2026/Tremor-riktlinjer-SWEMODIS-2026.pdf-8-0.png)
@@ -214,7 +218,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _10
 
 **Figur 4** : Tremorsyndrom och underformer.
 
-###### **Övergripande diagnostisk strategi**
+### Övergripande diagnostisk strategi
 
 
 Varje observation av en tremoraktivitet – i väntrum, under samtal eller formell undersökning är
@@ -260,7 +264,7 @@ möjligheter att ge behandling.
 ![](images/Tremor-riktlinjer-SWEMODIS-2026/Tremor-riktlinjer-SWEMODIS-2026.pdf-9-8.png)
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _11_
 
-###### **Undersökningsteknik**
+### Undersökningsteknik
 
 
 **Enkelt standardiserat tremortest:**
@@ -353,7 +357,7 @@ video. Ett standardiserat test enligt ovan 1-2 som tar ca 1 – 2 minuter att ge
 vanligen en mycket god bild som speglar funktionell påverkan och ger hållpunkter för
 tremortyp.
 
-###### **Diagnoskoder**
+### Diagnoskoder
 
 
 När en specifik tremorform kan diagnostiseras används en G-kod;
@@ -371,7 +375,7 @@ Symtomdiagnos
 
 R 25.1 Ospecifik tremor
 
-###### **Differentialdiagnostik - fenomenologi**
+### Differentialdiagnostik - fenomenologi
 
 **Ataxi**
 
@@ -396,7 +400,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _13
 
 eller förekomst av ett sensoriskt trick.
 
-###### **Patofysiologi**
+### Patofysiologi
 
 **1. Översikt – neurobiologiskt underlag**
 
@@ -483,7 +487,7 @@ omgivande personer är mer störda. Den reella funktionsinskränkningen, inklusi
 upplevelse av stigma, bör analyseras, och inte eventuell grad av missprydande symtom. Det är
 viktigt att klargöra för vems skull utredning och eventuell behandling görs.
 
-###### **Icke-farmakologiska behandlingar**
+### Icke-farmakologiska behandlingar
 
 **Information**
 
@@ -534,7 +538,9 @@ Disorders, 2018; 33: 1, 75-87.
 Hallett M. Tremor: Pathophysiology. Parkinsonism Related Disord, 2014; 20: S118-S122.
 Louis, ED. Essential tremor: a nuanced approach to the clinical features. Pract Neurol 2019;19:389–398.
 
-###### **C. Tremortillstånd** **Förstärkt fysiologisk tremor**
+## C. Tremortillstånd
+
+### Förstärkt fysiologisk tremor
 
 **Förekomst**
 
@@ -651,7 +657,7 @@ kontinuerligt ha effekt.
 Kirurgisk behandling är aldrig aktuell mot förstärkt fysiologisk tremor. Ifrågasätt diagnos om
 tremorn är så uttalad att kirurgi övervägs.
 
-###### **Läkemedelsframkallad tremor**
+### Läkemedelsframkallad tremor
 
 **Epidemiologi**
 
@@ -715,7 +721,7 @@ G25.2 Andra specificerade former av
 tremor R 25.1 Ospecifik tremor
 [Y40-Y59 Ogynnsam effekt av droger, läkemedel och biologiska substanser i terapeutiskt bruk](http://icd.internetmedicin.se/diagnos/V01-Y98-Yttre-orsaker-till-sjukdom-och-dod.html)
 
-###### **Essentiell tremor och essentiell tremor plus**
+### Essentiell tremor och essentiell tremor plus
 
 **Definition**
 
@@ -847,7 +853,7 @@ Louis ED. Diagnosis and management of tremor. Continuum 2016; 22 (4, Movement Di
 Skuladottir et al GWAS meta-analysis reveals key risk loci in essential tremor pathogenesis. Commun Biol.
 2024;7(1):504.
 
-###### **Cerebellär tremor**
+### Cerebellär tremor
 
 
 Denna tremor är oftast oregelbunden, har hög amplitud och ses inte i vila men både posturalt
@@ -862,7 +868,7 @@ propranolol, klonazepam, karbamazepin och topiramat har visats ha effekt.
 Lenka A, Louis ED. Revisiting the Clinical Phenomenology of "Cerebellar Tremor": Beyond the Intention
 Tremor. Cerebellum. 2019;18(3):565-574.
 
-###### **Ortostatisk tremor**
+### Ortostatisk tremor
 
 **Fenomenologi**
 
@@ -918,7 +924,7 @@ vilket tyder på att den primära patologin vid OT inte är belägen i VIM.
 Rigby HB, Rigby MH, Caviness JN. Orthostatic tremor: a spectrum of fast and slow frequencies or distinct
 entities? Tremor Other Hyperkinet Mov 2015; 5-11.
 
-###### **Tremor vid idiopatisk Parkinsons sjukdom**
+### Tremor vid idiopatisk Parkinsons sjukdom
 
 **Patofysiologi**
 
@@ -1014,7 +1020,7 @@ propranolol kan lindra parkinsontremor. Klozapin, ett atypiskt neuroleptikum, ka
 parkinsontremor, men kräver monitorering av leukocyter pga risk för agranulocytos.
 Zonisamide i låga doser (≤ 50 mg) kan också lindra parkinsontremor i vissa fall.
 
-###### **Från SWEMODIS Terapiråd vid Parkinsons sjukdom 2025 version 10**
+#### Från SWEMODIS Terapiråd vid Parkinsons sjukdom 2025 version 10
 
 **Tremor**
 
@@ -1032,7 +1038,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _22
 ![](images/Tremor-riktlinjer-SWEMODIS-2026/Tremor-riktlinjer-SWEMODIS-2026.pdf-21-0.png)
 
 
-###### **Dyston tremor och tremor associerad med dystoni**
+### Dyston tremor och tremor associerad med dystoni
 
 **Fenomenologi**
 
@@ -1111,7 +1117,7 @@ classification of tremors. from the task force on tremor of the International Pa
 Society. Mov Disord. 2018 Jan;33(1):75-87.
 Louis ED. Tremor. Continuum (Minneap Minn). 2019 Aug;25(4):959-975.
 
-###### **Neuropatisk tremor**
+### Neuropatisk tremor
 
 **Fenomenologi**
 
@@ -1150,7 +1156,7 @@ VIM-DBS har prövats.
 
 Becktepe JS, Goevert F, Deuschl G. Rare tremor syndromes. Nervenarzt 2018; 89(4): 386-393.
 
-###### **Palatal tremor (Tremor i mjuka gommen)**
+### Palatal tremor (Tremor i mjuka gommen)
 
 **Fenomenologi**
 
@@ -1216,7 +1222,7 @@ Tilikete C, Desestret V. Hypertrophic Olivary Degeneration and Palatal or Oculop
 Khoyratty F, Wilson T. The dentato-rubro-olivary tract: clinical dimension of this anatomical pathway. Case Rep
 Otolaryngol. 2013; 934386.
 
-###### **Holmes tremor och talamisk tremor**
+### Holmes tremor och talamisk tremor
 
 **Klinisk bild**
 
@@ -1269,7 +1275,7 @@ det skadade området.
 Deuschl G, Bain P, Brin M. Consensus statement of the Movement Disorder Society on Tremor. Ad Hoc
 Scientific Committee. Mov Disord. 1998;13 Suppl 3:2-23.
 
-###### **Funktionell tremor**
+### Funktionell tremor
 
 
 Att ställa denna diagnos kräver god förtrogenhet med rörelsestörningar. Tremor är ett av de vanligaste
@@ -1380,7 +1386,9 @@ large series of cases. Mov Disord. 2012;27(9):1164–8.
 
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _27_
 
-###### **D. Neurokirurgisk behandling av tremor** **Metoder, biverkningar**
+## D. Neurokirurgisk behandling av tremor
+
+### Metoder, biverkningar
 
 Neurokirurgisk behandling av rörelserubbningar har lång tradition i Sverige. Stereotaktisk
 lesionell behandling med bl a pallidotomi och talamotomi föregick effektiv farmakologisk
@@ -1400,7 +1408,7 @@ DBS är numera en neurokirurgisk rutinmetod för behandling av tremor och andra
 rörelserubbningar. Lesionella tekniker nyttjas fortfarande. På senare tid har dessutom
 lesionella tekniker tillkommit som inte kräver att skallbenet öppnas.
 
-###### **DBS – Deep brain stimulation, djup hjärnstimulering**
+### DBS – Deep brain stimulation, djup hjärnstimulering
 
 Operation med DBS görs antingen med patienten vaken eller sövd. Förbättrad pre- och
 intraoperativ radiologisk avbildningsteknik har inneburit att man på senare år på många centra
@@ -1457,7 +1465,7 @@ Motorisk påverkan med dystoni, samt cerebellära symtom, inklusive dysartri upp
 själva målområdet. Det är av vikt att skilja på dessa situationer, då det ofta sker en habituering i det
 senare fallet, något som kan möjliggöra en gradvis ökning av stimuleringen.
 
-###### **Indikationer – kontraindikationer**
+### Indikationer – kontraindikationer
 
 Generellt är neurokirurgisk behandling vid tremor indicerad när läkemedelsbehandling inte ger
 tillfredsställande funktionellt resultat i det individuella fallet, med inskränkningar i patientens
@@ -1494,7 +1502,7 @@ minska möjligheterna till en framgångsrik behandling. Riskerna med att en even
 existerande balans- eller talrubbning kan förvärras måste också vägas mot vinsterna av
 ingreppet.
 
-###### **Målpunkter för DBS**
+### Målpunkter för DBS
 
 För närvarande används främst följande målpunkter vid behandlingen av ET: nucleus
 ventralis intermedius thalami (VIM) och posterior subthalamic area (PSA) som innefattar zona
@@ -1513,7 +1521,7 @@ preliminärt i PSA och två i VIM, varvid det exakta djupet avgörs under den pe
 utvärderingen. STN utgör ffa ett alternativ när VIM /PSA till följd av exempelvis lesioner ej är
 lämpligt.
 
-###### **Uni- eller bilateral kirurgi**
+### Uni- eller bilateral kirurgi
 
 Bilateral kirurgi ger naturligtvis den största symtomreduktionen hos bilateralt påverkade
 
@@ -1525,7 +1533,7 @@ patienter. Dock medför bilateral kirurgi en större risk för biverkningar, som
 och balanspåverkan. Risken förefaller öka med stigande ålder, varför bilateral kirurgi bör
 utföras allt mer restriktivt med tilltagande ålder.
 
-###### **DBS-effekter vid olika tremorformer**
+### DBS-effekter vid olika tremorformer
 
 
 Tremor vid Parkinsons sjukdom: DBS vid PS behandlas i ”Svenska riktlinjer för utredning
@@ -1560,7 +1568,7 @@ Neuropatisk tremor: Enstaka fall av sannolik neuropatisk tremor finns beskrivna 
 VIM/PSA DBS gav en måttlig effekt. Sannolikt torde ingen större effekt kunna förväntas
 avseende eventuell associerad ataxi.
 
-###### **Postoperativ medicinering och elektrostimulering**
+### Postoperativ medicinering och elektrostimulering
 
 För optimalt resultat krävs specialisterfarenhet med samverkan mellan neurokirurg och
 neurolog. Stor förtrogenhet med DBS och symtomanalys behövs, särskilt vid misstanke om
@@ -1569,7 +1577,7 @@ behandlingskontroller och adekvat uppföljning hos de neurokirurgiska/neurologis
 universitetsklinikerna, som inlett behandlingen. Individuella arrangemang måste därefter
 upprättas med andra kliniker.
 
-###### **Speciellt handhavande**
+### Speciellt handhavande
 
 Vid EKG-undersökning stängs impulsgivarna av och startas efteråt.
 
@@ -1616,7 +1624,7 @@ användas skall DBS vara avstängd och neutralplattan placeras på sådant sätt
 elektriska fältet inte direkt kommer att omfatta DBS-dosan eller området för kabel mellan
 dosa och hjärnelektrod. Konsekvenserna är likartade dem vid MRT.
 
-###### **Lesionella tekniker**
+### Lesionella tekniker
 
 Stereotaktisk termolesion: Genomförs som stereotaktiskt ingrepp – vanligtvis på vaken patient
 
@@ -1635,7 +1643,7 @@ utveckling av komplicerade symtom. Tekniken kan dock vara aktuell i mycket speci
 Stereotaktiskt riktat ultraljud (Focal Ultra Sound – FUS) är en metod som fått stor spridning
 under det senaste decenniet och kräver inte heller borrhål eller införande av lesionselektrod.
 
-###### **MRgFUS-talamotomi som behandling av tremor**
+### MRgFUS-talamotomi som behandling av tremor
 
 MRgFUS, magnetic resonance imaging guided focused ultrasound, även kallad high frequency
 focused ultrasound (HIFU), är en relativt ny metod att utföra stereotaktisk lesionskirurgi där
@@ -1797,7 +1805,9 @@ Det finns inga randomiserade studier som direkt jämför effekten mellan DBS och
 gällande FUS än för DBS. Patient-specifika faktorer såsom ålder, samsjuklighet, symtomgrad,
 gångförmåga med mera får styra vilken behandlingsmetod som är mest önskvärd/lämplig.
 
-###### **E. Tremor vid andra tillstånd** **Multipel systematrofi (MSA) Tremorfenomenologi**
+## E. Tremor vid andra tillstånd
+
+### Multipel systematrofi (MSA)
 
 Tremor vid MSA-parkinsonism, kan vara identisk med den som föreligger vid Parkinsons
 sjukdom, och skiljer sig inte på ett avgörande sätt så att tremorkarakteristik kan användas
@@ -1821,7 +1831,7 @@ Det är vanligt med blandformer av MSA-P/C där det kan förekomma både vilotre
 ataxi. Påvisande av ataxi är ett viktigt differentialdiagnostiskt fynd gentemot Parkinsons
 sjukdom.
 
-###### **Demens med Lewy-inklusionskroppar (DLB) Tremorfenomenologi**
+### Demens med Lewy-inklusionskroppar (DLB)
 
 Tremor kan vara framträdande vid DLB också som debutsymtom och skiljer sig inte på ett
 avgörande sätt från den klassiska vilotremortypen vid Parkinsons sjukdom. Vilotremor svarar
@@ -1839,7 +1849,7 @@ uttalad läkemedelskänslighet, förekommer det att frågeställning om DBS-beha
 Effekten av unilateral VIM/ZI/PSA-stimulering kan vara god och i utvalda fall kan detta vara
 möjligt.
 
-###### **Progressiv supranukleär pares (PSP) Tremorfenomenologi**
+### Progressiv supranukleär pares (PSP)
 
 Tremor kan förekomma vid främst en av de sju underformerna av PSP-syndromet.
 Den relativt ovanliga undergruppen PSP-parkinsonism där PSP sjukdomsprogressen med tau
@@ -1856,18 +1866,20 @@ Vid de övriga kliniska undergrupperna av PSP sjukdomsprocessen (PSP-kortikobasa
 syndrom, PSP-pure akinesia and freezing of gait, PSP-cerebellär form, PSP-primär lateral
 skleros, och PSP-frontotemporaldemens) är tremor ovanligt.
 
-###### **Kortikobasal degeneration (CBD), kortikobasalt syndrom (CBS) Tremor** **fenomenlogi**
+### Kortikobasal degeneration (CBD), kortikobasalt syndrom (CBS)
 
 Tremor är ovanligt vid de olika undergrupperna av CBD. Dystoni och myoklonier förekommer
 i hög grad och kan misstas för tremor. Dopaminerg medicinering är sällan effektivt men bör
 prövas för andra symtom.
 
-###### **F. Organisatoriska aspekter** **Övergripande behandlingsstrategi**
+## F. Organisatoriska aspekter
+
+### Övergripande behandlingsstrategi
 
 
 Individuellt anpassad symtomprofilerad terapi
 
-###### **Vårdnivå - Vårdkedja**
+### Vårdnivå - Vårdkedja
 
 
 Tremor är ett vanligt symtom:
@@ -1878,7 +1890,7 @@ huvudsakligen i primärvård.Vid osäkerhet kring diagnostik och behandling bör
 med **specialistläkare som har kunskap och erfarenhet av att handlägga tremor, t.ex.**
 **neurolog** med kompetens för differentialdiagnostik.
 
-###### **Körkort**
+### Körkort
 
 Frågan om olämplighet av att inneha körkort är sällan aktuell för de flesta
 
@@ -1889,7 +1901,9 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _34
 tremorpatienter men vissa läkemedel kan påverka vakenhet och uppmärksamhet, ffa
 antiepileptika: gabapentin, topiramat, primidon.
 
-###### **G. Diagnoskriterier** **Essentiell Tremor (ET)**
+## G. Diagnoskriterier
+
+### Essentiell Tremor (ET)
 
 Med den nya klassifikation av tremortillstånd från 2018, har diagnoskriterierna för Essentiell
 Tremor också modifierats, enligt nedan fria översättning.
@@ -1909,7 +1923,7 @@ scientific committee. Movement Disord 1998; 13 (suppl 3): 2-23.
 Louis ED, Ottman R, Ford B, et al. The Washington Heights-Inwood Genetic Study of Essential Tremor:
 Methodologic issues in essential-tremor research. Neuroepidemiology 1997; 16: 124-133.
 
-###### **Essentiell tremor**
+### Essentiell tremor
 
 
 1)Isolerad bilateral aktionstremor i övre extremiteter med
@@ -1917,7 +1931,7 @@ Methodologic issues in essential-tremor research. Neuroepidemiology 1997; 16: 12
 3) med eller utan tremor i andra delar av kroppen (huvud, röst, nedre extremiteter t ex) samt
 4) avsaknad av andra neurologiska fynd som dystoni, ataxi, parkinsonism.
 
-###### **Essentiell tremor plus**
+### Essentiell tremor plus
 
 Tremor som har de för Essentiell Tremor typiska karakteristiska, och har ytterligare neurologiska
 statusfynd av oklar signifikans, såsom nedsatt tandemgång, oklara dystona hållningar, nedsatta
@@ -1928,7 +1942,9 @@ vilotremor är ett exempel på klassifikation inom Essentiell Tremor plus.
 
 _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _35_
 
-###### **H. Bilagor** **Behandling av Tremor**
+## H. Bilagor
+
+### Behandling av Tremor
 
 
 **Tremorbehandling**, övergripande effekter (gradering ingen – (+) viss effekt, + effekt, ++ klar
@@ -1937,7 +1953,7 @@ effekt)
 
 Modifierat ur Oertel, Deuschl och Poewe: "Parkinson-Syndrome und andere Bewegungsstörungen **"** 2012 **.**
 
-###### **Remissmall Tremor**
+### Remissmall Tremor
 
 
 Vid remittering är det värdefullt att strukturera innehållet och söka ta ställning till vilken typ av
@@ -1974,7 +1990,7 @@ _Svenska riktlinjer för utredning och behandling av tremor, version 3 2026_ _36
 
 Aktuella mediciner:
 
-###### **Specifikationer av DT inför FUS**
+### Specifikationer av DT inför FUS
 
 Om patienten planeras för operation med fokuserat ultraljud (MRgFUS) krävs en
 skallbensdensitetsmätning (SDR). DT skall utföras utifrån specifikationerna nedan, varefter Umeå

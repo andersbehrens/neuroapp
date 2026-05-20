@@ -749,7 +749,7 @@ body {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 16px;
   margin: 20px 0;
   background: var(--vit);
   border-radius: var(--radius-sm);
@@ -762,7 +762,7 @@ body {
   color: var(--vit);
   padding: 9px 12px;
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -911,26 +911,26 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .toc-item:hover { background: var(--grå-100); color: var(--blå-medium); }
-.toc-h2 {
+.toc-2 {
   font-weight: 600;
   border-left: 3px solid var(--blå-kant);
   padding-left: 17px;
 }
-.toc-h3 {
+.toc-3 {
   padding-left: 28px;
   font-size: 0.82rem;
   border-left: none;
 }
-.toc-h4 {
+.toc-4 {
   padding-left: 40px;
   font-size: 0.78rem;
   color: var(--text-ljus);
   border-left: none;
 }
-.toc-h5,
-.toc-h6 {
-  padding-left: 40px;
-  font-size: 0.78rem;
+.toc-5,
+.toc-6 {
+  padding-left: 52px;
+  font-size: 0.74rem;
   color: var(--text-ljus);
   border-left: none;
 }

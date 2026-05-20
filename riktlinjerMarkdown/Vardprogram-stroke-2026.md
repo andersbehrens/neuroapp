@@ -1,15 +1,13 @@
 ![](/Users/andersbehrens2/Desktop/BTH-projekt/claudeProjekt/neuroApp/riktlinjerMarkdown/images/Vardprogram-stroke-2026.pdf-0-0.png)
 # Vårdprogram stroke
 
-## Medicinsk del Rehabiliterande del
 
-### Slutenvård Blekingesjukhuset 2026-01-01 – 2026-12-31
 
 
 2
 
 
-#### Förord
+## Förord
 
 _Vårdprogrammet för Stroke/TIA gäller för vård på Blekingesjukhuset och är_
 _tänkt att vara ett praktiskt stöd för alla medarbetare vilka har kontakt med_
@@ -54,9 +52,9 @@ Maja Pettersson Avdelningschef Arbetsterapi/Sjukgymnastik Karlskrona
 
 
 
-##### A. Medicinsk del
+## A. Medicinsk del
 
-###### 1. Akut handläggning
+### 1. Akut handläggning
 
 1.1 Patienter med misstänkt stroke och TIA
 
@@ -287,7 +285,7 @@ arterioscleros och vid misstanke om perfusionsrelaterade symtom.
 10
 
 
-###### 2. Generellt omhändertagande av samtliga strokepatienter i akutskedet dvs. de första 3 dygnen
+### 2. Generellt omhändertagande av samtliga strokepatienter i akutskedet dvs. de första 3 dygnen
 
 2.1 Cirkulation i övrigt och elektrolytrubbningar
 
@@ -417,7 +415,7 @@ patienten kan vara aktuell för SPRIH eller slutenvårdsrehabilitering.
 12
 
 
-###### 3. Fortsatt utredning med fokus på bakomliggande orsak till hjärninfarkt/TIA och hjärnblödning samt sekundärprofylax
+### 3. Fortsatt utredning – bakomliggande orsak, sekundärprofylax
 
 3.1 Undersökningar/provtagningar
 
@@ -614,7 +612,7 @@ Socialstyrelsen som åtgärd inom FoU enligt riktlinjer för stroke 2017.
 15
 
 
-###### 4. Uppföljning/Utskrivning
+### 4. Uppföljning/Utskrivning
 
 Vid utskrivning från strokeenheten får patienten ett utskrivningsmeddelande och
 läkemedelslista. Vid hjärninfarkt/hjärnblödning gäller förbud att framföra motorfordon i
@@ -653,7 +651,7 @@ Riksstroke.
 16
 
 
-##### B. Rehabiliterande del
+## B. Rehabiliterande del
 
 Rehabilitering efter stroke är nödvändigt för att återfå eller förbättra kroppsfunktioner. I
 Sverige får de flesta sin rehabilitering utanför akutsjukhuset. I Region Blekinge erbjuds
@@ -702,7 +700,7 @@ förändras, även om patienten initialt inte har kunnat fullfölja ett rehabili
 17
 
 
-###### 1. Inneliggande Rehabilitering
+### 1. Inneliggande Rehabilitering
 
 Rehabiliteringsenheten är en specialistvårdsenhet, som i första hand främjar särskilda
 rehabiliterande insatser snarare än internmedicinska och kirurgiska insatser eller
@@ -806,7 +804,7 @@ av patientens medicinska/kirurgiska status.
 19
 
 
-###### 2. Arbetsterapeut
+### 2. Arbetsterapeut
 
 2.1 Bedömning
 
@@ -890,7 +888,7 @@ sjuksköterska. Var god se vårdprogrammet för SPRIH!
 21
 
 
-###### 3. Sjukgymnast/Fysioterapeut
+### 3. Sjukgymnast/Fysioterapeut
 
 3.1 Bedömning
 
@@ -1008,7 +1006,7 @@ kommunen, primärvården eller för specialistrehabilitering. Se separat vårdpr
 23
 
 
-###### 4. Logoped
+### 4. Logoped
 
 4.1 Bedömning
 
@@ -1066,7 +1064,7 @@ kommunikation, optimera intag av mat och dryck tillsammans med andra).
 25
 
 
-###### 5. Dietist
+### 5. Dietist
 
 5.1 Bedömning
 
@@ -1108,7 +1106,7 @@ individuell bedömning av typ och mängd utifrån patientens behov.
 26
 
 
-###### 6. Kurator
+### 6. Kurator
 
 6.1 Socialt arbete och psykosocialt behandlingsarbete
 
@@ -1151,7 +1149,7 @@ anamnes görs sedan en bedömning av behov av kuratorsåtgärder.
 27
 
 
-###### 7. Sexolog
+### 7. Sexolog
 
 Arbetet med sexuell hälsa sker på olika nivåer utifrån PLISSIT-modellen (Permisson,
 Limited Information, Specific Suggestions, Intensive Therapy). Det innebär att all
@@ -1167,9 +1165,9 @@ med andra team-medlemmar. Informationsbroschyr om sexuell hälsa finns i väntru
 28
 
 
-###### Appendix I
+## Appendix I
 
-##### Utdrag ur Riksstrokes diagnoslathund
+### Utdrag ur Riksstrokes diagnoslathund
 
 För komplett lathund var god se;
 http://www.riksstroke.org/wp-content/uploads/2018/01/Riksstroke-diagnos-lathund-reviderad-nov2017.pdf
@@ -1222,7 +1220,7 @@ inte i definitionen av stroke och registreras inte i Riksstroke.
 29
 
 
-### **Strokekontroller**
+## Strokekontroller
 
 
 
@@ -1235,7 +1233,7 @@ inte i definitionen av stroke och registreras inte i Riksstroke.
 ![](/Users/andersbehrens2/Desktop/BTH-projekt/claudeProjekt/neuroApp/riktlinjerMarkdown/images/Vardprogram-stroke-2026.pdf-29-2.png)
 
 
-##### **Medvetandegrad enl. ACVPU-skalan**
+### Medvetandegrad enl. ACVPU-skalan
 
 
 
@@ -1254,7 +1252,7 @@ inte i definitionen av stroke och registreras inte i Riksstroke.
 |<br>P <br>(Pain)<br>|<br>Mycket slö. Reagerar vid smärtstimulering. (RLS 3)<br>|
 |<br>U <br>(Unresponsive)|<br>Okontaktbar. Reagerar ej vid tilltal eller smärtstimulering. Ev.<br>stereotypa böj- eller sträckrörelser eller ingen reaktion alls. (RLS 4–8)<br>|
 
-##### **Sväljningstest till vaken patient**
+### Sväljningstest till vaken patient
 
 Ge 1 tsk vatten.
 
@@ -1296,9 +1294,9 @@ nästkommande måltid!
 
 
 ![](/Users/andersbehrens2/Desktop/BTH-projekt/claudeProjekt/neuroApp/riktlinjerMarkdown/images/Vardprogram-stroke-2026.pdf-30-0.png)
-###### Appendix III
+## Appendix III
 
-##### ABCD2-score
+### ABCD2-score
 
 
 

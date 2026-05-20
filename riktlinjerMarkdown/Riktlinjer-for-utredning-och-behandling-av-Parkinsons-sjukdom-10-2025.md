@@ -1,4 +1,4 @@
-### I. Nyheter och Ändringar
+## I. Nyheter och Ändringar
 
 **Nyheter och Ändringar 2025**
 Tillägg av text kring subkutan L-dopa behandling.
@@ -99,7 +99,7 @@ Bilaga med en icke validerad översättning av diagnoskriterer för demens vid P
 
 
 
-### II. Förkortningar
+## II. Förkortningar
 
 ADL Activities of Daily Living
 
@@ -239,9 +239,9 @@ VUS Variant of Unknown Significance // av oklar signifikans
 
 
 
-### III. Inledning
-#### Bakgrund, SWEMODIS
-###### **Syfte**
+## III. Inledning
+### Bakgrund, SWEMODIS
+#### Syfte
 
 Swemodis riktlinjer för utredning och behandling vid Parkinsons sjukdom (PS) är rekommendationer som avser
 att underlätta handläggning vid utredning, remittering, behandling och uppföljning av individer med PS.
@@ -288,7 +288,7 @@ där det är tillämpbart.
 
 Strävan är att förbättra omhändertagandet i hela vårdkedjan varför också vårdnivåer och vårdformer redovisas.
 Regionala eller lokala förutsättningar avgör ytterst hur de mest adekvata och effektiva vårdinsatserna utformas.
-###### **Målgrupp**
+#### Målgrupp
 
 Riktlinjerna vänder sig till vårdpersonal, på alla nivåer, som kommer i kontakt med individer med PS; från
 diagnostiska överväganden, under etablerad sjukdom till omhändertagande i sjukdomens komplikations- och
@@ -301,7 +301,7 @@ beskrivs översiktligt.
 
 
 
-###### **Ansvariga för riktlinjerna**
+#### Ansvariga för riktlinjerna
 
 Riktlinjerna är utarbetade av en arbetsgrupp inom SWEMODIS nuvarande och tidigare styrelser:
 
@@ -326,7 +326,7 @@ Håkan Widner, Docent, Överläkare, Neurologiska kliniken, Skånes universitets
 
 
 Riktlinjerna är fastställda av SWEMODIS styrelse och revideras och uppdateras regelbundet.
-###### **Restriktioner och begränsningar**
+#### Restriktioner och begränsningar
 
 Dessa riktlinjer är rekommendationer och är inte juridiskt bindande.
 
@@ -361,8 +361,8 @@ SWEMODIS styrelse.
 
 
 
-### IV. Definitioner, diagnostik och utredningsgång vid Parkinsons sjukdom
-#### Definitioner
+## IV. Definitioner, diagnostik och utredningsgång vid Parkinsons sjukdom
+### Definitioner
 ###### **Parkinsonism**
 
 Skador och sjukdomar som påverkar dopaminnervcellernas funktion i de basala ganglierna ger upphov till
@@ -421,7 +421,7 @@ eller MSA-A (tidigare Shy-Drager, G23.8),
 Att notera är att Multipel System Degeneration (G 90.3) avser multipla dysautonomier utan andra neurologiska
 symtom, s.k. Primary (Pure) Autonomic Failure (tidigare Bradbury-Egglestons syndrom).
 
-#### Diagnostik och utredning
+### Diagnostik och utredning
 ###### **Diagnoskriterier**
 
 För de större sjukdomsgrupperna med parkinsonism finns det definierade diagnoskriterier med inklusions- och
@@ -608,8 +608,8 @@ påverka LRRK2 funktion eller ackumulering av alfa-synuklein proteinet.
 
 I bilaga IV finns råd om genetisk provtagning och rådgivning av vikt att ta ställning till innan utredning påbörjas.
 
-### V. Läkemedelsöversikt
-#### Levodopa
+## V. Läkemedelsöversikt
+### Levodopa
 
 
 Levodopa ges alltid i fast kombination med en perifert verkande dekarboxylashämmare och är den mest
@@ -716,7 +716,7 @@ symtomfluktuationer trots optimerad peroral terapi. Därigenom uppnås en mer ko
 levodopa jämfört med peroral terapi, vilket kan leda till stabilisering av symtombilden. För mer information om
 dessa behandlingar se avsnittet ”VIII. Avancerad behandling ” eller ScandMODIS konsensusdokument för
 [användning av Duodopa® på www.swemodis.se.](http://www.swemodis.se/)
-#### Dopaminagonister
+### Dopaminagonister
 
 
 _Dopaminagonister rekommenderas för behandling av tidig Parkinsons sjukdom (prioritet 3, NR PD10)_
@@ -898,7 +898,7 @@ EKG bör kontrolleras före insättning av domperidon för att utesluta långt Q
 
 behandlingen. Använd inte metoklopramid, som kan försämra parkinsonsymtomen.
 
-#### COMT-hämmare
+### COMT-hämmare
 
 
 COMT-hämmare kan användas för att förstärka effekten av levodopamedicinering. Tiläggsbehandling med COMThämmare till patienter som har motoriska fluktuationer trots optimal behandling med levodopa har hög prioritet
@@ -959,7 +959,7 @@ produktmonografin avrådes från att ta opikapon tillsammans med levodopa men de
 motivering till detta. Samtidigt matintag försämrar opikaponupptaget. Den totala dagliga levodopadosen kan
 behöva sänkas när opikapon sätts in, även vid byte från entakapon.
 
-#### MAO-B-hämmare
+### MAO-B-hämmare
 
 
 MAO-B-hämmare bromsar nedbrytningen av dopamin i CNS och har en viss egen symtomlindrande effekt, i alla
@@ -1047,7 +1047,7 @@ symtomlindring än om behandlingen initierats senare. Långtidsstudier med seleg
 visat långsammare symtom-utveckling, lägre L-dopabehov och mindre dyskinesi- utveckling, jämfört med
 placebotillägg.
 
-#### Antidyskinesiläkemedel (NMDA-antagonister)
+### Antidyskinesiläkemedel (NMDA-antagonister)
 
 
 Amantadin verkar via NMDA antagonism och ev ytterligare mekanismer. Det finns evidens för en mild till måttlig
@@ -1071,7 +1071,7 @@ Parkinsondemens. Den kliniska erfarenheten är att läkemedlet kan fungera vid b
 utfallet är mer variabelt än med de mer etablerade behandlingarna amantadin, respektive
 acetylkolinesterashämmare.
 
-#### Antikolinergika
+### Antikolinergika
 
 
 Centralt verkande antikolinergika (biperiden, Akineton® och orfenadrin, Norflex® samt trihexyfenidul, Artane,
@@ -1093,7 +1093,7 @@ tillståndet.
 
 
 
-#### Vanliga interaktioner
+### Vanliga interaktioner
 ###### **Läkemedel med dopaminreceptorhämmande effekt**
 
 **Neuroleptika:** Hela gruppen N05A förutom N05AH02 klozapin och N05AH04 kvetiatipin är kontraindicerade på
@@ -1174,7 +1174,7 @@ som inte har pågående antiparkinson-medicinering, men med pågående dopaminve
 vanligen ingen försämring och eftersom effekten av dessa läkemedel har klinisk betydelse vid Parkinsondemens
 bör man inte avhålla sig från att använda dem av oro för ökad parkinsonism.
 
-#### Levodopa-ekvivalenta dygnsdoser
+### Levodopa-ekvivalenta dygnsdoser
 
 
 Vid tillägg av andra dopaminverkande läkemedel än levodopa eller helt eller delvis byte av terapeutisk strategi
@@ -1207,8 +1207,8 @@ levodopa.
 
 
 ![](images/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf-26-0.png)
-### VI. Behandling av motoriska symtom
-#### Terapi tidig fas
+## VI. Behandling av motoriska symtom
+### Terapi tidig fas
 ###### **Bakgrund**
 
 All behandling vid PS är symtomlindrande. Det finns ännu ingen kausal behandling som övertygande visats
@@ -1355,7 +1355,7 @@ regelbundet under all PS-behandling. En ortostatisk hypotension har störst kons
 kardiovaskulär sjukdom, där behandlingarna av hypertoni och PS bör ske med viss försiktighet. Om uttalade
 ortostatiska blodtrycksfall förekommer tidigt i förloppet bör diagnosen omprövas.
 
-#### Terapi vid begynnande symtomfluktuation
+### Terapi vid begynnande symtomfluktuation
 ###### **Bakgrund**
 
 Symtomfluktuationer innebär att parkinsonsymtomen återkommer periodvis under dygnet i form av dosglapp
@@ -1427,7 +1427,7 @@ symtomfluktuationer:
 |Prova att minska levodopadosen och öka<br>dopaminagonistdosen. Agonistdoserna kan<br>behöva fördelas över dygnet, alternativt ges<br>transdermalt som rotigotinplåster.|Prova att minska levodopadosen och öka<br>dopaminagonistdosen. Agonistdoserna kan<br>behöva fördelas över dygnet, alternativt ges<br>transdermalt som rotigotinplåster.|Minska medicinering (agonister,<br>enzymhämmare). Sätt ut preparat med<br>antikolinerg effekt. Överväg<br>demensbehandling.|Minska medicinering (agonister,<br>enzymhämmare). Sätt ut preparat med<br>antikolinerg effekt. Överväg<br>demensbehandling.|
 
 
-#### Terapi mot svårbehandlade motoriska symtom
+### Terapi mot svårbehandlade motoriska symtom
 
 **Tremor**
 Behandlingen av tremor bör inrikta sig på faktiska funktionshinder för arbete, störningar i ADL-funktioner
@@ -1480,8 +1480,8 @@ enkla medel, t ex handtag och markering med linjer på golvet.
 
 
 
-### VII. Behandling av icke-motoriska symtom
-#### Sömnrubbningar
+## VII. Behandling av icke-motoriska symtom
+### Sömnrubbningar
 
 Sömnstörningar är vanligare vid PS än i jämförbara kontrollgrupper. Olika undersökningar talar för en prevalens
 mellan 60 och 98 %. Flera faktorer medverkar till detta. Det handlar om direkt parkinsonrelaterade orsaker,
@@ -1577,7 +1577,7 @@ Det preparat som är bäst dokumenterat för behandling av RBD-symtom vid PS är
 mg till natten). Nackdelen med klonazepam är en hög risk för konfusion och kognitiv påverkan. Ett säkrare, men
 mindre effektivt alternativ är melatonin (se ovan). För vissa patienter minskar RBD när man sätter in parkinsonläkemedel som levodopa eller pramipexol, men de kan också öka.
 
-#### Autonom dysfunktion
+### Autonom dysfunktion
 ###### **Ortostatisk hypotension**
 
 Definition: Ett systoliskt blodtrycksfall >20-30 mm Hg och ett diastoliskt blodtrycksfall >10-20 mm Hg i samband
@@ -1777,7 +1777,7 @@ _I de nationella riktlinjerna framhålls att perifera antikolinergika kan erbjud
 _Vid farmakologiskt refraktära urinträningar kan även injektion av botulinumtoxin i blåsvägg erbnjudas (görs_
 _oftast av urolog, prioritet 7, NR PD36)._
 
-#### Beteendestörningar
+### Beteendestörningar
 ###### **Dopaminerga dysregleringssyndromet**
 
 Dopamin har en i vid mening viktig roll för rörelsekontrollen, men också för inlärnings- och belöningsfunktioner,
@@ -1861,7 +1861,7 @@ jämställa med vanföreställningar och psykos.
 Behandling: Information. Lätta former: Sänkt dos av antiparkinsonmedicinering eller byte av preparat.
 Utsättning av läkemedel, i första hand utsättning eller dosminsknng av dopaminagonist, men man kan
 också överväga justera ner MAO-B-I, COMT-I, antikolinerga medel. Noggrann monitorering krävs.
-#### Kognitiv svikt
+### Kognitiv svikt
 
 
 Nedsättning av kognitiva funktioner vid PS är inte ovanligt. Efter 10 års sjukdom har kognitionen visats
@@ -1982,7 +1982,7 @@ _PD31a) baserat på stor svårighetsgrad av symtom, måttlig vetenskaplig eviden
 _Memantin har betydligt lägre prioriet (9, NR, PD31b) då studier visat motsägelsefulla resultat och_
 _behandlingen föreslås erbjudas i undantagsfall._
 
-#### Psykos
+### Psykos
 
 
 Psykos hos en patient med PS är mycket vanligt – i riktade undersökningar har förekomst hos upp till 50% av
@@ -2011,7 +2011,7 @@ _kvetiapin prioritet 7 (kan erbjudas)_
 
 _medan atypiska neuroleptika, inklusive olanzapin, är ”icke-göra”_
 
-#### Apati
+### Apati
 
 
 Apati definieras som en avsaknad av motivation som leder till minskat målorienterat beteende och minskade
@@ -2033,7 +2033,7 @@ studie visade sig effektiv (hos patienter som inte hade depression eller kogniti
 (ex v Venlafaxin, Nortriptylin) och icke-farmakologisk terapi med fysisk och kognitiv träning har föreslagits ha
 effekt.
 
-#### Depression
+### Depression
 
 
 **Bakgrund**
@@ -2143,7 +2143,7 @@ ECT har givits vid DBS-behandling men IPG måste stängas av i samband med behan
 efter varje enskild ECT-behandling. ECT vid samtidig DBS-behandling rekommenderas inte av de företag som
 marknadsför DBS-utrustning.
 
-#### Ångest och panikattacker
+### Ångest och panikattacker
 
 
 **Bakgrund**
@@ -2212,7 +2212,7 @@ Pregabalin, 150-600 mg/dag, har indikation generell ångest men litteraturen på
 samband med PS, är begränsad. Interaktionerna är dock få och ur farmokologisk synpunkt kan medlet
 kombineras med de flesta medel vid PS.
 
-#### Smärta
+### Smärta
 
 
 Smärta förekommer hos 70-80% av patienterna. Det är vanligare hos kvinnor och vid samtidig depression.
@@ -2297,7 +2297,7 @@ dystona besvär överväg DBS.
 
 **”Burning mouth”** och genital smärta lindras genom optimerad dopaminerg medicinering.
 
-#### Avancerad behandling
+### Avancerad behandling
 
 
 Begreppet avancerad, eller kontinuerlig, behandling brukar förbehållas djupelektrodstimulering (behandlas i
@@ -2878,7 +2878,7 @@ Någon exakt definition finns inte för ”otillräcklig effekt …”, men som 
 behandlingskonferens innan man doserar L-DOPA fler än fem doser dagligen, hos patienter som har mer än två
 timmar besvärande off per dag, besvärande fluktuationer eller terapiresistent tremor.
 
-### VIII. Behandlingssvikt och palliativ vård
+## VIII. Behandlingssvikt och palliativ vård
 
 
 Vid avancerad sjukdom kan en del patienter förefalla att inte längre ha någon effekt av antiparkinsonbehandlingen, utan är gravt hypokinetiska, med en viss fluktuation i symtomatologin och med psykiska symtom
@@ -2914,7 +2914,7 @@ samarbete mellan specialistvård, palliativmedicinsk expertis, primärvård och 
 I detta avsnitt ges praktiska råd och handläggningsförslag vid situationer som kan bli aktuella när
 Parkinsonpatienter vårdas på grund av andra sjukdomar.
 
-#### Medicinering i samband med elektiv kirurgi
+### Medicinering i samband med elektiv kirurgi
 
 
 Några helt generella råd kan inte ges och hänsyn behöver tas till såväl operationsindikation som typ av narkos
@@ -2994,7 +2994,7 @@ Heminevrin® 300-600 mg.
 
 läkemedel på FASS.se
 
-#### DBS - praktiskt handhavande vid diagnostiska undersökningar och kirurgi
+### DBS - praktiskt handhavande vid diagnostiska undersökningar och kirurgi
 ###### **Diagnostiska undersökningar**
 
 **1.** Vid **EKG** stängs impulsgivarna av och startas efteråt. Ofta har patienten en egen programmerare som
@@ -3024,15 +3024,15 @@ placeras på sådant sätt att det elektriska fältet inte direkt kommer att omf
 för kabel mellan dosa och hjärnelektrod. Risken är dels skador på utrustningen, och om systemet inte är
 intakt kan läckströmmar ge temperaturökning I hjärnan.
 
-#### Akuta tillstånd vid Parkinsons sjukdom och andra basalgangliesjukdomar
+### Akuta tillstånd vid Parkinsons sjukdom och andra basalgangliesjukdomar
 
 
 Vid plötsliga försämringar i Parkinsonsymtom eller nytillkommen förvirring bör akut somatisk sjukdom eller
 bristande följsamhet till medicinering uteslutas. För detaljerade handlingsplaner vid konfusion, psykos eller
 hyperpyrexisyndrom, se handlingsplaner i avsnitt 0.
 
-### IX. Diagnostik och behandling av parkinsonliknande tillstånd
-#### Sekundär parkinsonism
+## IX. Diagnostik och behandling av parkinsonliknande tillstånd
+### Sekundär parkinsonism
 ###### **Läkemedelsutlöst parkinsonism**
 
 _Symtom:_ Misstänk diagnos vid symmetrisk debut, relativt snabbt påkommet tillstånd och inkomplett symtombild
@@ -3104,7 +3104,7 @@ självständigt gående. Risk för konfusion finns. Till ett behandlingsförsök
 och följas upp vilket förutsätter observationsmöjlighet. En gynnsam effekt kan vara notabel först efter
 insättning och utsättning, exv vad gäller gångförmåga.
 
-#### Essentiell tremor
+### Essentiell tremor
 
 
 _Symtom_ : Tremor, rytmisk oscillation av en kroppsdel, orsakad av alternerande eller synkrona sammandragningar
@@ -3116,7 +3116,7 @@ motorikream vid regionsjukhus.
 
 _Utredning och behandling:_ Se Swemodis Tremorriktlinjer.
 
-#### Dystoni
+### Dystoni
 
 
 _Symtom:_ Samtidig kontraktion av muskler (agonist/antagonist) kring en led leder till förlängda kontraktioner,
@@ -3131,7 +3131,7 @@ _Behandling:_ Fokala dystonier behandlas med botulinumtoxin. Generella dystonier
 antikolinergika. Levodopa eller dopaminagonister bör prövas, särskilt hos yngre. Vid svåra symtom kan
 elektrostimulering i globus pallidus övervägas.
 
-#### Atypisk parkinsonism (se även Bilaga I: Diagnoskriterier)
+### Atypisk parkinsonism (se även Bilaga I: Diagnoskriterier)
 ###### **Multipel systematrofi (MSA)**
 
 _Symtom:_ En progressiv, sporadisk neurodegeneration som karakteriseras av autonom dysfunktion, parkinsonism,
@@ -3220,8 +3220,8 @@ _Utredning_ : Om inte känd demenstyp, utredning med avseende på etiologi.
 
 
 
-### X. Organisatoriska aspekter
-#### Nationella riktlinjer för Parkinsonvården 2016
+## X. Organisatoriska aspekter
+### Nationella riktlinjer för Parkinsonvården 2016
 
 Swemodis har i tidigare versioner av sina riktlinjer för utredning och behandling av PS förespråkat en
 övergripande behandlingsstrategi, vårdkedja och olika vårdnivåer som nu än tydligare konkretiseras i de
@@ -3242,7 +3242,7 @@ bedömning avseende avancerad behandling. Swemodis styrelse har aktivt medverkat
 NR i egenskap av ordförande för faktagrupp- resp. prioriteringsgrupp avseende PS samt bidragit med experter i
 arbetet med det medicinska underlaget för PS samt deltagare i den samlade prioriteringsgruppen.
 
-#### Översyn av riktlinjerna för Parkinsonvården 2022
+### Översyn av riktlinjerna för Parkinsonvården 2022
 
 
 En mindre översyn genomfördes 2022 av Parkinsonvården.Där uppdatering beslutades avseende
@@ -3267,7 +3267,7 @@ nätet
 d) Kunskapsunderlaget för Parkinsons sjukdom – 2016 och 2022
 e) Hälsoekonomiska underlaget/modellrapport för Parkinsons sjukdom
 
-#### Centrala rekommendationerna
+### Centrala rekommendationerna
 
 
 Här redovisas uppföljning och omhändertagande/rehabilitering. Beträffande diagnostik och symtomatisk
@@ -3417,7 +3417,7 @@ Väsentligt förstås att fortsatta rehabiliteringsplanen efter vårdperioden ko
 
 
 Förteckning över godkända neurologiska rehabiliteringsanläggningar finns på de regionala websidorna.
-### XI. Körkort
+## XI. Körkort
 
 
 Alla läkare har skyldighet att anmäla den körkortshavare som är medicinskt olämplig att ha körkort. En person
@@ -3616,7 +3616,7 @@ körkortshavaren motsätter sig fortsatt undersökning eller utredning, får lä
 Transportstyrelsen. Bestämmelserna i första och andra styckena gäller även den som har körkortstillstånd eller
 traktorkort
 
-### XII. Socialstyrelsens försäkringsmedicinska beslutsstöd
+## XII. Socialstyrelsens försäkringsmedicinska beslutsstöd
 
 
 Utdrag av de mest relevanta texterna från de rekommendationer som finns i sin helhet i på Socialstyrelsens
@@ -3746,7 +3746,7 @@ arbetsbelastning vid tilltagande funktionsnedsättningar.
 
 
 
-### XIII. Referenser
+## XIII. Referenser
 
 **1.** **Andra Guidelines, översikter, länkar**
 
@@ -3950,7 +3950,7 @@ Yu XX, Fernandez HH. Dopamine agonist withdrawal syndrome: A comprehensive revie
 
 
 
-### Bilaga I: Diagnoskriterier
+## Bilaga I: Diagnoskriterier
 
 _(ej validerade översättningar från engelska)_
 
@@ -3961,7 +3961,7 @@ _Disease. Arch Neurol 1999: 56 (1):33-39_ ) och UK Parkinson’s Disease Society
 ( _Gibb WR, Lees AJ. The relevance of the Lewy body to the pathogenesis of idiopathic Parkinson's disease. J_
 _Neurol Neurosurg psychiatry 1988; 51: 745-52)._ MDS har relativt nyligen kommit ut med nya diagnostiska
 kriterier som allmännt accepterats och vi har därför valt att endast redogöra för dem.
-#### MDS Kliniska diagnostiska kriterier för Parkinsons sjukdom
+### MDS Kliniska diagnostiska kriterier för Parkinsons sjukdom
 
 
 _Postuma RB, Berg D, Stern M et al. Movement Disorders, Vol. 30, No. 12, 2015_
@@ -3976,7 +3976,7 @@ _Postuma RB, Berg D, Stern M et al. Movement Disorders, Vol. 30, No. 12, 2015_
 ![](images/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025/Riktlinjer-for-utredning-och-behandling-av-Parkinsons-sjukdom-10-2025.pdf-70-0.png)
 
 
-#### Kliniska diagnostiska kriterier för mild kognitiv svikt, MCI, vid Parkinsons sjukdom
+### Kliniska diagnostiska kriterier för mild kognitiv svikt, MCI, vid Parkinsons sjukdom
 
 _Litvan I, Goldman JG, Tröster AI, et al. Diagnostic criteria for mild cognitive impairment in Parkinson’s_
 _disease: Movement Disorder Society Task Force Guidelines. Mov Disord 2012;27:349-56_
@@ -4037,7 +4037,7 @@ _Exklusionskriterier_
 
 dagtrötthet mm)
 
-#### Kliniska diagnostiska kriterier för demens vid Parkinsons sjukdom
+### Kliniska diagnostiska kriterier för demens vid Parkinsons sjukdom
 
 
 _Emre M, Aasland D, Brown R et al. Clinical Diagnostic Criteria for Dementia Associated with Parkinson’s_
@@ -4194,7 +4194,7 @@ _D: Ingen av grupp IV-symtom uppfylls._
 
 
 
-#### MDS Kliniska diagnostiska kriterier för Multipel systematrofi (MSA)
+### MDS Kliniska diagnostiska kriterier för Multipel systematrofi (MSA)
 
 _Wenning GK, Stankovic I, Vignatelli L, Fanciulli A et al. The Movement Disorder Society Criteria for the Diagnosis_
 _of Multiple System Atrophy. Mov Disord. 2022 Jun;37(6):1131-1148._
@@ -4237,7 +4237,7 @@ _of Multiple System Atrophy. Mov Disord. 2022 Jun;37(6):1131-1148._
 
 
 
-#### Progressiv Supranukleär Pares (PSP)
+### Progressiv Supranukleär Pares (PSP)
 
 _Höglinger GU, Respondek G, Stamelou M et al. Movement Disorder Society-endorsed PSP Study Group. Clinical_
 _diagnosis of progressive supranuclear palsy: The movement disorder society criteria. Mov Disord. 2017_
@@ -4335,7 +4335,7 @@ Patienter med möjlig PSP SL eller PSP-CBS kvalificerar också för diagnosen �
 
 
 
-#### Demens med Lewy-inklusionskroppar (DLB)
+### Demens med Lewy-inklusionskroppar (DLB)
 
 _McKeith IG, Boeve BF, Dickson DW et al. Diagnosis and management of dementia with Lewy bodies: Fourth_
 _consensus report of the DLB Consortium. Neurology. 2017 Jul 4;89(1):88-100._
@@ -4486,7 +4486,7 @@ uppkomst av demens symtom och parkinonism.
 
 
 
-#### Kortikobasal degeneration (CBD), kortikobasalt syndrom (CBS)
+### Kortikobasal degeneration (CBD), kortikobasalt syndrom (CBS)
 
 Histopatologiskt verifierad kortikobasal degeneration (CBD) uppvisar heterogen klinik och det har varit svårt att
 etablera kliniska diagnostiska kriterier. Det mest uppdaterade systemet (Armstrong et al. 2013) [5 ] är baserat på en
@@ -4557,15 +4557,15 @@ talar starkt för Alzheimer såsom låg CSF betaamyloid/tau kvot; (2) positiv 11
 
 **med andra tau-patier.**
 
-#### Essentiell Tremor (ET)
+### Essentiell Tremor (ET)
 
 
 För diagnoskriterier se SWEMODIS terapiriktlinjer/praktiska råd för Tremor.
 
 
 
-### Bilaga II: Praktiska handlingsplaner vid akuta tillstånd
-#### Handlingsplan om konfusion vid PS eller andra sjukdomar i basala ganglier
+## Bilaga II: Praktiska handlingsplaner vid akuta tillstånd
+### Handlingsplan om konfusion vid PS eller andra sjukdomar i basala ganglier
 ###### **Konfusion (Delirium-Akut konfusion–Akut psykoorganiskt syndrom) F05.9**
 
 **Karakteristika/symtom** : Störd uppmärksamhet och koncentrationsförmåga. Omtolkning av
@@ -4608,7 +4608,7 @@ innehållet i konfusionen är ointressant.
 **Uppföljning:** Patienterna kan ha fragmentariska minnen av konfusionen vilket är fortsatt förvirrande och
 skrämmande. Patienter kan uppleva oro för vad som hänt med skamkänslor, ofta skuldkänslor, och fortsatt
 rädsla för framtiden.
-#### Handlingsplan vid psykos
+### Handlingsplan vid psykos
 ###### **Organisk hallucinos (F06.0 + Y 46.7 utlöst av antiparkinsonmedel)**
 
 **Karakteristika/symtom:** Typiskt med förstadier: Livliga drömmar, mardrömmar, illusioner, systematiska
@@ -4687,7 +4687,7 @@ av dessa vid psykos är **”icke-göra”** enligt nationella riktlinjer.
 Patienterna kan ha fragmentariska minnen av psykosen vilket är fortsatt förvirrande och skrämmande. Patienter
 kan uppleva oro för vad som hänt med skamkänslor, ofta skuldkänslor, och fortsatt rädsla för framtiden.
 
-#### Handlingsplan för hyperpyrexisyndrom vid Parkinsons sjukdom
+### Handlingsplan för hyperpyrexisyndrom vid Parkinsons sjukdom
 
 
 Tillståndet är ekvivalent med malignt neuroleptika-syndrom och i det mest uttalade fallen karaktäriseras det
@@ -4748,7 +4748,7 @@ dygn och autonom påvekan inom några dygn.
 
 
 
-### Bilaga III: Accelerometri/aktigrafi för utvärdering av motoriska symtom vid Parkinsons sjukdom – Parkinson Kinetigraph, PKG
+## Bilaga III: Accelerometri/aktigrafi för utvärdering av motoriska symtom vid Parkinsons sjukdom – Parkinson Kinetigraph, PKG
 
 Objektiv rörelsemätning med bärbara sensorer (wearables) för utvärdering av rörelsestörningar har möjliggjorts
 genom senare års miniatyrisering av elektronik och förbättrad datahantering och analys. Det finns för
@@ -4862,7 +4862,7 @@ p.g.a ortostatism eller hallucinationer och de faktiska behandlingsmålen är so
 
 
 
-### Bilaga IV: Klinisk genetisk utredning och genetisk vägledning
+## Bilaga IV: Klinisk genetisk utredning och genetisk vägledning
 
 **Allmänna aspekter**
 

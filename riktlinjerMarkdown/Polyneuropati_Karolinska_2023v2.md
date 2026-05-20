@@ -1,24 +1,24 @@
-# Polyneuropati Karolinska 2023v2
 
-# **Polyneuropati**
 
-## **Vårdprogram**
+# Polyneuropati
 
-##### _FÖR SLUTENVÅRD_
+_Vårdprogram_
 
-### Neurologiska kliniken Karolinska Universitetssjukhuset
+_FÖR SLUTENVÅRD_
+
+_Neurologiska kliniken Karolinska Universitetssjukhuset_
 
 **Rayomand Press, överläkare**
 
-##### **_Senaste revision Dec 2023_**
+_Senaste revision Dec 2023_
 
 
 
-##### **Innehåll**
+**Innehåll**
 
 _sidan_
 
-**A. Medicinska aspekter**
+A. Medicinska aspekter
 
 Definition 3
 
@@ -50,9 +50,9 @@ Symtomatisk behandling 21
 **C. Omhändertagandenivå och vårdorganisation** 24
 
 
-#### **Polyneuropati**
 
-##### A. Medicinska aspekter
+
+## A. Medicinska aspekter
 
 
 **Definition**

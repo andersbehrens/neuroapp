@@ -1,13 +1,13 @@
-# Konsensusdokument_MR_3.1_2025-10-10
+
 
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-0-0.png)
 
 
-# **Nationella rekommendationer för MR** **vid neuroinflammatoriska tillstånd**
+# Nationella rekommendationer för MR vid neuroinflammatoriska tillstånd
 
-### Version 3.1, 2025-10-10
+_Version 3.1, 2025-10-10_
 
-## Innehåll
+**Innehåll**
 
 Innehåll ................................................................................................................................................... 1
 
@@ -101,7 +101,7 @@ Vid frågor kring innehållet i dokumentet kan kontakt tas med Ordförande i Sve
 
 
 ## Rekommenderad MR-användning vid neuroinflammation
-#### I vilka situationer bör MR göras?
+### I vilka situationer bör MR göras?
 
 Det finns ett flertal situationer vid vilka en person med misstänkt eller känd neuroinflammation bör
 genomgå MR-undersökning. De dominerande skälen är nydiagnostik och monitorering av
@@ -130,7 +130,7 @@ _(radiologically isolated syndrome)._
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-3-0.png)
 
 
-#### Vilka delar av centrala nervsystemet bör undersökas?
+### Vilka delar av centrala nervsystemet bör undersökas?
 
 Vid utredning och rutinuppföljning av MS och annan neuroinflammation bör alltid hjärnan undersökas.
 MR av ryggmärgen kan ge ytterligare information men har begränsad nytta vid MS-rutinkontroller för
@@ -138,7 +138,7 @@ att detektera subklinisk sjukdomsaktivitet eftersom ryggmärgslesioner i större
 symtom/skov än lesioner i hjärnan. Vid några situationer föreligger särskild indikation för MR av
 ryggmärgen (se Tabell 2 nedan). Tabellen är en fri översättning från MAGNIMS rekommendationer. [1]
 
-#### Rekommenderade protokoll för MR hjärna
+### Rekommenderade protokoll för MR hjärna
 
 Rekommenderade MR-protokoll av hjärnan för specificeras i Bild 1. De rekommenderade protokollen
 utgör en föreslagen minimi-nivå för att erhålla adekvat information i typfallet och kan kompletteras
@@ -248,7 +248,7 @@ vara en fördel att jämföra aktuell undersökning även med undersökning län
 än den direkt föregående. Subtraktionsteknik kan övervägas för ökad sensitivitet för
 nya/förstorade lesioner.
 
-#### Rekommenderade protokoll för MR rygg
+### Rekommenderade protokoll för MR rygg
 
 
 _**Tabell 2.**_ _Indikationer för MR rygg._
@@ -299,7 +299,7 @@ snittjocklek om maximalt 3 mm.
 
  - Bildtagningen ska inkludera conus.
 
-#### Kontrastmedelsanvändning
+### Kontrastmedelsanvändning
 
 Information om huruvida någon lesion uppvisar kontrastladdning är central vid diagnos av MS och
 kontrastmedel ingår därför som rutin i ”MR hjärna Neuroinflammation” och ”MR rygg
@@ -308,7 +308,7 @@ diagnostisk undersökning, varför kontrastmedel vid MS-rutinkontroller enbart u
 kontrastmedel på begäran. Kontrastmedel vid rutinkontroll kan begäras exempelvis efter hos en
 individ som uppvisat klinisk/radiologisk aktivitet vid föregående kontroller.
 
-#### 7 Tesla MR hjärna
+### 7 Tesla MR hjärna
 
   - Remiss kan skrivas för 7 Tesla MR vid hög MS-misstanke men icke-uppfyllda kriterier.
 
@@ -325,7 +325,7 @@ i Huddinge. Undersökning görs enbart av hjärnan, ej rygg.
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-6-0.png)
 
 
-#### Hur ofta bör MR göras vid MS?
+### Hur ofta bör MR göras vid MS?
 
 Det saknas evidens för att definiera exakta uppföljningsintervall för MR vid MS/neuroinflammation.
 Nedanstående bild är ett praktiskt exempel på undersökningsintervall som kan användas både den
@@ -385,7 +385,7 @@ riskvärdering. Inklusion även av DWI vid MR-kontroll kan öka sensitiviteten y
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-7-0.png)
 
 
-#### När kan undersökningarna begränsas eller MR-uppföljningen avslutas vid MS?
+### När kan undersökningarna begränsas eller MR-uppföljningen avslutas vid MS?
 
 Den med MR detekterbara fokala inflammatoriska aktiviteten vid MS är som högst mellan cirka 20 och
 40 års ålder, vilket också är det åldersintervall inom vilket de flesta debuterar med första kliniska
@@ -428,7 +428,7 @@ immunomodulerande behandling.
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-8-0.png)
 
 
-#### Vad bör remisstext och remissvar innehålla?
+### Vad bör remisstext och remissvar innehålla?
 
 Remisstext och remissvar är centrala kommunikationsverktyg i samarbetet mellan neurolog, radiolog
 och övrig MR-personal. Nedan framgår exempel på information som är av vikt i kommunikationen vid
@@ -450,7 +450,7 @@ _Tabell 3. Rekommenderat innehåll i remisstext och remissvar_
 ![](images/Konsensusdokument_MR_3.1_2025-10-10/Konsensusdokument_MR_3.1_2025-10-10.pdf-9-0.png)
 
 
-#### Svarsmallar
+### Svarsmallar
 
 
 **MR HJÄRNA NEUROINFLAMMATION**
@@ -541,7 +541,7 @@ BEDÖMNING:
 [Inga nytillkomna lesioner.|Nya lesioner enligt ovan.] (Kommentera särskilt ev. långsträckta förändringar, 3+
 kotkroppssegment)
 
-#### Remissmall
+### Remissmall
 
 
 Diagnos:

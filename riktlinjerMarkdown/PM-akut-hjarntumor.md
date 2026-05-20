@@ -1,6 +1,6 @@
 # Handläggning vid akut försämring av hjärntumörpatienter
 
-### Introduktion
+## Introduktion
 
 Syfte och bakgrund:
 
@@ -25,7 +25,7 @@ biträdande överläkare Neuro-onkologiska mottagningen VO neurologi, Lund.
 1
 
 
-### Tumörrelaterad epilepsi
+## Tumörrelaterad epilepsi
 
 Epileptiska anfall är vanliga hos patienter med primära hjärntumörer och resulterar i
 medicinska, sociala och ekonomiska problem. Det vanligaste debutsymtomet vid
@@ -41,7 +41,7 @@ intrakraniella tryck inklusive hydrocefalusbild, vaskulära komplikationer och
 metaboliska störningar. Behandling av dessa provocerande faktorer, när det är
 möjligt, bör göras utöver terapi med ett antiepileptiskt läkemedel (AED). _(2)_
 
-#### Epileptiska anfall
+### Epileptiska anfall
 
 Fokala anfall vid hjärntumör sprids relativt ofta till stora delar av hjärnytan, varvid
 det uppstår ett bilateralt toniskt-kloniskt anfall med medvetandeförlust och
@@ -64,7 +64,7 @@ känselnedsättning eller pareser.
 rörelser (kan tyda på icke-konvulsivt status epilepticus, det vill säga långvarig
 pågående anfallsaktivitet utan påtagliga motoriska fenomen). _(3)_
 
-#### Val av läkemedel vid epilepsi
+### Val av läkemedel vid epilepsi
 
 Vid behandling av en patient med tumörrelaterad epilepsi med en AED måste
 patientens underliggande diagnos, deras medicinska Samsjuklighet och behovet av
@@ -144,7 +144,7 @@ alternativ hos denna patientgrupp, men dokumentationen är mer begränsad. _(6)_
 
 
 
-#### Hjärnödem
+### Hjärnödem
 
 Primära hjärntumörer stör blod-hjärnbarriären genom utsöndrande faktorer, såsom
 vascular endothelial growth faktor (VEGF), som förändrar cellpermeabilteten och
@@ -224,7 +224,7 @@ ljusstel pupill på tumörsidan då oculomotoriusnerven kläms under tentoriet.
 
 
 
-#### Kortisonbehandling vid hjärnödem
+### Kortisonbehandling vid hjärnödem
 
 Man brukar behandla huvudvärk som kommer pga. hjärnödem med
 kortikosteroider, men beslutet att behandla ska göras främst baserat på patientens
@@ -317,7 +317,7 @@ preparatet har studerats vid behandling av återkommande gliom och kan minska
 hjärnans ödem och minska beroendet av kortikosteroid, men denna indikation är
 fortfarande främst föremål inom studier som alternativ till kortison. (8)
 
-### Blod-benmärgspåverkan
+## Blod-benmärgspåverkan
 
 
 Blod-benmärgspåverkan är vanligt under pågående cytostatikabehandling.
@@ -341,8 +341,8 @@ trombocytkoncentrat.
 Vid konstaterad blödning: kontrollera om låga trombocyter eller användning av
 antikoagulantia?
 
-### Infektion som komplikation hos hjärntumörpatienter
-#### 1. Pneumoni
+## Infektion som komplikation hos hjärntumörpatienter
+### 1. Pneumoni
 
 Den viktigaste riskfaktorn för pneumoni hos tumörpatienter som fått behandling
 med cytostatika och kortison är lymfopeni (lymfocyter <0,5), men även bakteriell
@@ -398,7 +398,7 @@ Behandlingen av pneumocystispneumoni
 
    - Steroider om uttalad lungbild/ desaturering.
 
-#### 2. Svampinfektion i munhåla — oral candidos
+### 2. Svampinfektion i munhåla — oral candidos
 
 Immunsuppression från kortison och cytostatikabehandling ökar också risken för
 utveckling av Candidainfektioner. Dessa tenderar att vara milda hos patienter med
@@ -422,7 +422,7 @@ förlängas till 4 till 6 veckor vid behov.
 |**2. Fluconazol**<br>|Laddningsdos: 200 mg<br>till 400 mg dag 1.<br>Efterföljande dos: 100<br>mg till 200 mg<br>dagligen. <br>||Höga<br>leverenzymsvärde.<br>|
 
 
-#### Tromboembolisk sjukdom
+## Tromboembolisk sjukdom
 
 Venös tromboembolism är vanlig hos patienter med hjärntumörer särskilt vid
 hemipares, minskad rörlighet, och denna risk kan vara livslång (10)
@@ -484,7 +484,7 @@ Användning av inferior vena cava filter bör begränsas till patienter med nyli
 aktiv intrakraniell blödning eller hos patienter med andra medicinska
 kontraindikationer mot antikoagulantia.
 
-### Psykiska symptom
+## Psykiska symptom
 
 Ångest och depression är ibland underdiagnostiserade symtom hos patienter med
 hjärntumör. När en klinisk diagnos har gjorts kan ett antidepressivt läkemedel
@@ -494,14 +494,14 @@ medel är i regel säkra hos patienter med hjärntumörer och vår erfarenhet av
 citalopram till denna patientgrupp är god, eller mirtazapin ffa till natten vid samtidig
 ångest eller sömnbesvär.
 
-### Multidisciplinär teambehandling
+## Multidisciplinär teambehandling
 
 
 Det är angeläget att tidigt erbjuda stöd för att hantera sjukdomen. Via de olika
 kompetenserna inom hjärntumörbehandling kan stöd och adekvata åtgärder sättas
 in samt information om sjukdomen ges.
 
-#### Sjuksköterska
+### Sjuksköterska
 
 För att undvika onödig oro är det mycket viktigt att patienterna vet vart de ska vända
 sig vid olika frågor. Därför är det viktigt att patienterna vet att det finns tillgång till
@@ -532,7 +532,7 @@ hjälper också till att utvärdera och följa upp hur patienten mår, tål beha
 kan uppmärksamma om patienten har andningspåverkan, hög puls, feber eller
 underbenssvullnad och informerar läkare om detta.
 
-#### Kurator
+### Kurator
 
 Att drabbas av hjärntumör påverkar patienten inom alla områden i livet. Förutom
 stöd kring de medicinska frågeställningarna kan det behövas stöd kring den övriga
@@ -541,12 +541,12 @@ kring hur livet påverkats på olika sätt och kan också bidra med vägledning 
 information i frågor om samhällets resurser. Detta för att underlätta för patienten
 och närstående att hantera sjukdomen och den förändrade livssituationen.
 
-#### Fysioterapeut och arbetsterapeut
+### Fysioterapeut och arbetsterapeut
 
 Vid akut försämring av hjärntumör bör göras en ny bedömning av kognition och ADLförmåga för att se om patienten behöver nya kommunala hjälpinsatser eller om ev.
 ansökan om personlig assistans ska övervägas.
 
-### Biverkningar av strålbehandling
+## Biverkningar av strålbehandling
 
 Biverkningar av strålbehandling är vanligtvis uppdelade i akuta biverkningar som kan
 uppstå under strålning eller biverkningar som uppstår upp till sex veckor efteråt och
@@ -570,7 +570,7 @@ med inlärning och minne.
 12
 
 
-## **Referenser**
+## Referenser
 
 1. _Nationella registergruppen för hjärntumörer_ . Nationellt kvalitetsregister för
 hjärntumörer nationell rapport 1999-2015. ISBN:91-89048-65-2.
