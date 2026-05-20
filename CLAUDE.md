@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v15)
+├── sw.js                               # Service worker (cache-version: neuroguide-v18)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -34,7 +34,7 @@ neuroApp/
 │   ├── MGkonsensus2024v2.md
 │   ├── Polyneuropati_Karolinska_2023v2.md
 │   ├── PM-akut-hjarntumor.md
-│   ├── Vardprogram-stroke-2020.md
+│   ├── Vardprogram-stroke-2026.md
 │   └── images/                         # Bilder extraherade av pymupdf4llm
 ├── graphical_abstract_hypogamma.html   # Standalone HTML-abstrakt
 ├── graphical_abstract_mg.html
@@ -61,7 +61,7 @@ Data är strukturerad i två globala arrays:
 { id, namn, beskrivning, ikon, farg, parent? }
 ```
 Toppnivå: `riktlinjer`, `akutkort`, `artiklar`.
-Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`.
+Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`, `epilepsi`.
 
 **`DOKUMENT`** – varje dokument:
 ```js
@@ -72,6 +72,7 @@ Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `n
   graphicalAbstract?,  // länk till graphical_abstract_*.html → visas ovanpå texten
   källa?,              // visas som meta-text för artiklar (t.ex. "Brain 2024")
   kalkylatorUrl?,      // länk till fristående HTML-kalkylator (öppnas i iframe)
+  direktPdf?: true,    // kortkortet öppnar PDF direkt (window.open) utan dokumentvy
   innehall: [{ rubrik, text?, html? }]  // sektioner (används av sökning)
 }
 ```
@@ -80,11 +81,13 @@ Dokument utan `markdownUrl` visas som avsnittslista (akutkort) eller bildgalleri
 
 **Artiklar-kategorin** (`artiklar`) beter sig annorlunda: ett tryck på dokumentkortet öppnar PDF direkt i nytt fönster (`window.open()`) istället för att navigera till dokumentvy. Fältet `källa` visas som meta-text under titeln.
 
+**`direktPdf: true`** – valfri flagga på enskilda dokument i alla kategorier. Kortkortet öppnar PDF:en direkt (samma beteende som artiklar). Används för dokument utan meningsfulla textavsnitt (t.ex. rena referensdokument). Meta-texten visar `'PDF'` istället för antal avsnitt.
+
 ## Applogik (app.js)
 
 ### Router
 Hash-baserad. Anropar `Vy.rendera(vy, params)` vid varje hashchange.
-Switch-case täcker: `start`, `riktlinjer`, `akutkort`, `artiklar`, `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`, `dokument`, `sektion`, `sok`.
+Switch-case täcker: `start`, `riktlinjer`, `akutkort`, `artiklar`, `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`, `epilepsi`, `dokument`, `sektion`, `sok`.
 
 ### Vy.rendera()
 - Döljer TOC-knappen och stänger TOC-drawer vid varje vybyte
@@ -130,18 +133,24 @@ Reparerar PDF-extraktionsartefakter:
 - Skalar bilder till 70% av naturlig pixelbredd (200 DPI → skärmanpassad), stora diagram (>900px) fyller containerns bredd
 
 ### _scrollaTill(id) – TOC-scroll
-Dubbelscroll för att kompensera för lazy-loaded bilder som förskjuter layouten:
+Tre-pass scroll för att kompensera för lazy-loaded bilder som förskjuter layouten:
 ```js
 window.scrollTo({ top: beräknaY(), behavior: 'smooth' });
 setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 650);
+setTimeout(() => window.scrollTo({ top: beräknaY(), behavior: 'instant' }), 1400);
 ```
-First smooth scroll till beräknad position, sedan instant-korrigering efter 650 ms när bilder har laddats och layout stabiliserats.
+Smooth scroll direkt → instant-korrigering vid 650 ms (snabba bilder) → instant-korrigering vid 1400 ms (långsamma bilder). Ger ett kort "ryck" men landar alltid rätt.
 
 ### TOC (innehållsförteckning)
 - `#toc-knapp` (☰, fixad nere till höger) visas bara i Kindle-vy
 - Klick öppnar `#toc-drawer` (slide-in från höger)
 - Innehåller knappar för h2–h6-rubriker, byggda från `tocData`-arrayen
 - Klick scrollar till rubrik och stänger drawern
+- **CSS-klasser**: JS genererar `.toc-2`/`.toc-3`/`.toc-4`/`.toc-5`/`.toc-6` (INTE `.toc-h2` etc.)
+  - `.toc-2` = fet med vänster kantlinje (mest prominent)
+  - `.toc-3` = indenterat 28px, 0.82rem
+  - `.toc-4` = indenterat 40px, 0.78rem, ljusgrå
+  - `.toc-5`/`.toc-6` = indenterat 52px, 0.74rem, ljusgrå
 
 ## Slash-commands och sub-agenter
 
@@ -191,7 +200,7 @@ Markdown-filerna är stora (273–5518 rader). Dessa regler minimerar tokens uta
    grep -n "kategori: 'ms'" js/data.js | tail -5
    ```
 
-5. **Spawn Explore-subagent för undersökning** – om du behöver förstå ett dokuments struktur utan att det ska in i huvudkontexten.
+5. **Spawn general-purpose-subagent för rubrikanalys** – för dokument >1000 rader, spawna en bakgrundsagent med uppgiften att köra `grep -n "^#" fil.md` och analysera klinisk hierarki. Agenten returnerar en kompakt lista med radnummer → ny nivå, utan att ladda hela filen i huvudkontexten.
 
 ## Lägga till ett nytt riktlinjedokument
 
@@ -224,8 +233,15 @@ pathlib.Path(ut).write_text(md)
 Kör QA-scriptet och kontrollera:
 
 - **Sidfötter**: Vissa PDF:er upprepar dokumentnamn + författare på varje sida. Ta bort med Python/sed.
-- **Inbyggd TOC**: Om dokumentet har en sidnumrerad innehållsförteckning extraheras den som en enda `###`-rubrik – ta bort den manuellt.
+- **Inbyggd TOC**: Om dokumentet har en sidnumrerad innehållsförteckning extraheras den som text med `##`-rubrik (`## Innehåll`). Ta bort rubrik-markören eller hela sektionen – annars förorenar den TOC-menyn.
+- **Compound headings**: pymupdf4llm sammanfogar ibland två rubriker på samma rad, t.ex. `###### **A. Inledning** **Bakgrund, SWEMODIS**`. Dela upp dessa manuellt: `## A. Inledning\n\n### Bakgrund, SWEMODIS`.
 - **Rubriker**: Dokumentet kan använda `**fet text**` istället för `##`-rubriker. JS hanterar detta automatiskt. Men se till att standalone bold-rader som är formulärfält eller varningsboxar (ej rubriker) saknar omgivande tomrader, annars konverteras de felaktigt.
+- **Rubrikhierarki** – använd dessa nivåer konsekvent för klinisk TOC-navigering:
+  - `##` = Huvud-sektioner (t.ex. A. Medicinsk del, V. Läkemedelsöversikt)
+  - `###` = Kliniska undersektioner (t.ex. enskilda läkemedel, diagnoser, behandlingstyper)
+  - `####` = Detaljer som kliniker söker (t.ex. doseringssteg, kriterier)
+  - `######` = Implementeringsdetaljer som EJ ska synas i TOC (lämna som `######`)
+  - Frontmatter (sjukhusnamn, datum, inbyggd TOC) → ta bort rubrik-markören, lämna som plain text
 - **Bilder**: Bildlänkarna i .md-filen pekar på `images/` (relativ) — JS skriver om dem automatiskt.
 - **Försättsblad**: Bilder med `.pdf-0-N.png` (förstasida) filtreras bort automatiskt av JS.
 
@@ -256,7 +272,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v16';  // öka siffran (nuvarande: v15)
+const CACHE_NAME = 'neuroguide-v19';  // öka siffran (nuvarande: v18)
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -291,7 +307,7 @@ Filer och tillhörande dokument:
 | `graphical_abstract_polyneuropati.html` | Polyneuropati (Karolinska 2023) |
 | `graphical_abstract_mr.html` | MR vid neuroinflammation (v3.1, 2025) |
 | `graphical_abstract_hjarntumor.html` | Akut försämring hjärntumörpatienter (Södra regionen) |
-| `graphical_abstract_stroke.html` | Vårdprogram stroke – Blekingesjukhuset 2020 |
+| `graphical_abstract_stroke.html` | Vårdprogram stroke – Blekingesjukhuset 2026 |
 
 CSS-mall: CSS-variabler `--blå`, `--grön`, `--röd`, `--gul`, `--lila`, `--teal` med `-lj`/`-md`-varianter. Tabeller med mörk header (`background:var(--blå)`). Läs `graphical_abstract_parkinson.html` som referensimplementation.
 
@@ -319,7 +335,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v15`**.
+Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v18`**.
 
 ## Service Worker (sw.js)
 
