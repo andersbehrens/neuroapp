@@ -8681,6 +8681,23 @@ i symtomkomplexet.`
   },
 
   {
+    id: 'status-ep',
+    titel: 'Status epilepticus',
+    kategori: 'akutkort',
+    pdf: 'akutkort/Status EP.pdf',
+    innehall: [
+    {
+      rubrik: 'Sida 1',
+      html: `<img src="images/akutkort/Status_EP_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
+    },
+    {
+      rubrik: 'Sida 2',
+      html: `<img src="images/akutkort/Status_EP_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
+    }
+    ]
+  },
+
+  {
     id: 'gcs',
     titel: 'GCS – Glasgow Coma Scale',
     kategori: 'akutkort',
@@ -8787,23 +8804,6 @@ i symtomkomplexet.`
     {
       rubrik: 'SBAR',
       html: `<img src="images/akutkort/SBAR_p1.png" alt="SBAR" style="max-width:100%;display:block;margin:0 auto">`
-    }
-    ]
-  },
-
-  {
-    id: 'status-ep',
-    titel: 'Status epilepticus',
-    kategori: 'akutkort',
-    pdf: 'akutkort/Status EP.pdf',
-    innehall: [
-    {
-      rubrik: 'Sida 1',
-      html: `<img src="images/akutkort/Status_EP_p1.png" alt="Sida 1" style="max-width:100%;display:block;margin:0 auto">`
-    },
-    {
-      rubrik: 'Sida 2',
-      html: `<img src="images/akutkort/Status_EP_p2.png" alt="Sida 2" style="max-width:100%;display:block;margin:0 auto">`
     }
     ]
   },
