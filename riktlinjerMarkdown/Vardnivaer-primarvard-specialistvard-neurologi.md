@@ -71,7 +71,9 @@ Källa: nationellt **personcentrerat och sammanhållet vårdförlopp epilepsi** 
 
 ### Epilepsi – uppföljning i primärvård respektive återremiss
 
-- **Kan följas i primärvård:** stabil patient om specialistläkare och patient gemensamt bedömt det lämpligt.
+- **Kan följas i primärvård** (kontroller och receptförnyelse) – färdigutredd, anfallsfri och mångårigt stabil patient utan behov av ytterligare medicinjustering, när specialist och primärvård är överens om att sammanhållen vård på primärvårdsnivå är fördelaktig. Särskilt aktuellt för:
+  - **äldre multisjuka** där helhetsbilden talar för att god sammanhållen vård kan tillgodoses på primärvårdsnivå,
+  - epilepsi efter stroke eller vid demens som efter initial uppföljning hos neurolog är anfallsfri/har stabil anfallssituation och tolererar given antiepileptisk behandling.
 - **Bör stanna i specialistvård:** nydebuterad epilepsi (de första åren), graviditet/fertilitetsfrågor, pågående läkemedelsjustering, barn och ungdomar.
 - **Återremiss till specialist vid:** försämrad anfallssituation, planerad utsättning av läkemedel, trafikmedicinska frågor, interaktionsproblematik, nytillkomna biverkningar, graviditet eller graviditetsönskan.
 
