@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v20)
+├── sw.js                               # Service worker (cache-version: neuroguide-v26, öka vid varje ändring)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -60,8 +60,14 @@ Data är strukturerad i två globala arrays:
 ```js
 { id, namn, beskrivning, ikon, farg, parent? }
 ```
-Toppnivå: `riktlinjer`, `akutkort`, `artiklar`.
+Toppnivå: `riktlinjer`, `akutkort`, `artiklar`, `remiss-vardniva` (Remiss & vårdnivå), `kalkylatorer`, `lankar`.
 Under `riktlinjer`: `ms`, `parkinson`, `tremor`, `myasteni`, `polyneuropati`, `neuroonkologi`, `stroke`, `epilepsi`.
+
+Lägger man till en **ny toppkategori** måste man även lägga till en `case` för dess id i routern (`app.js`, switch i `Vy.rendera`), annars renderas den inte.
+
+En kategori kan ha `externalUrl` (kortet öppnar URL:en direkt från startsidan). **`lankar`** beter sig som `artiklar`: korten öppnar `d.pdf`-URL i ny flik. En "länk" är alltså ett DOKUMENT med `kategori: 'lankar'` och ett `pdf`-fält som kan vara vilken URL som helst (t.ex. **FASS** ligger som länk under Länkar med `pdf: 'https://fass.se/health'`).
+
+Kategorin **`remiss-vardniva`** samlar administrativa stöddokument om gränsdragning primärvård/specialist (t.ex. `Vardnivaer-primarvard-specialistvard-neurologi.md` och `Inklusionskriterier-avd58.md`). Primärkällor (vårdförlopps-PDF:er) ligger lokalt i mappen `vårdnivå/` men committas/publiceras **inte**.
 
 **`DOKUMENT`** – varje dokument:
 ```js
@@ -150,6 +156,18 @@ Smooth scroll direkt → instant-korrigering vid 650 ms (snabba bilder) → inst
   - `.toc-2` = fet med vänster kantlinje (mest prominent)
   - `.toc-3` = indenterat 28px, 0.82rem
   - `.toc-4` = indenterat 40px, 0.78rem, ljusgrå
+
+## Lunch-widget (startsidan)
+
+`Lunch`-modulen i `app.js` visar dagens lunch från Blekingesjukhusets restaurang i ett `#lunch-widget` (endast vardagar).
+
+- **Datakälla:** läser `data/lunch.json` **same-origin** (`Lunch._frånFil`). Filen innehåller hela veckan: `{ updated, vecka, dagar: { Måndag: {lunch, gront}, … } }`. Reserv: `_frånProxy` (codetabs) – men **alla fria CORS-proxyer är opålitliga/nere**, så filen är den som gäller.
+- **Filen hålls färsk av en GitHub Action** (`.github/workflows/lunch.yml`, vardagar 07/11) som kör `scripts/lunch-scrape.mjs` – server-side skrapning direkt mot regionblekinge.se (ingen proxy, ingen CORS).
+- **Fälla (löst):** GitHubs runner blockerades av regionblekinge.se:s WAF (`fetch failed`) tills scrapern fick en **browser-User-Agent**. Behåll den.
+- **Skyddsräcke:** scrapern skriver **aldrig över med tom data** – om skrapningen ger 0 dagar bevaras senaste fungerande fil.
+- SW hämtar `data/lunch.json` **nätverk-först** (så Action-uppdateringar syns), cache som offline-reserv.
+
+Samma mönster (och lärdomar) som GoodDay-appens lunch.
 
 ## Slash-commands och sub-agenter
 
@@ -282,7 +300,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v20';  // öka siffran (nuvarande: v20)
+const CACHE_NAME = 'neuroguide-v26';  // öka siffran vid varje ändring
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -335,6 +353,8 @@ git push
 
 GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönster.
 
+**Två deploy-fällor:** (1) Lunch-Action:en committar `data/lunch.json` till `main` då och då → en egen push kan avvisas (non-fast-forward). Gör `git pull --rebase --autostash origin main` och pusha igen. (2) Repot kan ha **användarens egna oavslutade WIP** (t.ex. stroke-dokument) ocommittad – staga därför **bara dina egna filer explicit** (`git add <fil1> <fil2>`), aldrig `git add -A`.
+
 ### Viktiga regler för paths
 
 **Alla URL-sökvägar i projektet måste vara relativa** (inte börja med `/`), annars fungerar de inte på GitHub Pages:
@@ -345,7 +365,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång nya filer läggs till **måste** `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache och ser inte de nya dokumenten. Nuvarande version: **`neuroguide-v20`**.
+Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v26`** (öka vid varje ändring).
 
 ## Service Worker (sw.js)
 
