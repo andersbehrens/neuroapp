@@ -1,0 +1,37 @@
+name: Uppdatera lunch
+
+on:
+  schedule:
+    - cron: '0 5,9 * * 1-5'   # vardagar 07:00 & 11:00 svensk tid
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lunch
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Hämta veckomatsedel
+        run: node scripts/lunch-scrape.mjs
+      - name: Committa om datan ändrats
+        run: |
+          if [[ -n "$(git status --porcelain data/lunch.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/lunch.json
+            git commit -m "Uppdatera lunch ($(date -u +%Y-%m-%d))"
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main && git push && break || { echo "Push-krock, försök $i…"; sleep $((RANDOM % 5 + 2)); }
+            done
+          else
+            echo "Ingen ändring i lunchen."
+          fi

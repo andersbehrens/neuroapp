@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v24';
+const CACHE_NAME = 'neuroguide-v25';
 const ASSETS = [
   './',
   'index.html',
@@ -7,6 +7,7 @@ const ASSETS = [
   'js/data.js',
   'js/marked.min.js',
   'manifest.json',
+  'data/lunch.json',
   'icons/icon.svg',
   'icons/icon-192.png',
   'icons/icon-512.png',
@@ -99,6 +100,18 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Lunchdata: nätverk först så Action-uppdateringar syns direkt; cache som offline-reserv.
+  if (new URL(e.request.url).pathname.endsWith('/data/lunch.json')) {
+    e.respondWith(
+      fetch(e.request).then(res => {
+        const copy = res.clone();
+        caches.open(CACHE_NAME).then(c => c.put(e.request, copy)).catch(() => {});
+        return res;
+      }).catch(() => caches.match(e.request))
+    );
+    return;
+  }
+  // Övrigt: cache först (snabbt + offline).
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   );

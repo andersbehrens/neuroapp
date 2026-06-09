@@ -817,37 +817,45 @@ const Lunch = {
     const nu = new Date();
     const dagIdx = nu.getDay() - 1; // 0=mån … 4=fre
     if (dagIdx < 0 || dagIdx > 4) return; // helg – visa inget
-
     const dagNamn = this.DAGAR[dagIdx];
 
+    // Primärt: same-origin data/lunch.json (uppdateras av GitHub Action – ingen proxy).
+    // Reserv: direkt skrapning via CORS-proxy (sällan tillgänglig numera).
+    let rätter = await this._frånFil(dagNamn);
+    if (!rätter) rätter = await this._frånProxy(dagNamn, nu);
+    if (!rätter || (!rätter.lunch && !rätter.grönt)) return;
+
+    el.innerHTML = `
+      <div class="lunch-kort">
+        <div class="lunch-rubrik">
+          <span class="lunch-ikon">🍽</span>
+          <span>Dagens lunch</span>
+          <span class="lunch-tid">11:15–13:30</span>
+        </div>
+        ${rätter.lunch ? `<div class="lunch-rätt">${rätter.lunch}</div>` : ''}
+        ${rätter.grönt ? `<div class="lunch-grönt">🌿 ${rätter.grönt}</div>` : ''}
+      </div>`;
+  },
+
+  async _frånFil(dagNamn) {
     try {
-      // Steg 1: hämta huvudsidan, hitta länk för innevarande vecka
+      const r = await fetch('data/lunch.json', { cache: 'no-store' });
+      if (!r.ok) return null;
+      const j = await r.json();
+      const d = (j.dagar || {})[dagNamn];
+      return d && (d.lunch || d.gront) ? { lunch: d.lunch, grönt: d.gront } : null;
+    } catch (e) { return null; }
+  },
+
+  async _frånProxy(dagNamn, nu) {
+    try {
       const vecka = this._isoVecka(nu);
-      const huvudHtml = await this._hämta(this.HUVUD);
-      const doc1 = new DOMParser().parseFromString(huvudHtml, 'text/html');
+      const doc1 = new DOMParser().parseFromString(await this._hämta(this.HUVUD), 'text/html');
       const veckoUrl = this._finnVeckoUrl(doc1, vecka);
-      if (!veckoUrl) return;
-
-      // Steg 2: hämta veckomatsedeln och parsa
-      const veckoHtml = await this._hämta(veckoUrl);
-      const doc2 = new DOMParser().parseFromString(veckoHtml, 'text/html');
-      const rätter = this._parsaDag(doc2, dagNamn);
-      if (!rätter) return;
-
-      // Visa widgeten
-      el.innerHTML = `
-        <div class="lunch-kort">
-          <div class="lunch-rubrik">
-            <span class="lunch-ikon">🍽</span>
-            <span>Dagens lunch</span>
-            <span class="lunch-tid">11:15–13:30</span>
-          </div>
-          ${rätter.lunch   ? `<div class="lunch-rätt">${rätter.lunch}</div>` : ''}
-          ${rätter.grönt   ? `<div class="lunch-grönt">🌿 ${rätter.grönt}</div>` : ''}
-        </div>`;
-    } catch (e) {
-      // Tyst fel – widgeten förblir tom
-    }
+      if (!veckoUrl) return null;
+      const doc2 = new DOMParser().parseFromString(await this._hämta(veckoUrl), 'text/html');
+      return this._parsaDag(doc2, dagNamn);
+    } catch (e) { return null; }
   },
 
   async _hämta(url) {
