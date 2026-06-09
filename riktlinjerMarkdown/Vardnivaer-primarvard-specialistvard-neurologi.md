@@ -8,7 +8,7 @@ Dokumentet sammanfattar vad som enligt nationella kunskapsstöd ska skötas i pr
 - avgöra vad som kan eller bör hänvisas/återremitteras till primärvård,
 - se vad en remiss bör innehålla.
 
-Detta är en sammanfattning – vid tveksamhet, läs originaldokumentet (se Källor). Avsnitten om **migrän, epilepsi och stroke/TIA är avstämda ord för ord mot de nationella primärdokumenten**. Övriga avsnitt (NPH, MS, Parkinson, narkolepsi, långvarig smärta) är sammanfattade ur nationella kunskapsstöd och regionala återgivningar och är ännu inte ordagrant verifierade mot primärdokumenten.
+Detta är en sammanfattning – vid tveksamhet, läs originaldokumentet (se Källor). Avsnitten om **migrän, epilepsi, stroke/TIA, narkolepsi och långvarig smärta är avstämda ord för ord mot de nationella primärdokumenten** (PDF:erna är nedladdade och sparade lokalt). Avsnitten om **NPH, MS och Parkinson** bygger på nationella kunskapsstöd och regionala återgivningar men har inte kunnat stämmas av mot en nedladdningsbar primär-PDF – NPH-vårdförloppet och de kliniska kunskapsstöden för MS och Parkinson publiceras webbaserat. Kontrollera dessa tre mot originalet vid behov.
 
 ## Migrän – vuxna
 
