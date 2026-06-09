@@ -13,11 +13,18 @@ const KATEGORIER = [
   { id: 'artiklar',      namn: 'Artiklar',           beskrivning: 'Kliniskt användbara vetenskapliga artiklar', ikon: '📖', farg: 'kategori-riktlinje' },
   { id: 'remiss-vardniva', namn: 'Remiss & vårdnivå', beskrivning: 'Gränsdragning primärvård/specialist enligt nationella vårdförlopp och kunskapsstöd', ikon: '🚦', farg: 'kategori-prognos' },
   { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
-  { id: 'fass', namn: 'FASS', beskrivning: 'Läkemedelsinformation – öppnar fass.se', ikon: '💊', farg: 'kategori-akut', externalUrl: 'https://fass.se/health' },
   { id: 'lankar', namn: 'Länkar', beskrivning: 'Externa resurser och referenslänkar', ikon: '🔗', farg: 'kategori-riktlinje' }
 ];
 
 const DOKUMENT = [
+  {
+    id: 'fass',
+    titel: 'FASS',
+    kategori: 'lankar',
+    pdf: 'https://fass.se/health',
+    källa: 'fass.se – läkemedelsinformation (öppnas i ny flik)',
+    innehall: [],
+  },
   {
     id: 'remiss-vardniva-neurologi',
     titel: 'Vårdnivå & remiss – primärvård vs specialiserad neurologi',
