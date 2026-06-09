@@ -17,7 +17,11 @@ function isoWeek(d) {
   return Math.ceil(((t - y0) / 864e5 + 1) / 7);
 }
 async function get(url) {
-  const r = await fetch(url, { headers: { 'User-Agent': 'neuroguide-lunch/1.0' } });
+  const r = await fetch(url, { headers: {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'sv-SE,sv;q=0.9,en;q=0.8',
+  } });
   if (!r.ok) throw new Error(url + ' -> ' + r.status);
   return r.text();
 }
@@ -56,9 +60,15 @@ try {
   }
 } catch (e) { console.error('Skrapning misslyckades:', e.message); }
 
+const n = Object.keys(dagar).length;
+if (!n) {
+  // Skriv ALDRIG över med tom data (t.ex. om sajten är onåbar från runnern) –
+  // behåll senaste fungerande data/lunch.json.
+  console.error('Tom skrapning – behåller befintlig data/lunch.json (skriver inte).');
+  process.exit(0);
+}
 const out = { updated: now.toISOString(), vecka, dagar };
 await mkdir('data', { recursive: true });
 await writeFile('data/lunch.json', JSON.stringify(out, null, 2) + '\n', 'utf8');
-const n = Object.keys(dagar).length;
-console.log(`Skrev data/lunch.json: vecka ${vecka}, ${n} dagar` +
-  (n ? ' – ' + Object.entries(dagar).map(([d, r]) => `${d}: ${r.lunch}`).join(' | ') : ' (tomt)'));
+console.log(`Skrev data/lunch.json: vecka ${vecka}, ${n} dagar – ` +
+  Object.entries(dagar).map(([d, r]) => `${d}: ${r.lunch}`).join(' | '));
