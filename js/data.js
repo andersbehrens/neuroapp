@@ -26,13 +26,24 @@ const DOKUMENT = [
     innehall: [
       { rubrik: 'Syfte och användning', text: 'Stöd för remissbedömning: gränsdragning mellan primärvård och specialiserad neurologi enligt nationella vårdförlopp, vårdriktlinjer och kliniska kunskapsstöd. För bedömning av inkommande remisser och ställningstagande till återremiss till primärvård.' },
       { rubrik: 'Migrän – vårdnivå och remiss', text: 'De flesta migränpatienter (~90 %) sköts i primärvård. Remiss till neurolog vid atypisk anamnes, avvikande status, debutålder över 50 år, svikt på första- och andrahandsbehandling inklusive förebyggande, eller när avancerad behandling övervägs (topiramat, onabotulinumtoxin A, CGRP-antikroppar). Akut vid bortfall ej förklarat av aura, aura över 1 timme, anfall över 72 timmar.' },
-      { rubrik: 'Epilepsi – vårdnivå och remiss', text: 'Primärvård gör initial bedömning och remiss; specialist utreder (EEG, MR) och behandlar. Remiss bör innehålla anfallsbeskrivning, aura, medvetandepåverkan, provocerat eller oprovocerat, statusfynd. Färdigutredd, anfallsfri och mångårigt stabil patient kan följas i primärvård för kontroller och receptförnyelse, särskilt äldre multisjuka samt epilepsi efter stroke eller vid demens. Stanna i specialistvård vid nydebut, graviditet, läkemedelsjustering, barn. Återremiss vid försämring, utsättning, trafikmedicin, interaktioner, biverkningar, graviditet.' },
+      { rubrik: 'Epilepsi – vårdnivå och remiss', text: 'Primärvård gör initial bedömning och remiss; specialist utreder (EEG, MR) och behandlar. Remiss bör innehålla anfallsbeskrivning, aura, medvetandepåverkan, provocerat eller oprovocerat, statusfynd. Stabila patienter kan tillsammans med specialist följas i primärvård; även äldre multisjuka där epilepsin inte nödvändigtvis är under god anfallskontroll. Hanteras i specialistvård vid nydebut (första fem åren), graviditet, läkemedelsjustering, komplicerad läkemedelsbehandling, intellektuell eller neurologisk funktionsnedsättning, barn. Återremiss vid försämring, utsättning, trafikmedicin, interaktioner, biverkningar, nytillkomna sjukdomstillstånd, kognitiva problem, graviditet.' },
       { rubrik: 'Normaltryckshydrocefalus NPH – vårdnivå och remiss', text: 'Primärvård misstänker vid progressiv symmetrisk gång- och balansstörning, kognitiv svikt och/eller urinträngningar hos patient över 60 år, beställer DT-hjärna, remitterar vid NPH-misstanke. Specialist gör tap-test, MDK, ställningstagande till shunt.' },
       { rubrik: 'Stroke och TIA – uppföljning och vårdnivå', text: 'Uppföljning av strokekompetent läkare inom 1–3 månader vid TIA och 3–6 månader vid stroke, därefter årligen. TIA-uppföljning ska ske i primärvård. Remiss till fast vårdkontakt vid utskrivning.' },
       { rubrik: 'MS multipel skleros – vårdnivå och remiss', text: 'Primärvård vid misstanke: MR-hjärna och basala blodprover före snabb remiss till neurolog. Diagnos, sjukdomsmodifierande behandling och uppföljning sker i specialiserad neurologi.' },
       { rubrik: 'Parkinsons sjukdom – vårdnivå och remiss', text: 'Basal utredning i primärvård före remiss. Påbörja inte behandling före neurologbedömning. Diagnos ställs av specialist. Uppföljning minst två gånger per år; stabila patienter kan handläggas i primärvård men kan återremitteras.' },
       { rubrik: 'Narkolepsi – vårdnivå och remiss', text: 'Primärvård utreder vanligaste orsaker och remitterar till neurolog vid kardinalsymtom. Specialist eller sömnenhet gör sömnregistrering, orexin/hypokretin i likvor, diagnos och behandling.' },
       { rubrik: 'Långvarig smärta – vårdnivå och remiss', text: 'Primärvård är basen (MMRpv). Remiss till specialiserad smärtvård vid oklar smärttyp, avancerad läkemedelsbehandling, interventionell behandling eller behov av MMRsv.' },
+    ],
+  },
+  {
+    id: 'inklusionskriterier-avd58',
+    titel: 'Inklusionskriterier avd 58 – prioritering till avdelningen',
+    kategori: 'remiss-vardniva',
+    markdownUrl: 'riktlinjerMarkdown/Inklusionskriterier-avd58.md',
+    innehall: [
+      { rubrik: 'Prioriterad direktinläggning', text: 'Avd 58 är akutstroke-avdelning/strokeenhet och neurologisk utredningsavdelning. Direktinläggning prioriteras för akut stroke eller välgrundad misstanke om stroke, samt vård efter regional neurokirurgisk eller neurologisk strokevård (hjärninfarkt, hjärnblödning, subaraknoidalblödning).' },
+      { rubrik: 'Prioriterad överflyttning – utredningspatienter', text: 'Neurologiska utredningspatienter: misstanke om Guillain-Barrés syndrom (GBS), myasthenia gravis (MG), neuroinflammation, encefalit. Instabil eller svårbehandlad epilepsi, GBS, MG. Primär hjärntumör och hjärntumörutredning samt efter neurokirurgisk hjärntumörkirurgi (undantag hypofystumör, akustikusschwannom, hjärnmetastas från känd primärtumör).' },
+      { rubrik: 'Ej prioriterade för avd 58', text: 'Neurologisk sjukdom som inte primärt orsakar inläggningen, traumatiska eller anoxiska hjärnskador, rehabiliteringsbehov eller behov av fysioterapeut/arbetsterapeut/logoped, neurokirurgivård av annan orsak (trauma, ortopedi), samt allmänt internmedicinska patienter.' },
     ],
   },
   {

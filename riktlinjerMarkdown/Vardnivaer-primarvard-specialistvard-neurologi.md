@@ -8,7 +8,7 @@ Dokumentet sammanfattar vad som enligt nationella kunskapsstöd ska skötas i pr
 - avgöra vad som kan eller bör hänvisas/återremitteras till primärvård,
 - se vad en remiss bör innehålla.
 
-Detta är en sammanfattning – vid tveksamhet, läs originaldokumentet (se Källor). Migrän- och epilepsiavsnitten är hämtade ordagrant ur originalen; övriga är sammanfattade ur nationella kunskapsstöd och regionala återgivningar av dessa.
+Detta är en sammanfattning – vid tveksamhet, läs originaldokumentet (se Källor). Avsnitten om **migrän, epilepsi och stroke/TIA är avstämda ord för ord mot de nationella primärdokumenten**. Övriga avsnitt (NPH, MS, Parkinson, narkolepsi, långvarig smärta) är sammanfattade ur nationella kunskapsstöd och regionala återgivningar och är ännu inte ordagrant verifierade mot primärdokumenten.
 
 ## Migrän – vuxna
 
@@ -71,11 +71,9 @@ Källa: nationellt **personcentrerat och sammanhållet vårdförlopp epilepsi** 
 
 ### Epilepsi – uppföljning i primärvård respektive återremiss
 
-- **Kan följas i primärvård** (kontroller och receptförnyelse) – färdigutredd, anfallsfri och mångårigt stabil patient utan behov av ytterligare medicinjustering, när specialist och primärvård är överens om att sammanhållen vård på primärvårdsnivå är fördelaktig. Särskilt aktuellt för:
-  - **äldre multisjuka** där helhetsbilden talar för att god sammanhållen vård kan tillgodoses på primärvårdsnivå,
-  - epilepsi efter stroke eller vid demens som efter initial uppföljning hos neurolog är anfallsfri/har stabil anfallssituation och tolererar given antiepileptisk behandling.
-- **Bör stanna i specialistvård:** nydebuterad epilepsi (de första åren), graviditet/fertilitetsfrågor, pågående läkemedelsjustering, barn och ungdomar.
-- **Återremiss till specialist vid:** försämrad anfallssituation, planerad utsättning av läkemedel, trafikmedicinska frågor, interaktionsproblematik, nytillkomna biverkningar, graviditet eller graviditetsönskan.
+- **Kan följas i primärvård** – patienter som bedömts stabila och som, tillsammans med läkare inom specialiserad vård, kommer fram till att det är fördelaktigt med en sammanhållen vård på primärvårdsnivå. Även **äldre multisjuka personer där epilepsin inte nödvändigtvis är under god anfallskontroll**, men där helhetsbilden talar för att god sammanhållen vård kan tillgodoses på primärvårdsnivå.
+- **Hanteras i specialiserad vård** – nydebuterad epilepsi (fortsatt uppföljning under de första fem åren), patienter som är eller önskar bli gravida, patienter som genomgår någon form av läkemedelsjustering, komplicerad läkemedelsbehandling med risk för långtidsbiverkningar, intellektuell funktionsnedsättning eller annan neurologisk funktionsnedsättning, samt alla barn och ungdomar.
+- **Återremiss/kontakt med specialiserad vård vid** – försämrad anfallssituation, utsättning av läkemedel, trafikmedicinska frågor, interaktionsproblematik med andra läkemedel, nytillkomna biverkningar, nytillkomna sjukdomstillstånd som påverkar epilepsisjukdomen eller behandlingen, kognitiva problem sekundärt till epilepsin, samt graviditet eller önskemål om graviditet.
 
 ## Normaltryckshydrocefalus (NPH)
 
@@ -103,11 +101,10 @@ Källa: **två** nationella personcentrerade vårdförlopp – "tidiga insatser 
 
 ### Stroke/TIA – uppföljning och ansvarsfördelning
 
-- Uppföljning av strokekompetent läkare inom specialist- eller primärvård: inom **1–3 månader vid TIA**, inom **3–6 månader vid stroke**, därefter minst årligen utifrån behov.
-- **TIA-uppföljning ska ske i primärvården.**
-- Vid utskrivning från specialistvård skickas remiss för uppföljning samt patientkontrakt till fast vårdkontakt/fast läkarkontakt i primärvården.
-- Rehabiliteringsmedicin har uppföljningsansvar för patienter som vårdats på rehabiliteringsmedicinsk klinik.
-- Uppföljningen bör vara livslång och strukturerad, med fördel utifrån en post-stroke-checklista.
+- Uppföljning av strokekompetent läkare inom **specialist- eller primärvård**: inom 1–3 månader vid TIA, inom 3–6 månader vid stroke, därefter minst årligen utifrån personens behov.
+- Uppföljningen sker hos aktuell vårdgivare – öppen vård på sjukhus, primärvård i regionen eller kommunal hälso- och sjukvård – med tillgång till multidisciplinärt team med strokekompetens.
+- Patienten ska erbjudas ett patientkontrakt med en namngiven strokekompetent fast vårdkontakt.
+- Uppföljningen bör vara strukturerad, med fördel utifrån Post-stroke-checklistan.
 
 ## Multipel skleros (MS)
 
