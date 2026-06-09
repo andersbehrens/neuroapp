@@ -111,6 +111,7 @@ const Vy = {
       case 'epilepsi':
       case 'kalkylatorer':
       case 'lankar':
+      case 'remiss-vardniva':
         tillbaka.classList.add('synlig');
         el.innerHTML = this.kategoriVy(vy);
         this._bindaKategori(vy);

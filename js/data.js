@@ -11,12 +11,30 @@ const KATEGORIER = [
   { id: 'epilepsi',      namn: 'Epilepsi',           beskrivning: 'Epilepsi – handläggning och riktlinjer', ikon: '⚡', farg: 'kategori-riktlinje', parent: 'riktlinjer' },
   { id: 'akutkort',      namn: 'Akutkort',          beskrivning: 'Neurologiska akutkort för akuta situationer', ikon: '⚡', farg: 'kategori-akut' },
   { id: 'artiklar',      namn: 'Artiklar',           beskrivning: 'Kliniskt användbara vetenskapliga artiklar', ikon: '📖', farg: 'kategori-riktlinje' },
+  { id: 'remiss-vardniva', namn: 'Remiss & vårdnivå', beskrivning: 'Gränsdragning primärvård/specialist enligt nationella vårdförlopp och kunskapsstöd', ikon: '🚦', farg: 'kategori-prognos' },
   { id: 'kalkylatorer',  namn: 'Kalkylatorer',       beskrivning: 'Kliniska beräkningsverktyg', ikon: '🧮', farg: 'kategori-prognos' },
   { id: 'fass', namn: 'FASS', beskrivning: 'Läkemedelsinformation – öppnar fass.se', ikon: '💊', farg: 'kategori-akut', externalUrl: 'https://fass.se/health' },
   { id: 'lankar', namn: 'Länkar', beskrivning: 'Externa resurser och referenslänkar', ikon: '🔗', farg: 'kategori-riktlinje' }
 ];
 
 const DOKUMENT = [
+  {
+    id: 'remiss-vardniva-neurologi',
+    titel: 'Vårdnivå & remiss – primärvård vs specialiserad neurologi',
+    kategori: 'remiss-vardniva',
+    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-primarvard-specialistvard-neurologi.md',
+    innehall: [
+      { rubrik: 'Syfte och användning', text: 'Stöd för remissbedömning: gränsdragning mellan primärvård och specialiserad neurologi enligt nationella vårdförlopp, vårdriktlinjer och kliniska kunskapsstöd. För bedömning av inkommande remisser och ställningstagande till återremiss till primärvård.' },
+      { rubrik: 'Migrän – vårdnivå och remiss', text: 'De flesta migränpatienter (~90 %) sköts i primärvård. Remiss till neurolog vid atypisk anamnes, avvikande status, debutålder över 50 år, svikt på första- och andrahandsbehandling inklusive förebyggande, eller när avancerad behandling övervägs (topiramat, onabotulinumtoxin A, CGRP-antikroppar). Akut vid bortfall ej förklarat av aura, aura över 1 timme, anfall över 72 timmar.' },
+      { rubrik: 'Epilepsi – vårdnivå och remiss', text: 'Primärvård gör initial bedömning och remiss; specialist utreder (EEG, MR) och behandlar. Remiss bör innehålla anfallsbeskrivning, aura, medvetandepåverkan, provocerat eller oprovocerat, statusfynd. Stabil patient kan följas i primärvård. Stanna i specialistvård vid nydebut, graviditet, läkemedelsjustering, barn. Återremiss vid försämring, utsättning, trafikmedicin, interaktioner, biverkningar, graviditet.' },
+      { rubrik: 'Normaltryckshydrocefalus NPH – vårdnivå och remiss', text: 'Primärvård misstänker vid progressiv symmetrisk gång- och balansstörning, kognitiv svikt och/eller urinträngningar hos patient över 60 år, beställer DT-hjärna, remitterar vid NPH-misstanke. Specialist gör tap-test, MDK, ställningstagande till shunt.' },
+      { rubrik: 'Stroke och TIA – uppföljning och vårdnivå', text: 'Uppföljning av strokekompetent läkare inom 1–3 månader vid TIA och 3–6 månader vid stroke, därefter årligen. TIA-uppföljning ska ske i primärvård. Remiss till fast vårdkontakt vid utskrivning.' },
+      { rubrik: 'MS multipel skleros – vårdnivå och remiss', text: 'Primärvård vid misstanke: MR-hjärna och basala blodprover före snabb remiss till neurolog. Diagnos, sjukdomsmodifierande behandling och uppföljning sker i specialiserad neurologi.' },
+      { rubrik: 'Parkinsons sjukdom – vårdnivå och remiss', text: 'Basal utredning i primärvård före remiss. Påbörja inte behandling före neurologbedömning. Diagnos ställs av specialist. Uppföljning minst två gånger per år; stabila patienter kan handläggas i primärvård men kan återremitteras.' },
+      { rubrik: 'Narkolepsi – vårdnivå och remiss', text: 'Primärvård utreder vanligaste orsaker och remitterar till neurolog vid kardinalsymtom. Specialist eller sömnenhet gör sömnregistrering, orexin/hypokretin i likvor, diagnos och behandling.' },
+      { rubrik: 'Långvarig smärta – vårdnivå och remiss', text: 'Primärvård är basen (MMRpv). Remiss till specialiserad smärtvård vid oklar smärttyp, avancerad läkemedelsbehandling, interventionell behandling eller behov av MMRsv.' },
+    ],
+  },
   {
     id: 'mr-konsensus',
     titel: 'Nationella rekommendationer för MR vid neuroinflammation (v3.1, 2025)',
