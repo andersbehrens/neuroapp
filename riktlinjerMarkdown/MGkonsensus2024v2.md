@@ -349,7 +349,9 @@ ALS, polymyosit, LEMS och efter behandling med botulinumtoxin. Specificiteten f�
 också att det saknas avvikelser i rutin-EMG.
 
 
-**[5] DT-thorax** med frågeställningen tymom eller tymusförstoring ska alltid göras vid
+### [5] DT-thorax
+
+DT-thorax med frågeställningen tymom eller tymusförstoring ska alltid göras vid
 
 
 diagnostiserad MG, särskilt vid förekomst av AChR-ak. Specificiteten för att skilja mellan
@@ -367,7 +369,9 @@ undersökning utan kontrast, vilket är att föredra hos personer med instabil g
 symtombild pga. risk för akut försämring inducerad av kontrastmedel (se nedan).
 
 
-**[6] Övriga blodprover** : Blodstatus, med blod diff, leverstatus, kreatinin, Na, K, fT4, TSH
+### [6] Övriga blodprover
+
+Blodstatus, med blod diff, leverstatus, kreatinin, Na, K, fT4, TSH
 
 
 som basprover, med tillägg av serum IgA, IgM och IgG nivåer samt FACS lymfocytprofil vid
@@ -883,7 +887,9 @@ HSCT ska fattas inom ramen för nationell högspecialiserad vård (NHV), där te
 MG rent allmänt även ingår i uppdraget.
 
 
-**[3] Tymektomi:** Rekommendationsgrad A, evidensgrad 1b.
+### [3] Tymektomi
+
+Rekommendationsgrad A, evidensgrad 1b.
 
 
 Tymektomi bör utföras tidigt vid generaliserad EOMG (rekommendationsgrad A) och
