@@ -1,187 +1,122 @@
-Stöd för remissbedömning: var går gränsen mellan primärvård och specialiserad neurologi enligt nationella vårdförlopp, vårdriktlinjer och kliniska kunskapsstöd. Avsett som snabbt beslutsstöd vid bedömning av inkommande remisser och vid ställningstagande till återremiss till primärvård.
+Stöd för remissbedömning vid migrän och epilepsi: vad som ska skötas i primärvård respektive specialiserad neurologi, enligt nationella primärdokument. Primärvårds- och specialistnivå återges ordagrant ur originalen. Vid tveksamhet, läs originaldokumentet (se Källor).
 
-## Syfte och användning
+## Migrän
 
-Dokumentet sammanfattar vad som enligt nationella kunskapsstöd ska skötas i primärvården respektive i specialiserad vård, för de neurologiska diagnoser där vårdnivå är specificerad. Använd det för att:
+Källa: nationell **vårdriktlinje för migrän** (NPO nervsystemets sjukdomar, beslutsdatum 2022-10-25). De flesta migränpatienter diagnostiseras och sköts i primärvården.
 
-- bedöma om en inkommande remiss uppfyller kriterierna för specialistvård,
-- avgöra vad som kan eller bör hänvisas/återremitteras till primärvård,
-- se vad en remiss bör innehålla.
+### Migrän – primärvårdsnivå
 
-Detta är en sammanfattning – vid tveksamhet, läs originaldokumentet (se Källor). Avsnitten om **migrän, epilepsi, stroke/TIA, narkolepsi och långvarig smärta är avstämda ord för ord mot de nationella primärdokumenten** (PDF:erna är nedladdade och sparade lokalt). Avsnitten om **NPH, MS och Parkinson** bygger på nationella kunskapsstöd och regionala återgivningar men har inte kunnat stämmas av mot en nedladdningsbar primär-PDF – NPH-vårdförloppet och de kliniska kunskapsstöden för MS och Parkinson publiceras webbaserat. Kontrollera dessa tre mot originalet vid behov.
-
-## Migrän – vuxna
-
-Källa: nationell **vårdriktlinje för migrän** (NPO nervsystemets sjukdomar, beslutsdatum 2022-10-25). De flesta migränpatienter (~90 %) diagnostiseras och sköts i primärvården.
-
-### Migrän – primärvård (~90 %)
+Ordagrant ur flödesschemat (vuxna). Primärvården ska:
 
 - Utesluta sekundär huvudvärk.
-- Säkerställ migrändiagnos enligt IHS-kriterier.
+- Säkerställ migrändiagnos enligt IHS.
 - Utprovning av lämplig akut och förebyggande behandling enligt första och andra linjens rekommendationer.
 - Icke-farmakologisk behandling via sjuksköterska/fysioterapeut.
-- Utbildning för att undvika läkemedelsöveranvändningshuvudvärk (MOH).
+- Utbildning för undvikande av läkemedelsöveranvändningshuvudvärk via sjuksköterska/fysioterapeut/kurator.
 - Avgiftning med stöd (läkare/sjuksköterska/fysioterapeut/kurator eller psykolog).
 
-### Migrän – remiss till neurolog rekommenderas vid
+### Migrän – första och andra linjens terapi
 
-- atypisk anamnes eller avvikande status,
-- debutålder över 50 år,
-- svikt på terapi med första- och andrahandsalternativ, inklusive tillägg av förebyggande behandling,
-- när avancerad behandling övervägs (topiramat, onabotulinumtoxin A, CGRP-antikroppsbehandling).
+Detta är behandlingen primärvården ska prova innan remiss (ur riktlinjens behandlingstrappa).
 
-### Migrän – specialistnivå (~9 %)
+Anfallsbehandling (akut), vuxna:
+
+- **Analgetika (Steg 1–2)** – tas tidigt i anfallet och i adekvat dos: paracetamol 1000 mg, acetylsalicylsyra 1000 mg, ibuprofen 400 mg, naproxen 750 mg. Ange maximal dygnsdos på receptet, gärna även maximalt antal doser per månad för att minska risken för läkemedelsutlöst huvudvärk.
+- **Triptaner (Steg 2)** – välj tablettform i första hand (kostnad), beakta eventuella kardiella kontraindikationer. Vid otillräcklig effekt eller oacceptabla biverkningar kan en annan triptan eller beredningsform prövas.
+- **Antiemetika** – addera vid illamående, till exempel metoklopramid eller ondansetron.
+
+Förebyggande behandling, vuxna – bör erbjudas vid tre eller flera svåra migränanfall per månad eller om effekten av attackmedicineringen är otillräcklig. Behandling enligt steg 1 och 2 kan genomföras inom primärvården. Mål: 50 % reduktion av antal migrändagar. Utvärdering bör ske var tredje till var sjätte månad initialt.
+
+- **Förstahandsalternativ (Steg 1)** – betablockerare: metoprolol 50–100 mg × 2 (eller depåberedning × 1) eller propranolol 60–120 mg × 2–3 (eller depåberedning 120 mg × 1).
+- **Andrahandsalternativ (Steg 2)** – kandesartan upp till 16 mg/dygn (startdos 4–8 mg med gradvis ökning) eller amitriptylin (startdos 5–10 mg till natten med gradvis dosökning; vid antikolinerga biverkningar kan byte till nortriptylin övervägas).
+
+### Migrän – remiss till neurolog rekommenderas
+
+Ordagrant:
+
+- vid atypisk anamnes, avvikande status
+- vid debutålder över 50 år
+- när terapi med första- och andrahandsalternativen inklusive tillägg av förebyggande behandling sviktar
+- när avancerad behandling med topiramat, onabotulinumtoxin A, CGRP-antikroppsbehandling övervägs.
+
+### Migrän – specialistnivå
+
+Ordagrant ur flödesschemat:
 
 - Oklar huvudvärksdiagnos – utred och fastställ diagnos.
 - Otillfredsställande effekt av första och andra linjens akut- och förebyggande behandling.
-- Misstanke om MOH som inte svarat på avgiftning.
+- Misstanke om läkemedelsöveranvändningshuvudvärk (MOH) som inte svarat på avgiftning.
 - Samsjuklighet som begränsar den farmakologiska behandlingen.
 - Avancerade behandlingsalternativ.
 - Uttalad funktionsnedsättning.
 
-Specialiserad huvudvärksmottagning (~1 %): specialformer av migrän, behandling utanför ordinarie rekommendationer, behandlingssvikt, behov av teambaserad behandling.
+Specialiserad huvudvärksmottagning – för utredning och utprovning av behandling av ungdomar och vuxna där neurologmottagningens resurser är otillräckliga (specialformer av migrän, behandling utanför ordinarie rekommendationer, behandlingssvikt, behov av teambaserad behandling).
 
-### Migrän – akut (remittera/hänvisa till akutmottagning) vid
+### Migrän – akut (remittera/hänvisa till akutmottagning)
 
-- huvudvärk med neurologiska bortfallssymtom som inte förklaras av migränaura,
-- aurasymtom längre än 1 timme,
-- migränanfall som varar längre än 72 timmar trots behandling.
+Ordagrant:
 
-## Epilepsi – vuxna
+- Huvudvärk med neurologiska bortfallssymtom som inte förklaras av migränaura.
+- Aurasymtom längre än 1 timme.
+- Migränanfall som varar längre än 72 timmar trots behandling.
 
-Källa: nationellt **personcentrerat och sammanhållet vårdförlopp epilepsi** (NPO nervsystemets sjukdomar, 2022). Misstänkt epilepsi utreds av specialist; primärvården står för initial bedömning och remiss.
+## Epilepsi
 
-### Epilepsi – primärvård (initial bedömning)
+Källa: nationellt **personcentrerat och sammanhållet vårdförlopp epilepsi** (NPO nervsystemets sjukdomar, 2022-10-20). Misstänkt epilepsi utreds av specialist; primärvården står för initial bedömning och remiss.
 
-- Mottagningsbesök med klinisk bedömning av anamnes.
-- Ställningstagande till remiss till specialiserad vård eller hänvisning till akut vård.
+### Epilepsi – primärvårdsnivå
 
-### Epilepsi – remissinnehåll till specialistvård
+Ordagrant (åtgärd B): Genomför mottagningsbesök i primärvården eller annan vårdgivare med klinisk bedömning av anamnes och ställningstagande till remiss till specialiserad vård eller vid behov hänvisning till akut vård.
 
-- anamnes och status samt skälet till varför epilepsi misstänks,
-- anfallsbeskrivning från patient och vittnen: förkänning (aura), medvetandepåverkan, motoriska och sensoriska symtom, generaliserade anfall och/eller postiktal trötthet,
-- om anfallet bedöms provocerat eller oprovocerat,
-- kvarstående symtom eller neurologiska statusfynd.
+### Epilepsi – remissinnehåll
 
-### Epilepsi – specialistvård
+Ordagrant. Information som ska finnas i remissen eller finnas lätt tillgänglig enligt överenskomna rutiner:
 
-- **Utredning:** tidig kontakt med epilepsisjuksköterska, EEG och MR-hjärna vid indikation, ställningstagande till epilepsidiagnos, genetisk utredning vid behov.
-- **Behandling:** individuell vårdplan, läkemedelsinsättning, säkerhetsaspekter, information om fertilitet och graviditet till kvinnor, kontakt med epilepsisjuksköterska inom sex veckor.
-- **Uppföljning:** läkaruppföljning inom tre till sex månader, neuropsykologisk screening vid behov.
+- anamnes och status samt skälet till varför epilepsi misstänks
+- anfallsbeskrivning från patient och vittnen såsom förekomst av förkänning (aura), medvetandepåverkan, motoriska och sensoriska symtom, generaliserade kramper och/eller postiktal trötthet
+- information om anfallet var provocerat eller oprovocerat
+- information om patienten har kvarstående symtom eller neurologiska statusfynd.
+
+### Epilepsi – specialistnivå
+
+Ordagrant (ur vårdförloppets specifika mål). Inom specialiserad vård sker:
+
+- utredning med magnetresonanstomografi (MRT) och elektroencefalografi (EEG) när indikation finns
+- remittering till avancerad utredning vid farmakologiskt terapiresistent epilepsi
+- patientens säkerhet, delaktighet och inflytande genom stadigvarande kontakt med epilepsisjuksköterska
+- uppföljning och kontinuitet med epilepsiteam samt i vissa fall primärvård i såväl region som kommun och habilitering
+- korrekt handläggning för kvinnor i fertil ålder som är eller önskar bli gravida
+- att psykosociala och psykiatriska problem samt behov av neuropsykologisk utredning för patienter med misstänkta kognitiva svårigheter identifieras.
 
 ### Epilepsi – uppföljning i primärvård respektive återremiss
 
-- **Kan följas i primärvård** – patienter som bedömts stabila och som, tillsammans med läkare inom specialiserad vård, kommer fram till att det är fördelaktigt med en sammanhållen vård på primärvårdsnivå. Även **äldre multisjuka personer där epilepsin inte nödvändigtvis är under god anfallskontroll**, men där helhetsbilden talar för att god sammanhållen vård kan tillgodoses på primärvårdsnivå.
-- **Hanteras i specialiserad vård** – nydebuterad epilepsi (fortsatt uppföljning under de första fem åren), patienter som är eller önskar bli gravida, patienter som genomgår någon form av läkemedelsjustering, komplicerad läkemedelsbehandling med risk för långtidsbiverkningar, intellektuell funktionsnedsättning eller annan neurologisk funktionsnedsättning, samt alla barn och ungdomar.
-- **Återremiss/kontakt med specialiserad vård vid** – försämrad anfallssituation, utsättning av läkemedel, trafikmedicinska frågor, interaktionsproblematik med andra läkemedel, nytillkomna biverkningar, nytillkomna sjukdomstillstånd som påverkar epilepsisjukdomen eller behandlingen, kognitiva problem sekundärt till epilepsin, samt graviditet eller önskemål om graviditet.
+Ordagrant. Patienter med epilepsi som kan hanteras i primärvården:
 
-## Normaltryckshydrocefalus (NPH)
+- patienter som bedömts stabila och som, tillsammans med läkare inom specialiserad vård, kommer fram till att det är fördelaktigt med en sammanhållen vård på primärvårdsnivå
+- äldre multisjuka personer där epilepsin inte nödvändigtvis är under god anfallskontroll men där helhetsbilden talar för att en god sammanhållen vård kan tillfredsställas på primärvårdsnivå.
 
-Källa: nationellt **personcentrerat och sammanhållet vårdförlopp** för idiopatisk NPH (NPO nervsystemets sjukdomar). Diagnos initieras i primärvård; vidare utredning och behandling kräver specialist med tillgång till multidisciplinärt team.
+Patienter med epilepsi som hanteras i specialiserad vård:
 
-### NPH – primärvård (misstänk och initiera)
+- patienter med nydebuterad epilepsi (fortsatt uppföljning under de första fem åren)
+- patienter som är eller önskar bli gravida
+- patienter som genomgår någon form av läkemedelsjustering
+- patienter med komplicerad läkemedelsbehandling med risk för långtidsbiverkningar
+- patienter med intellektuell funktionsnedsättning eller annan neurologisk funktionsnedsättning
+- alla barn och ungdomar.
 
-- Misstänk vid successivt progredierande, symmetrisk gång- och balansstörning – ensam eller tillsammans med kognitiv svikt och/eller urinträngningar (eller inkontinens) – hos patient över 60 år.
-- Överväg utredning utifrån differentialdiagnostik.
-- Beställ DT-hjärna vid kvarstående misstanke (med NPH som frågeställning).
+Kriterier som aktualiserar kontakt med och eventuell återgång till den specialiserade vården:
 
-### NPH – remiss till specialistvård
+- försämrad anfallssituation
+- utsättning av läkemedel
+- trafikmedicinska frågor
+- interaktionsproblematik med andra läkemedel
+- nytillkomna biverkningar
+- nytillkomna sjukdomstillstånd som påverkar epilepsisjukdomen eller behandlingen
+- om kognitiva problem uppstår sekundärt till epilepsin
+- graviditet eller önskemål om graviditet.
 
-- När bildfynd talar för NPH skickas remiss skyndsamt till specialiserad vård.
-
-### NPH – specialistvård
-
-- DT/MR granskas av neuroradiolog.
-- Om neurolog bedömer att symtomen överensstämmer med bildfynden görs tap-test (lumbalpunktion med bedömning av arbetsterapeut och fysioterapeut före och efter dränage).
-- Patienten diskuteras på multidisciplinär konferens; ställningstagande till shuntoperation.
-
-## Stroke och TIA
-
-Källa: **två** nationella personcentrerade vårdförlopp – "tidiga insatser och vård" samt "fortsatt vård och rehabilitering" (NPO nervsystemets sjukdomar, 2022). Akut handläggning sker i specialiserad strokevård; nedan fokus på uppföljning och vårdnivå.
-
-### Stroke/TIA – uppföljning och ansvarsfördelning
-
-- Uppföljning av strokekompetent läkare inom **specialist- eller primärvård**: inom 1–3 månader vid TIA, inom 3–6 månader vid stroke, därefter minst årligen utifrån personens behov.
-- Uppföljningen sker hos aktuell vårdgivare – öppen vård på sjukhus, primärvård i regionen eller kommunal hälso- och sjukvård – med tillgång till multidisciplinärt team med strokekompetens.
-- Patienten ska erbjudas ett patientkontrakt med en namngiven strokekompetent fast vårdkontakt.
-- Uppföljningen bör vara strukturerad, med fördel utifrån Post-stroke-checklistan.
-
-## Multipel skleros (MS)
-
-Källa: nationellt **kliniskt kunskapsstöd** MS (1177 för vårdpersonal). Diagnos, sjukdomsmodifierande behandling och uppföljning sker i specialiserad neurologi.
-
-### MS – primärvård (vid misstanke)
-
-- Initial bedömning och undersökning vid misstanke om MS.
-- MR-hjärna (och vid behov halsrygg) samt basala blodprover före remiss.
-- Snabb remiss till neurolog.
-
-### MS – specialistvård
-
-- Diagnos ställs i specialiserad vård, vanligen efter MR och lumbalpunktion med likvoranalys.
-- Sjukdomsmodifierande behandling och uppföljning sker på neurologmottagning – patienten stannar i specialistvård.
-
-## Parkinsons sjukdom
-
-Källa: nationellt **kliniskt kunskapsstöd** Parkinsonism och Parkinsons sjukdom (NPO nervsystemets sjukdomar / 1177 för vårdpersonal). Diagnosen är klinisk och ställs inom specialiserad vård.
-
-### Parkinson – primärvård (vid misstanke)
-
-- Basal utredning krävs vid misstanke före remiss.
-- **Påbörja inte behandling före neurologbedömning** – insatt behandling försvårar bedömningen.
-- Vid misstanke finns alltid skäl för neurologkontakt; remittera till neurolog.
-
-### Parkinson – specialistvård
-
-- Klinisk diagnos ställs av läkare inom specialiserad vård med erfarenhet av tillståndet.
-- Atypisk eller sekundär parkinsonism diagnostiseras främst inom specialiserad vård (obs läkemedelsutlöst parkinsonism – neuroleptika m.fl.).
-
-### Parkinson – uppföljning och återremiss
-
-- Uppföljning rekommenderas minst två gånger per år.
-- Stabila patienter kan handläggas i primärvård, men kan alltid återremitteras till neurolog för konsultation om fortsatt uppföljning.
-- Remiss till primärvård bör ange aktuell behandling, rekommenderade kontroller (inklusive labb) och hur ofta, samt om och när behandling kan minskas eller sättas ut.
-
-## Narkolepsi
-
-Källa: nationell **vårdriktlinje** samt vårdförlopp för narkolepsi (NPO nervsystemets sjukdomar). Utredning, diagnos och behandling sker inom barn- eller vuxenneurologi.
-
-### Narkolepsi – primärvård
-
-- Första kontakt sker oftast i primärvård.
-- Utred de vanligaste bakomliggande orsakerna till symtomen före remiss.
-- Remiss till neurolog vid kardinalsymtom på narkolepsi.
-
-### Narkolepsi – specialistvård
-
-- Kompletterande utredning via neurolog eller sömnenhet: sömnregistrering och vid behov mätning av orexin/hypokretin i likvor eller genetisk utredning.
-- Diagnos och behandling.
-
-## Långvarig smärta
-
-Källa: nationellt **vårdförlopp** långvarig smärta hos vuxna (mer smärtklinik/rehabilitering än allmän neurologi, men ingår i NPO nervsystemets sjukdomar). Bygger på kunskapsutbyte mellan primär- och specialistvård genom hela förloppet.
-
-### Långvarig smärta – vårdnivå
-
-- Primärvård är basen. Multimodal rehabilitering i primärvård (MMRpv) vid betydande påverkan.
-- **Remiss till specialiserad smärtvård** kan vara aktuell vid: oklar smärttyp som kräver fördjupad smärtdiagnostik; ställningstagande till avancerad läkemedelsbehandling; interventionell smärtbehandling; fördjupad bedömning av rehabbehov inklusive MMRsv (multimodal rehabilitering i specialistvård).
-- Det finns inget krav på att först ha deltagit i MMRpv för att få tillgång till MMRsv.
-- Specialiserad smärtvård behandlar inte underliggande somatisk sjukdom eller samsjuklighet (t.ex. psykiatrisk sjukdom).
-
-## Övriga och under arbete
-
-- **Traumatisk hjärnskada** – nationellt kliniskt kunskapsstöd (vissa vårdnivåaspekter).
-- **ALS** – personcentrerat vårdförlopp under arbete (ännu ej publicerat).
-- **MS, läkemedel** – nationellt beslutsstöd för immunmodulerande läkemedel och rituximab under arbete.
-
-###### Källor och datum
+###### Källor
 
 - Vårdriktlinje för migrän, NPO nervsystemets sjukdomar, beslutsdatum 2022-10-25.
-- Personcentrerat och sammanhållet vårdförlopp epilepsi, 2022.
-- Personcentrerat och sammanhållet vårdförlopp normaltryckshydrocefalus (idiopatisk NPH).
-- Personcentrerade vårdförlopp stroke och TIA (tidiga insatser och vård; fortsatt vård och rehabilitering), 2022.
-- Kliniskt kunskapsstöd multipel skleros (MS), 1177 för vårdpersonal.
-- Kliniskt kunskapsstöd Parkinsonism och Parkinsons sjukdom.
-- Vårdriktlinje och vårdförlopp narkolepsi.
-- Personcentrerat och sammanhållet vårdförlopp långvarig smärta hos vuxna.
-- Samtliga via Nationellt system för kunskapsstyrning (kunskapsstyrningvard.se) och 1177 för vårdpersonal. Sammanställt som internt beslutsstöd – ersätter inte originaldokumenten. Kontrollera aktuell version vid tveksamhet.
+- Personcentrerat och sammanhållet vårdförlopp epilepsi, NPO nervsystemets sjukdomar, 2022-10-20.
+- Primärvårds- och specialistnivå samt behandlingstrappan är återgivna ordagrant ur ovanstående dokument. Sammanställt som internt beslutsstöd – ersätter inte originaldokumenten.

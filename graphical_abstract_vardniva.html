@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphical Abstract – Vårdnivå migrän & epilepsi</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blå:#1B3A6B; --blå-md:#2563EB; --blå-lj:#EFF6FF;
+    --teal:#0E7490; --teal-lj:#ECFEFF;
+    --grön:#047857; --grön-lj:#ECFDF5;
+    --röd:#DC2626; --röd-lj:#FEF2F2;
+    --gul:#D97706; --gul-lj:#FFFBEB;
+    --lila:#6D28D9; --lila-lj:#F5F3FF;
+    --grå:#F1F5F9; --vit:#FFFFFF;
+    --text:#0F172A; --text-md:#334155; --text-lj:#64748B;
+    --font:-apple-system,'Segoe UI',system-ui,sans-serif;
+  }
+  body { font-family:var(--font); background:#fff; color:var(--text); font-size:13px; padding:16px; }
+  h1 { background:var(--blå); color:#fff; padding:14px 18px; border-radius:10px; font-size:1.05rem; margin-bottom:14px; }
+  h1 span { display:block; font-size:0.72rem; font-weight:400; opacity:.85; margin-top:3px; }
+  .sek { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--text-lj); margin:14px 0 6px; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+  .chip { background:var(--grå); color:var(--text-md); border:1px solid #E2E8F0; border-radius:20px; padding:4px 12px; font-size:0.75rem; font-weight:600; }
+  .chip.grön { background:var(--grön-lj); color:var(--grön); border-color:#A7F3D0; }
+  .chip.teal { background:var(--teal-lj); color:var(--teal); border-color:#A5F3FC; }
+  .chip.röd { background:var(--röd-lj); color:var(--röd); border-color:#FECACA; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px; }
+  .box { background:var(--grå); border-radius:8px; padding:10px 12px; }
+  .box.grön { background:var(--grön-lj); border:1px solid #A7F3D0; }
+  .box.röd { background:var(--röd-lj); border:1px solid #FECACA; }
+  .box.gul { background:var(--gul-lj); border:1px solid #FDE68A; }
+  .box.teal { background:var(--teal-lj); border:1px solid #A5F3FC; }
+  .box.blå { background:var(--blå-lj); border:1px solid #BFDBFE; }
+  .box-title { font-weight:700; font-size:0.78rem; margin-bottom:5px; }
+  .box-title.grön { color:var(--grön); }
+  .box-title.röd { color:var(--röd); }
+  .box-title.gul { color:var(--gul); }
+  .box-title.teal { color:var(--teal); }
+  .box-title.blå { color:var(--blå-md); }
+  ul.li { padding-left:14px; }
+  ul.li li { font-size:0.75rem; color:var(--text-md); margin-bottom:3px; line-height:1.4; }
+
+  .grid3 { display:grid; grid-template-columns:96px 1fr 1fr; border-radius:8px; overflow:hidden; border:1px solid #E2E8F0; margin-bottom:5px; }
+  .hdr { background:var(--blå); color:#fff; font-weight:700; padding:7px 8px; font-size:0.72rem; }
+  .cell { padding:7px 8px; border-bottom:1px solid #E2E8F0; border-right:1px solid #E2E8F0; color:var(--text-md); line-height:1.4; font-size:0.75rem; }
+  .cell:last-child { border-right:none; }
+  .row:last-child .cell { border-bottom:none; }
+  .row { display:contents; }
+  .note { font-size:0.7rem; color:var(--text-lj); margin:0 0 12px; }
+  .fotnot { font-size:0.68rem; color:var(--text-lj); margin-top:12px; border-top:1px solid #E2E8F0; padding-top:6px; }
+
+  @media (max-width: 480px) {
+    .two-col { grid-template-columns: 1fr; }
+    .grid3 { grid-template-columns: 1fr; }
+    .hdr, .cell { display: block; }
+    .hdr:empty { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Vårdnivå &amp; remiss – migrän och epilepsi
+  <span>Nationell vårdriktlinje migrän (2022-10-25) · vårdförlopp epilepsi (2022-10-20)</span>
+</h1>
+
+<div class="chips">
+  <span class="chip grön">Primärvård</span>
+  <span class="chip teal">Remiss / specialist</span>
+  <span class="chip röd">Akut</span>
+</div>
+
+<!-- MIGRÄN -->
+<div class="sek">Migrän – vårdnivå</div>
+<div class="two-col">
+  <div class="box grön">
+    <div class="box-title grön">Primärvård sköter (de flesta)</div>
+    <ul class="li">
+      <li>Utesluta sekundär huvudvärk</li>
+      <li>Säkerställ migrändiagnos enligt IHS</li>
+      <li>Första &amp; andra linjens behandling (se trappa)</li>
+      <li>Icke-farmakologisk beh., utbildning, MOH-avgiftning</li>
+    </ul>
+  </div>
+  <div class="box teal">
+    <div class="box-title teal">Remiss till neurolog</div>
+    <ul class="li">
+      <li>Atypisk anamnes, avvikande status</li>
+      <li>Debutålder &gt; 50 år</li>
+      <li>Svikt på första- + andrahand inkl. förebyggande</li>
+      <li>Avancerad beh. övervägs: topiramat, onabotulinumtoxin A, CGRP-antikroppar</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sek">Migrän – första &amp; andra linjens terapi (i primärvård)</div>
+<div class="grid3">
+  <div class="hdr"></div>
+  <div class="hdr">Steg 1 – förstahand</div>
+  <div class="hdr">Steg 2 – andrahand</div>
+  <div class="row">
+    <div class="cell" style="font-weight:700;color:var(--blå)">Akut</div>
+    <div class="cell">Analgetika: paracetamol 1 g · ASA 1 g · ibuprofen 400 mg · naproxen 750 mg</div>
+    <div class="cell">Triptan (tablett i första hand) · antiemetika vid illamående</div>
+  </div>
+  <div class="row">
+    <div class="cell" style="font-weight:700;color:var(--blå)">Förebyggande</div>
+    <div class="cell">Betablockerare: metoprolol · propranolol</div>
+    <div class="cell">Kandesartan ≤ 16 mg/dygn · eller amitriptylin</div>
+  </div>
+</div>
+<div class="note">Förebyggande erbjuds vid ≥ 3 svåra anfall/månad eller otillräcklig akutbehandling. Steg 1–2 sköts i primärvård; mål 50 % färre migrändagar.</div>
+
+<div class="box röd">
+  <div class="box-title röd">⚠ Akut – remittera/hänvisa till akutmottagning</div>
+  <ul class="li">
+    <li>Huvudvärk med neurologiska bortfall som inte förklaras av migränaura</li>
+    <li>Aurasymtom längre än 1 timme</li>
+    <li>Migränanfall längre än 72 timmar trots behandling</li>
+  </ul>
+</div>
+
+<!-- EPILEPSI -->
+<div class="sek">Epilepsi – vårdnivå</div>
+<div class="two-col">
+  <div class="box grön">
+    <div class="box-title grön">Primärvård</div>
+    <ul class="li">
+      <li>Mottagningsbesök, klinisk bedömning, remiss till specialist</li>
+      <li>Kan följa stabila patienter (i samråd med specialist)</li>
+      <li>Kan följa äldre multisjuka – även utan god anfallskontroll</li>
+    </ul>
+  </div>
+  <div class="box teal">
+    <div class="box-title teal">Specialistvård</div>
+    <ul class="li">
+      <li>MRT &amp; EEG vid indikation; avancerad utredning vid terapiresistens</li>
+      <li>Epilepsisjuksköterska, epilepsiteam</li>
+      <li>Stannar: nydebut (5 år), gravida, läkemedelsjustering, komplicerad beh., funktionsnedsättning, barn</li>
+    </ul>
+  </div>
+</div>
+
+<div class="box blå">
+  <div class="box-title blå">Remiss epilepsi – ska innehålla</div>
+  <ul class="li">
+    <li>Anamnes/status + skälet till varför epilepsi misstänks</li>
+    <li>Anfallsbeskrivning (patient + vittne): aura, medvetandepåverkan, motoriska/sensoriska symtom, generaliserade kramper, postiktal trötthet</li>
+    <li>Provocerat/oprovocerat; kvarstående symtom eller neurologiska statusfynd</li>
+  </ul>
+</div>
+
+<div class="box gul" style="margin-top:8px">
+  <div class="box-title gul">Återremiss till specialist vid</div>
+  <ul class="li">
+    <li>Försämrad anfallssituation · utsättning av läkemedel · trafikmedicinska frågor</li>
+    <li>Interaktioner · nya biverkningar · nytillkomna sjukdomstillstånd</li>
+    <li>Kognitiva problem sekundärt till epilepsin · graviditet eller graviditetsönskan</li>
+  </ul>
+</div>
+
+<div class="fotnot">Primärvårds- och specialistnivå återgivna ordagrant ur nationell vårdriktlinje migrän (2022-10-25) och personcentrerat vårdförlopp epilepsi (2022-10-20). Internt beslutsstöd – ersätter inte originaldokumenten.</div>
+
+</body>
+</html>
