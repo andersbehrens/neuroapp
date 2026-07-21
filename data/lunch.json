@@ -1,26 +1,26 @@
 {
-  "updated": "2026-07-15T07:19:08.159Z",
-  "vecka": 29,
+  "updated": "2026-07-21T11:12:28.704Z",
+  "vecka": 30,
   "dagar": {
     "Måndag": {
-      "lunch": "Kycklinglasagne",
-      "gront": "Nudelwok med sweetchilisås"
+      "lunch": "Kycklingfilé, currysås, ris",
+      "gront": "Broccoli – och parmesansås, pasta"
     },
     "Tisdag": {
-      "lunch": "Stekt spätta, remouladsås, potatis",
-      "gront": "Asiatisk vegogryta, ris"
+      "lunch": "Hummergratinerad sej, potatismos",
+      "gront": ""
     },
     "Onsdag": {
-      "lunch": "Rosmarinstekt kotlettrad, gräddsås, stekt potatis",
-      "gront": "Tacogratäng med nachochips"
+      "lunch": "Färsruta med fetaost, tzatziki, klyftpotatis",
+      "gront": "Blomkålsgryta med kokosmjölk, bulgur"
     },
     "Torsdag": {
-      "lunch": "Köttfärssoppa",
-      "gront": "Kikärtsbiffar, kall paprikasås,tabbouleh"
+      "lunch": "Fisksoppa Gunilla, aioli",
+      "gront": "Vårrullar, kall sweetchilisås, ris"
     },
     "Fredag": {
-      "lunch": "BBQ-kryddad kycklinglårfilé, potatisgratäng",
-      "gront": "Pastagratäng med svamp och soltorkad tomat"
+      "lunch": "Lasagne",
+      "gront": "Champinjonsoppa med vitlök"
     }
   }
 }
