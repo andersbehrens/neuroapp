@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v28';
+const CACHE_NAME = 'neuroguide-v30';
 const ASSETS = [
   './',
   'index.html',
@@ -42,9 +42,10 @@ const ASSETS = [
   'riktlinjerMarkdown/Polyneuropati_Karolinska_2023v2.md',
   'riktlinjerMarkdown/PM-akut-hjarntumor.md',
   'riktlinjerMarkdown/Vardprogram-stroke-2026.md',
-  'riktlinjerMarkdown/Vardnivaer-primarvard-specialistvard-neurologi.md',
+  'riktlinjerMarkdown/Vardnivaer-migran.md',
+  'riktlinjerMarkdown/Vardnivaer-epilepsi.md',
+  'riktlinjerMarkdown/Vardnivaer-nph.md',
   'riktlinjerMarkdown/Inklusionskriterier-avd58.md',
-  'graphical_abstract_vardniva.html',
   // PDF-filer
   'akutkort/GCS.pdf',
   'akutkort/ICH.pdf',

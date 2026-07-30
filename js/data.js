@@ -26,15 +26,33 @@ const DOKUMENT = [
     innehall: [],
   },
   {
-    id: 'remiss-vardniva-neurologi',
-    titel: 'Vårdnivå & remiss – migrän och epilepsi',
+    id: 'vardniva-migran',
+    titel: 'Migrän – vårdnivå & remiss',
     kategori: 'remiss-vardniva',
-    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-primarvard-specialistvard-neurologi.md',
-    graphicalAbstract: 'graphical_abstract_vardniva.html',
+    pdf: 'https://vardpersonal.1177.se/kunskapsstod/kliniska-kunskapsstod/migran/',
+    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-migran.md',
     innehall: [
-      { rubrik: 'Syfte och användning', text: 'Stöd för remissbedömning vid migrän och epilepsi: vad som ska skötas i primärvård respektive specialiserad neurologi enligt nationella primärdokument. Primärvårds- och specialistnivå återges ordagrant. För bedömning av inkommande remisser och återremiss till primärvård.' },
       { rubrik: 'Migrän – primärvård, behandlingstrappa och remiss', text: 'Primärvården ska utesluta sekundär huvudvärk, säkerställa migrändiagnos enligt IHS och prova första och andra linjens behandling. Anfallsbehandling: analgetika (paracetamol, acetylsalicylsyra, ibuprofen, naproxen), triptaner, antiemetika. Förebyggande (vid tre eller flera svåra anfall per månad): förstahand betablockerare (metoprolol, propranolol), andrahand kandesartan eller amitriptylin – steg 1 och 2 kan skötas i primärvård. Remiss till neurolog vid atypisk anamnes, debut över 50 år, svikt på första- och andrahandsbehandling inklusive förebyggande, eller när avancerad behandling övervägs (topiramat, onabotulinumtoxin A, CGRP-antikroppar). Akut vid bortfall ej förklarat av aura, aura över 1 timme, anfall över 72 timmar.' },
+    ],
+  },
+  {
+    id: 'vardniva-epilepsi',
+    titel: 'Epilepsi – vårdnivå & remiss',
+    kategori: 'remiss-vardniva',
+    pdf: 'https://vardpersonal.1177.se/kunskapsstod/vardforlopp/epilepsi/',
+    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-epilepsi.md',
+    innehall: [
       { rubrik: 'Epilepsi – primärvård, specialistnivå och remiss', text: 'Primärvård gör mottagningsbesök med klinisk bedömning och ställningstagande till remiss. Remiss ska innehålla anamnes, anfallsbeskrivning (aura, medvetandepåverkan, motoriska och sensoriska symtom, generaliserade kramper, postiktal trötthet), provocerat eller oprovocerat, kvarstående symtom. Specialistnivå: MRT och EEG vid indikation, avancerad utredning vid terapiresistens, epilepsisjuksköterska, epilepsiteam. Kan följas i primärvård: stabila patienter i samråd med specialist, samt äldre multisjuka även utan god anfallskontroll. Hanteras i specialistvård: nydebut (första fem åren), gravida, läkemedelsjustering, komplicerad läkemedelsbehandling, intellektuell eller neurologisk funktionsnedsättning, barn. Återremiss vid försämring, utsättning, trafikmedicin, interaktioner, biverkningar, nytillkomna sjukdomstillstånd, kognitiva problem, graviditet.' },
+    ],
+  },
+  {
+    id: 'vardniva-nph',
+    titel: 'NPH (normaltryckshydrocefalus) – vårdnivå & remiss',
+    kategori: 'remiss-vardniva',
+    pdf: 'https://vardpersonal.1177.se/Blekinge/kunskapsstod/vardforlopp/normaltryckshydrocefalus-idiopatisk/',
+    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-nph.md',
+    innehall: [
+      { rubrik: 'NPH – primärvård och remissinnehåll', text: 'Idiopatisk normaltryckshydrocefalus (iNPH): basal utredning i primärvården innan remiss, samt vad remissen till neurolog ska innehålla. Remiss skickas när basal utredning är utförd. Remissinnehåll: symtomutveckling inom typiska områden för NPH (särskilt gångrubbning över tid, fynd i rutinnervsstatus, behov av gånghjälpmedel), kognitiv screening med poäng (MoCA/MMSE/Rudas), svar från DT- eller MR-hjärna, samsjuklighet (kognitiv dysfunktion, miktionsproblem, gång/balans, kardiopulmonell sjukdom med narkosrisk), patientens inställning till utredning och operation. Vid DT/MR med bild som vid NPH: remiss utan dröjsmål.' },
     ],
   },
   {

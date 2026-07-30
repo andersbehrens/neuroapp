@@ -280,9 +280,10 @@ const Vy = {
     const kat = KATEGORIER.find(k => k.id === dok.kategori);
     const isAkutkort = dok.kategori === 'akutkort';
 
+    const ärPdf = dok.pdf && /\.pdf($|\?)/i.test(dok.pdf);
     const pdfKnapp = dok.pdf ? `
-      <a class="pdf-knapp" href="${dok.pdf}" target="_blank">
-        📄 Öppna original-PDF
+      <a class="pdf-knapp" href="${dok.pdf}" target="_blank" rel="noopener noreferrer">
+        ${ärPdf ? '📄 Öppna original-PDF' : '🔗 Öppna originaldokumentet'}
       </a>` : '';
 
     if (isAkutkort) {
@@ -783,6 +784,7 @@ const App = {
     document.getElementById('toc-bakgrund').addEventListener('click', () => Vy._stängToc());
 
     Router.init();
+    Lunch.startaBevakning();
   },
 
   visaInstallDialog() {
@@ -816,7 +818,10 @@ const Lunch = {
 
     const nu = new Date();
     const dagIdx = nu.getDay() - 1; // 0=mån … 4=fre
-    if (dagIdx < 0 || dagIdx > 4) return; // helg – visa inget
+    if (dagIdx < 0 || dagIdx > 4) {          // helg – töm ev. kvarhängande vardagslunch
+      if (el.dataset.sig !== 'helg') { el.innerHTML = ''; el.dataset.sig = 'helg'; }
+      return;
+    }
     const dagNamn = this.DAGAR[dagIdx];
 
     // Primärt: same-origin data/lunch.json (uppdateras av GitHub Action – ingen proxy).
@@ -824,6 +829,12 @@ const Lunch = {
     let rätter = await this._frånFil(dagNamn);
     if (!rätter) rätter = await this._frånProxy(dagNamn, nu);
     if (!rätter || (!rätter.lunch && !rätter.grönt)) return;
+
+    // Signatur = dag + innehåll. Låter oss köra om visa() (vid fokus/timer) utan
+    // att skriva om DOM:en – och därmed utan flimmer – när inget faktiskt ändrats.
+    const sig = dagNamn + '|' + (rätter.lunch || '') + '|' + (rätter.grönt || '');
+    if (el.dataset.sig === sig) return;
+    el.dataset.sig = sig;
 
     el.innerHTML = `
       <div class="lunch-kort">
@@ -835,6 +846,23 @@ const Lunch = {
         ${rätter.lunch ? `<div class="lunch-rätt">${rätter.lunch}</div>` : ''}
         ${rätter.grönt ? `<div class="lunch-grönt">🌿 ${rätter.grönt}</div>` : ''}
       </div>`;
+  },
+
+  // Håll widgeten aktuell även när appen står öppen dygnet runt (jobbdator).
+  // Utan detta beräknas "idag" bara vid startsidans rendering → gårdagens lunch
+  // hänger kvar på morgonen tills appen laddas om. Körs en gång från App.init().
+  startaBevakning() {
+    if (this._bevakas) return;
+    this._bevakas = true;
+    // När fliken/appen blir synlig igen (väckt dator på morgonen) → uppdatera.
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') this.visa();
+    });
+    window.addEventListener('focus', () => this.visa());
+    // Skyddsnät om appen står synlig över ett dygnsskifte utan fokusändring.
+    setInterval(() => {
+      if (document.visibilityState === 'visible') this.visa();
+    }, 30 * 60 * 1000);
   },
 
   async _frånFil(dagNamn) {
