@@ -738,7 +738,9 @@ const Sidebar = {
 const App = {
   init() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(() => {});
+      // Relativ sökväg: fungerar både lokalt (roten) och på GitHub Pages (/neuroapp/).
+      // Absolut '/sw.js' pekade på domänroten → 404, så SW registrerades aldrig.
+      navigator.serviceWorker.register('sw.js').catch(() => {});
     }
 
     window.addEventListener('beforeinstallprompt', e => {
