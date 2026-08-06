@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v26, öka vid varje ändring)
+├── sw.js                               # Service worker (cache-version: neuroguide-v32, öka vid varje ändring)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -67,7 +67,7 @@ Lägger man till en **ny toppkategori** måste man även lägga till en `case` f
 
 En kategori kan ha `externalUrl` (kortet öppnar URL:en direkt från startsidan). **`lankar`** beter sig som `artiklar`: korten öppnar `d.pdf`-URL i ny flik. En "länk" är alltså ett DOKUMENT med `kategori: 'lankar'` och ett `pdf`-fält som kan vara vilken URL som helst (t.ex. **FASS** ligger som länk under Länkar med `pdf: 'https://fass.se/health'`).
 
-Kategorin **`remiss-vardniva`** samlar administrativa stöddokument om gränsdragning primärvård/specialist (t.ex. `Vardnivaer-primarvard-specialistvard-neurologi.md` och `Inklusionskriterier-avd58.md`). Primärkällor (vårdförlopps-PDF:er) ligger lokalt i mappen `vårdnivå/` men committas/publiceras **inte**.
+Kategorin **`remiss-vardniva`** samlar administrativa stöddokument om gränsdragning primärvård/specialist. Vårdnivå-dokumenten är uppdelade **per diagnos** med fokus på **remissinnehåll** (motverka ofullständiga remisser): `Vardnivaer-migran.md`, `Vardnivaer-epilepsi.md`, `Vardnivaer-nph.md`, den interna rutinen `Vardnivaer-remissbedomning.md` (remissbedömning på mottagningen – internt mejl, ingen extern originallänk) samt `Inklusionskriterier-avd58.md`. Varje diagnos-doc har en länk till originaldokumentet via `pdf`-fältet (extern 1177-URL som visas som knapp högst upp i dokumentvyn – etiketten blir **🔗 Öppna originaldokumentet** för webblänkar, **📄 Öppna original-PDF** för `.pdf`). Primärkällor (vårdförlopps-PDF:er) ligger lokalt i mappen `vårdnivå/` men committas/publiceras **inte**.
 
 **`DOKUMENT`** – varje dokument:
 ```js
@@ -166,6 +166,7 @@ Smooth scroll direkt → instant-korrigering vid 650 ms (snabba bilder) → inst
 - **Fälla (löst):** GitHubs runner blockerades av regionblekinge.se:s WAF (`fetch failed`) tills scrapern fick en **browser-User-Agent**. Behåll den.
 - **Skyddsräcke:** scrapern skriver **aldrig över med tom data** – om skrapningen ger 0 dagar bevaras senaste fungerande fil.
 - SW hämtar `data/lunch.json` **nätverk-först** (så Action-uppdateringar syns), cache som offline-reserv.
+- **Auto-uppdatering (öppen app):** `Lunch.startaBevakning()` (körs en gång i `App.init`) kör om `Lunch.visa()` vid `visibilitychange`/`focus` + var 30:e minut, så en app som står öppen dygnet runt (jobbdator) byter dag på morgonen utan omladdning. `visa()` använder en `data-sig`-vakt (dag + innehåll) för att undvika onödig omrendering/flimmer, och tömmer widgeten på helger.
 
 Samma mönster (och lärdomar) som GoodDay-appens lunch.
 
@@ -300,7 +301,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v26';  // öka siffran vid varje ändring
+const CACHE_NAME = 'neuroguide-v32';  // öka siffran vid varje ändring
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -362,14 +363,21 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 - `data.js`: `markdownUrl`, `pdf`, `graphicalAbstract`, `kalkylatorUrl` – alla utan ledande `/`
 - `sw.js`: alla poster i `ASSETS`-arrayen utan ledande `/` (använd `'./'` för rooten, `'index.html'` etc.)
 - `app.js`: bildlänkar skrivs om till `riktlinjerMarkdown/images/` (utan ledande `/`)
+- `app.js`: service workern registreras med **relativ** sökväg – `navigator.serviceWorker.register('sw.js')`, **aldrig** `'/sw.js'`. Absolut sökväg pekar på domänroten (`andersbehrens.github.io/sw.js` → 404), och då registreras SW:n **aldrig** på GitHub Pages (`/neuroapp/`). Detta var trasigt fram till v31 – offline-läget fungerade inte och alla `CACHE_NAME`-bumpar var no-ops. Relativ sökväg resolvar rätt både lokalt (roten) och i `/neuroapp/`.
 
 ### Bumpa service worker-version
 
-Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v26`** (öka vid varje ändring).
+Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v32`** (öka vid varje ändring).
 
 ## Service Worker (sw.js)
 
 Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Varje gång assets ändras måste `CACHE_NAME` bumpa version för att gamla cachen ska rensas.
+
+**Registrering:** `app.js` kör `navigator.serviceWorker.register('sw.js')` – **relativ** sökväg (se path-reglerna ovan; absolut `/sw.js` var trasigt fram till v31).
+
+**Livscykel:** `install` precachar alla ASSETS (per-URL `catch`, så en enskild 404 inte stjälper installationen) + `skipWaiting()`; `activate` raderar gamla cachar + `clients.claim()`. Därför slår en ny version igenom direkt vid nästa omladdning. `data/lunch.json` hämtas **nätverk-först** (så Action-uppdateringar syns); allt annat cache-first.
+
+**Konsekvens av cache-first:** en app som står **öppen** ser ny kod först vid omladdning (den gamla JS:en fortsätter köra). Lunch-*datan* uppdateras dock ändå automatiskt eftersom `Lunch.visa()` körs om vid `visibilitychange`/`focus` och hämtar `lunch.json` nätverk-först.
 
 Vid lokal testning: använd inkognitofönster eller avregistrera SW i DevTools → Application → Service Workers.
 

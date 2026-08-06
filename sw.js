@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v31';
+const CACHE_NAME = 'neuroguide-v32';
 const ASSETS = [
   './',
   'index.html',
@@ -45,6 +45,7 @@ const ASSETS = [
   'riktlinjerMarkdown/Vardnivaer-migran.md',
   'riktlinjerMarkdown/Vardnivaer-epilepsi.md',
   'riktlinjerMarkdown/Vardnivaer-nph.md',
+  'riktlinjerMarkdown/Vardnivaer-remissbedomning.md',
   'riktlinjerMarkdown/Inklusionskriterier-avd58.md',
   // PDF-filer
   'akutkort/GCS.pdf',

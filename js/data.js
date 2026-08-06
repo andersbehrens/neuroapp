@@ -56,6 +56,15 @@ const DOKUMENT = [
     ],
   },
   {
+    id: 'vardniva-remissbedomning',
+    titel: 'Remissbedömning',
+    kategori: 'remiss-vardniva',
+    markdownUrl: 'riktlinjerMarkdown/Vardnivaer-remissbedomning.md',
+    innehall: [
+      { rubrik: 'Remissregler – bedömning av inkommande remisser', text: 'Interna remissregler på neurologmottagningen (Region Blekinge) för att handlägga inkommande remisser likartat. Steg 1: öppna bedömningsrutan, skriv svarstext om patienten inte behöver kallas, hoppa över priorutan; bokningsort utifrån bostadskommun (Karlshamn för Karlshamn/Olofström/Sölvesborg, annars Karlskrona). Steg 2: ange om patienten kan gå till ST-läkare eller neurolog. Steg 3: prioritering Hög (mål inom 2 veckor), Medel (4 veckor), Låg (3 månader); tidsintervallet hoppas över utom vid specialfall. Steg 4: spara – remissen flyttar till hanteringssiffra 2 och läkardelen är klar.' },
+    ],
+  },
+  {
     id: 'inklusionskriterier-avd58',
     titel: 'Inklusionskriterier avd 58 – prioritering till avdelningen',
     kategori: 'remiss-vardniva',
