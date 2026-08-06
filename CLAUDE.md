@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v32, öka vid varje ändring)
+├── sw.js                               # Service worker (cache-version: neuroguide-v33, öka vid varje ändring)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -301,7 +301,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v32';  // öka siffran vid varje ändring
+const CACHE_NAME = 'neuroguide-v33';  // öka siffran vid varje ändring
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -367,7 +367,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v32`** (öka vid varje ändring).
+Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v33`** (öka vid varje ändring).
 
 ## Service Worker (sw.js)
 
@@ -378,6 +378,8 @@ Cache-strategi: cache-first. Alla assets listas explicit i `ASSETS`-arrayen. Var
 **Livscykel:** `install` precachar alla ASSETS (per-URL `catch`, så en enskild 404 inte stjälper installationen) + `skipWaiting()`; `activate` raderar gamla cachar + `clients.claim()`. Därför slår en ny version igenom direkt vid nästa omladdning. `data/lunch.json` hämtas **nätverk-först** (så Action-uppdateringar syns); allt annat cache-first.
 
 **Konsekvens av cache-first:** en app som står **öppen** ser ny kod först vid omladdning (den gamla JS:en fortsätter köra). Lunch-*datan* uppdateras dock ändå automatiskt eftersom `Lunch.visa()` körs om vid `visibilitychange`/`focus` och hämtar `lunch.json` nätverk-först.
+
+**Auto-uppdatering:** `App.init` lyssnar på `navigator.serviceWorker` `controllerchange` och kör `location.reload()` en gång (med en diskret "Ny version – uppdaterar…"-notis) när en ny SW tar över. Guard: hoppar över första registreringen (ingen `controller` vid start) och en `laddarOm`-flagga hindrar reload-loop. Därför slår en ny deploy igenom automatiskt efter en omladdning – ingen manuell hård-omladdning behövs (gäller från och med den version där logiken först installerats).
 
 Vid lokal testning: använd inkognitofönster eller avregistrera SW i DevTools → Application → Service Workers.
 

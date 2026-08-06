@@ -738,6 +738,23 @@ const Sidebar = {
 const App = {
   init() {
     if ('serviceWorker' in navigator) {
+      // Auto-uppdatering: sw.js kör skipWaiting()+clients.claim(), så en ny version
+      // tar över öppna sidor direkt. 'controllerchange' → ladda om EN gång så nytt
+      // innehåll visas utan manuell hård-omladdning. Guard: hoppa över den allra
+      // första registreringen (då fanns ingen controller) och skydda mot reload-loop.
+      const hadeController = !!navigator.serviceWorker.controller;
+      let laddarOm = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (laddarOm || !hadeController) return;
+        laddarOm = true;
+        const notis = document.createElement('div');
+        notis.textContent = 'Ny version – uppdaterar…';
+        notis.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);' +
+          'background:#2C2C2C;color:#fff;padding:10px 18px;border-radius:22px;z-index:99999;' +
+          'font:600 14px/1 -apple-system,system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.25)';
+        document.body.appendChild(notis);
+        setTimeout(() => location.reload(), 700);
+      });
       // Relativ sökväg: fungerar både lokalt (roten) och på GitHub Pages (/neuroapp/).
       // Absolut '/sw.js' pekade på domänroten → 404, så SW registrerades aldrig.
       navigator.serviceWorker.register('sw.js').catch(() => {});
