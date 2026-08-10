@@ -16,14 +16,23 @@ function isoWeek(d) {
   const y0 = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
   return Math.ceil(((t - y0) / 864e5 + 1) / 7);
 }
-async function get(url) {
-  const r = await fetch(url, { headers: {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'sv-SE,sv;q=0.9,en;q=0.8',
-  } });
-  if (!r.ok) throw new Error(url + ' -> ' + r.status);
-  return r.text();
+async function get(url, tries = 3) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, { headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'sv-SE,sv;q=0.9,en;q=0.8',
+      } });
+      if (!r.ok) throw new Error(url + ' -> ' + r.status);
+      return await r.text();
+    } catch (e) {
+      last = e;
+      if (i < tries - 1) await new Promise(res => setTimeout(res, 1500 * (i + 1))); // backoff mot WAF/transient
+    }
+  }
+  throw last;
 }
 const clean = s => s.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 
@@ -52,11 +61,14 @@ let dagar = {}, vecka = week;
 try {
   const main = await get(HUVUD);
   const links = [...main.matchAll(/href="([^"]*matsedel[^"]*\.html)"/gi)].map(m => m[1]);
-  let href = links.find(h => new RegExp('vecka-' + week + '\\D').test(h)) || links[links.length - 1];
+  // ENDAST innevarande vecka. Skriv aldrig en annan veckas meny – då hellre behålla
+  // gammal fil (widgeten veckokontrollerar och visar "ej uppdaterad" om den är gammal).
+  let href = links.find(h => new RegExp('vecka-' + week + '\\D').test(h));
   if (href) {
-    const m = href.match(/vecka-(\d+)/); if (m) vecka = +m[1];
     if (!href.startsWith('http')) href = BASE + href;
     dagar = parseWeek(await get(href));
+  } else {
+    console.error(`Ingen länk för vecka ${week} hittades – behåller befintlig data/lunch.json.`);
   }
 } catch (e) { console.error('Skrapning misslyckades:', e.message); }
 

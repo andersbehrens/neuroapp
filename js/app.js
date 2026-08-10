@@ -842,29 +842,49 @@ const Lunch = {
       return;
     }
     const dagNamn = this.DAGAR[dagIdx];
+    const nuVecka = this._isoVecka(nu);
+    let datumStr = nu.toLocaleDateString('sv-SE', { weekday: 'long', day: 'numeric', month: 'short' })
+                     .replace(/\.$/, '');
+    datumStr = datumStr.charAt(0).toUpperCase() + datumStr.slice(1); // "Måndag 10 aug"
 
     // Primärt: same-origin data/lunch.json (uppdateras av GitHub Action – ingen proxy).
     // Reserv: direkt skrapning via CORS-proxy (sällan tillgänglig numera).
-    let rätter = await this._frånFil(dagNamn);
-    if (!rätter) rätter = await this._frånProxy(dagNamn, nu);
-    if (!rätter || (!rätter.lunch && !rätter.grönt)) return;
+    const fil = await this._frånFil(dagNamn);
+    let rätter = fil, vecka = fil ? fil.vecka : null;
+    if (!fil) {                                   // ingen fil-data → prova live-proxy (aktuell vecka)
+      const p = await this._frånProxy(dagNamn, nu);
+      if (p) { rätter = p; vecka = nuVecka; }
+    }
 
-    // Signatur = dag + innehåll. Låter oss köra om visa() (vid fokus/timer) utan
-    // att skriva om DOM:en – och därmed utan flimmer – när inget faktiskt ändrats.
-    const sig = dagNamn + '|' + (rätter.lunch || '') + '|' + (rätter.grönt || '');
-    if (el.dataset.sig === sig) return;
-    el.dataset.sig = sig;
+    // Veckokontroll: visa ALDRIG en gammal veckas meny tyst som "dagens".
+    const aktuell = !!(rätter && vecka === nuVecka && (rätter.lunch || rätter.grönt));
 
-    el.innerHTML = `
-      <div class="lunch-kort">
+    const rubrik = `
         <div class="lunch-rubrik">
           <span class="lunch-ikon">🍽</span>
           <span>Dagens lunch</span>
           <span class="lunch-tid">11:15–13:30</span>
         </div>
+        <div class="lunch-datum">${datumStr} · v.${nuVecka}</div>`;
+
+    let sig, html;
+    if (aktuell) {
+      sig = 'ok|' + nuVecka + '|' + (rätter.lunch || '') + '|' + (rätter.grönt || '');
+      html = `<div class="lunch-kort">${rubrik}
         ${rätter.lunch ? `<div class="lunch-rätt">${rätter.lunch}</div>` : ''}
         ${rätter.grönt ? `<div class="lunch-grönt">🌿 ${rätter.grönt}</div>` : ''}
       </div>`;
+    } else {
+      // Gammal eller utebliven data → tydlig notis i stället för fel meny.
+      sig = 'gammal|' + nuVecka + '|' + (vecka || '-');
+      html = `<div class="lunch-kort">${rubrik}
+        <div class="lunch-rätt lunch-vantar">Menyn för vecka ${nuVecka} är inte uppdaterad ännu.</div>
+      </div>`;
+    }
+    // Signatur låter oss köra om visa() (fokus/timer) utan omrendering/flimmer när inget ändrats.
+    if (el.dataset.sig === sig) return;
+    el.dataset.sig = sig;
+    el.innerHTML = html;
   },
 
   // Håll widgeten aktuell även när appen står öppen dygnet runt (jobbdator).
@@ -890,7 +910,8 @@ const Lunch = {
       if (!r.ok) return null;
       const j = await r.json();
       const d = (j.dagar || {})[dagNamn];
-      return d && (d.lunch || d.gront) ? { lunch: d.lunch, grönt: d.gront } : null;
+      if (!d || (!d.lunch && !d.gront)) return null;
+      return { lunch: d.lunch, grönt: d.gront, vecka: j.vecka };  // vecka → veckokontroll i visa()
     } catch (e) { return null; }
   },
 

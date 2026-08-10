@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v33, öka vid varje ändring)
+├── sw.js                               # Service worker (cache-version: neuroguide-v34, öka vid varje ändring)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -164,7 +164,8 @@ Smooth scroll direkt → instant-korrigering vid 650 ms (snabba bilder) → inst
 - **Datakälla:** läser `data/lunch.json` **same-origin** (`Lunch._frånFil`). Filen innehåller hela veckan: `{ updated, vecka, dagar: { Måndag: {lunch, gront}, … } }`. Reserv: `_frånProxy` (codetabs) – men **alla fria CORS-proxyer är opålitliga/nere**, så filen är den som gäller.
 - **Filen hålls färsk av en GitHub Action** (`.github/workflows/lunch.yml`, vardagar 07/11) som kör `scripts/lunch-scrape.mjs` – server-side skrapning direkt mot regionblekinge.se (ingen proxy, ingen CORS).
 - **Fälla (löst):** GitHubs runner blockerades av regionblekinge.se:s WAF (`fetch failed`) tills scrapern fick en **browser-User-Agent**. Behåll den.
-- **Skyddsräcke:** scrapern skriver **aldrig över med tom data** – om skrapningen ger 0 dagar bevaras senaste fungerande fil.
+- **Skyddsräcke (skraper):** skriver **aldrig över med tom data** – ger skrapningen 0 dagar bevaras senaste fungerande fil. Scrapern hämtar **endast innevarande ISO-vecka** (matchar `vecka-<n>` i länken) och skriver aldrig en annan veckas meny; hittas inte veckan behålls gamla filen. `get()` gör **retry med backoff** (3 försök) mot WAF/transienta fel.
+- **Veckokontroll (widget):** `visa()` jämför filens `vecka` mot dagens ISO-vecka (`_isoVecka`). Är datat från fel vecka visas **aldrig** den gamla menyn tyst – i stället "Menyn för vecka N är inte uppdaterad ännu". Detta är skyddet mot att en missad Action-körning visar förra veckans lunch som "dagens". Widgeten visar även **datum + vecka** (`.lunch-datum`, t.ex. "Måndag 10 aug · v.33").
 - SW hämtar `data/lunch.json` **nätverk-först** (så Action-uppdateringar syns), cache som offline-reserv.
 - **Auto-uppdatering (öppen app):** `Lunch.startaBevakning()` (körs en gång i `App.init`) kör om `Lunch.visa()` vid `visibilitychange`/`focus` + var 30:e minut, så en app som står öppen dygnet runt (jobbdator) byter dag på morgonen utan omladdning. `visa()` använder en `data-sig`-vakt (dag + innehåll) för att undvika onödig omrendering/flimmer, och tömmer widgeten på helger.
 
@@ -301,7 +302,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v33';  // öka siffran vid varje ändring
+const CACHE_NAME = 'neuroguide-v34';  // öka siffran vid varje ändring
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -367,7 +368,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v33`** (öka vid varje ändring).
+Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v34`** (öka vid varje ändring).
 
 ## Service Worker (sw.js)
 
