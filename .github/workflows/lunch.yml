@@ -2,7 +2,11 @@ name: Uppdatera lunch
 
 on:
   schedule:
-    - cron: '0 5,9 * * 1-5'   # vardagar 07:00 & 11:00 svensk tid
+    # OBS: GitHub-cron KÖAR vid dessa tider men startar ofta 60–150 min senare.
+    # Därför tätt+tidigt: körningarna landar utspritt över morgonen och fångar
+    # veckobytet (bara måndag är känsligt – tis–fre ligger hela veckan redan i filen).
+    - cron: '0,30 4-7 * * 1-5'  # köas var 30:e min 06:00–09:30 sv → körs ~07:00–11:30 sv
+    - cron: '0 9 * * 1-5'       # köas 11:00 sv → backstop tidig eftermiddag
   workflow_dispatch:
 
 permissions:
