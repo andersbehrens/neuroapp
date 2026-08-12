@@ -4,7 +4,7 @@
  * data/lunch.json. Körs av GitHub Action (direkt hämtning – inga CORS/proxy-problem).
  * Lokalt: node scripts/lunch-scrape.mjs
  */
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, readFile, mkdir } from 'node:fs/promises';
 
 const HUVUD = 'https://regionblekinge.se/halsa-och-vard/sa-fungerar-varden-i-blekinge/blekingesjukhuset/matsedlar-for-sjukhusrestauranger/restaurangen-i-karlskrona.html';
 const BASE = 'https://regionblekinge.se';
@@ -79,6 +79,17 @@ if (!n) {
   console.error('Tom skrapning – behåller befintlig data/lunch.json (skriver inte).');
   process.exit(0);
 }
+// Skriv bara om själva menyn (vecka + dagar) ändrats. Annars ger varje lyckad
+// körning en commit p.g.a. ny updated-tidsstämpel – med det täta schemat blir
+// det commit-spam. Oförändrad meny → hoppa över (ingen fil-ändring, ingen commit).
+try {
+  const prev = JSON.parse(await readFile('data/lunch.json', 'utf8'));
+  if (prev.vecka === vecka && JSON.stringify(prev.dagar) === JSON.stringify(dagar)) {
+    console.log(`Oförändrad meny (vecka ${vecka}) – skriver inte.`);
+    process.exit(0);
+  }
+} catch { /* ingen befintlig fil – skriv */ }
+
 const out = { updated: now.toISOString(), vecka, dagar };
 await mkdir('data', { recursive: true });
 await writeFile('data/lunch.json', JSON.stringify(out, null, 2) + '\n', 'utf8');
