@@ -8896,6 +8896,16 @@ i symtomkomplexet.`
 ,
   // ── Artiklar ──────────────────────────────────────────
   {
+    id: 'iih-handlaggningsstod',
+    titel: 'Idiopatisk intrakraniell hypertension – förslag till nationellt handläggningsstöd',
+    kategori: 'artiklar',
+    källa: 'Läkartidningen 2019 (Sundholm et al.)',
+    pdf: 'papers/FI3R.pdf',
+    innehall: [
+      { rubrik: 'Idiopatisk intrakraniell hypertension (IIH)', text: 'Förslag till nationellt handläggningsstöd för utredning, behandling och uppföljning av idiopatisk intrakraniell hypertension (IIH, pseudotumor cerebri). Symtom: huvudvärk, papillödem, synpåverkan, pulsatil tinnitus. Diagnostik: modifierade Dandy-kriterier, lumbalpunktion med öppningstryck, neuroradiologi (MR/MRV). Behandling: viktnedgång, acetazolamid, i svåra fall shunt eller optikusskidefenestration. Uppföljning av synfunktion och synfält. Översikt av Sundholm, Träisk, Hellgren, Lundvall, Söderman, Gustavsson m.fl.' }
+    ]
+  },
+  {
     id: 'myelopathy-normal-mri',
     titel: 'Myelopathy but normal MRI: where next?',
     kategori: 'artiklar',

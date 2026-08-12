@@ -1,4 +1,4 @@
-const CACHE_NAME = 'neuroguide-v34';
+const CACHE_NAME = 'neuroguide-v35';
 const ASSETS = [
   './',
   'index.html',
@@ -72,6 +72,7 @@ const ASSETS = [
   'papers/4A7884B3-820E-4B4C-8587-133D336C1012.pdf',
   'papers/51F1599A-2FCA-423A-B1D4-AC8026090E6C.pdf',
   'papers/EE288F17-635C-43FB-95C7-374F680DFC3E.pdf',
+  'papers/FI3R.pdf',
   // Graphical abstracts
   'graphical_abstract_hypogamma.html',
   'graphical_abstract_mg.html',
