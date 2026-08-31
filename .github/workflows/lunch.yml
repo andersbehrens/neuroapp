@@ -7,6 +7,7 @@ on:
     # veckobytet (bara måndag är känsligt – tis–fre ligger hela veckan redan i filen).
     - cron: '0,30 4-7 * * 1-5'  # köas var 30:e min 06:00–09:30 sv → körs ~07:00–11:30 sv
     - cron: '0 9 * * 1-5'       # köas 11:00 sv → backstop tidig eftermiddag
+    - cron: '0 11,13,15 * * 1'  # köas 13/15/17 sv MÅNDAG → fångar sent publicerad ny-veckas-meny
   workflow_dispatch:
 
 permissions:
