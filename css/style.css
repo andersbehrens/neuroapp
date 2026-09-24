@@ -1013,6 +1013,20 @@ body {
   margin-top: 3px;
 }
 
+.forelasning-lankar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 8px;
+  font-size: 0.78rem;
+}
+.forelasning-lankar a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+}
+.forelasning-lankar a:hover { text-decoration: underline; }
+
 .lunch-kort {
   background: var(--blå-ljus);
   border-left: 3px solid var(--blå-medium);

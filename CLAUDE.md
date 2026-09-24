@@ -19,7 +19,7 @@ Projektet är ett BTH-projekt av Anders Behrens (neurolog).
 ```
 neuroApp/
 ├── index.html                          # App-skal, TOC-drawer, header
-├── sw.js                               # Service worker (cache-version: neuroguide-v34, öka vid varje ändring)
+├── sw.js                               # Service worker (cache-version: neuroguide-v36, öka vid varje ändring)
 ├── manifest.json                       # PWA-manifest
 ├── css/style.css                       # All CSS (Birch-tema, layout, Kindle-läsare, TOC)
 ├── js/
@@ -302,7 +302,7 @@ Använd `/skapa-graphical-abstract`. Spara som `graphical_abstract_nytt.html` i 
 
 ```js
 // 1. Bumpa cache-versionen
-const CACHE_NAME = 'neuroguide-v34';  // öka siffran vid varje ändring
+const CACHE_NAME = 'neuroguide-v36';  // öka siffran vid varje ändring
 
 // 2. Lägg till alla nya filer i ASSETS-arrayen (ingen ledande /):
 'riktlinjerMarkdown/NyttDokument.md',
@@ -368,7 +368,7 @@ GitHub Pages deployas automatiskt inom ~1 minut. Testa alltid i inkognitofönste
 
 ### Bumpa service worker-version
 
-Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v34`** (öka vid varje ändring).
+Varje gång filer läggs till **eller ändras** måste `CACHE_NAME` i `sw.js` ökas. Annars använder installerade appar gammal cache. Senast: **`neuroguide-v36`** (öka vid varje ändring).
 
 ## Service Worker (sw.js)
 

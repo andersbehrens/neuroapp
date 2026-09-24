@@ -995,12 +995,28 @@ const Lunch = {
 
 // ============================================================
 // Föreläsning-widget – nästa föreläsning i akut neurologi
+// Källa: https://www.akutneurologi.org (ANS webbseminarier, onsdagar)
 // Uppdatera FORELASNINGAR inför ny termin
 // ============================================================
 const Forelasning = {
+  WEBB:  'https://www.akutneurologi.org',
+  MOTE:  'https://global.gotomeeting.com/join/942542237',
   FORELASNINGAR: [
-    { datum: '2026-05-27', titel: 'Lätt kan vara svårt ibland – ett neurokirurgiskt perspektiv på lätta skallskador', forelasare: 'Lars-Owe Koskinen, Umeå' },
-    { datum: '2026-06-03', titel: 'Kontrastencefalopati', forelasare: 'Jeanette Carlqvist, Sahlgrenska' }
+    // Hösten 2026
+    { datum: '2026-09-09', titel: 'Nyheter från ESOC', forelasare: 'Boris Keselman, Karolinska US' },
+    { datum: '2026-09-16', titel: 'Just give the contrast! – nya riktlinjer för kontrasthantering vid njurpåverkan', forelasare: 'Carin Wallquist, Malmö' },
+    { datum: '2026-09-23', titel: 'Oceanic-Stroke', forelasare: 'Niaz Ahmed, Karolinska' },
+    { datum: '2026-09-30', titel: 'PML', forelasare: 'Henrik Matell, S:t Göran' },
+    { datum: '2026-10-07', titel: 'Nytt PM för refraktärt status EP: presentation av förbättringsarbete', forelasare: 'Susanna Friberg, Karolinska' },
+    { datum: '2026-10-14', titel: 'Nya behandlingar mot Alzheimers sjukdom och neurologiska komplikationer', forelasare: 'Daniel Jaray, Sahlgrenska' },
+    { datum: '2026-10-21', titel: 'Trombolys vid retinal ischemi', forelasare: 'Elias Johansson, Sahlgrenska' },
+    { datum: '2026-11-04', titel: 'Vestibulär migrän, finns det?', forelasare: 'Maria Lantz, Danderyds sjukhus' },
+    { datum: '2026-11-11', titel: 'Lipidsänkande behandling för sekundärprevention efter stroke', forelasare: 'Magnus Thoren, Danderyds sjukhus' },
+    { datum: '2026-11-18', titel: 'Nytt akutkort akut huvudvärk', forelasare: 'Johan Birnefeld / Johan Virhammar, Umeå / Akademiska' },
+    { datum: '2026-11-25', titel: 'NIHSS – interaktiv skattning', forelasare: 'Malin Woock, Sahlgrenska' },
+    { datum: '2026-12-02', titel: 'Obstruktiv hydrocefalus', forelasare: 'Sadia Mirza, Akademiska sjukhuset' },
+    { datum: '2026-12-09', titel: 'Nytt akutkort neurooftalmologi', forelasare: 'Hemin Sabir, Kungsbacka' },
+    { datum: '2026-12-16', titel: 'Nytt akutkort myastenisk kris', forelasare: 'Linda Säll, Södersjukhuset' }
   ],
 
   visa() {
@@ -1021,6 +1037,10 @@ const Forelasning = {
         </div>
         <div class="forelasning-titel">${nästa.titel}</div>
         <div class="forelasning-forelasare">${nästa.forelasare}</div>
+        <div class="forelasning-lankar">
+          <a href="${this.MOTE}" target="_blank" rel="noopener noreferrer">Anslut (GoToMeeting) ↗</a>
+          <a href="${this.WEBB}" target="_blank" rel="noopener noreferrer">Hela programmet ↗</a>
+        </div>
       </div>`;
   }
 };

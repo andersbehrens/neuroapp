@@ -9030,5 +9030,13 @@ i symtomkomplexet.`
     pdf: 'https://janusmed.se/interaktioner',
     källa: 'Janusmed – Region Stockholm',
     innehall: [{ rubrik: 'Janusmed interaktioner', text: 'Kliniskt beslutsstöd för läkemedelsinteraktioner.' }]
+  },
+  {
+    id: 'uptodate',
+    titel: 'UpToDate',
+    kategori: 'lankar',
+    pdf: 'https://www.wolterskluwer.com/en/solutions/uptodate',
+    källa: 'Wolters Kluwer – evidensbaserat kliniskt beslutsstöd',
+    innehall: [{ rubrik: 'UpToDate', text: 'Evidensbaserat kliniskt beslutsstöd och referensverk (Wolters Kluwer).' }]
   }
 ];
